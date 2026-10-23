@@ -3,8 +3,8 @@
    photos shown whole, titles in Anton. One fixed brand look (no light/dark switch);
    the accessibility panel adds high contrast, plain font, spacing and text size. */
 :root {
-  --pink: #ff1f9b;
-  --pink-deep: #c4106f;
+  --pink: #ff00ff;
+  --pink-deep: #9f049b;
   --green: #3cfe2d;
   --ink: #0e0b12;
   --line: #3a3040;
@@ -145,7 +145,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .claws a { text-decoration: none; display: flex; flex-direction: column; gap: .45rem; }
 .claws img { width: 100%; aspect-ratio: 2/3; object-fit: cover; border: 3px solid var(--pink); transition: transform .2s; }
 .claws a:hover img { transform: translateY(-6px) rotate(-1deg); }
-.namebox { align-self: flex-start; background: var(--pink); color: #fff; font: 400 clamp(.95rem, 2.4vw, 1.6rem)/1.05 var(--display); text-transform: uppercase; padding: .2em .35em; max-width: 100%; }
+.namebox { align-self: flex-start; background: var(--pink); color: var(--ink); font: 400 clamp(.95rem, 2.4vw, 1.6rem)/1.05 var(--display); text-transform: uppercase; padding: .2em .35em; max-width: 100%; }
 @media (max-width: 560px) {
   .claws { grid-template-columns: 1fr; gap: .9rem; }
   .claws a { display: grid; grid-template-columns: 38% 1fr; grid-template-rows: auto 1fr; column-gap: 1rem; align-items: start; }
