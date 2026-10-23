@@ -5,8 +5,7 @@
 # at the root (/). The others go in /<code>/ (e.g. /ca/talleres.html).
 # Add a language here only when its translation in text.yaml is complete —
 # `python3 build.py --check` lists what is missing.
-languages: [es]
-# Full list planned: [es, en, ca, de, it, fr, eu]
+languages: [es, en, ca, de, it, fr, eu]
 
 language_names:
   es: Castellano
@@ -111,7 +110,7 @@ videos:
   - {id: 8dQ9giAwwBE, title: "el Afilador"}
   - {id: KQJ2nJZBHCs, title: "alta BAJEZA", feat: "ft. Kiltreo Oskuro"}
   - {id: IFF7f8r7nbA, title: "PELASO"}
-  - {id: DgmGpjpw-Pk, title: "POCA ROPA", feat: "con La Maga"}
+  - {id: DgmGpjpw-Pk, title: "POCA ROPA", feat: "ft. La Maga"}
   - {id: mYE5oTtRIMw, title: "Ladyboi"}
   - {id: hxHuym02RKc, title: "Sissy"}
 
@@ -139,7 +138,7 @@ press_outlets:
   - {id: tisner,     name: "betevé · Plaça Tísner", date: "2023-07", title: "«L'autodefensa no és només anar amb un bat de beisbol, també és cuidar-se»", lang: ca}
   - {id: hab910,     name: "betevé · Habitació 910", date: "2023-06", url: "https://beteve.cat/habitacio-910/las-marikarmen-debuten-amb-nos-pegan/", title: "«Nos pegan», l'àlbum debut de Las Marikarmen", lang: ca}
   - {id: girona,     name: Diari de Girona,     date: "2023-03", url: "https://www.diaridegirona.cat/cultura/2023/03/30/marikarmen-protagonitzen-quarta-festa-transmaricabollo-85408221.html", title: "Las Marikarmen protagonitzen la quarta festa TransMaricaBollo", lang: ca}
-  - {id: grec,       name: "Festival Grec 2022", date: "2022-07", url: "https://www.barcelona.cat/grec/arxiugrec/en/show/las-marikarmen-marga-socias", title: "«Molinex», con Marga Socias, en El Molino"}
+  - {id: grec,       name: "Festival Grec 2022", date: "2022-07", url: "https://www.barcelona.cat/grec/arxiugrec/en/show/las-marikarmen-marga-socias", title_key: press_grec}
   - {id: pelaso,     name: Enderrock,           date: "2022",    url: "https://www.enderrock.cat/noticia/24605/marikarmen-llueixen-pelaso", title: "Las Marikarmen llueixen «Pelaso»", lang: ca}
   - {id: enderrock,  name: Enderrock,           date: "2021-12", url: "https://www.enderrock.cat/noticia/23689/orgull-queer-catala", title: "L'orgull queer català", lang: ca}
   - {id: sommerwerft, name: "Sommerwerft Frankfurt", date: "2021-07", url: "https://sommerwerft.de/events/compost-your-gender/", title: "Compost your Gender", lang: de}

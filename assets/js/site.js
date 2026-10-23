@@ -49,6 +49,17 @@
     apply();
   }
 
+  /* language button: remember the choice, close on outside click / Escape */
+  var langs = document.querySelector('.langs');
+  if (langs) {
+    langs.addEventListener('click', function (e) {
+      var a = e.target.closest('[data-lang]');
+      if (a) { try { localStorage.setItem('lm-lang', a.getAttribute('data-lang')); } catch (err) {} }
+    });
+    document.addEventListener('click', function (e) { if (langs.open && !langs.contains(e.target)) langs.open = false; });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && langs.open) { langs.open = false; langs.querySelector('summary').focus(); } });
+  }
+
   /* back to top: shows after scrolling */
   var top = document.querySelector('.to-top');
   if (top) {

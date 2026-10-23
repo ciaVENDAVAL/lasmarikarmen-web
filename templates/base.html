@@ -13,6 +13,15 @@
 {% for l in langs %}
 <link rel="alternate" hreflang="{{ l }}" href="{{ page_url(slug, l) }}">
 {% endfor %}
+{% if langs %}<link rel="alternate" hreflang="x-default" href="{{ page_url(slug, langs[0]) }}">{% endif %}
+{% if slug == 'index' and lang == langs[0] and langs|length > 1 %}
+<script>
+/* first visit to the home page: open it in the browser's language, if we have it */
+(function(){try{var L={{ langs|tojson }},k=localStorage.getItem('lm-lang');
+if(!k){var n=(navigator.languages||[navigator.language||'es']).map(function(x){return x.slice(0,2).toLowerCase()});k=n.find(function(x){return L.indexOf(x)>-1})}
+if(k&&k!==L[0]&&L.indexOf(k)>-1&&!/[?&]lang=/.test(location.search)){location.replace(k+'/')}}catch(e){}})();
+</script>
+{% endif %}
 <link rel="icon" href="{{ root }}favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="{{ root }}assets/img/favicon.png">
 <link rel="apple-touch-icon" href="{{ root }}assets/img/apple-touch-icon.png">
@@ -45,11 +54,14 @@ for(var k in s){if(k==='size'){h.style.fontSize=s.size+'%'}else if(s[k]){h.class
       {% endfor %}
       </ul>
       {% if langs %}
-      <ul class="langs" aria-label="{{ t('lang_label') }}">
-        {% for l in langs %}
-        <li><a href="{{ page_url(slug, l) }}" hreflang="{{ l }}" lang="{{ l }}" title="{{ lang_names[l] }}"{% if l == lang %} aria-current="true"{% endif %}>{{ l|upper }}</a></li>
-        {% endfor %}
-      </ul>
+      <details class="langs">
+        <summary aria-label="{{ t('lang_label') }}: {{ lang_names[lang] }}"><svg class="langs__globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.6 2.8 3.9 6 3.9 9.5s-1.3 6.7-3.9 9.5c-2.6-2.8-3.9-6-3.9-9.5s1.3-6.7 3.9-9.5z"/></svg><span>{{ lang|upper }}</span><span class="langs__caret" aria-hidden="true">▾</span></summary>
+        <ul>
+          {% for l in langs %}
+          <li><a href="{{ page_url(slug, l) }}" hreflang="{{ l }}" lang="{{ l }}" data-lang="{{ l }}"{% if l == lang %} aria-current="true"{% endif %}><span class="langs__code">{{ l|upper }}</span>{{ lang_names[l] }}</a></li>
+          {% endfor %}
+        </ul>
+      </details>
       {% endif %}
     </nav>
   </div>

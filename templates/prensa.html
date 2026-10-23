@@ -36,7 +36,7 @@
       <li>
         {% if o.get('url') %}<a href="{{ o.url }}" target="_blank" rel="noopener">{% else %}<div>{% endif %}
           <span class="outlets__name">{{ o.name }}</span>
-          <span class="outlets__title"{% if o.get('lang') %} lang="{{ o.lang }}"{% endif %}>{{ o.title }}</span>
+          <span class="outlets__title"{% if o.get('lang') %} lang="{{ o.lang }}"{% endif %}>{% if o.get('title_key') %}{{ t(o.title_key) }}{% else %}{{ o.title }}{% endif %}</span>
           <span class="mono outlets__dom">{{ month(t, o.date) }}{% if o.get('url') %} ↗{% endif %}</span>
         {% if o.get('url') %}</a>{% else %}</div>{% endif %}
       </li>

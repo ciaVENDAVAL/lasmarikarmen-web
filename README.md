@@ -40,15 +40,18 @@ Pronouns: ES elle · CA elli · DE dey/dem.
 
 You can edit `content/text.yaml` directly on github.com (pencil icon) — the site rebuilds by itself.
 
-## Adding a language
+## Languages
 
-1. Fill in the language line (e.g. `ca:`) for each key in `content/text.yaml`.
-2. Check what is missing: `python3 build.py --check`
-3. Add the code to `languages:` in `content/site.yaml` (e.g. `[es, ca]`). A language switcher appears in the menu automatically; pages go to `/ca/…`.
-4. Optional: add its PDF under `presskit:` in `site.yaml`.
+Published: es (root), en, ca, de, it, fr, eu — each in its own folder (`/en/`, `/ca/`…).
+The language button sits inside the menu. On a first visit, the home page opens in the
+browser's language if the site has it; after that the visitor's choice is remembered.
 
-Preview every language before it is complete (missing text shows in castellano):
-`python3 build.py --all`
+- Edit any text in `content/text.yaml` (all languages side by side).
+- Check what is missing: `python3 build.py --check`
+- To give one language to a translator:
+  `python3 tools/merge_lang.py --export fr > fr.yaml` (shows the castellano above each line),
+  then merge the file back: `python3 tools/merge_lang.py fr fr.yaml --replace`
+- To hide a language, remove it from `languages:` in `content/site.yaml`.
 
 ## Build locally
 
