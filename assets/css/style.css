@@ -412,3 +412,16 @@ html.a11y-contrast main a, html.a11y-contrast main a *, html.a11y-contrast .foot
 html.a11y-contrast .tag, html.a11y-contrast .chip, html.a11y-contrast .mark, html.a11y-contrast .namebox, html.a11y-contrast .inv, html.a11y-contrast .chips li, html.a11y-contrast .btn { background: #000 !important; color: #fff !important; border: 2px solid #fff !important; }
 html.a11y-contrast .showband::after, html.a11y-contrast .phead::after { background: rgb(0 0 0 / .7) !important; }
 html.a11y-contrast .phead__img { opacity: .5; }
+
+/* ── Japanese: CJK fonts, no italics or wide tracking, phrase-aware line breaks ── */
+html:lang(ja) {
+  --display: "Anton", "Dela Gothic One", "Hiragino Kaku Gothic StdN", sans-serif;
+  --serif: "Playfair Display", "Noto Sans JP", "Hiragino Sans", sans-serif;
+  --mono: "Space Mono", "Noto Sans JP", "Hiragino Sans", monospace;
+  --sans: "Inter", "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+}
+html:lang(ja) body { line-height: 1.85; line-break: strict; word-break: auto-phrase; }
+html:lang(ja) :is(.deck, .q p, .hero__headline, .outlets__title, .cta p, .contact__photo figcaption, .serif, .estupenda) { font-style: normal; font-weight: 700; }
+html:lang(ja) :is(.label, .tag, .kicker, .pron, .more, .btn, .nav a, .hero__lines, .chips li, .src, .foot__slogan, .foot__base, .credit-line) { letter-spacing: .04em; }
+html:lang(ja) :is(.h2, .giant, .phead__title, .hero__word, .namebox, .album__title, .product__name, .slogan-big) { line-height: 1.15; }
+html:lang(ja) .lead, html:lang(ja) .prose { line-height: 1.95; }

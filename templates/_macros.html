@@ -27,4 +27,4 @@
 
 {% macro price(n) %}{{ n }} €{% endmacro %}
 
-{% macro month(t, d) %}{% if d and d|length == 7 %}{{ t('month_' ~ d[5:7]) }} {{ d[:4] }}{% else %}{{ d }}{% endif %}{% endmacro %}
+{% macro month(t, d) %}{% if d and d|length == 7 %}{{ (t('month_fmt')|string).replace('{m}', t('month_' ~ d[5:7])|string).replace('{y}', d[:4]) }}{% elif d %}{{ (t('year_fmt')|string).replace('{y}', d) }}{% endif %}{% endmacro %}

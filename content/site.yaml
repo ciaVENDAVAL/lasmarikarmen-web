@@ -5,16 +5,19 @@
 # at the root (/). The others go in /<code>/ (e.g. /ca/talleres.html).
 # Add a language here only when its translation in text.yaml is complete —
 # `python3 build.py --check` lists what is missing.
-languages: [es, en, ca, de, it, fr, eu]
+languages: [es, en, ca, gl, eu, pt, fr, it, de, ja]
 
 language_names:
   es: Castellano
   en: English
   ca: Català
+  gl: Galego
   de: Deutsch
   it: Italiano
   fr: Français
   eu: Euskara
+  pt: Português
+  ja: 日本語
 
 # Custom domain. Leave empty while testing on <user>.github.io/<repo>/.
 # Set to lasmarikarmen.com when you are ready to move the domain to GitHub Pages.

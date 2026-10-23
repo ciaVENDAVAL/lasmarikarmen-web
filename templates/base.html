@@ -28,7 +28,8 @@ if(k&&k!==L[0]&&L.indexOf(k)>-1&&!/[?&]lang=/.test(location.search)){location.re
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&family=Playfair+Display:ital,wght@1,400;1,700;1,900&family=Space+Mono:wght@400;700&display=swap">
-<link rel="stylesheet" href="{{ root }}assets/css/style.css">
+{% if lang == 'ja' %}<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP:wght@400;700;900&display=swap">
+{% endif %}<link rel="stylesheet" href="{{ root }}assets/css/style.css">
 <script>
 /* apply saved accessibility settings before the page paints */
 (function(){try{var s=JSON.parse(localStorage.getItem('lm-a11y')||'{}'),h=document.documentElement;

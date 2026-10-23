@@ -17,7 +17,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 MASTER = ROOT / "content" / "text.yaml"
-ORDER = ["es", "en", "ca", "de", "it", "fr", "eu"]
+ORDER = ["es", "en", "ca", "gl", "eu", "pt", "fr", "it", "de", "ja"]
 KEY_RE = re.compile(r"^([A-Za-z0-9_]+):\s*(\{.*\})?\s*$")
 LANG_RE = re.compile(r"^  ([a-z]{2}):\s?(.*)$")
 

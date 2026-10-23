@@ -36,7 +36,7 @@ PAGES = [
     ("prensa",         "prensa.html",         "nav_press",     "nav_press"),
     ("contacto",       "contacto.html",       "nav_contact",   "nav_contact"),
 ]
-ALL_LANGS = ["es", "en", "ca", "de", "it", "fr", "eu"]
+ALL_LANGS = ["es", "en", "ca", "gl", "eu", "pt", "fr", "it", "de", "ja"]
 SOURCE = "es"
 
 

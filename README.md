@@ -23,7 +23,7 @@ Bottom left: pink triangle ▼ opens the accessibility options. Bottom right: �
 
 ## Where things live
 
-- **`content/text.yaml`** — every text on the site, one entry per key with a line per language (`es`, `en`, `ca`, `de`, `it`, `fr`, `eu`). Keys match the press-kit master text where they exist.
+- **`content/text.yaml`** — every text on the site, one entry per key with a line per language (`es`, `en`, `ca`, `gl`, `eu`, `pt`, `fr`, `it`, `de`, `ja`). Keys match the press-kit master text where they exist.
 - **`content/site.yaml`** — things that are not translated: published languages, links, social media, members' names and pronoun keys, album tracklist, concert venues, credits.
 - **`templates/`** — page layouts (Jinja2).
 - **`assets/`** — CSS, photos, logos, icons, press-kit PDFs.
@@ -42,7 +42,7 @@ You can edit `content/text.yaml` directly on github.com (pencil icon) — the si
 
 ## Languages
 
-Published: es (root), en, ca, de, it, fr, eu — each in its own folder (`/en/`, `/ca/`…).
+Published: es (root), en, ca, gl, eu, pt, fr, it, de, ja — each in its own folder (`/en/`, `/ca/`…).
 The language button sits inside the menu. On a first visit, the home page opens in the
 browser's language if the site has it; after that the visitor's choice is remembered.
 
