@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% from "_macros.html" import pagehead, more %}
+{% block main %}
+{{ pagehead(root ~ 'assets/img/band-masks.jpg', t('nav_workshops'), t('workshop_title_1'), t('workshop_title_2'), 'center 35%') }}
+
+<section class="band band--cream">
+  <div class="wrap">
+    <p class="deck deck--big narrow">{{ t('workshops_deck') }}</p>
+  </div>
+</section>
+
+<section class="band band--pink">
+  <div class="wrap workshop">
+    <figure class="workshop__img">
+      <img src="{{ root }}assets/img/vic-aspiradora.jpg" alt="Victoria Sickness" loading="lazy" width="733" height="1100">
+    </figure>
+    <div class="workshop__txt">
+      <p class="tag tag--ink">{{ t('workshop_title_1') }} {{ t('workshop_title_2') }}</p>
+      <h2 class="h2 h2--xl">{{ t('workshop_name') }}</h2>
+      <p class="lead">{{ t('workshop_intro') }}</p>
+      <p class="label">{{ t('workshop_contents_l') }}</p>
+      <ul class="chips">
+        {% for c in (t('workshop_contents')|string).split(' · ') %}<li>{{ c }}</li>{% endfor %}
+      </ul>
+      <dl class="facts facts--ink">
+        <div><dt>{{ t('workshop_duration_l') }}</dt><dd>{{ t('workshop_duration') }}</dd></div>
+        <div><dt>{{ t('workshop_group_l') }}</dt><dd>{{ t('workshop_group') }}</dd></div>
+        <div><dt>{{ t('workshop_age_l') }}</dt><dd>{{ t('workshop_age') }}</dd></div>
+      </dl>
+      <div class="cta">
+        <p>{{ t('workshop_cta') }}</p>
+        <a class="btn btn--ink" href="mailto:{{ site.contact.email }}?subject={{ (t('workshop_mail_subject')|striptags)|urlencode }}">{{ t('web_write_us') }}</a>
+        <p class="mono small">{{ site.contact.email }} · {{ site.contact.phone }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band band--ink">
+  <div class="wrap split split--rev">
+    <div class="split__txt">
+      <p class="tag">{{ t('meneo_kicker') }}</p>
+      <p class="lead lead--light">{{ t('meneo_text') }}</p>
+      <a class="insta mono" href="https://www.instagram.com/{{ site.meneo_instagram }}/" target="_blank" rel="noopener">{{ icons.instagram }}@{{ site.meneo_instagram }}</a>
+    </div>
+    <img class="split__photo" src="{{ root }}assets/img/hipo-live.jpg" alt="Hipogrifa" loading="lazy" width="1400" height="933">
+  </div>
+  <div class="wrap next">
+    {{ more(page_url('contratacion'), t('nav_booking')) }}
+  </div>
+</section>
+{% endblock %}

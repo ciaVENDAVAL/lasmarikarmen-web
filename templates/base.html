@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% if page_title %}{{ page_title|striptags }} · {% endif %}Las Marikarmen</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="{{ t('meta_description')|striptags }}">
+<meta property="og:title" content="Las Marikarmen{% if page_title %} · {{ page_title|striptags }}{% endif %}">
+<meta property="og:description" content="{{ t('meta_description')|striptags }}">
+<meta property="og:image" content="{{ site.site_url }}/assets/img/band-sky.jpg">
+<meta name="theme-color" content="#0e0b12">
+{% for l in langs %}
+<link rel="alternate" hreflang="{{ l }}" href="{{ page_url(slug, l) }}">
+{% endfor %}
+<link rel="icon" type="image/png" href="{{ root }}assets/img/favicon.png">
+<link rel="apple-touch-icon" href="{{ root }}assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&family=Playfair+Display:ital,wght@1,400;1,700;1,900&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="{{ root }}assets/css/style.css">
+</head>
+<body class="page-{{ slug }}">
+<a class="skip" href="#main">{{ t('skip_link') }}</a>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="brand" href="{{ page_url('index') }}">
+      <img src="{{ root }}assets/img/favicon.png" alt="" width="40" height="40">
+      <span class="brand__word"><span class="pk">Las</span> Marikarmen</span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">
+      <span class="menu-btn__bars" aria-hidden="true"></span>{{ t('nav_menu') }}
+    </button>
+    <nav id="nav" class="nav" aria-label="{{ t('nav_menu') }}">
+      <ul>
+      {% for p_slug, _tpl, nav_key, _tk in pages if p_slug != 'index' %}
+        <li><a href="{{ page_url(p_slug) }}"{% if p_slug == slug %} aria-current="page"{% endif %}>{{ t(nav_key) }}</a></li>
+      {% endfor %}
+      </ul>
+      {% if langs %}
+      <ul class="langs" aria-label="{{ t('lang_label') }}">
+        {% for l in langs %}
+        <li><a href="{{ page_url(slug, l) }}" hreflang="{{ l }}" lang="{{ l }}" title="{{ lang_names[l] }}"{% if l == lang %} aria-current="true"{% endif %}>{{ l|upper }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div class="foot__brand">
+      <img src="{{ root }}assets/img/logo-dark.png" alt="Las Marikarmen" width="392" height="127" loading="lazy">
+      <p class="mono foot__slogan"><span class="pk">Nos pegan!</span> {{ t('slogan') }}</p>
+      {% include "_social.html" %}
+    </div>
+    <div>
+      <p class="label gr">{{ t('contact_direct') }}</p>
+      <p><span class="nm">{{ site.contact.person }}</span> <span class="pron">{{ '{' }}{{ t(site.contact.pronoun_key) }}{{ '}' }}</span><br>
+        <a href="{{ site.contact.phone_href }}">{{ site.contact.phone }}</a><br>
+        <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+    </div>
+    <div>
+      <p class="label gr">{{ t('contact_booking') }}</p>
+      <p>{{ site.contact.agency }}</p>
+      <p class="label gr">Press kit</p>
+      <p><a href="{{ presskit }}">{{ t('web_download') }}</a></p>
+    </div>
+  </div>
+  <div class="wrap foot__base mono">
+    <span>{{ t('location_label') }} · 2017–2026</span>
+    <span>{{ t('photo_credit_line') }}</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.querySelector('.menu-btn'), n=document.getElementById('nav');
+  if(!b||!n) return;
+  document.documentElement.classList.add('js');
+  b.addEventListener('click',function(){
+    var o=b.getAttribute('aria-expanded')==='true';
+    b.setAttribute('aria-expanded',String(!o)); n.classList.toggle('open',!o);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% from "_macros.html" import more %}
+{% block main %}
+<section class="band band--pink press-head">
+  <div class="wrap press-top">
+    <h1 class="giant giant--ink">{{ t('press_title_1') }} {{ t('press_title_2') }}</h1>
+    <figure class="polaroid">
+      <img src="{{ root }}assets/img/conta-fur.jpg" alt="Contàmina Perpétua" width="733" height="1100">
+    </figure>
+  </div>
+  <div class="wrap">
+    <blockquote class="q q--big q--ink">
+      <p>«{{ t('quote_kaos') }}»</p>
+      <footer class="src"><span class="chip chip--ink">Kaos en la Red</span> {{ t('quote_kaos_src') }}</footer>
+    </blockquote>
+    <div class="quotes">
+      <blockquote class="q"><p>«{{ t('quote_beteve') }}»</p><footer class="src"><span class="chip chip--ink">betevé</span> Feeel, 2021</footer></blockquote>
+      <blockquote class="q"><p>«{{ t('quote_vic') }}»</p><footer class="src"><span class="chip chip--ink nm">Victoria Sickness</span> betevé</footer></blockquote>
+      <blockquote class="q"><p>«{{ t('quote_heart') }}»</p><footer class="src"><span class="chip chip--ink">Las Marikarmen</span> betevé</footer></blockquote>
+      <blockquote class="q"><p>«{{ t('quote_enderrock') }}»</p><footer class="src"><span class="chip chip--ink">Enderrock</span> 2021</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="band band--ink">
+  <div class="wrap">
+    <p class="label gr">{{ t('outlets_kicker') }}</p>
+    <ul class="outlets">
+      {% for o in site.press_outlets %}
+      <li>
+        <a href="{{ o.url }}" target="_blank" rel="noopener">
+          <span class="outlets__name">{{ o.name }}</span>
+          <span class="outlets__title">{{ t('press_' ~ o.id) }}</span>
+          <span class="mono outlets__dom">{{ o.domain }} ↗</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="band band--cream">
+  <div class="wrap kitbox">
+    <div>
+      <h2 class="h2">Press <span class="pk">kit</span></h2>
+      <p class="lead">{{ t('press_kit_box') }}</p>
+    </div>
+    <a class="btn" href="{{ presskit }}">{{ t('web_download') }}</a>
+  </div>
+</section>
+{% endblock %}

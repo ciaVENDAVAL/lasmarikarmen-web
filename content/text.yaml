@@ -1,0 +1,337 @@
+# Las Marikarmen — all translatable web text.
+# Same keys as the press-kit master text where they exist, so both can be merged.
+# Each key: es (source) + one line per language. A missing language falls back
+# to es and is listed by `python3 build.py --check`.
+# Basic HTML is allowed: <b>, <em>, <br>. Keep names out of here (they are in site.yaml).
+
+# ───────── general ─────────
+presskit_label:
+  es: Press kit · Edición 2026
+location_label:
+  es: Barcelona · Collserola
+germany:
+  es: Alemania
+  ca: Alemanya
+  de: Deutschland
+  it: Germania
+  fr: Allemagne
+  eu: Alemania
+pron_she:
+  es: ella
+  ca: ella
+  de: sie
+pron_they:
+  es: elle
+  ca: elli
+  de: dey/dem
+
+# ───────── web: navigation & common ─────────
+nav_home:
+  es: Inicio
+nav_bio:
+  es: Quiénes somos
+nav_members:
+  es: Integrantes
+nav_show:
+  es: Espectáculo
+nav_workshops:
+  es: Talleres
+nav_press:
+  es: Prensa
+nav_booking:
+  es: Contratación
+nav_menu:
+  es: Menú
+more_info:
+  es: Más info
+back_home:
+  es: Volver al inicio
+lang_label:
+  es: Idioma
+skip_link:
+  es: Saltar al contenido
+web_download:
+  es: Descargar press kit (PDF)
+web_listen:
+  es: Escuchar
+web_write_us:
+  es: Escríbenos
+meta_description:
+  es: Las Marikarmen, banda travesti transfeminista y queer de Barcelona. Hip-hop electrónico con saxos y clarinete en directo, drag, vídeo y niebla al beat.
+photo_credit_line:
+  es: "Fotos: Lukk Pink, Juan Miguel Morales, Albert Garcia"
+
+# ───────── cover / home ─────────
+cover_headline:
+  es: Saxos, drag,<br><em>synth punk.</em>
+cover_lines:
+  es: <b>Banda travesti</b> · transfeminista · queer<br>Hip-hop electrónico con vientos en directo<br>Vídeo, humo y mucha purpurina
+cover_sticker:
+  es: El espectáculo
+cover_credit:
+  es: "En portada: Contàmina Perpétua, Hipogrifa y Victoria Sickness"
+home_bio_teaser:
+  es: Banda travesti nutrida del transfeminismo y lo queer, nacida en 2017 en la ruralidad de Collserola. Sin jerarquías, todes hacemos de todo.
+home_show_teaser:
+  es: El funeral folclórico de Lady Marikarmen convertido en fiesta multimedia. Hip-hop electrónico, vientos, drag, vídeo y niebla al beat.
+home_workshops_teaser:
+  es: "2000 años de Drag Kings, Queens &amp; Monsters: historia del drag, maquillaje, vestuario y runway."
+home_booking_teaser:
+  es: Sala o calle, mejor de noche. Condiciones técnicas, conciertos memorables y contacto.
+home_listen_title:
+  es: Nos pegan! en todas las redes
+
+# ───────── bio ─────────
+bio_tag:
+  es: Quiénes somos
+bio_title_1:
+  es: Bienvenide a la
+bio_title_2:
+  es: house of Marikarmen
+bio_p1:
+  es: "<b>Las Marikarmen</b> es una banda travesti nutrida del transfeminismo y lo queer. Mezclamos música, performance y vivencias: hip-hop y trap con pop electrónico, dos saxos y un clarinete en directo, drag, proyecciones de vídeo y niebla programada al beat."
+bio_p2:
+  es: "Nacimos en 2017 para dar un espacio a las identidades disidentes en la ruralidad de Collserola (Barcelona). Nos organizamos de forma horizontal, sin jerarquías, y llevamos esa idea al escenario: todes cantamos, tocamos, hacemos perfo, vídeo, bailoteo… ¡y lo que haga falta!"
+bio_p3:
+  es: "En la house of Marikarmen tenemos a nuestra madre, <b>Lady Marikarmen</b>, gran pionera del mundo transfeminista. Tras su muerte, honramos su legado y continuamos su lucha: abrazar antiguas formas de vida queer que fueron erradicadas y destruir el heteropatriarcado, la cisnormalidad y el binarismo obligado."
+bio_banner:
+  es: ¡Destruir el heteropatriarcado, la cisnormalidad y el binarismo obligado!
+lady_caption:
+  es: Lady Marikarmen<br>madre de la casa
+
+# ───────── members ─────────
+members_title_1:
+  es: Les
+members_title_2:
+  es: integrantes
+members_deck:
+  es: Tres monstruas drag, dos saxos, un clarinete y un ordenador lleno de beats.
+from_vic:
+  es: Leganés
+  ca: Leganés
+  de: Leganés
+  it: Leganés
+  fr: Leganés
+  eu: Leganés
+from_hipo:
+  es: Vitoria-Gasteiz
+  ca: Vitòria-Gasteiz
+  de: Vitoria-Gasteiz
+  it: Vitoria-Gasteiz
+  fr: Vitoria-Gasteiz
+  eu: Gasteiz
+from_conta:
+  es: Planeta X
+  ca: Planeta X
+  de: Planet X
+  it: Pianeta X
+  fr: Planète X
+  eu: X Planeta
+role_vic:
+  es: Saxo tenor · rap · danzas urbanas
+role_hipo:
+  es: Clarinete · voz · twerking
+role_conta:
+  es: Saxo barítono · fliscornio · voz · vídeo
+
+# ───────── show ─────────
+show_kicker:
+  es: El espectáculo · 60 min
+show_title:
+  es: Nos pegan!
+show_deck:
+  es: El funeral folclórico de Lady Marikarmen se convierte en <b>una fiesta multimedia</b> de hip-hop electrónico, vientos y travestismo.
+show_p1:
+  es: "Proyecciones de vídeo, luces y una columna de niebla con LEDs programada al ritmo del beat. Tocamos encima del escenario y bajamos al público. Un directo explosivo y lleno de sorpresas al que todo el mundo está invitade: un viaje de redescubrimiento y locura por el universo queer de Las Marikarmen."
+show_p2:
+  es: Cada concierto es un ritual cargado de simbolismo y humor crítico contra el heteropatriarcado y la cisnormalidad. Salimos de él con más purpurina y más aliades.
+fact_duration:
+  es: Duración
+fact_people:
+  es: En escena
+fact_venue_big:
+  es: Sala
+fact_venue:
+  es: o calle,<br>mejor de noche
+fact_public_big:
+  es: TP
+fact_public:
+  es: Todos los públicos
+quote_contamina:
+  es: Cogemos a los hombres cis, los ponemos al sol y lloran.
+  ca: Agafem els homes cis, els posem al sol i ploren.
+quote_contamina_src:
+  es: Contàmina Perpétua en betevé, 2021
+album_kicker:
+  es: El disco del espectáculo
+album_intro:
+  es: "Nueve temas de hip-hop electrónico con vientos:"
+first_album_l:
+  es: Primer álbum
+  ca: Primer àlbum
+  de: Erstes Album
+  it: Primo album
+  fr: Premier album
+  eu: Lehen diskoa
+album_motto:
+  es: Composta, recicla y repiensa la manera en que percibes el género.
+  ca: Composta, recicla i repensa la manera en què perceps el gènere.
+
+# ───────── press ─────────
+press_title_1:
+  es: Lo que<br>dice la
+press_title_2:
+  es: prensa
+quote_kaos:
+  es: Nos regocijamos en el odio que nos transmite la sociedad y lo transformamos en empoderamiento y amor personal.
+quote_kaos_src:
+  es: entrevista
+quote_beteve:
+  es: Una banda performativa llamada a minar el heteropatriarcado, romper con el relato de la cisnormalidad y poner fin al reduccionismo del binarismo.
+  ca: Una banda performativa cridada a minar l’heteropatriarcat, trencar amb el relat de la cisnormalitat i posar fi al reduccionisme d’un binarisme.
+quote_vic:
+  es: Una banda queer que introduce conceptos pop, balcánicos, beats, vestuario, maquillaje y también un poco de nosotres.
+  ca: Una banda queer, que introdueix conceptes pop, balcànics, beats, vestuari, maquillatge i també una mica de nosaltres.
+quote_heart:
+  es: Hay mucho que deconstruir, repensar, reciclar, compostar… y nosotres lo hacemos desde nuestro pequeño corazón.
+  ca: Hi ha molt a deconstruir, repensar, reciclar, compostar… i nosaltres ho fem des del nostre petit cor.
+quote_enderrock:
+  es: Tiene un directo performativo e interactivo que se convierte en una celebración de las identidades disidentes, un espacio de cuidados y amor…
+outlets_kicker:
+  es: Nos han visto en
+press_enderrock:
+  es: Orgull queer català
+  ca: Orgull queer català
+press_beteve:
+  es: Las Marikarmen presentan «Compost your Gender»
+press_grec:
+  es: «Molinex», con Marga Socias, en El Molino
+press_masdecultura:
+  es: Entrevistamos a este colectivo transfeminista queer
+press_wag1:
+  es: Descubrimos el cabaret reivindicativo de Las Marikarmen
+press_kaos:
+  es: Entrevista
+press_kit_box:
+  es: Todo en un PDF, con fotos, textos y condiciones técnicas.
+
+# ───────── booking / info ─────────
+booking_title_1:
+  es: Contratación
+booking_title_2:
+  es: y contacto
+concerts_title_1:
+  es: Conciertos
+concerts_title_2:
+  es: memorables
+concerts_since:
+  es: Desde 2017
+region_bcn:
+  es: Barcelona
+region_cat:
+  es: Catalunya
+region_es:
+  es: Resto de España
+tech_title_1:
+  es: Condiciones
+tech_title_2:
+  es: técnicas
+tech_place_l:
+  es: Lugar
+tech_place:
+  es: Sala o calle. Mejor de noche, en un escenario elevado.
+tech_duration_l:
+  es: Duración
+tech_duration:
+  es: 60 minutos
+tech_public_l:
+  es: Público
+tech_public:
+  es: Todas las edades
+tech_space_l:
+  es: Espacio ideal
+tech_space:
+  es: 5 m ancho × 4 m fondo × 3 m altura
+tech_setup_l:
+  es: Montaje y pruebas
+tech_setup:
+  es: 30 min montaje · 60 min pruebas de sonido/vídeo · 60 min maquillaje y vestuario
+tech_video_l:
+  es: Vídeo y niebla
+tech_video:
+  es: Traemos máquina de niebla con DMX programado al beat. Podemos proyectar vídeos si hay una pared lisa al fondo.
+credits_title_1:
+  es: Ficha
+credits_title_2:
+  es: artística
+credits_idea_l:
+  es: Idea, coreografía, música, vestuario
+credits_music_l:
+  es: Producción musical
+credits_design_l:
+  es: Diseño gráfico
+credits_photo_l:
+  es: Fotografía
+contact_title:
+  es: Contacto
+contact_booking:
+  es: Booking
+  ca: Booking
+  de: Booking
+  it: Booking
+  fr: Booking
+  eu: Booking
+contact_direct:
+  es: Contacto directo
+contact_rider:
+  es: Rider técnico completo<br>bajo petición
+slogan:
+  es: en todas las redes
+
+# ───────── workshops ─────────
+workshops_title_1:
+  es: Talle
+workshops_title_2:
+  es: res
+workshops_deck:
+  es: Más allá del escenario. Compartimos lo que sabemos del drag con grupos, festivales, casales y centros cívicos.
+workshop_title_1:
+  es: Taller
+workshop_title_2:
+  es: drag
+  ca: drag
+  de: Drag
+  it: drag
+  fr: drag
+  eu: drag
+workshop_text:
+  es: <b>2000 años de Drag Kings, Queens &amp; Monsters.</b> Historia del drag, juegos de teatro, vestuario, maquillaje, runway y actuaciones de les participantes. 3 h (+1 h con actuación pública) · 10–20 personas · 16+.
+workshop_name:
+  es: 2000 años de Drag Kings, Queens &amp; Monsters
+workshop_intro:
+  es: Un viaje por la historia del drag y una puesta en práctica. Cada participante construye su personaje con juegos de teatro, vestuario y maquillaje, y lo lleva a la pasarela.
+workshop_contents_l:
+  es: Qué hacemos
+workshop_contents:
+  es: Historia del drag · Juegos de teatro · Vestuario · Maquillaje · Runway · Actuaciones de les participantes
+workshop_duration_l:
+  es: Duración
+workshop_duration:
+  es: 3 h<br>(+1 h con actuación pública)
+workshop_group_l:
+  es: Grupo
+workshop_group:
+  es: 10–20 personas
+workshop_age_l:
+  es: Edad
+workshop_age:
+  es: 16+
+workshop_cta:
+  es: ¿Quieres el taller en tu festival, casal o centro cívico? Escríbenos y lo hablamos.
+workshop_mail_subject:
+  es: Taller drag
+meneo_kicker:
+  es: Fiestas
+meneo_text:
+  es: <b>Meneo Disidente.</b> Junto con otras bandas feministas organizamos fiestas disidentes.
+  de: <b>Meneo Disidente.</b> Zusammen mit anderen feministischen Bands organisieren wir Fiestas.

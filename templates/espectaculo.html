@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% from "_macros.html" import more, facts %}
+{% block main %}
+<section class="showband showband--page">
+  <img class="showband__img" src="{{ root }}assets/img/band-stage.jpg" alt="Victoria Sickness, Contàmina Perpétua, Hipogrifa" width="1800" height="1200">
+  <div class="wrap showband__in">
+    <p class="mono kicker">{{ t('show_kicker') }}</p>
+    <h1 class="giant">Nos <span class="pk">pegan!</span></h1>
+  </div>
+</section>
+
+<section class="band band--cream">
+  <div class="wrap show">
+    <div class="show__txt">
+      <p class="deck deck--big">{{ t('show_deck') }}</p>
+      <p>{{ t('show_p1') }}</p>
+      <p>{{ t('show_p2') }}</p>
+      {{ facts(t) }}
+      <blockquote class="q">
+        <p>«{{ t('quote_contamina') }}»</p>
+        <footer class="src pk">{{ t('quote_contamina_src') }}</footer>
+      </blockquote>
+    </div>
+    <aside class="album">
+      <p class="label gr">{{ t('album_kicker') }}</p>
+      <h2 class="album__title">{{ site.album.title }} <sup>{{ site.album.year }}</sup></h2>
+      <p>{{ t('album_intro') }}</p>
+      <ol class="tracks mono">
+        {% for tr in site.album.tracks %}<li>{{ tr }}</li>{% endfor %}
+      </ol>
+      <hr>
+      <p class="label gr">{{ t('first_album_l') }} · {{ site.album.first_album_year }}</p>
+      <p><em class="serif">{{ site.album.first_album }}</em> — «{{ t('album_motto') }}»</p>
+      <p class="label gr">{{ t('web_listen') }}</p>
+      {% include "_social.html" %}
+    </aside>
+  </div>
+</section>
+
+<section class="band band--ink">
+  <div class="wrap trio">
+    <img src="{{ root }}assets/img/conta-fur.jpg" alt="Contàmina Perpétua" loading="lazy" width="733" height="1100">
+    <img src="{{ root }}assets/img/vic-live.jpg" alt="Victoria Sickness" loading="lazy" width="733" height="1100">
+    <img src="{{ root }}assets/img/conta-leopard.jpg" alt="Contàmina Perpétua" loading="lazy" width="733" height="1100">
+  </div>
+  <div class="wrap next">
+    {{ more(page_url('contratacion'), t('nav_booking')) }}
+    {{ more(page_url('prensa'), t('nav_press')) }}
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% from "_macros.html" import pagehead, more %}
+{% block main %}
+{{ pagehead(root ~ 'assets/img/band-wheelbarrow.jpg', t('bio_tag'), t('bio_title_1'), t('bio_title_2'), 'center 40%') }}
+
+<section class="band band--cream">
+  <div class="wrap prose-cols">
+    <p class="dropcap">{{ t('bio_p1') }}</p>
+    <p>{{ t('bio_p2') }}</p>
+    <p>{{ t('bio_p3') }}</p>
+  </div>
+</section>
+
+<section class="band band--cream band--flush">
+  <div class="wrap lady">
+    <div class="burst"><p>{{ t('bio_banner') }}</p></div>
+    <figure class="frame">
+      <img src="{{ root }}assets/img/lady.png" alt="Lady Marikarmen" width="428" height="700" loading="lazy">
+      <figcaption class="plaque">{{ t('lady_caption') }}</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band band--ink">
+  <div class="wrap gallery">
+    <img src="{{ root }}assets/img/band-masks.jpg" alt="" loading="lazy" width="1600" height="1067">
+    <img src="{{ root }}assets/img/band-funeral.jpg" alt="" loading="lazy" width="1800" height="1200">
+    <img src="{{ root }}assets/img/band-dientes.jpg" alt="" loading="lazy" width="1600" height="1067">
+    <img src="{{ root }}assets/img/band-clubs.jpg" alt="" loading="lazy" width="800" height="1200">
+  </div>
+  <div class="wrap next">
+    {{ more(page_url('integrantes'), t('nav_members')) }}
+    {{ more(page_url('espectaculo'), t('nav_show')) }}
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,23 @@
+{# Page header: photo + kicker + two-line title in marker boxes, like the press kit #}
+{% macro pagehead(img, kicker, l1, l2, pos='center', tone='ink') %}
+<section class="phead phead--{{ tone }}">
+  <img class="phead__img" src="{{ img }}" alt="" style="object-position: {{ pos }}">
+  <div class="wrap phead__in">
+    <p class="tag">{{ kicker }}</p>
+    <h1 class="phead__title"><span class="mark mark--w">{{ l1 }}</span><br><span class="mark mark--g">{{ l2 }}</span></h1>
+  </div>
+</section>
+{% endmacro %}
+
+{% macro more(href, label) %}
+<a class="more" href="{{ href }}">{{ label }} <span aria-hidden="true">→</span></a>
+{% endmacro %}
+
+{% macro facts(t) %}
+<dl class="facts">
+  <div><dt>60′</dt><dd>{{ t('fact_duration') }}</dd></div>
+  <div><dt>3</dt><dd>{{ t('fact_people') }}</dd></div>
+  <div><dt>{{ t('fact_venue_big') }}</dt><dd>{{ t('fact_venue') }}</dd></div>
+  <div><dt>{{ t('fact_public_big') }}</dt><dd>{{ t('fact_public') }}</dd></div>
+</dl>
+{% endmacro %}

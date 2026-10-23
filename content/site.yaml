@@ -1,0 +1,117 @@
+# Las Marikarmen — web settings and data that does NOT need translating.
+# All translatable text lives in content/text.yaml.
+
+# Languages published on the site. The first one is the default and is built
+# at the root (/). The others go in /<code>/ (e.g. /ca/talleres.html).
+# Add a language here only when its translation in text.yaml is complete —
+# `python3 build.py --check` lists what is missing.
+languages: [es]
+# Full list planned: [es, ca, de, it, fr, eu]
+
+language_names:
+  es: Castellano
+  ca: Català
+  de: Deutsch
+  it: Italiano
+  fr: Français
+  eu: Euskara
+
+# Custom domain. Leave empty while testing on <user>.github.io/<repo>/.
+# Set to lasmarikarmen.com when you are ready to move the domain to GitHub Pages.
+cname: ""
+
+site_url: https://www.lasmarikarmen.com
+
+# Press kit PDF per language (files in assets/presskit/). Missing ones fall back to es.
+presskit:
+  es: assets/presskit/Las-Marikarmen-presskit-2026-es.pdf
+
+contact:
+  person: tyle fernández
+  pronoun_key: pron_they
+  phone: "+34 644 389 757"
+  phone_href: "tel:+34644389757"
+  email: lasmarikarmen@anartist.org
+  agency: Rebel Sound Booking
+
+social:
+  - {name: Instagram,  icon: instagram,  url: "https://www.instagram.com/lasmarikarmen/"}
+  - {name: Spotify,    icon: spotify,    url: "https://open.spotify.com/artist/5Rh261ShPjFw5zqis2nbtF"}
+  - {name: YouTube,    icon: youtube,    url: "https://www.youtube.com/channel/UCtktbwYuTYX1_Ym86ScTacg"}
+  - {name: Facebook,   icon: facebook,   url: "https://www.facebook.com/LasMarikarmen/"}
+  - {name: SoundCloud, icon: soundcloud, url: "https://soundcloud.com/lasmarikarmen"}
+  - {name: Bandcamp,   icon: bandcamp,   url: "https://lasmarikarmen.bandcamp.com/"}
+  - {name: X,          icon: x,          url: "https://x.com/lasmarikarmen"}
+
+# Names are never translated or broken across lines.
+members:
+  - id: vic
+    name: Victoria Sickness
+    pronoun_key: pron_they
+    from_key: from_vic
+    role_key: role_vic
+    instagram: victoriasickness
+    claw: assets/img/claw-vic.jpg
+    live: assets/img/vic-live.jpg
+  - id: hipo
+    name: Hipogrifa
+    pronoun_key: pron_she
+    from_key: from_hipo
+    role_key: role_hipo
+    instagram: hipogrifff
+    claw: assets/img/claw-hipo.jpg
+    live: assets/img/hipo-sing.jpg
+  - id: conta
+    name: Contàmina Perpétua
+    pronoun_key: pron_they
+    from_key: from_conta
+    role_key: role_conta
+    instagram: contamina_perpetua
+    claw: assets/img/claw-conta.jpg
+    live: assets/img/conta-live.jpg
+
+album:
+  title: Nos pegan
+  year: 2023
+  tracks:
+    - Nos pegan
+    - Travestis por la carretera
+    - Secuestro
+    - Tiene un brillito
+    - El afilador
+    - Amantalak
+    - Patadas
+    - Petaca en el tanga
+    - "69: el número del amor"
+  first_album: Compost your Gender
+  first_album_year: 2021
+
+press_outlets:
+  - {id: enderrock,   name: Enderrock,            domain: enderrock.cat,    url: "https://www.enderrock.cat/noticia/23689/orgull-queer-catala"}
+  - {id: beteve,      name: "betevé · Feeel",     domain: beteve.cat,       url: "https://beteve.cat/feeel/las-marikarmen/"}
+  - {id: grec,        name: "Festival Grec 2022", domain: barcelona.cat,    url: "https://barcelona.cat/grec/arxiugrec/en/show/las-marikarmen-marga-socias"}
+  - {id: masdecultura, name: Más de Cultura,      domain: masdecultura.com, url: "https://masdecultura.com/musica/las-marikarmen-entrevistamos-este-colectivo-transfeminista-queer/"}
+  - {id: wag1,        name: Wag1mag,              domain: wag1mag.com,      url: "https://www.wag1mag.com/descubrimos-el-cabaret-reivindicativo-de-las-marikarmen/"}
+  - {id: kaos,        name: Kaos en la Red,       domain: kaosenlared.net,  url: "https://kaosenlared.net/nos-regocijamos-en-el-odio-que-nos-transmite-la-sociedad-y-lo-transformamos-en-empoderamiento-y-amor-personal/"}
+
+credits:
+  idea: [{name: Las Marikarmen}]
+  music: [{name: suzio, url: "https://www.instagram.com/suzio.tarik/"}]
+  design: [{name: bicialta, url: "https://linktr.ee/bicialta"}]
+  photo:
+    - {name: Lukk Pink}
+    - {name: Juan Miguel Morales, url: "https://juanmiguelmorales.blogspot.com/"}
+    - {name: Albert Garcia, url: "https://www.instagram.com/al.garciarome/"}
+
+meneo_instagram: meneo.disidente
+
+# Concert venues are proper names: kept as written in every language.
+concerts:
+  - region_key: region_bcn
+    venues: [El Grec, El Molino, La Mercè, "betevé: Habitació 910 & Plaça Tísner", "Carneval Bravo, Paral·lel 62", "Churros Talent, Sala Apolo", "Fiesta Wacha, Sala Upload", Poble Espanyol, La Central de Circ, FMA Fort Pienc, Barraques del Clot, Simbiruta Festival Jove, Festa Alternativa La Totxana, Diobar]
+  - region_key: region_cat
+    venues: ["Calçotada Marika, Konvent (Berga)", "La Mirona (Girona)", "Figa Fest (Lleida)", "Adoberies Fest (Vic)", "Nuria Social (Olot)", "La Rabia, CRAC (Rubí)", "Festival de Circo y Arte (La Candela)"]
+  - region_key: region_es
+    venues: ["Orgull (Palma, Mallorca)", "Transgress Fest (Zamora)", "Orgullo es Protesta (Asturias)", "Lata de Zinc (Oviedo)", "Planta Baja (Granada)", "Festa Agro LGTBI (Tomiño, Galicia)"]
+  - region_key: germany
+    venues: ["Fusion Festival (Lärz)", "Sommerwerft Festival (Frankfurt)", At.tension Festival]
