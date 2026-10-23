@@ -14,6 +14,7 @@ import argparse
 import re
 import shutil
 import sys
+from datetime import date
 from pathlib import Path
 
 import yaml
@@ -27,13 +28,15 @@ OUT = ROOT / "_site"
 PAGES = [
     ("index",          "index.html",          "nav_home",      None),
     ("quienes-somos",  "quienes-somos.html",  "nav_bio",       "nav_bio"),
-    ("integrantes",    "integrantes.html",    "nav_members",   "nav_members"),
     ("espectaculo",    "espectaculo.html",    "nav_show",      "nav_show"),
+    ("musica",         "musica.html",         "nav_music",     "nav_music"),
+    ("tienda",         "tienda.html",         "nav_shop",      "nav_shop"),
     ("talleres",       "talleres.html",       "nav_workshops", "nav_workshops"),
+    ("conciertos",     "conciertos.html",     "nav_gigs",      "nav_gigs"),
     ("prensa",         "prensa.html",         "nav_press",     "nav_press"),
-    ("contratacion",   "contratacion.html",   "nav_booking",   "nav_booking"),
+    ("contacto",       "contacto.html",       "nav_contact",   "nav_contact"),
 ]
-ALL_LANGS = ["es", "ca", "de", "it", "fr", "eu"]
+ALL_LANGS = ["es", "en", "ca", "de", "it", "fr", "eu"]
 SOURCE = "es"
 
 
@@ -72,6 +75,10 @@ def build(langs, text, site):
         shutil.rmtree(OUT)
     shutil.copytree(ROOT / "assets", OUT / "assets")
     (OUT / ".nojekyll").write_text("")
+    if (ROOT / "favicon.ico").exists():
+        shutil.copy(ROOT / "favicon.ico", OUT / "favicon.ico")
+    today = date.today().isoformat()
+    gigs = sorted((g for g in (site.get("gigs") or []) if str(g["date"]) >= today), key=lambda g: str(g["date"]))
     if site.get("cname"):
         (OUT / "CNAME").write_text(site["cname"].strip() + "\n")
 
@@ -101,7 +108,7 @@ def build(langs, text, site):
             ctx = dict(
                 t=t, lang=lang, langs=langs if len(langs) > 1 else [], site=site,
                 lang_names=site["language_names"], root=root, page_url=page_url,
-                slug=slug, pages=PAGES, icons=icons, presskit=root + presskit,
+                slug=slug, pages=PAGES, icons=icons, gigs=gigs, presskit=root + presskit,
                 page_title=(t(title_key) if title_key else None),
                 canonical=f"{site['site_url'].rstrip('/')}/{sub}{'' if slug == 'index' else slug + '.html'}",
             )

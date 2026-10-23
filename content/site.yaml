@@ -6,10 +6,11 @@
 # Add a language here only when its translation in text.yaml is complete —
 # `python3 build.py --check` lists what is missing.
 languages: [es]
-# Full list planned: [es, ca, de, it, fr, eu]
+# Full list planned: [es, en, ca, de, it, fr, eu]
 
 language_names:
   es: Castellano
+  en: English
   ca: Català
   de: Deutsch
   it: Italiano
@@ -37,42 +38,57 @@ contact:
 social:
   - {name: Instagram,  icon: instagram,  url: "https://www.instagram.com/lasmarikarmen/"}
   - {name: Spotify,    icon: spotify,    url: "https://open.spotify.com/artist/5Rh261ShPjFw5zqis2nbtF"}
-  - {name: YouTube,    icon: youtube,    url: "https://www.youtube.com/channel/UCtktbwYuTYX1_Ym86ScTacg"}
+  - {name: YouTube,    icon: youtube,    url: "https://www.youtube.com/@lasmarikarmen"}
   - {name: Facebook,   icon: facebook,   url: "https://www.facebook.com/LasMarikarmen/"}
   - {name: SoundCloud, icon: soundcloud, url: "https://soundcloud.com/lasmarikarmen"}
   - {name: Bandcamp,   icon: bandcamp,   url: "https://lasmarikarmen.bandcamp.com/"}
   - {name: X,          icon: x,          url: "https://x.com/lasmarikarmen"}
 
+bandcamp_merch: "https://lasmarikarmen.bandcamp.com/merch"
+
 # Names are never translated or broken across lines.
+# card = the old-site portrait card (symbol, hand-lettered name and motto are in the picture)
 members:
   - id: vic
     name: Victoria Sickness
     pronoun_key: pron_they
     from_key: from_vic
     role_key: role_vic
+    roles_key: roles_vic
+    motto_key: motto_vic
+    bio_key: bio_vic
     instagram: victoriasickness
     claw: assets/img/claw-vic.jpg
-    live: assets/img/vic-live.jpg
+    card: assets/img/photos/card-vic.jpg
   - id: hipo
     name: Hipogrifa
     pronoun_key: pron_she
     from_key: from_hipo
     role_key: role_hipo
+    roles_key: roles_hipo
+    motto_key: motto_hipo
+    bio_key: bio_hipo
     instagram: hipogrifff
     claw: assets/img/claw-hipo.jpg
-    live: assets/img/hipo-sing.jpg
+    card: assets/img/photos/card-hipo.jpg
   - id: conta
     name: Contàmina Perpétua
     pronoun_key: pron_they
     from_key: from_conta
     role_key: role_conta
+    roles_key: roles_conta
+    motto_key: motto_conta
+    bio_key: bio_conta
     instagram: contamina_perpetua
     claw: assets/img/claw-conta.jpg
-    live: assets/img/conta-live.jpg
+    card: assets/img/photos/card-conta.jpg
 
 album:
   title: Nos pegan
   year: 2023
+  spotify: "https://open.spotify.com/album/0K5Uj5ANW0CpvLUnNLWD9D"
+  spotify_embed: "https://open.spotify.com/embed/album/0K5Uj5ANW0CpvLUnNLWD9D"
+  producers: [Suzio Tarik, Slowbou, Carlo Juranccelli]
   tracks:
     - Nos pegan
     - Travestis por la carretera
@@ -86,13 +102,52 @@ album:
   first_album: Compost your Gender
   first_album_year: 2021
 
+radio:
+  spotify: "https://open.spotify.com/playlist/37i9dQZF1E4wBvv8s9g5NW"
+  spotify_embed: "https://open.spotify.com/embed/playlist/37i9dQZF1E4wBvv8s9g5NW"
+
+# Video clips, newest first. Titles exactly as on YouTube.
+videos:
+  - {id: 8dQ9giAwwBE, title: "el Afilador"}
+  - {id: KQJ2nJZBHCs, title: "alta BAJEZA", feat: "ft. Kiltreo Oskuro"}
+  - {id: IFF7f8r7nbA, title: "PELASO"}
+  - {id: DgmGpjpw-Pk, title: "POCA ROPA", feat: "con La Maga"}
+  - {id: mYE5oTtRIMw, title: "Ladyboi"}
+  - {id: hxHuym02RKc, title: "Sissy"}
+
+# Shop. Text (name, description) is in text.yaml as merch_<id>_name / merch_<id>_desc.
+# Remove an item here when it sells out.
+merch:
+  - {id: tee_pink,  price: 15, img: assets/img/merch/camiseta-cistema-rosa.jpg,  url: "https://lasmarikarmen.bandcamp.com/merch/camisetas-t-shirts"}
+  - {id: tee_green, price: 15, img: assets/img/merch/camiseta-cistema-verde.jpg, url: "https://lasmarikarmen.bandcamp.com/merch/camisetas-t-shirts-xxl-print"}
+  - {id: fan,       price: 10, img: assets/img/merch/abanico.jpg,                url: "https://lasmarikarmen.bandcamp.com/merch/fan-abanico"}
+  - {id: cassette,  price: 5,  img: assets/img/merch/cassette-nos-pegan.jpg,     url: "https://lasmarikarmen.bandcamp.com/merch/nos-pegan-album-cassette"}
+  - {id: fanzine,   price: 5,  img: assets/img/merch/fanzine-nos-pegan.jpg,      url: "https://lasmarikarmen.bandcamp.com/merch/fanzine-nos-pegan"}
+  - {id: usb,       price: 10, img: assets/img/merch/usb-unicornios.jpg,         url: "https://lasmarikarmen.bandcamp.com/merch/usb-unicorn-4gb-with-music-photos"}
+
+# Upcoming gigs. Add lines like:
+#   - {date: 2026-11-28, city: "Barcelona", venue: "Sala Apolo", url: "https://…"}
+# Past dates are hidden automatically at build time.
+gigs: []
+
+# Press, newest first. date: YYYY-MM (month names come from text.yaml).
+# title: headline in its original language. note_key: optional translated note.
 press_outlets:
-  - {id: enderrock,   name: Enderrock,            domain: enderrock.cat,    url: "https://www.enderrock.cat/noticia/23689/orgull-queer-catala"}
-  - {id: beteve,      name: "betevé · Feeel",     domain: beteve.cat,       url: "https://beteve.cat/feeel/las-marikarmen/"}
-  - {id: grec,        name: "Festival Grec 2022", domain: barcelona.cat,    url: "https://barcelona.cat/grec/arxiugrec/en/show/las-marikarmen-marga-socias"}
-  - {id: masdecultura, name: Más de Cultura,      domain: masdecultura.com, url: "https://masdecultura.com/musica/las-marikarmen-entrevistamos-este-colectivo-transfeminista-queer/"}
-  - {id: wag1,        name: Wag1mag,              domain: wag1mag.com,      url: "https://www.wag1mag.com/descubrimos-el-cabaret-reivindicativo-de-las-marikarmen/"}
-  - {id: kaos,        name: Kaos en la Red,       domain: kaosenlared.net,  url: "https://kaosenlared.net/nos-regocijamos-en-el-odio-que-nos-transmite-la-sociedad-y-lo-transformamos-en-empoderamiento-y-amor-personal/"}
+  - {id: falastin,   name: FalastinVision,      date: "2025",    url: "https://falastinvision.com/las-marikarmen/", title: "The Genocide Free Song Contest · «El Afilador»"}
+  - {id: hatena,     name: "バナナの木 (blog)",   date: "2024-08", url: "https://bnanananana7.hatenablog.com/entry/2024/08/19/171818", title: "フランクフルトの演劇祭Sommerwerftでのボランティア記録", lang: ja}
+  - {id: jamentens,  name: "3cat · Ja m'entens", date: "2023-11", title: "Pop i punk queer", lang: ca}
+  - {id: tisner,     name: "betevé · Plaça Tísner", date: "2023-07", title: "«L'autodefensa no és només anar amb un bat de beisbol, també és cuidar-se»", lang: ca}
+  - {id: hab910,     name: "betevé · Habitació 910", date: "2023-06", url: "https://beteve.cat/habitacio-910/las-marikarmen-debuten-amb-nos-pegan/", title: "«Nos pegan», l'àlbum debut de Las Marikarmen", lang: ca}
+  - {id: girona,     name: Diari de Girona,     date: "2023-03", url: "https://www.diaridegirona.cat/cultura/2023/03/30/marikarmen-protagonitzen-quarta-festa-transmaricabollo-85408221.html", title: "Las Marikarmen protagonitzen la quarta festa TransMaricaBollo", lang: ca}
+  - {id: grec,       name: "Festival Grec 2022", date: "2022-07", url: "https://www.barcelona.cat/grec/arxiugrec/en/show/las-marikarmen-marga-socias", title: "«Molinex», con Marga Socias, en El Molino"}
+  - {id: pelaso,     name: Enderrock,           date: "2022",    url: "https://www.enderrock.cat/noticia/24605/marikarmen-llueixen-pelaso", title: "Las Marikarmen llueixen «Pelaso»", lang: ca}
+  - {id: enderrock,  name: Enderrock,           date: "2021-12", url: "https://www.enderrock.cat/noticia/23689/orgull-queer-catala", title: "L'orgull queer català", lang: ca}
+  - {id: sommerwerft, name: "Sommerwerft Frankfurt", date: "2021-07", url: "https://sommerwerft.de/events/compost-your-gender/", title: "Compost your Gender", lang: de}
+  - {id: beteve,     name: "betevé · Feeel",     date: "2021-04", url: "https://beteve.cat/feeel/las-marikarmen/", title: "Parlen de l'esperit d'aquesta banda performativa i ens presenten el seu disc de debut: «Compost your Gender»", lang: ca}
+  - {id: rambla,     name: Revista Rambla,      date: "2020-11", url: "https://www.revistarambla.com/ladyboi-el-nuevo-single-de-las-marikarmen/", title: "«Ladyboi», el nuevo single de Las Marikarmen"}
+  - {id: kaos,       name: Kaos en la Red,      date: "2020-10", url: "https://kaosenlared.net/nos-regocijamos-en-el-odio-que-nos-transmite-la-sociedad-y-lo-transformamos-en-empoderamiento-y-amor-personal/", title: "«Nos regocijamos en el odio que nos transmite la sociedad y lo transformamos en empoderamiento y amor personal»"}
+  - {id: masdecultura, name: Más de Cultura,    date: "2020-09", url: "https://masdecultura.com/musica/las-marikarmen-entrevistamos-este-colectivo-transfeminista-queer/", title: "Entrevistamos a este colectivo transfeminista queer"}
+  - {id: rutalokal,  name: Ruta Lokal,          date: "",        url: "https://rutalokal.com/las-marikarmen/", title: "Las Marikarmen"}
 
 credits:
   idea: [{name: Las Marikarmen}]
@@ -102,6 +157,7 @@ credits:
     - {name: Lukk Pink}
     - {name: Juan Miguel Morales, url: "https://juanmiguelmorales.blogspot.com/"}
     - {name: Albert Garcia, url: "https://www.instagram.com/al.garciarome/"}
+    - {name: la peralimonera}
 
 meneo_instagram: meneo.disidente
 

@@ -1,68 +1,61 @@
 {% extends "base.html" %}
-{% from "_macros.html" import more, facts %}
+{% from "_macros.html" import more, video %}
 {% block main %}
 
+{# hero: the photo stays free; the title sits below it #}
 <section class="hero">
-  <img class="hero__img" src="{{ root }}assets/img/band-sky.jpg" alt="{{ t('cover_credit')|striptags }}" width="2000" height="1333">
-  <div class="wrap hero__in">
-    <div class="hero__top mono">
-      <span>{{ t('presskit_label') }}</span><span>{{ t('location_label') }}</span>
-    </div>
+  <figure class="hero__photo">
+    <img src="{{ root }}assets/img/photos/trio-mirror-dome.jpg" alt="{{ t('hero_alt')|striptags }}" width="1800" height="1200">
+    <a class="sticker" href="{{ page_url('espectaculo') }}">
+      <span class="sticker__big">Nos<br>pegan!</span>
+      <span class="sticker__small">{{ t('cover_sticker') }}</span>
+    </a>
+  </figure>
+  <div class="wrap hero__text">
     <h1 class="hero__word"><span class="pk">Las</span> Marikarmen</h1>
-    <div class="hero__bottom">
-      <div class="hero__box">
-        <p class="hero__headline">{{ t('cover_headline') }}</p>
-        <p class="mono hero__lines">{{ t('cover_lines') }}</p>
-      </div>
-      <a class="sticker" href="{{ page_url('espectaculo') }}">
-        <span class="sticker__big">Nos<br>pegan!</span>
-        <span class="sticker__small">{{ t('cover_sticker') }}</span>
-      </a>
+    <div class="hero__sub">
+      <p class="hero__headline">{{ t('cover_headline') }}</p>
+      <p class="mono hero__lines">{{ t('cover_lines') }}</p>
     </div>
   </div>
 </section>
-<p class="wrap credit mono">{{ t('cover_credit') }}</p>
 
-{# ── Quiénes somos ── #}
+{# who we are #}
 <section class="band band--cream">
   <div class="wrap split">
-    <a class="split__img" href="{{ page_url('quienes-somos') }}" tabindex="-1" aria-hidden="true">
-      <img src="{{ root }}assets/img/band-wheelbarrow.jpg" alt="" loading="lazy" width="1800" height="1200">
-    </a>
     <div class="split__txt">
-      <p class="tag">{{ t('bio_tag') }}</p>
-      <h2 class="h2">{{ t('bio_title_1') }} <span class="pk">{{ t('bio_title_2') }}</span></h2>
-      <p class="lead">{{ t('home_bio_teaser') }}</p>
+      <p class="tag">{{ t('nav_bio') }}</p>
+      <p class="lead lead--big">{{ t('home_intro') }}</p>
+      <blockquote class="q q--side">
+        <p>«{{ t('quote_rutalokal') }}»</p>
+        <footer class="src"><span class="chip">Ruta Lokal</span></footer>
+      </blockquote>
       {{ more(page_url('quienes-somos'), t('more_info')) }}
     </div>
+    <img class="cutout" src="{{ root }}assets/img/photos/cutout-destruir.png" alt="Victoria Sickness, Hipogrifa, Contàmina Perpétua" loading="lazy" width="768" height="506">
   </div>
 </section>
 
-{# ── Integrantes ── #}
+{# members #}
 <section class="band band--ink">
   <div class="wrap">
-    <div class="row-head">
-      <h2 class="h2">{{ t('members_title_1') }} <span class="gr">{{ t('members_title_2') }}</span></h2>
-      <p class="deck">{{ t('members_deck') }}</p>
-    </div>
     <ul class="claws">
       {% for m in site.members %}
       <li>
-        <a href="{{ page_url('integrantes') }}#{{ m.id }}">
-          <img src="{{ root }}{{ m.claw }}" alt="{{ m.name }}" loading="lazy" width="600" height="900">
+        <a href="{{ page_url('quienes-somos') }}#{{ m.id }}">
+          <img src="{{ root }}{{ m.claw }}" alt="" loading="lazy" width="600" height="900">
           <span class="namebox nm">{{ m.name }}</span>
-          <span class="pron mono">{{ t(m.pronoun_key) }}</span>
+          <span class="pron">{{ t(m.pronoun_key) }} · {{ t(m.role_key) }}</span>
         </a>
       </li>
       {% endfor %}
     </ul>
-    {{ more(page_url('integrantes'), t('more_info')) }}
   </div>
 </section>
 
-{# ── Espectáculo ── #}
+{# show #}
 <section class="showband">
-  <img class="showband__img" src="{{ root }}assets/img/band-stage.jpg" alt="" loading="lazy" width="1800" height="1200">
+  <img class="showband__img" src="{{ root }}assets/img/photos/live-funeral.jpg" alt="" loading="lazy" width="800" height="533">
   <div class="wrap showband__in">
     <p class="mono kicker">{{ t('show_kicker') }}</p>
     <h2 class="giant">Nos <span class="pk">pegan!</span></h2>
@@ -70,16 +63,34 @@
     {{ more(page_url('espectaculo'), t('more_info')) }}
   </div>
 </section>
-<div class="band band--ink band--tight"><div class="wrap">{{ facts(t) }}</div></div>
 
-{# ── Talleres + prensa ── #}
+{# music + shop #}
+<section class="band band--pink">
+  <div class="wrap pair">
+    <div class="pair__col">
+      <p class="tag tag--ink">{{ t('nav_music') }}</p>
+      {{ video(site.videos[0], root, t) }}
+      {{ more(page_url('musica'), t('home_music_more')) }}
+    </div>
+    <div class="pair__col">
+      <p class="tag tag--ink">{{ t('nav_shop') }}</p>
+      <ul class="mini-shop">
+        {% for p in site.merch[:3] %}
+        <li><a href="{{ page_url('tienda') }}#{{ p.id }}"><img src="{{ root }}{{ p.img }}" alt="{{ t('merch_' ~ p.id ~ '_name')|striptags }}" loading="lazy"><span>{{ p.price }} €</span></a></li>
+        {% endfor %}
+      </ul>
+      {{ more(page_url('tienda'), t('home_shop_more')) }}
+    </div>
+  </div>
+</section>
+
+{# workshops + press #}
 <section class="duo">
   <div class="duo__a">
     <div class="duo__pad">
       <p class="tag tag--ink">{{ t('nav_workshops') }}</p>
       <h2 class="h2">{{ t('workshop_title_1') }} <span class="inv">{{ t('workshop_title_2') }}</span></h2>
       <p class="lead">{{ t('home_workshops_teaser') }}</p>
-      <p class="mono small">{{ t('workshop_group') }} · {{ t('workshop_age') }}</p>
       {{ more(page_url('talleres'), t('more_info')) }}
     </div>
   </div>
@@ -87,32 +98,13 @@
     <div class="duo__pad">
       <p class="tag">{{ t('nav_press') }}</p>
       <blockquote class="q q--big">
-        <p>«{{ t('quote_kaos') }}»</p>
-        <footer class="src"><span class="chip">Kaos en la Red</span> {{ t('quote_kaos_src') }}</footer>
+        <p>«{{ t('quote_beteve') }}»</p>
+        <footer class="src"><span class="chip">betevé</span> Feeel, 2021</footer>
       </blockquote>
       {{ more(page_url('prensa'), t('more_info')) }}
     </div>
   </div>
 </section>
 
-{# ── Contratación ── #}
-<section class="band band--green">
-  <div class="wrap split split--rev">
-    <div class="split__txt">
-      <p class="tag tag--ink">{{ t('nav_booking') }}</p>
-      <h2 class="h2">{{ t('tech_title_1') }} <span class="inv">{{ t('tech_title_2') }}</span></h2>
-      <p class="lead">{{ t('home_booking_teaser') }}</p>
-      <div class="btns">
-        {{ more(page_url('contratacion'), t('more_info')) }}
-        <a class="btn" href="{{ presskit }}">{{ t('web_download') }}</a>
-      </div>
-    </div>
-    <div class="listen">
-      <p class="label">{{ t('web_listen') }}</p>
-      <p class="listen__title">{{ t('home_listen_title') }}</p>
-      {% include "_social.html" %}
-    </div>
-  </div>
-</section>
-
+<p class="estupenda"><span aria-hidden="true">✨</span> {{ t('estupenda') }} <span aria-hidden="true">✨</span></p>
 {% endblock %}

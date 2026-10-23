@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% from "_macros.html" import video %}
+{% block main %}
+<section class="band band--ink page-top">
+  <div class="wrap row-head">
+    <h1 class="giant giant--md">{{ t('music_title_1') }} <span class="pk">{{ t('music_title_2') }}</span></h1>
+    <p class="deck">{{ t('music_deck') }}</p>
+  </div>
+</section>
+
+<section class="band band--cream">
+  <div class="wrap album-row">
+    <img class="album-row__cover" src="{{ root }}assets/img/merch/fanzine-nos-pegan.jpg" alt="{{ t('album_cover_alt')|striptags }}" width="400" height="300" loading="lazy">
+    <div class="album-row__txt">
+      <p class="label pk">{{ t('album_kicker') }} · {{ site.album.year }}</p>
+      <h2 class="album__title">{{ site.album.title }}</h2>
+      <ol class="tracks mono">
+        {% for tr in site.album.tracks %}<li>{{ tr }}</li>{% endfor %}
+      </ol>
+      <p class="small mono muted">{{ t('album_prod') }}: {{ site.album.producers|join(', ') }}</p>
+      <div class="btns">
+        <a class="btn" href="{{ site.album.spotify }}" data-embed="{{ site.album.spotify_embed }}" data-kind="spotify" data-title="{{ site.album.title }} · Spotify">{{ t('listen_here') }}</a>
+        <a class="more" href="https://lasmarikarmen.bandcamp.com/" target="_blank" rel="noopener">Bandcamp ↗</a>
+      </div>
+    </div>
+    <div class="album-row__side">
+      <p class="label pk">{{ t('first_album_l') }} · {{ site.album.first_album_year }}</p>
+      <p><em class="serif big">{{ site.album.first_album }}</em><br>«{{ t('album_motto') }}»</p>
+      <p class="label pk">Marikarmen Radio</p>
+      <a class="more" href="{{ site.radio.spotify }}" data-embed="{{ site.radio.spotify_embed }}" data-kind="spotify" data-title="Marikarmen Radio · Spotify">{{ t('listen_here') }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="band band--ink" aria-labelledby="vid-h">
+  <div class="wrap">
+    <h2 id="vid-h" class="h2">{{ t('videos_title') }}</h2>
+    <div class="vids">
+      {% for v in site.videos %}{{ video(v, root, t) }}{% endfor %}
+    </div>
+    <p class="small mono muted">{{ t('video_privacy') }}</p>
+  </div>
+</section>
+{% endblock %}

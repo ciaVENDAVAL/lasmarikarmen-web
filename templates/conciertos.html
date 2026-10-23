@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="band band--ink page-top">
+  <div class="wrap gigs-top">
+    <h1 class="giant giant--md">{{ t('gigs_title_1') }} <span class="pk">{{ t('gigs_title_2') }}</span></h1>
+    {% if gigs %}
+    <ul class="gigs">
+      {% for g in gigs %}
+      <li>
+        <time class="gigs__date mono" datetime="{{ g.date }}">{{ g.date }}</time>
+        <span class="gigs__where"><b>{{ g.city }}</b> · {{ g.venue }}</span>
+        {% if g.get('url') %}<a class="more" href="{{ g.url }}" target="_blank" rel="noopener">{{ t('gigs_tickets') }} ↗</a>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <div class="gigs-empty">
+      <p class="deck deck--light">{{ t('gigs_none') }}</p>
+      <a class="btn" href="{{ page_url('contacto') }}">{{ t('gigs_invite') }}</a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="band band--cream">
+  <div class="wrap">
+    <h2 class="h2">{{ t('concerts_title_1') }} <span class="pk">{{ t('concerts_title_2') }}</span> <span class="mono small muted">{{ t('concerts_since') }}</span></h2>
+    <div class="regions">
+      {% for r in site.concerts %}
+      <div>
+        <p class="label pk">{{ t(r.region_key) }}</p>
+        <p>{{ r.venues|join(' · ') }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="band band--ink band--flushphotos">
+  <div class="wrap trio">
+    <img src="{{ root }}assets/img/photos/live-night-crowd.jpg" alt="" loading="lazy" width="800" height="532">
+    <img src="{{ root }}assets/img/photos/live-back-sax.jpg" alt="" loading="lazy" width="800" height="533">
+    <img src="{{ root }}assets/img/photos/live-back-hair.jpg" alt="" loading="lazy" width="800" height="533">
+  </div>
+</section>
+{% endblock %}

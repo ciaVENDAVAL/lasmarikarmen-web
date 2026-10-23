@@ -8,26 +8,32 @@
 <meta name="description" content="{{ t('meta_description')|striptags }}">
 <meta property="og:title" content="Las Marikarmen{% if page_title %} · {{ page_title|striptags }}{% endif %}">
 <meta property="og:description" content="{{ t('meta_description')|striptags }}">
-<meta property="og:image" content="{{ site.site_url }}/assets/img/band-sky.jpg">
+<meta property="og:image" content="{{ site.site_url }}/assets/img/photos/trio-mirror-dome.jpg">
 <meta name="theme-color" content="#0e0b12">
 {% for l in langs %}
 <link rel="alternate" hreflang="{{ l }}" href="{{ page_url(slug, l) }}">
 {% endfor %}
+<link rel="icon" href="{{ root }}favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="{{ root }}assets/img/favicon.png">
 <link rel="apple-touch-icon" href="{{ root }}assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&family=Playfair+Display:ital,wght@1,400;1,700;1,900&family=Space+Mono:wght@400;700&display=swap">
 <link rel="stylesheet" href="{{ root }}assets/css/style.css">
+<script>
+/* apply saved accessibility settings before the page paints */
+(function(){try{var s=JSON.parse(localStorage.getItem('lm-a11y')||'{}'),h=document.documentElement;
+for(var k in s){if(k==='size'){h.style.fontSize=s.size+'%'}else if(s[k]){h.classList.add('a11y-'+k)}}}catch(e){}})();
+</script>
 </head>
 <body class="page-{{ slug }}">
+<span id="top"></span>
 <a class="skip" href="#main">{{ t('skip_link') }}</a>
 
 <header class="top">
   <div class="wrap top__in">
     <a class="brand" href="{{ page_url('index') }}">
-      <img src="{{ root }}assets/img/favicon.png" alt="" width="40" height="40">
-      <span class="brand__word"><span class="pk">Las</span> Marikarmen</span>
+      <img src="{{ root }}assets/img/logo-pennant-dark.png" alt="Las Marikarmen · {{ t('nav_home')|striptags }}" width="196" height="63">
     </a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">
       <span class="menu-btn__bars" aria-hidden="true"></span>{{ t('nav_menu') }}
@@ -56,39 +62,60 @@
 <footer class="foot">
   <div class="wrap foot__grid">
     <div class="foot__brand">
-      <img src="{{ root }}assets/img/logo-dark.png" alt="Las Marikarmen" width="392" height="127" loading="lazy">
+      <img src="{{ root }}assets/img/logo-pennant-dark.png" alt="Las Marikarmen" width="300" height="97" loading="lazy">
       <p class="mono foot__slogan"><span class="pk">Nos pegan!</span> {{ t('slogan') }}</p>
-      {% include "_social.html" %}
+      <ul class="social">
+      {% for s in site.social %}
+        <li><a href="{{ s.url }}" aria-label="{{ s.name }}" title="{{ s.name }}" rel="noopener" target="_blank">{{ icons[s.icon] }}</a></li>
+      {% endfor %}
+      </ul>
     </div>
+    {% if slug != 'contacto' %}
     <div>
       <p class="label gr">{{ t('contact_direct') }}</p>
       <p><span class="nm">{{ site.contact.person }}</span> <span class="pron">{{ '{' }}{{ t(site.contact.pronoun_key) }}{{ '}' }}</span><br>
-        <a href="{{ site.contact.phone_href }}">{{ site.contact.phone }}</a><br>
-        <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
-    </div>
-    <div>
+        <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a><br>
+        <a href="{{ site.contact.phone_href }}">{{ site.contact.phone }}</a></p>
       <p class="label gr">{{ t('contact_booking') }}</p>
       <p>{{ site.contact.agency }}</p>
+    </div>
+    {% endif %}
+    <div>
       <p class="label gr">Press kit</p>
       <p><a href="{{ presskit }}">{{ t('web_download') }}</a></p>
+      <p class="label gr">{{ t('nav_shop') }}</p>
+      <p><a href="{{ site.bandcamp_merch }}" target="_blank" rel="noopener">Bandcamp merch ↗</a></p>
     </div>
   </div>
   <div class="wrap foot__base mono">
     <span>{{ t('location_label') }} · 2017–2026</span>
-    <span>{{ t('photo_credit_line') }}</span>
   </div>
 </footer>
 
-<script>
-(function(){
-  var b=document.querySelector('.menu-btn'), n=document.getElementById('nav');
-  if(!b||!n) return;
-  document.documentElement.classList.add('js');
-  b.addEventListener('click',function(){
-    var o=b.getAttribute('aria-expanded')==='true';
-    b.setAttribute('aria-expanded',String(!o)); n.classList.toggle('open',!o);
-  });
-})();
-</script>
+{# floating buttons: accessibility (left, pointing down) and back to top (right, pointing up) #}
+<div class="a11y">
+  <button type="button" class="tri tri--down a11y-btn" aria-expanded="false" aria-controls="a11y-panel" aria-label="{{ t('a11y_title') }}" title="{{ t('a11y_title') }}">
+    <svg viewBox="0 0 56 50" aria-hidden="true"><polygon class="tri__shape" points="2,2 54,2 28,48"/><g class="tri__icon" transform="translate(18 6) scale(.83)"><circle cx="12" cy="3.2" r="2.4"/><path d="M21 7.5h-6.2V22h-2.2v-6.6h-1.2V22H9.2V7.5H3V5.4h18z"/></g></svg>
+  </button>
+  <div id="a11y-panel" class="a11y-panel" role="group" aria-label="{{ t('a11y_title') }}" hidden>
+    <p class="a11y-title">{{ t('a11y_title') }}</p>
+    <button type="button" data-a="motion" aria-pressed="false"><span aria-hidden="true">⏸️</span>{{ t('a11y_motion') }}</button>
+    <button type="button" data-a="contrast" aria-pressed="false"><span aria-hidden="true">🌗</span>{{ t('a11y_contrast') }}</button>
+    <button type="button" data-a="plain" aria-pressed="false"><span aria-hidden="true">🔤</span>{{ t('a11y_plain') }}</button>
+    <button type="button" data-a="links" aria-pressed="false"><span aria-hidden="true">🔗</span>{{ t('a11y_links') }}</button>
+    <button type="button" data-a="spacing" aria-pressed="false"><span aria-hidden="true">↕️</span>{{ t('a11y_spacing') }}</button>
+    <div class="a11y-size">
+      <button type="button" data-a="smaller" aria-label="{{ t('a11y_smaller') }}">A−</button>
+      <span><span aria-hidden="true">🔠</span> {{ t('a11y_size') }}</span>
+      <button type="button" data-a="bigger" aria-label="{{ t('a11y_bigger') }}">A+</button>
+    </div>
+    <button type="button" data-a="reset" class="a11y-reset"><span aria-hidden="true">🔄</span>{{ t('a11y_reset') }}</button>
+  </div>
+</div>
+<a class="tri tri--up to-top" href="#top" aria-label="{{ t('to_top') }}" title="{{ t('to_top') }}" hidden>
+  <svg viewBox="0 0 56 50" aria-hidden="true"><polygon class="tri__shape" points="28,2 54,48 2,48"/></svg>
+</a>
+
+<script src="{{ root }}assets/js/site.js" defer></script>
 </body>
 </html>

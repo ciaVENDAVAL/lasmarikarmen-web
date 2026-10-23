@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% from "_macros.html" import pagehead %}
+{% macro people(list) %}{% for p in list %}{% if p.get('url') %}<a class="nm" href="{{ p.url }}" target="_blank" rel="noopener">{{ p.name }}</a>{% else %}<span class="nm">{{ p.name }}</span>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}{% endmacro %}
+{% block main %}
+<section class="band band--cream page-top">
+  <div class="wrap contact">
+    <div class="contact__txt">
+      <h1 class="h2 h2--xl">{{ t('nav_contact') }}</h1>
+      <p class="deck deck--big">{{ t('contact_invite') }}</p>
+      <dl class="contact__list">
+        <div><dt class="label pk">{{ t('contact_direct') }}</dt>
+          <dd><span class="nm">{{ site.contact.person }}</span> <span class="pron">{{ '{' }}{{ t(site.contact.pronoun_key) }}{{ '}' }}</span><br>
+          <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a><br>
+          <a href="{{ site.contact.phone_href }}">{{ site.contact.phone }}</a></dd></div>
+        <div><dt class="label pk">{{ t('contact_booking') }}</dt><dd>{{ site.contact.agency }}</dd></div>
+        <div><dt class="label pk">{{ t('contact_where') }}</dt><dd>Collserola, Barcelona</dd></div>
+      </dl>
+    </div>
+    <figure class="contact__photo">
+      <img src="{{ root }}assets/img/photos/trio-veiled-bench.jpg" alt="{{ t('veiled_alt')|striptags }}" width="800" height="533">
+      <figcaption class="serif">{{ t('contact_waiting') }}</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band band--ink">
+  <div class="wrap">
+    <h2 class="h2">{{ t('credits_title_1') }} <span class="pk">{{ t('credits_title_2') }}</span></h2>
+    <dl class="credits">
+      <div><dt class="label gr">{{ t('credits_idea_l') }}</dt><dd>{{ people(site.credits.idea) }}</dd></div>
+      <div><dt class="label gr">{{ t('credits_music_l') }}</dt><dd>{{ people(site.credits.music) }}</dd></div>
+      <div><dt class="label gr">{{ t('credits_design_l') }}</dt><dd>{{ people(site.credits.design) }}</dd></div>
+      <div><dt class="label gr">{{ t('credits_photo_l') }}</dt><dd>{{ people(site.credits.photo) }}</dd></div>
+    </dl>
+  </div>
+</section>
+{% endblock %}

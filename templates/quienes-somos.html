@@ -1,19 +1,15 @@
 {% extends "base.html" %}
-{% from "_macros.html" import pagehead, more %}
+{% from "_macros.html" import pagehead %}
 {% block main %}
 {{ pagehead(root ~ 'assets/img/band-wheelbarrow.jpg', t('bio_tag'), t('bio_title_1'), t('bio_title_2'), 'center 40%') }}
 
 <section class="band band--cream">
-  <div class="wrap prose-cols">
-    <p class="dropcap">{{ t('bio_p1') }}</p>
-    <p>{{ t('bio_p2') }}</p>
-    <p>{{ t('bio_p3') }}</p>
-  </div>
-</section>
-
-<section class="band band--cream band--flush">
-  <div class="wrap lady">
-    <div class="burst"><p>{{ t('bio_banner') }}</p></div>
+  <div class="wrap bio">
+    <div class="prose">
+      <p class="prose__lead">{{ t('bio_p1') }}</p>
+      <p>{{ t('bio_p2') }}</p>
+      <p>{{ t('bio_p3') }}</p>
+    </div>
     <figure class="frame">
       <img src="{{ root }}assets/img/lady.png" alt="Lady Marikarmen" width="428" height="700" loading="lazy">
       <figcaption class="plaque">{{ t('lady_caption') }}</figcaption>
@@ -21,16 +17,41 @@
   </div>
 </section>
 
+<section class="band band--ink" aria-labelledby="members-h">
+  <div class="wrap">
+    <div class="row-head">
+      <h2 id="members-h" class="h2">{{ t('members_title_1') }} <span class="gr">{{ t('members_title_2') }}</span></h2>
+      <p class="deck">{{ t('members_many') }}</p>
+    </div>
+    <div class="members">
+      {% for m in site.members %}
+      <article class="member" id="{{ m.id }}">
+        <img class="member__card" src="{{ root }}{{ m.card }}" alt="{{ m.name }} — «{{ t(m.motto_key)|striptags }}»" width="1000" height="1000" loading="lazy">
+        <h3 class="namebox nm">{{ m.name }}</h3>
+        <p class="pron">{{ t(m.pronoun_key) }} · {{ t(m.from_key) }}</p>
+        <p class="member__role">{{ t(m.roles_key) }}</p>
+        <p class="member__bio">{{ t(m.bio_key) }}</p>
+        <a class="insta mono" href="https://www.instagram.com/{{ m.instagram }}/" target="_blank" rel="noopener">{{ icons.instagram }}@{{ m.instagram }}</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="band band--green band--tight">
+  <div class="wrap slogan-row">
+    <p class="slogan-big">{{ t('bio_banner') }}</p>
+  </div>
+</section>
+
 <section class="band band--ink">
   <div class="wrap gallery">
-    <img src="{{ root }}assets/img/band-masks.jpg" alt="" loading="lazy" width="1600" height="1067">
-    <img src="{{ root }}assets/img/band-funeral.jpg" alt="" loading="lazy" width="1800" height="1200">
-    <img src="{{ root }}assets/img/band-dientes.jpg" alt="" loading="lazy" width="1600" height="1067">
-    <img src="{{ root }}assets/img/band-clubs.jpg" alt="" loading="lazy" width="800" height="1200">
-  </div>
-  <div class="wrap next">
-    {{ more(page_url('integrantes'), t('nav_members')) }}
-    {{ more(page_url('espectaculo'), t('nav_show')) }}
+    <img src="{{ root }}assets/img/photos/trio-sunset.jpg" alt="" loading="lazy">
+    <img src="{{ root }}assets/img/photos/satan-daddy.jpg" alt="" loading="lazy">
+    <img src="{{ root }}assets/img/photos/trio-white-frames.jpg" alt="" loading="lazy">
+    <img src="{{ root }}assets/img/photos/chickens.jpg" alt="" loading="lazy">
+    <img src="{{ root }}assets/img/photos/blue-camera.jpg" alt="" loading="lazy">
+    <img src="{{ root }}assets/img/photos/yurt-trumpet.jpg" alt="" loading="lazy">
   </div>
 </section>
 {% endblock %}
