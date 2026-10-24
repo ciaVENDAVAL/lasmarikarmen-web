@@ -481,3 +481,5 @@ html:lang(ja) .lead, html:lang(ja) .prose { line-height: 1.95; }
 .order__copy { background: none; border: 0; border-bottom: 3px solid currentColor; cursor: pointer; color: var(--ink); }
 .pay { align-items: start; }
 @media (min-width: 900px) { .pay { grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); } }
+.order__privacy { font-size: .74rem; line-height: 1.5; color: var(--muted); max-width: 60ch; }
+.order__bizum[hidden] { display: none; }

@@ -38,6 +38,8 @@
         data-pay="{{ t('order_d_pay')|striptags }}"
         data-amount="{{ t('order_d_amount')|striptags }}"
         data-size="{{ t('order_d_size')|striptags }}"
+        data-bizum="{{ t('order_d_bizum')|striptags }}"
+        data-need-bizum="{{ t('order_need_bizum')|striptags }}"
         data-need-item="{{ t('order_need_item')|striptags }}"
         data-need-fields="{{ t('order_need_fields')|striptags }}"
         data-copied="{{ t('order_copied')|striptags }}">
@@ -72,11 +74,13 @@
         <div class="order__fields">
           <label>{{ t('order_name') }}<input type="text" id="o-name" autocomplete="name"></label>
           <label>{{ t('order_email') }}<input type="email" id="o-email" autocomplete="email"></label>
+          <label class="order__bizum">{{ t('order_bizum') }}<input type="tel" id="o-bizum" autocomplete="tel" inputmode="tel" placeholder="{{ t('order_bizum_hint')|striptags }}"></label>
           <label class="order__addr">{{ t('order_address') }}<textarea id="o-addr" rows="3" autocomplete="street-address" placeholder="{{ t('order_address_hint')|striptags }}"></textarea></label>
         </div>
 
         <p class="order__err" role="alert" hidden></p>
         <button type="submit" class="btn btn--ink">{{ t('order_send') }}</button>
+        <p class="order__privacy">{{ t('order_privacy') }}</p>
 
         <div class="order__out" hidden>
           <p>{{ t('order_ready') }} <b class="nm">{{ site.contact.email }}</b></p>

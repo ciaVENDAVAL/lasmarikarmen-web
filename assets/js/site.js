@@ -113,8 +113,10 @@
     var draft = document.getElementById('o-draft'), mail = form.querySelector('.order__mail');
     var addr = document.getElementById('o-addr');
     var syncCash = function () {
-      var cash = form.querySelector('input[name=pay]:checked').hasAttribute('data-cash');
+      var sel = form.querySelector('input[name=pay]:checked');
+      var cash = sel.hasAttribute('data-cash');
       addr.closest('label').classList.toggle('is-off', cash);
+      document.getElementById('o-bizum').closest('label').hidden = sel.id !== 'pay-bizum';
     };
     form.addEventListener('change', function (e) {
       if (e.target.name === 'pay') syncCash();
@@ -131,9 +133,12 @@
       var name = document.getElementById('o-name').value.trim();
       var email = document.getElementById('o-email').value.trim();
       var where = addr.value.trim();
+      var isBizum = pay.id === 'pay-bizum';
+      var bizum = document.getElementById('o-bizum').value.trim();
       err.hidden = true;
       if (!items.length) { err.textContent = d('need-item'); err.hidden = false; return; }
       if (!name || !/.+@.+\..+/.test(email) || (!cash && !where)) { err.textContent = d('need-fields'); err.hidden = false; return; }
+      if (isBizum && bizum.replace(/\D/g, '').length < 9) { err.textContent = d('need-bizum'); err.hidden = false; return; }
       var lines = items.map(function (cb) {
         var id = cb.value, q = document.getElementById('q-' + id), s = document.getElementById('s-' + id);
         var n = Math.max(1, parseInt(q && q.value, 10) || 1);
@@ -141,7 +146,7 @@
       });
       var body = [d('hello'), '', d('want'), lines.join('\n'), '',
         cash ? d('pickup') : d('ship') + '\n' + name + '\n' + where, '',
-        d('pay') + ' ' + pay.value, '', d('amount'), '', name, email].join('\n');
+        d('pay') + ' ' + pay.value + (isBizum ? '\n' + d('bizum') + ' ' + bizum : ''), '', d('amount'), '', name, email].join('\n');
       draft.value = body;
       var href = 'mailto:' + d('to') + '?subject=' + encodeURIComponent(d('subject') + ' · ' + name) + '&body=' + encodeURIComponent(body);
       mail.setAttribute('href', href);
