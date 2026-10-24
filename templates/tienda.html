@@ -28,6 +28,11 @@
   <div class="wrap">
     <h2 id="pay-h" class="h2">{{ t('shop_pay_title') }}</h2>
     <div class="pay">
+      <div class="paybox">
+        <p class="label">PayPal · {{ t('shop_card') }}</p>
+        <p>{{ t('shop_pay_bandcamp') }}</p>
+        <a class="btn btn--ink" href="{{ site.bandcamp_merch }}" target="_blank" rel="noopener">Bandcamp merch ↗</a>
+      </div>
       <form class="order" id="order" novalidate
         data-to="{{ site.contact.email }}"
         data-subject="{{ t('order_d_subject')|striptags }}"
@@ -91,11 +96,6 @@
           </div>
         </div>
       </form>
-      <div>
-        <p class="label">PayPal · {{ t('shop_card') }}</p>
-        <p>{{ t('shop_pay_bandcamp') }}</p>
-        <a class="btn btn--ink" href="{{ site.bandcamp_merch }}" target="_blank" rel="noopener">Bandcamp merch ↗</a>
-      </div>
     </div>
   </div>
 </section>

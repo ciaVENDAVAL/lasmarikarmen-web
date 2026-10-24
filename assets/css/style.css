@@ -480,9 +480,11 @@ html:lang(ja) .lead, html:lang(ja) .prose { line-height: 1.95; }
 .order__out textarea { width: 100%; font: 400 .9rem/1.5 var(--mono); }
 .order__copy { background: none; border: 0; border-bottom: 3px solid currentColor; cursor: pointer; color: var(--ink); }
 .pay { align-items: start; }
-@media (min-width: 900px) { .pay { grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); } }
+@media (min-width: 900px) { .pay { grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr); } }
 .order__privacy { font-size: .74rem; line-height: 1.5; color: var(--muted); max-width: 60ch; }
 .order__bizum[hidden] { display: none; }
 .order__out .btns { display: none; }
 .order__out.is-ready .btns { display: flex; }
 .order__out.is-ready textarea { border-color: var(--pink-deep); }
+.paybox { background: var(--paper); color: var(--ink); border: 3px solid var(--ink); padding: clamp(1.1rem, 3vw, 1.8rem); box-shadow: 8px 8px 0 var(--ink); }
+.order__price { white-space: nowrap; }
