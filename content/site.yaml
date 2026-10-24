@@ -108,6 +108,12 @@ radio:
   spotify: "https://open.spotify.com/playlist/37i9dQZF1E4wBvv8s9g5NW"
   spotify_embed: "https://open.spotify.com/embed/playlist/37i9dQZF1E4wBvv8s9g5NW"
 
+# Muted, looping video behind the home-page photo (YouTube id). Remove to show only the photo.
+hero_video: {id: ou99LABzxKU, title: "abuelita folclórika (live) · Paral·lel 62"}
+
+# Big video at the top of the music page and in the home-page music teaser.
+featured_video: {id: flv6o1dghxk, title: "el stalker de tu barrio", feat: "prod. Suzio Tarik"}
+
 # Video clips, newest first. Titles exactly as on YouTube.
 videos:
   - {id: 8dQ9giAwwBE, title: "el Afilador"}
@@ -120,8 +126,8 @@ videos:
 # Shop. Text (name, description) is in text.yaml as merch_<id>_name / merch_<id>_desc.
 # Remove an item here when it sells out.
 merch:
-  - {id: tee_pink,  price: 15, img: assets/img/merch/camiseta-cistema-rosa.jpg,  url: "https://lasmarikarmen.bandcamp.com/merch/camisetas-t-shirts"}
-  - {id: tee_green, price: 15, img: assets/img/merch/camiseta-cistema-verde.jpg, url: "https://lasmarikarmen.bandcamp.com/merch/camisetas-t-shirts-xxl-print"}
+  - {id: tee_pink,  price: 15, sizes: [S, M, L, XL, XXL], img: assets/img/merch/camiseta-cistema-rosa.jpg,  url: "https://lasmarikarmen.bandcamp.com/merch/camisetas-t-shirts"}
+  - {id: tee_green, price: 15, sizes: [S, M, L, XL, XXL], img: assets/img/merch/camiseta-cistema-verde.jpg, url: "https://lasmarikarmen.bandcamp.com/merch/camisetas-t-shirts-xxl-print"}
   - {id: fan,       price: 10, img: assets/img/merch/abanico.jpg,                url: "https://lasmarikarmen.bandcamp.com/merch/fan-abanico"}
   - {id: cassette,  price: 5,  img: assets/img/merch/cassette-nos-pegan.jpg,     url: "https://lasmarikarmen.bandcamp.com/merch/nos-pegan-album-cassette"}
   - {id: fanzine,   price: 5,  img: assets/img/merch/fanzine-nos-pegan.jpg,      url: "https://lasmarikarmen.bandcamp.com/merch/fanzine-nos-pegan"}

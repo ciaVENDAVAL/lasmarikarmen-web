@@ -28,11 +28,65 @@
   <div class="wrap">
     <h2 id="pay-h" class="h2">{{ t('shop_pay_title') }}</h2>
     <div class="pay">
-      <div>
+      <form class="order" id="order" novalidate
+        data-to="{{ site.contact.email }}"
+        data-subject="{{ t('order_d_subject')|striptags }}"
+        data-hello="{{ t('order_d_hello')|striptags }}"
+        data-want="{{ t('order_d_want')|striptags }}"
+        data-ship="{{ t('order_d_ship')|striptags }}"
+        data-pickup="{{ t('order_d_pickup')|striptags }}"
+        data-pay="{{ t('order_d_pay')|striptags }}"
+        data-amount="{{ t('order_d_amount')|striptags }}"
+        data-size="{{ t('order_d_size')|striptags }}"
+        data-need-item="{{ t('order_need_item')|striptags }}"
+        data-need-fields="{{ t('order_need_fields')|striptags }}"
+        data-copied="{{ t('order_copied')|striptags }}">
         <p class="label">Bizum · {{ t('shop_transfer') }} · {{ t('shop_cash') }}</p>
-        <p>{{ t('shop_pay_direct') }}</p>
-        <a class="btn btn--ink" href="mailto:{{ site.contact.email }}?subject={{ (t('shop_mail_subject')|striptags)|urlencode }}">{{ t('web_write_us') }}</a>
-      </div>
+        <h3 class="order__title">{{ t('order_title') }}</h3>
+        <p>{{ t('order_intro') }}</p>
+
+        <fieldset>
+          <legend class="label">{{ t('order_items') }}</legend>
+          <ul class="order__items">
+            {% for p in site.merch %}
+            <li>
+              <label class="order__item"><input type="checkbox" id="o-{{ p.id }}" name="item" value="{{ p.id }}" data-name="{{ t('merch_' ~ p.id ~ '_name')|striptags }}" data-price="{{ p.price }}"><span>{{ t('merch_' ~ p.id ~ '_name') }}</span><span class="order__price">{{ p.price }} €</span></label>
+              <span class="order__opts">
+                <label>{{ t('order_qty') }} <input type="number" id="q-{{ p.id }}" min="1" max="20" value="1" inputmode="numeric"></label>
+                {% if p.get('sizes') %}<label>{{ t('order_size') }} <select id="s-{{ p.id }}">{% for z in p.sizes %}<option{% if z == 'M' %} selected{% endif %}>{{ z }}</option>{% endfor %}</select></label>{% endif %}
+              </span>
+            </li>
+            {% endfor %}
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend class="label">{{ t('order_pay') }}</legend>
+          <div class="order__pay">
+            <label><input type="radio" name="pay" id="pay-bizum" value="Bizum" checked> Bizum</label>
+            <label><input type="radio" name="pay" id="pay-transfer" value="{{ t('shop_transfer')|striptags }}"> {{ t('shop_transfer') }}</label>
+            <label><input type="radio" name="pay" id="pay-cash" value="{{ t('shop_cash')|striptags }}" data-cash> {{ t('shop_cash') }} <span class="muted-ink">({{ t('order_cash_note') }})</span></label>
+          </div>
+        </fieldset>
+
+        <div class="order__fields">
+          <label>{{ t('order_name') }}<input type="text" id="o-name" autocomplete="name"></label>
+          <label>{{ t('order_email') }}<input type="email" id="o-email" autocomplete="email"></label>
+          <label class="order__addr">{{ t('order_address') }}<textarea id="o-addr" rows="3" autocomplete="street-address" placeholder="{{ t('order_address_hint')|striptags }}"></textarea></label>
+        </div>
+
+        <p class="order__err" role="alert" hidden></p>
+        <button type="submit" class="btn btn--ink">{{ t('order_send') }}</button>
+
+        <div class="order__out" hidden>
+          <p>{{ t('order_ready') }} <b class="nm">{{ site.contact.email }}</b></p>
+          <textarea id="o-draft" rows="10" readonly></textarea>
+          <div class="btns">
+            <a class="btn btn--ink order__mail" href="#">{{ t('order_open') }}</a>
+            <button type="button" class="more order__copy">{{ t('order_copy') }}</button>
+          </div>
+        </div>
+      </form>
       <div>
         <p class="label">PayPal · {{ t('shop_card') }}</p>
         <p>{{ t('shop_pay_bandcamp') }}</p>

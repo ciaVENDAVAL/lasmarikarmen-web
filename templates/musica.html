@@ -35,6 +35,12 @@
 <section class="band band--ink" aria-labelledby="vid-h">
   <div class="wrap">
     <h2 id="vid-h" class="h2">{{ t('videos_title') }}</h2>
+    {% if site.get('featured_video') %}
+    <div class="vid-feature">
+      <p class="tag">{{ t('featured_kicker') }}</p>
+      {{ video(site.featured_video, root, t) }}
+    </div>
+    {% endif %}
     <div class="vids">
       {% for v in site.videos %}{{ video(v, root, t) }}{% endfor %}
     </div>

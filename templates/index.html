@@ -6,6 +6,10 @@
 <section class="hero">
   <figure class="hero__photo">
     <img src="{{ root }}assets/img/photos/trio-mirror-dome.jpg" alt="{{ t('hero_alt')|striptags }}" width="1800" height="1200">
+    {% if site.get('hero_video') %}
+    <div class="hero__video" data-yt="{{ site.hero_video.id }}" aria-hidden="true"></div>
+    <a class="hero__vlink mono" href="https://www.youtube.com/watch?v={{ site.hero_video.id }}" target="_blank" rel="noopener">▶ <span class="hero__vtitle">{{ site.hero_video.title }} · </span>{{ t('hero_video_link') }} ↗</a>
+    {% endif %}
     <a class="sticker" href="{{ page_url('espectaculo') }}">
       <span class="sticker__big">Nos<br>pegan!</span>
       <span class="sticker__small">{{ t('cover_sticker') }}</span>
@@ -69,7 +73,7 @@
   <div class="wrap pair">
     <div class="pair__col">
       <p class="tag tag--ink">{{ t('nav_music') }}</p>
-      {{ video(site.videos[0], root, t) }}
+      {{ video(site.featured_video, root, t) }}
       {{ more(page_url('musica'), t('home_music_more')) }}
     </div>
     <div class="pair__col">
