@@ -78,7 +78,9 @@ def build(langs, text, site):
     if (ROOT / "favicon.ico").exists():
         shutil.copy(ROOT / "favicon.ico", OUT / "favicon.ico")
     today = date.today().isoformat()
-    gigs = sorted((g for g in (site.get("gigs") or []) if str(g["date"]) >= today), key=lambda g: str(g["date"]))
+    all_gigs = site.get("gigs") or []
+    gigs = sorted((g for g in all_gigs if str(g["date"]) >= today), key=lambda g: str(g["date"]))
+    past_gigs = sorted((g for g in all_gigs if str(g["date"]) < today), key=lambda g: str(g["date"]), reverse=True)
     if site.get("cname"):
         (OUT / "CNAME").write_text(site["cname"].strip() + "\n")
 
@@ -108,7 +110,7 @@ def build(langs, text, site):
             ctx = dict(
                 t=t, lang=lang, langs=langs if len(langs) > 1 else [], site=site,
                 lang_names=site["language_names"], root=root, page_url=page_url,
-                slug=slug, pages=PAGES, icons=icons, gigs=gigs, presskit=root + presskit,
+                slug=slug, pages=PAGES, icons=icons, gigs=gigs, past_gigs=past_gigs, presskit=root + presskit,
                 page_title=(t(title_key) if title_key else None),
                 canonical=f"{site['site_url'].rstrip('/')}/{sub}{'' if slug == 'index' else slug + '.html'}",
             )

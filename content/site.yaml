@@ -127,9 +127,11 @@ merch:
   - {id: fanzine,   price: 5,  img: assets/img/merch/fanzine-nos-pegan.jpg,      url: "https://lasmarikarmen.bandcamp.com/merch/fanzine-nos-pegan"}
   - {id: usb,       price: 10, img: assets/img/merch/usb-unicornios.jpg,         url: "https://lasmarikarmen.bandcamp.com/merch/usb-unicorn-4gb-with-music-photos"}
 
-# Upcoming gigs. Add lines like:
-#   - {date: 2026-11-28, city: "Barcelona", venue: "Sala Apolo", url: "https://…"}
-# Past dates are hidden automatically at build time.
+# Gigs, upcoming and past, in any order. One line each:
+#   - {date: 2026-11-28, city: "Barcelona", venue: "Sala Apolo", event: "Festival X", poster: assets/img/posters/2026-11-28-apolo.jpg, url: "https://tickets…"}
+# date: YYYY-MM-DD · event, poster and url are optional.
+# Dates from today on show under "Próximas fechas"; earlier ones move by themselves to
+# "Lo petamos…" (the site rebuilds every night). Posters go in assets/img/posters/.
 gigs: []
 
 # Press, newest first. date: YYYY-MM (month names come from text.yaml).

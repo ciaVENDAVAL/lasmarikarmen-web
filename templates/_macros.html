@@ -28,3 +28,17 @@
 {% macro price(n) %}{{ n }} €{% endmacro %}
 
 {% macro month(t, d) %}{% if d and d|length == 7 %}{{ (t('month_fmt')|string).replace('{m}', t('month_' ~ d[5:7])|string).replace('{y}', d[:4]) }}{% elif d %}{{ (t('year_fmt')|string).replace('{y}', d) }}{% endif %}{% endmacro %}
+
+{% macro day(t, d) %}{% set d = d|string %}{{ (t('day_fmt')|string).replace('{d}', d[8:10]|int|string).replace('{m}', t('month_' ~ d[5:7])|string).replace('{y}', d[:4]) }}{% endmacro %}
+
+{% macro gig(t, g, root, past=false) %}
+<li class="gig{% if past %} gig--past{% endif %}">
+  {% if g.get('poster') %}<a class="gig__poster" href="{{ root }}{{ g.poster }}" target="_blank" rel="noopener"><img src="{{ root }}{{ g.poster }}" alt="{{ t('gig_poster_alt')|striptags }}: {{ g.get('event') or g.venue }}, {{ g.city }}" loading="lazy"></a>{% endif %}
+  <div class="gig__txt">
+    <time class="gig__date mono" datetime="{{ g.date }}">{{ day(t, g.date) }}</time>
+    <p class="gig__city">{{ g.city }}</p>
+    <p class="gig__venue">{% if g.get('event') %}<b>{{ g.event }}</b> · {% endif %}{{ g.venue }}</p>
+    {% if g.get('url') and not past %}<a class="more" href="{{ g.url }}" target="_blank" rel="noopener">{{ t('gigs_tickets') }} ↗</a>{% endif %}
+  </div>
+</li>
+{% endmacro %}

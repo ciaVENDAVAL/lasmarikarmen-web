@@ -1,17 +1,12 @@
 {% extends "base.html" %}
+{% from "_macros.html" import gig %}
 {% block main %}
 <section class="band band--ink page-top">
   <div class="wrap gigs-top">
     <h1 class="giant giant--md">{{ t('gigs_title_1') }} <span class="pk">{{ t('gigs_title_2') }}</span></h1>
     {% if gigs %}
     <ul class="gigs">
-      {% for g in gigs %}
-      <li>
-        <time class="gigs__date mono" datetime="{{ g.date }}">{{ g.date }}</time>
-        <span class="gigs__where"><b>{{ g.city }}</b> · {{ g.venue }}</span>
-        {% if g.get('url') %}<a class="more" href="{{ g.url }}" target="_blank" rel="noopener">{{ t('gigs_tickets') }} ↗</a>{% endif %}
-      </li>
-      {% endfor %}
+      {% for g in gigs %}{{ gig(t, g, root) }}{% endfor %}
     </ul>
     {% else %}
     <div class="gigs-empty">
@@ -21,6 +16,17 @@
     {% endif %}
   </div>
 </section>
+
+{% if past_gigs %}
+<section class="band band--pink" aria-labelledby="past-h">
+  <div class="wrap">
+    <h2 id="past-h" class="giant giant--md giant--ink">{{ t('gigs_past_title') }}</h2>
+    <ul class="gigs gigs--past">
+      {% for g in past_gigs %}{{ gig(t, g, root, true) }}{% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
 
 <section class="band band--cream">
   <div class="wrap">

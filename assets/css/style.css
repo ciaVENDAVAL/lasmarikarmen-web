@@ -326,10 +326,20 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 /* ── concerts ── */
 .gigs-top { display: flex; flex-direction: column; gap: 1.6rem; }
 .gigs-empty { display: flex; flex-direction: column; gap: 1.4rem; align-items: flex-start; max-width: 36rem; }
-.gigs { display: grid; gap: 0; }
-.gigs li { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; align-items: baseline; padding-block: 1rem; border-top: 1px solid var(--line); }
-.gigs__date { color: var(--green); min-width: 7.5rem; }
-.gigs__where { flex: 1; min-width: 12rem; }
+.gigs { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); gap: 2rem 1.5rem; margin-top: 2rem; }
+.gig { display: flex; flex-direction: column; gap: .7rem; min-width: 0; }
+.gig__poster { display: block; border: 3px solid var(--pink); background: #000; }
+.gig__poster img { width: 100%; aspect-ratio: 3/4; object-fit: cover; transition: transform .2s; }
+.gig__poster:hover img { transform: scale(1.02); }
+.gig__txt { display: flex; flex-direction: column; gap: .2rem; align-items: flex-start; }
+.gig__date { color: var(--green); font-weight: 700; font-size: .85rem; }
+.gig__city { font: 400 1.6rem/1 var(--display); text-transform: uppercase; color: #fff; }
+.gig__venue { color: var(--cream); }
+.gig .more { color: var(--green); margin-top: .4rem; }
+.gigs--past .gig__poster { border-color: var(--ink); box-shadow: 6px 6px 0 var(--ink); }
+.gigs--past .gig__date { color: var(--ink); }
+.gigs--past .gig__city { color: var(--ink); }
+.gigs--past .gig__venue { color: var(--ink); }
 .regions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 1.6rem 2.5rem; margin-top: 1.8rem; font-size: .95rem; }
 
 /* ── press ── */

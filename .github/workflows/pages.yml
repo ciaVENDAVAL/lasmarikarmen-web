@@ -6,6 +6,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"   # every night: gigs that have happened move to the past section
 
 permissions:
   contents: read
