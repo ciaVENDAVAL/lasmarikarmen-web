@@ -134,11 +134,113 @@ merch:
   - {id: usb,       price: 10, img: assets/img/merch/usb-unicornios.jpg,         url: "https://lasmarikarmen.bandcamp.com/merch/usb-unicorn-4gb-with-music-photos"}
 
 # Gigs, upcoming and past, in any order. One line each:
-#   - {date: 2026-11-28, city: "Barcelona", venue: "Sala Apolo", event: "Festival X", poster: assets/img/posters/2026-11-28-apolo.jpg, url: "https://tickets…"}
-# date: YYYY-MM-DD · event, poster and url are optional.
+#   - {date: "2026-11-28", city: "Barcelona", venue: "Sala Apolo", event: "Festival X", posters: [assets/img/posters/2026-11-28-apolo.jpg], url: "https://tickets…"}
+# date: "YYYY-MM-DD" (or "YYYY-MM" / "YYYY" if the day is unknown) · city, venue, event, posters, url optional.
+# kind: media (radio, TV, podcast, online interview) or release (record, compilation). Leave out for concerts.
 # Dates from today on show under "Próximas fechas"; earlier ones move by themselves to
 # "Lo petamos…" (the site rebuilds every night). Posters go in assets/img/posters/.
-gigs: []
+gigs:
+  - {date: "2017-06-10", city: "Barcelona", venue: "CSO Kan Pasqual", event: "20 anys en moviment", posters: [assets/img/posters/2017-06-10-cso-kan-pasqual.jpg]}
+  - {date: "2017-10-21", city: "Vallvidrera", venue: "La Talaia", event: "Festa Talaia · 8è aniversari", posters: [assets/img/posters/2017-10-21-la-talaia.jpg]}
+  - {date: "2017-11-03", city: "Barcelona", venue: "Ateneu Llibertari del Casc Antic", event: "Kafeta Marika", posters: [assets/img/posters/2017-11-03-ateneu-llibertari-del-casc-antic.jpg]}
+  - {date: "2018-05-12", city: "Barcelona", venue: "Can Masdeu", event: "16a Festa de la Resistència", posters: [assets/img/posters/2018-05-12-can-masdeu.jpg]}
+  - {date: "2018-06-02", city: "Vall de Querol", venue: "Somiabarrets", event: "Festival d'arts escèniques al bosc", posters: [assets/img/posters/2018-06-02-somiabarrets.jpg, assets/img/posters/2018-06-02-somiabarrets-2.jpg, assets/img/posters/2018-06-02-somiabarrets-3.jpg]}
+  - {date: "2018-06-23", city: "Barcelona", venue: "Les Tres Xemeneies", event: "Revetlla de Barri", posters: [assets/img/posters/2018-06-23-les-tres-xemeneies.jpg]}
+  - {date: "2018-10-28", city: "Barcelona", venue: "Can Masdeu", event: "PIC Can Bee Solar", posters: [assets/img/posters/2018-10-28-can-masdeu.jpg]}
+  - {date: "2018-10-31", venue: "La Xesca", event: "La Gran Castanya", posters: [assets/img/posters/2018-10-31-la-xesca.jpg]}
+  - {date: "2018-12-28", city: "Barcelona", venue: "CSO Kan Pasqual", event: "22 aniversari", posters: [assets/img/posters/2018-12-28-cso-kan-pasqual.jpg]}
+  - {date: "2019-02-09", city: "Barcelona", venue: "Esplac", event: "1es Jornades Dissidents · Perspectiva trans*", posters: [assets/img/posters/2019-02-09-esplac.jpg]}
+  - {date: "2019-04-26", venue: "La Candela", event: "5º Festival Circo y Arte Combativo", posters: [assets/img/posters/2019-04-26-la-candela.jpg]}
+  - {date: "2019-05-24", city: "Sant Cugat del Vallès", venue: "Casa Mònaco · EAD", event: "La Festa fi de curs", posters: [assets/img/posters/2019-05-24-casa-monaco-ead.jpg]}
+  - {date: "2019-06-08", city: "Barcelona", venue: "Parc de la Guineueta", event: "Simbiruta 25", posters: [assets/img/posters/2019-06-08-parc-de-la-guineueta.jpg]}
+  - {date: "2019-06-15", city: "Barcelona", venue: "Plaça de la Bòbila", event: "La Totxana · Festa Alternativa de La Taxonera", posters: [assets/img/posters/2019-06-15-placa-de-la-bobila.jpg]}
+  - {date: "2019-06-27", city: "Oviedo", venue: "Lata de Zinc", event: "Orgullo es Protesta", posters: [assets/img/posters/2019-06-27-lata-de-zinc.jpg, assets/img/posters/2019-06-27-lata-de-zinc-2.jpg]}
+  - {date: "2019-06-29", city: "Tomiño", venue: "Mercado de Tomiño", event: "1a Festa Agro LGTBI", posters: [assets/img/posters/2019-06-29-mercado-de-tomino.jpg]}
+  - {date: "2019-07", city: "Deutschland", event: "Prekarietour", posters: [assets/img/posters/2019-07-prekarietour.jpg]}
+  - {date: "2019-07-12", city: "Frankfurt", venue: "Café KOZ", event: "Support and celebrate your local media", posters: [assets/img/posters/2019-07-12-cafe-koz.jpg, assets/img/posters/2019-07-12-cafe-koz-2.jpg, assets/img/posters/2019-07-12-cafe-koz-3.jpg]}
+  - {date: "2019-07-14", city: "Leipzig", venue: "Rhizomia", event: "Punk Pop Drag Queer Konzerte", posters: [assets/img/posters/2019-07-14-rhizomia.jpg]}
+  - {date: "2019-07-18", city: "Dresden", venue: "Platz Da!", event: "Konzert & KüFa", posters: [assets/img/posters/2019-07-18-platz-da.jpg]}
+  - {date: "2019-07-26", city: "Hamburg", venue: "Projekt Eschenhof", event: "Glam Trash aus Barcelona", posters: [assets/img/posters/2019-07-26-projekt-eschenhof.jpg]}
+  - {date: "2019-07-28", city: "Frankfurt", venue: "Sommerwerft", event: "Sommerwerft Festival", posters: [assets/img/posters/2019-07-28-sommerwerft.jpg]}
+  - {date: "2019-09-06", city: "Lärz", venue: "Flugplatz Lärz", event: "at.tension Festival", posters: [assets/img/posters/2019-09-06-flugplatz-larz.jpg]}
+  - {date: "2019-09-13", city: "Barcelona", venue: "Casal de Joves Guineueta", event: "Tornem a la càrrega!", posters: [assets/img/posters/2019-09-13-casal-de-joves-guineueta.jpg]}
+  - {date: "2019-09-14", city: "El Masnou", venue: "Masflow", event: "Kabaret", posters: [assets/img/posters/2019-09-14-masflow.jpg]}
+  - {date: "2019-10-26", venue: "Can Fenosa", event: "La Fenosenka", posters: [assets/img/posters/2019-10-26-can-fenosa.jpg]}
+  - {date: "2019-11-08", city: "Barcelona", venue: "Casal de Joves de Prosperitat", posters: [assets/img/posters/2019-11-08-casal-de-joves-de-prosperitat.jpg]}
+  - {date: "2019-11-29", city: "Barcelona", venue: "Ateneu del Raval", event: "BCN Queer 2019 · Cabaret Queer", posters: [assets/img/posters/2019-11-29-ateneu-del-raval.jpg, assets/img/posters/2019-11-29-ateneu-del-raval-2.jpg]}
+  - {date: "2019-11-30", city: "Barcelona", venue: "Can Batlló", event: "Jornada de Menstruació Conscient", posters: [assets/img/posters/2019-11-30-can-batllo.jpg]}
+  - {date: "2019-11-30", city: "Barcelona", venue: "Casal de Barri Can Travi", event: "Taller Drag Queen i King + concert", posters: [assets/img/posters/2019-11-30-casal-de-barri-can-travi.jpg, assets/img/posters/2019-11-30-casal-de-barri-can-travi-2.jpg]}
+  - {date: "2019-12-14", city: "Barcelona", venue: "RAI", event: "Electrodomésticos", posters: [assets/img/posters/2019-12-14-rai.jpg, assets/img/posters/2019-12-14-rai-2.jpg, assets/img/posters/2019-12-14-rai-3.jpg]}
+  - {date: "2019", venue: "L'Experimental", event: "4rt aniversari", posters: [assets/img/posters/2019-l-experimental.jpg]}
+  - {date: "2020-02-29", city: "Barcelona", venue: "Sala Apolo", event: "Churros Talent", posters: [assets/img/posters/2020-02-29-sala-apolo.jpg]}
+  - {date: "2020-04-30", city: "Online", event: "Uñas y Dientes Streaming Festival", posters: [assets/img/posters/2020-04-30-unas-y-dientes-streaming-festival.jpg, assets/img/posters/2020-04-30-unas-y-dientes-streaming-festival-2.jpg]}
+  - {date: "2020-06-27", city: "Rubí", venue: "La Ràbia · CRAC", event: "Orgull Rabiós", posters: [assets/img/posters/2020-06-27-la-rabia-crac.jpg]}
+  - {date: "2020-07-14", venue: "Drag is Burning", event: "Podcast · Rubén Antón", kind: "media", posters: [assets/img/posters/2020-07-14-drag-is-burning.jpg]}
+  - {date: "2020-08-11", venue: "QWERTY camp", posters: [assets/img/posters/2020-08-11-qwerty-camp.jpg, assets/img/posters/2020-08-11-qwerty-camp-2.jpg]}
+  - {date: "2020-09", venue: "La Haine", event: "20 años de desobediencia informativa · «Compost your Gender»", kind: "release", posters: [assets/img/posters/2020-09-la-haine.jpg, assets/img/posters/2020-09-la-haine-2.jpg]}
+  - {date: "2020-12-30", city: "Rubí", venue: "CRAC", event: "Presentació de «Compost your Gender»", posters: [assets/img/posters/2020-12-30-crac.jpg]}
+  - {date: "2021-01-10", venue: "Mutuo Galería", event: "Neotravestismo · con Fera y Las Disidentes", posters: [assets/img/posters/2021-01-10-mutuo-galeria.jpg, assets/img/posters/2021-01-10-mutuo-galeria-2.jpg, assets/img/posters/2021-01-10-mutuo-galeria-3.jpg]}
+  - {date: "2021-01-23", city: "Barcelona", venue: "La Casa de la Pradera", event: "Concierto queer", posters: [assets/img/posters/2021-01-23-la-casa-de-la-pradera.jpg]}
+  - {date: "2021-02", venue: "Diversitats FM", kind: "media", posters: [assets/img/posters/2021-02-diversitats-fm.jpg]}
+  - {date: "2021-02-10", city: "Online", venue: "Dona Cançó", event: "Instagram Live", kind: "media", posters: [assets/img/posters/2021-02-10-dona-canco.jpg, assets/img/posters/2021-02-10-dona-canco-2.jpg, assets/img/posters/2021-02-10-dona-canco-3.jpg]}
+  - {date: "2021-04-28", city: "Barcelona", venue: "betevé", event: "Feeel", kind: "media", posters: [assets/img/posters/2021-04-28-beteve.jpg]}
+  - {date: "2021-05-20", city: "Barcelona", venue: "Candy Darling", event: "Kobra Kuir · Travesti rural y la autogestión", posters: [assets/img/posters/2021-05-20-candy-darling.jpg]}
+  - {date: "2021-05-21", city: "Barcelona", venue: "Casal de Joves de Prosperitat", posters: [assets/img/posters/2021-05-21-casal-de-joves-de-prosperitat.jpg]}
+  - {date: "2021-05-22", venue: "CSO La Ruina", event: "I Jornades d'Identitats Dissidents", posters: [assets/img/posters/2021-05-22-cso-la-ruina.jpg]}
+  - {date: "2021-05-29", city: "Barcelona", venue: "Cruïlla Girona – Consell de Cent", event: "Las Pibas · Festa Jove 2021", posters: [assets/img/posters/2021-05-29-cruilla-girona-consell-de-cent.jpg, assets/img/posters/2021-05-29-cruilla-girona-consell-de-cent-2.jpg, assets/img/posters/2021-05-29-cruilla-girona-consell-de-cent-3.jpg]}
+  - {date: "2021-05-30", city: "Barcelona", venue: "RAI", posters: [assets/img/posters/2021-05-30-rai.jpg, assets/img/posters/2021-05-30-rai-2.jpg]}
+  - {date: "2021-07-02", city: "Palafolls", venue: "Mosca", event: "IV Concurs de música jove", posters: [assets/img/posters/2021-07-02-mosca.jpg, assets/img/posters/2021-07-02-mosca-2.jpg]}
+  - {date: "2021-07-04", city: "Barcelona", venue: "La Escocesa", event: "Jornada de apoyo a la Gira Zapatista", posters: [assets/img/posters/2021-07-04-la-escocesa.jpg]}
+  - {date: "2021-07-06", city: "Barcelona", venue: "Drassanes", event: "Benvinguda a les companyes zapatistes", posters: [assets/img/posters/2021-07-06-drassanes.jpg]}
+  - {date: "2021-08-21", city: "Capafonts", venue: "Mas Fortet", event: "Compost your Gender", posters: [assets/img/posters/2021-08-21-mas-fortet.jpg]}
+  - {date: "2021-09-14", city: "Barcelona", venue: "Candy Darling", event: "They say", posters: [assets/img/posters/2021-09-14-candy-darling.jpg]}
+  - {date: "2021-09-18", city: "Barcelona", venue: "Can Batlló", event: "Folks Queer Fest", posters: [assets/img/posters/2021-09-18-can-batllo.jpg, assets/img/posters/2021-09-18-can-batllo-2.jpg, assets/img/posters/2021-09-18-can-batllo-3.jpg]}
+  - {date: "2021-10-01", city: "Online", venue: "femnøise.fest", event: "Metaverse", posters: [assets/img/posters/2021-10-01-femnise-fest.jpg, assets/img/posters/2021-10-01-femnise-fest-2.jpg]}
+  - {date: "2021-10-16", city: "Lleida", venue: "Plaça de les Magnòlies", event: "VI Figa Fest", posters: [assets/img/posters/2021-10-16-placa-de-les-magnolies.jpg]}
+  - {date: "2021-10-16", city: "Barcelona", venue: "Poble Espanyol", event: "Los Conciertos de La Pradera", posters: [assets/img/posters/2021-10-16-poble-espanyol.jpg, assets/img/posters/2021-10-16-poble-espanyol-2.jpg]}
+  - {date: "2021-10-30", city: "Rubí", venue: "La Ràbia", event: "Octubre Trans", posters: [assets/img/posters/2021-10-30-la-rabia.jpg, assets/img/posters/2021-10-30-la-rabia-2.jpg, assets/img/posters/2021-10-30-la-rabia-3.jpg]}
+  - {date: "2021-10-31", venue: "Sala Meteoro", event: "Fiestón Transmarica Halloqueer · con Fera y Las Disidentes", posters: [assets/img/posters/2021-10-31-sala-meteoro.jpg]}
+  - {date: "2021-10-31", venue: "Uterzine", event: "No más punkis muertas · recopilatorio", kind: "release", posters: [assets/img/posters/2021-10-31-uterzine.jpg, assets/img/posters/2021-10-31-uterzine-2.jpg, assets/img/posters/2021-10-31-uterzine-3.jpg, assets/img/posters/2021-10-31-uterzine-4.jpg]}
+  - {date: "2021-11-19", city: "Olot", venue: "Núria", event: "Cicle d'identitat i gènere", posters: [assets/img/posters/2021-11-19-nuria.jpg]}
+  - {date: "2021-12-07", city: "Mallorca", venue: "Do It Music · Radio Dublab", event: "Alta Bajeza", kind: "media", posters: [assets/img/posters/2021-12-07-do-it-music-radio-dublab.jpg]}
+  - {date: "2021-12-28", city: "Madrid", venue: "La Villana de Vallekas", event: "Concierto Kuir", posters: [assets/img/posters/2021-12-28-la-villana-de-vallekas.jpg, assets/img/posters/2021-12-28-la-villana-de-vallekas-2.jpg]}
+  - {date: "2022-02-19", city: "Barcelona", venue: "Ateneu 9Barris", event: "Meneo Disidente · Cítric", posters: [assets/img/posters/2022-02-19-ateneu-9barris.jpg, assets/img/posters/2022-02-19-ateneu-9barris-2.jpg, assets/img/posters/2022-02-19-ateneu-9barris-3.jpg]}
+  - {date: "2022-03-03", city: "Barcelona", venue: "Candy Darling", event: "Kobra Kuir · preestreno «POCA ROPA»", posters: [assets/img/posters/2022-03-03-candy-darling.jpg]}
+  - {date: "2022-06-30", event: "Presentando «Pelaso» · con Faggot Hunters", posters: [assets/img/posters/2022-06-30-presentando-pelaso-con-faggot-hunters.jpg]}
+  - {date: "2022-07-02", city: "Gavà", venue: "FM Alternatives Gavà '22", posters: [assets/img/posters/2022-07-02-fm-alternatives-gava-22.jpg]}
+  - {date: "2022-07-10", city: "Esparreguera", venue: "Plaça de la Constitució", event: "Festa Major Alternativa d'Esparreguera", posters: [assets/img/posters/2022-07-10-placa-de-la-constitucio.jpg, assets/img/posters/2022-07-10-placa-de-la-constitucio-2.jpg]}
+  - {date: "2022-07", city: "Barcelona", venue: "Poble Sec", event: "Festa Major Popular del Poble Sec", posters: [assets/img/posters/2022-07-poble-sec.jpg]}
+  - {date: "2022-07-28", city: "Frankfurt", venue: "Sommerwerft", event: "Sommerwerft Festival · Workshop 2000 Jahre Drag", posters: [assets/img/posters/2022-07-28-sommerwerft.jpg, assets/img/posters/2022-07-28-sommerwerft-2.jpg]}
+  - {date: "2022-08-06", city: "Siegsdorf", event: "Queer Hiphop Konzert", posters: [assets/img/posters/2022-08-06-queer-hiphop-konzert.jpg]}
+  - {date: "2022-08-29", city: "Online", venue: "Sonidos Clandestinos", event: "Disco de la semana", kind: "media", posters: [assets/img/posters/2022-08-29-sonidos-clandestinos.jpg, assets/img/posters/2022-08-29-sonidos-clandestinos-2.jpg]}
+  - {date: "2022-09-08", city: "Palafolls", venue: "Plaça Poppi", event: "AlterFesta", posters: [assets/img/posters/2022-09-08-placa-poppi.jpg, assets/img/posters/2022-09-08-placa-poppi-2.jpg]}
+  - {date: "2022-09-26", city: "El Prat de Llobregat", venue: "Parc", event: "Festa Major del Prat 2022", posters: [assets/img/posters/2022-09-26-parc.jpg]}
+  - {date: "2022-09-28", city: "Barcelona", venue: "Centre Cívic del Besòs i el Maresme", event: "Música al barri", posters: [assets/img/posters/2022-09-28-centre-civic-del-besos-i-el-maresme.jpg, assets/img/posters/2022-09-28-centre-civic-del-besos-i-el-maresme-2.jpg]}
+  - {date: "2022-10-01", city: "El Bruc", venue: "Can Serrat", event: "Bird Day of Love", posters: [assets/img/posters/2022-10-01-can-serrat.jpg, assets/img/posters/2022-10-01-can-serrat-2.jpg]}
+  - {date: "2022-10", city: "Barcelona", venue: "Sarrià", event: "Festes Alternatives de Sarrià", posters: [assets/img/posters/2022-10-sarria.jpg]}
+  - {date: "2022-10-08", city: "Granada", venue: "Planta Baja", event: "Meneo Disidente", posters: [assets/img/posters/2022-10-08-planta-baja.jpg]}
+  - {date: "2022-11-12", city: "Barcelona", venue: "Camp de Futbol Municipal El Carmel", posters: [assets/img/posters/2022-11-12-camp-de-futbol-municipal-el-carmel.jpg]}
+  - {date: "2023-01-07", city: "Barcelona", venue: "Sala Upload", event: "Fiesta Wacha", posters: [assets/img/posters/2023-01-07-sala-upload.jpg]}
+  - {date: "2023-02-18", city: "Barcelona", venue: "Paral·lel 62", event: "Carneval Bravo", posters: [assets/img/posters/2023-02-18-parallel-62.jpg]}
+  - {date: "2023-03-31", city: "Girona", venue: "Sala La Mirona", event: "TransMaricaBollo · 4a edició", posters: [assets/img/posters/2023-03-31-sala-la-mirona.jpg]}
+  - {date: "2023-07-22", city: "Frankfurt", venue: "Sommerwerft", event: "Sommerwerft Festival", posters: [assets/img/posters/2023-07-22-sommerwerft.jpg]}
+  - {date: "2023-09-16", city: "Zamora", venue: "Aceñas de Cabañales", event: "Transgress Fest 5", posters: [assets/img/posters/2023-09-16-acenas-de-cabanales.jpg]}
+  - {date: "2023-10-06", city: "Olot", venue: "Núria", posters: [assets/img/posters/2023-10-06-nuria.jpg]}
+  - {date: "2023-11-27", venue: "3cat", event: "Ja m'entens · Pop i punk queer", kind: "media", posters: [assets/img/posters/2023-11-27-3cat.jpg, assets/img/posters/2023-11-27-3cat-2.jpg, assets/img/posters/2023-11-27-3cat-3.jpg, assets/img/posters/2023-11-27-3cat-4.jpg]}
+  - {date: "2023-12-22", city: "Zaragoza", venue: "CSO Kike Mur", event: "Las Degeneradas Kuir acaban con la Navidad", posters: [assets/img/posters/2023-12-22-cso-kike-mur.jpg, assets/img/posters/2023-12-22-cso-kike-mur-2.jpg]}
+  - {date: "2023-12-23", city: "Oviedo", venue: "Lata de Zinc", event: "con DJ Guanatekk", posters: [assets/img/posters/2023-12-23-lata-de-zinc.jpg]}
+  - {date: "2024-03-02", city: "Barcelona", venue: "Espai Jove Casa Sagnier", event: "Març feminista · Dia de bruixes", posters: [assets/img/posters/2024-03-02-espai-jove-casa-sagnier.jpg]}
+  - {date: "2024-03-23", city: "Agurain", event: "Zokorrak jaialdia", posters: [assets/img/posters/2024-03-23-zokorrak-jaialdia.jpg]}
+  - {date: "2024-04-20", city: "Madrid", venue: "El Sótano Club", event: "Sound Isidro 2024", posters: [assets/img/posters/2024-04-20-el-sotano-club.jpg, assets/img/posters/2024-04-20-el-sotano-club-2.jpg]}
+  - {date: "2024-08-16", city: "Sant Pol de Mar", event: "IIIa Nit LGTBIQ+", posters: [assets/img/posters/2024-08-16-iiia-nit-lgtbiq.jpg, assets/img/posters/2024-08-16-iiia-nit-lgtbiq-2.jpg]}
+  - {date: "2024-08-31", city: "Artés", event: "27a Festa Major Alternativa d'Artés", posters: [assets/img/posters/2024-08-31-27a-festa-major-alternativa-d-artes.jpg, assets/img/posters/2024-08-31-27a-festa-major-alternativa-d-artes-2.jpg]}
+  - {date: "2024-10-26", city: "Terrassa", venue: "Casa de la Música", event: "con OLI", posters: [assets/img/posters/2024-10-26-casa-de-la-musica.jpg]}
+  - {date: "2024-11-30", city: "Parets del Vallès", venue: "Espai Jove", event: "II Vallès Queer", posters: [assets/img/posters/2024-11-30-espai-jove.jpg]}
+  - {date: "2025-02-21", city: "Sabadell", venue: "Espai Mandarina", event: "Karnaval MariK", posters: [assets/img/posters/2025-02-21-espai-mandarina.jpg]}
+  - {date: "2025-09-05", city: "Barcelona", venue: "Vallcarca", event: "Festes Llibertàries de Vallcarca", posters: [assets/img/posters/2025-09-05-vallcarca.jpg]}
+  - {date: "2026-05-01", city: "Iruña", venue: "Txantrea", event: "Txantreako jaiak 2026", posters: [assets/img/posters/2026-05-01-txantrea.jpg]}
+  - {date: "2026-06-12", city: "Barcelona", venue: "Parc de la Guineueta", event: "Simbiruta 2026", posters: [assets/img/posters/2026-06-12-parc-de-la-guineueta.jpg, assets/img/posters/2026-06-12-parc-de-la-guineueta-2.jpg]}
+  - {date: "2026-07-25", city: "Frankfurt", venue: "Sommerwerft", event: "Sommerwerft Festival", posters: [assets/img/posters/2026-07-25-sommerwerft.jpg]}
 
 # Press, newest first. date: YYYY-MM (month names come from text.yaml).
 # title: headline in its original language. note_key: optional translated note.

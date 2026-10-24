@@ -2193,6 +2193,28 @@ day_fmt:
   it: "{d} {m} {y}"
   de: "{d}. {m} {y}"
   ja: "{y}年{m}{d}日"
+gig_kind_media:
+  es: "radio / tele / online"
+  en: "radio / TV / online"
+  ca: "ràdio / tele / en línia"
+  gl: "radio / tele / en liña"
+  eu: "irratia / telebista / sarean"
+  pt: "rádio / TV / online"
+  fr: "radio / télé / en ligne"
+  it: "radio / tv / online"
+  de: "Radio / TV / online"
+  ja: "ラジオ・TV・オンライン"
+gig_kind_release:
+  es: "disco"
+  en: "record"
+  ca: "disc"
+  gl: "disco"
+  eu: "diskoa"
+  pt: "disco"
+  fr: "disque"
+  it: "disco"
+  de: "Tonträger"
+  ja: "リリース"
 gigs_tickets:
   es: Entradas
   en: "Tickets"

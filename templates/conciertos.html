@@ -21,9 +21,13 @@
 <section class="band band--pink" aria-labelledby="past-h">
   <div class="wrap">
     <h2 id="past-h" class="giant giant--md giant--ink">{{ t('gigs_past_title') }}</h2>
+    <nav class="years mono" aria-label="{{ t('gigs_past_title')|striptags }}">{% for y, _l in past_years %}<a href="#y{{ y }}">{{ y }}</a>{% endfor %}</nav>
+    {% for y, list in past_years %}
+    <h3 class="year" id="y{{ y }}">{{ y }} <span class="mono small">{{ list|length }}</span></h3>
     <ul class="gigs gigs--past">
-      {% for g in past_gigs %}{{ gig(t, g, root, true) }}{% endfor %}
+      {% for g in list %}{{ gig(t, g, root, true) }}{% endfor %}
     </ul>
+    {% endfor %}
   </div>
 </section>
 {% endif %}

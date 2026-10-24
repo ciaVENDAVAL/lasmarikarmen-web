@@ -31,13 +31,18 @@
 
 {% macro day(t, d) %}{% set d = d|string %}{{ (t('day_fmt')|string).replace('{d}', d[8:10]|int|string).replace('{m}', t('month_' ~ d[5:7])|string).replace('{y}', d[:4]) }}{% endmacro %}
 
+{% macro anydate(t, d) %}{% set d = d|string %}{% if d|length == 10 %}{{ day(t, d) }}{% else %}{{ month(t, d) }}{% endif %}{% endmacro %}
+
 {% macro gig(t, g, root, past=false) %}
-<li class="gig{% if past %} gig--past{% endif %}">
-  {% if g.get('poster') %}<a class="gig__poster" href="{{ root }}{{ g.poster }}" target="_blank" rel="noopener"><img src="{{ root }}{{ g.poster }}" alt="{{ t('gig_poster_alt')|striptags }}: {{ g.get('event') or g.venue }}, {{ g.city }}" loading="lazy"></a>{% endif %}
+{% set ps = g.get('posters') or ([g.poster] if g.get('poster') else []) %}
+{% set title = g.get('event') or g.get('venue') or g.get('city') %}
+<li class="gig{% if past %} gig--past{% endif %}{% if g.get('kind') %} gig--{{ g.kind }}{% endif %}">
+  {% if ps %}<a class="gig__poster" href="{{ root }}{{ ps[0] }}" target="_blank" rel="noopener"><img src="{{ root }}{{ ps[0] }}" alt="{{ t('gig_poster_alt')|striptags }}: {{ title }}{% if g.get('city') %}, {{ g.city }}{% endif %}" loading="lazy"></a>{% endif %}
+  {% if ps|length > 1 %}<span class="gig__more">{% for p in ps[1:] %}<a href="{{ root }}{{ p }}" target="_blank" rel="noopener"><img src="{{ root }}{{ p }}" alt="{{ t('gig_poster_alt')|striptags }} {{ loop.index + 1 }}: {{ title }}" loading="lazy"></a>{% endfor %}</span>{% endif %}
   <div class="gig__txt">
-    <time class="gig__date mono" datetime="{{ g.date }}">{{ day(t, g.date) }}</time>
-    <p class="gig__city">{{ g.city }}</p>
-    <p class="gig__venue">{% if g.get('event') %}<b>{{ g.event }}</b> · {% endif %}{{ g.venue }}</p>
+    <time class="gig__date mono" datetime="{{ g.date }}">{{ anydate(t, g.date) }}{% if g.get('kind') %} · {{ t('gig_kind_' ~ g.kind) }}{% endif %}</time>
+    {% if g.get('city') %}<p class="gig__city">{{ g.city }}</p>{% endif %}
+    <p class="gig__venue">{% if g.get('event') %}<b>{{ g.event }}</b>{% if g.get('venue') %} · {% endif %}{% endif %}{{ g.get('venue','') }}</p>
     {% if g.get('url') and not past %}<a class="more" href="{{ g.url }}" target="_blank" rel="noopener">{{ t('gigs_tickets') }} ↗</a>{% endif %}
   </div>
 </li>

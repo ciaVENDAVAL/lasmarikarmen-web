@@ -18,7 +18,7 @@ Short info on the home page, one page per topic:
 Social icons, contact and press kit appear once, in the footer of every page.
 Bottom left: pink triangle ▼ opens the accessibility options. Bottom right: ▲ back to top.
 
-**Upcoming gigs:** add lines under `gigs:` in `content/site.yaml`; past dates disappear by themselves on the next build.
+**Gigs:** add lines under `gigs:` in `content/site.yaml` (posters in `assets/img/posters/`). Past dates move by themselves to "Lo petamos…", grouped by year (the site rebuilds every night).
 **Shop:** products are under `merch:` in `site.yaml`; remove a line when it sells out.
 
 ## Where things live

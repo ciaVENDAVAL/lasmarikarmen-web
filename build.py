@@ -82,7 +82,15 @@ def build(langs, text, site):
     today = date.today().isoformat()
     all_gigs = site.get("gigs") or []
     gigs = sorted((g for g in all_gigs if str(g["date"]) >= today), key=lambda g: str(g["date"]))
-    past_gigs = sorted((g for g in all_gigs if str(g["date"]) < today), key=lambda g: str(g["date"]), reverse=True)
+    def _end(d):  # a gig dated "2024-08" or "2024" counts as past once that month/year is over
+        d = str(d); return d + "-99" if len(d) == 7 else (d + "-99-99" if len(d) == 4 else d)
+    past_gigs = sorted((g for g in all_gigs if _end(g["date"]) < today), key=lambda g: str(g["date"]), reverse=True)
+    gigs = sorted((g for g in all_gigs if _end(g["date"]) >= today), key=lambda g: str(g["date"]))
+    past_years = []
+    for g in past_gigs:
+        y = str(g["date"])[:4]
+        if not past_years or past_years[-1][0] != y: past_years.append((y, []))
+        past_years[-1][1].append(g)
     if site.get("cname"):
         (OUT / "CNAME").write_text(site["cname"].strip() + "\n")
 
@@ -112,7 +120,7 @@ def build(langs, text, site):
             ctx = dict(
                 t=t, lang=lang, langs=langs if len(langs) > 1 else [], site=site,
                 lang_names=site["language_names"], root=root, page_url=page_url,
-                slug=slug, pages=PAGES, icons=icons, asset_v=asset_v, gigs=gigs, past_gigs=past_gigs, presskit=root + presskit,
+                slug=slug, pages=PAGES, icons=icons, asset_v=asset_v, gigs=gigs, past_gigs=past_gigs, past_years=past_years, presskit=root + presskit,
                 page_title=(t(title_key) if title_key else None),
                 canonical=f"{site['site_url'].rstrip('/')}/{sub}{'' if slug == 'index' else slug + '.html'}",
             )
