@@ -6,6 +6,9 @@ Last updated: 2026-10-24.
 
 ## Where everything is
 
+Live website: **https://ciavendaval.github.io/lasmarikarmen-web/** · source code: **github.com/ciaVENDAVAL/lasmarikarmen-web**
+(every push to `main` rebuilds and republishes the site; texts are in `content/text.yaml`, settings in `content/site.yaml`).
+
 The website preview artifact holds all texts and all photos as files:
 **https://claude.ai/artifact/46Y4KUjLop6rgPDjkpiL5R**
 
