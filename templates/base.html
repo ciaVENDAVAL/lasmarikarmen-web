@@ -29,7 +29,7 @@ if(k&&k!==L[0]&&L.indexOf(k)>-1&&!/[?&]lang=/.test(location.search)){location.re
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&family=Playfair+Display:ital,wght@1,400;1,700;1,900&family=Space+Mono:wght@400;700&display=swap">
 {% if lang == 'ja' %}<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP:wght@400;700;900&display=swap">
-{% endif %}<link rel="stylesheet" href="{{ root }}assets/css/style.css">
+{% endif %}<link rel="stylesheet" href="{{ root }}assets/css/style.css?v={{ asset_v }}">
 <script>
 /* apply saved accessibility settings before the page paints */
 (function(){try{var s=JSON.parse(localStorage.getItem('lm-a11y')||'{}'),h=document.documentElement;
@@ -129,6 +129,6 @@ for(var k in s){if(k==='size'){h.style.fontSize=s.size+'%'}else if(s[k]){h.class
   <svg viewBox="0 0 56 50" aria-hidden="true"><polygon class="tri__shape" points="28,2 54,48 2,48"/></svg>
 </a>
 
-<script src="{{ root }}assets/js/site.js" defer></script>
+<script src="{{ root }}assets/js/site.js?v={{ asset_v }}" defer></script>
 </body>
 </html>
