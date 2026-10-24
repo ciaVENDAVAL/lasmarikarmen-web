@@ -150,8 +150,8 @@
       draft.value = body;
       var href = 'mailto:' + d('to') + '?subject=' + encodeURIComponent(d('subject') + ' · ' + name) + '&body=' + encodeURIComponent(body);
       mail.setAttribute('href', href);
-      out.hidden = false;
-      window.location.href = href;
+      out.classList.add('is-ready');
+      draft.focus(); draft.select();
     });
     form.querySelector('.order__copy').addEventListener('click', function () {
       var b = this, done = function () { b.textContent = d('copied'); };

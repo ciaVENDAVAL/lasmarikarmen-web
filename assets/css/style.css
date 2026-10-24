@@ -483,3 +483,6 @@ html:lang(ja) .lead, html:lang(ja) .prose { line-height: 1.95; }
 @media (min-width: 900px) { .pay { grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); } }
 .order__privacy { font-size: .74rem; line-height: 1.5; color: var(--muted); max-width: 60ch; }
 .order__bizum[hidden] { display: none; }
+.order__out .btns { display: none; }
+.order__out.is-ready .btns { display: flex; }
+.order__out.is-ready textarea { border-color: var(--pink-deep); }

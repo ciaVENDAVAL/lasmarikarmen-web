@@ -82,9 +82,9 @@
         <button type="submit" class="btn btn--ink">{{ t('order_send') }}</button>
         <p class="order__privacy">{{ t('order_privacy') }}</p>
 
-        <div class="order__out" hidden>
+        <div class="order__out">
           <p>{{ t('order_ready') }} <b class="nm">{{ site.contact.email }}</b></p>
-          <textarea id="o-draft" rows="10" readonly></textarea>
+          <textarea id="o-draft" rows="10" readonly aria-label="{{ t('order_d_subject')|striptags }}"></textarea>
           <div class="btns">
             <a class="btn btn--ink order__mail" href="#">{{ t('order_open') }}</a>
             <button type="button" class="more order__copy">{{ t('order_copy') }}</button>
