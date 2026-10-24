@@ -43,7 +43,7 @@ You can edit `content/text.yaml` directly on github.com (pencil icon) — the si
 ## Languages
 
 Published: es (root), en, ca, gl, eu, pt, fr, it, de, ja — each in its own folder (`/en/`, `/ca/`…).
-The language button sits inside the menu. On a first visit, the home page opens in the
+The language button sits in the top bar, next to the menu. On a first visit, the home page opens in the
 browser's language if the site has it; after that the visitor's choice is remembered.
 
 - Edit any text in `content/text.yaml` (all languages side by side).
