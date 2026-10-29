@@ -71,7 +71,7 @@ for si,s in enumerate(S):
     m=re.search(r'\s+con\s+Capitano Barbaco[ñn]o\s*$',title)
     if m:
         title=title[:m.start()]
-        d['credits']=list(d.get('credits',[]))+[("Producción","Capitano Barbaconyo",CAPI)]
+        d['credits']=list(d.get('credits',[]))+[("Con","Capitano Barbaconyo",CAPI)]
     out.append({"title":title,"slug":norm(title).replace(' ','-'),"blocks":blocks,"desc":d})
 out.sort(key=lambda s:norm(s['title']))
 tpl=open('template.html').read()
