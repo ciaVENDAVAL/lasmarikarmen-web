@@ -71,6 +71,7 @@ def build(langs, text, site):
     published = site["languages"]
     default = published[0]
 
+    site["site_url"] = ("https://" + site["cname"].strip()) if (site.get("cname") or "").strip() else site.get("pages_url", site["site_url"])
     if OUT.exists():
         shutil.rmtree(OUT)
     shutil.copytree(ROOT / "assets", OUT / "assets")
@@ -81,7 +82,8 @@ def build(langs, text, site):
     lyr = (ROOT / "letras" / "page-embed.html").read_text(encoding="utf-8")
     (OUT / "letras.html").write_text('<!doctype html>\n<html lang="es">\n<head>\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
-        '<link rel="icon" href="favicon.ico">\n</head>\n<body>\n' + lyr + '\n</body>\n</html>\n', encoding="utf-8")
+        '<link rel="icon" href="favicon.ico">\n' + og_tags(site, "letras.html", "Letras y traducciones · Las Marikarmen",
+        "Letras de Las Marikarmen con traducción por estrofa a castellano, English y euskara.", "letras", "es") + '</head>\n<body>\n' + lyr + '\n</body>\n</html>\n', encoding="utf-8")
     if (ROOT / "favicon.ico").exists():
         shutil.copy(ROOT / "favicon.ico", OUT / "favicon.ico")
     import hashlib
@@ -126,7 +128,7 @@ def build(langs, text, site):
         for slug, tpl, nav_key, title_key in PAGES:
             ctx = dict(
                 t=t, lang=lang, langs=langs if len(langs) > 1 else [], site=site,
-                lang_names=site["language_names"], root=root, page_url=page_url,
+                lang_names=site["language_names"], root=root, page_url=page_url, og_tags=og_tags,
                 slug=slug, pages=PAGES, icons=icons, asset_v=asset_v, gigs=gigs, past_gigs=past_gigs, past_years=past_years, presskit=root + presskit,
                 page_title=(t(title_key) if title_key else None),
                 canonical=f"{site['site_url'].rstrip('/')}/{sub}{'' if slug == 'index' else slug + '.html'}",
@@ -138,6 +140,25 @@ def build(langs, text, site):
         if lang != SOURCE and missing:
             print(f"  {lang}: {len(missing)} texts shown in castellano (missing translation)")
     print(f"Built {len(langs)} language(s) × {len(PAGES)} pages → {OUT.relative_to(ROOT)}/")
+
+
+OG_LOCALE = {"es": "es_ES", "en": "en_GB", "ca": "ca_ES", "gl": "gl_ES", "eu": "eu_ES", "pt": "pt_PT",
+             "fr": "fr_FR", "it": "it_IT", "de": "de_DE", "ja": "ja_JP"}
+
+
+def og_tags(site, path, title, desc, image, lang):
+    """Open Graph / Twitter tags for link previews (WhatsApp, Telegram, Signal, etc.)."""
+    from html import escape as e
+    base = site["site_url"].rstrip("/")
+    img = f"{base}/assets/img/og/{image}.jpg"
+    return "".join(f'<meta {k}="{a}" content="{e(str(v))}">\n' for k, a, v in [
+        ("property", "og:type", "website"), ("property", "og:site_name", "Las Marikarmen"),
+        ("property", "og:title", title), ("property", "og:description", desc),
+        ("property", "og:url", f"{base}/{path}"), ("property", "og:locale", OG_LOCALE.get(lang, "es_ES")),
+        ("property", "og:image", img), ("property", "og:image:secure_url", img),
+        ("property", "og:image:type", "image/jpeg"), ("property", "og:image:width", 1200),
+        ("property", "og:image:height", 630), ("property", "og:image:alt", "Las Marikarmen"),
+        ("name", "twitter:card", "summary_large_image"), ("name", "twitter:image", img)])
 
 
 def main():

@@ -895,7 +895,7 @@ me gustaría dormir, pero seguimos aquí
 
 ## Poca ropa
 
-Las Marikarmen y La Maga (prod. Carlo Juranccelli)
+Las Marikarmen y La Maga (prod. Carlo Jurancelli)
 
 no postureo es momento de perreo  
 bichas sueltas, monstruas diosas divineo  

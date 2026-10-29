@@ -42,6 +42,12 @@ Pronouns: ES elle · CA elli · DE dey/dem.
 
 You can edit `content/text.yaml` directly on github.com (pencil icon) — the site rebuilds by itself.
 
+## Link previews
+
+WhatsApp, Telegram and Signal show a picture and title when a page link is shared. The pictures are in
+`assets/img/og/` (one per page, 1200×630). To remake them after changing photos: `node tools/make_og.js`.
+Apps cache previews for a while, so a changed picture may take days to show on links already shared.
+
 ## Languages
 
 Published: es (root), en, ca, gl, eu, pt, fr, it, de, ja — each in its own folder (`/en/`, `/ca/`…).

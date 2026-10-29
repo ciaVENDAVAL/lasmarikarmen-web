@@ -23,6 +23,9 @@ language_names:
 # Set to lasmarikarmen.com when you are ready to move the domain to GitHub Pages.
 cname: ""
 
+# Address used in link previews (WhatsApp, Telegram, Signal…). While cname is empty the site
+# lives at pages_url; once cname is set, previews use https://<cname> automatically.
+pages_url: https://ciavendaval.github.io/lasmarikarmen-web
 site_url: https://www.lasmarikarmen.com
 
 # Press kit PDF per language (files in assets/presskit/). Missing ones fall back to es.
@@ -90,7 +93,7 @@ album:
   year: 2023
   spotify: "https://open.spotify.com/album/0K5Uj5ANW0CpvLUnNLWD9D"
   spotify_embed: "https://open.spotify.com/embed/album/0K5Uj5ANW0CpvLUnNLWD9D"
-  producers: [Suzio Tarik, Slowbou, Carlo Juranccelli]
+  producers: [Suzio Tarik, Slowbou, Carlo Jurancelli]
   tracks:
     - Nos pegan
     - Travestis por la carretera

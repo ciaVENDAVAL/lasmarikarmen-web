@@ -6,10 +6,7 @@
 <title>{% if page_title %}{{ page_title|striptags }} · {% endif %}Las Marikarmen</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="{{ t('meta_description')|striptags }}">
-<meta property="og:title" content="Las Marikarmen{% if page_title %} · {{ page_title|striptags }}{% endif %}">
-<meta property="og:description" content="{{ t('meta_description')|striptags }}">
-<meta property="og:image" content="{{ site.site_url }}/assets/img/photos/trio-mirror-dome.jpg">
-<meta name="theme-color" content="#0e0b12">
+{{ og_tags(site, canonical[site.site_url|length + 1:], ((page_title|striptags) ~ ' · ' if page_title else '') ~ 'Las Marikarmen', t('meta_description')|striptags, slug, lang)|safe }}<meta name="theme-color" content="#0e0b12">
 {% for l in langs %}
 <link rel="alternate" hreflang="{{ l }}" href="{{ page_url(slug, l) }}">
 {% endfor %}
