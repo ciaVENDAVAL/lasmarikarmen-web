@@ -1,0 +1,485 @@
+{
+ "song": "Abuelita folklórica con Capitano Barbacoño",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 12,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Tu abuelita está ya cansada de cuidarte",
+      "Muy muy cansada",
+      "Se quiere cuidar así",
+      "Y ahora te vas a cuidar tú",
+      "Huelga de abuelitas",
+      "Huelga de abuelitas",
+      "Huelga",
+      "Abuelitas unidas en huelga contra",
+      "Todo el sistema que nos desvaloriza",
+      "En huelga contra todos los nietos desagradecidos",
+      "Huelga de abuelitas",
+      "Contra la sociedad que no les cuida",
+      "Abuelita folkloricaaaaa"
+     ],
+     "en": [
+      "Your granny is tired of looking after you",
+      "So so tired",
+      "She wants to look after herself like this",
+      "And now you're gonna look after yourself",
+      "Granny strike",
+      "Granny strike",
+      "Strike",
+      "Grannies united on strike against",
+      "The whole system that devalues us",
+      "On strike against all the ungrateful grandkids",
+      "Granny strike",
+      "Against the society that doesn't care for them",
+      "Folkloric grannyyyyy"
+     ],
+     "es": null,
+     "eu": [
+      "Zure amona nekatuta dago zu zaintzeaz",
+      "Oso oso nekatuta",
+      "Bere burua zaindu nahi du horrela",
+      "Eta orain zuk zainduko duzu zeure burua",
+      "Amonen greba",
+      "Amonen greba",
+      "Greba",
+      "Amona batuak greban, kontra",
+      "Gu gutxiesten gaituen sistema osoaren",
+      "Eskertzen ez duten biloba guztien kontra greban",
+      "Amonen greba",
+      "Zaintzen ez dituen gizartearen kontra",
+      "Amona folklorikoooa"
+     ]
+    },
+    {
+     "from": 13,
+     "to": 14,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Yes we use them like horses",
+      "Yes we use them like horses"
+     ],
+     "en": null,
+     "es": [
+      "Sí, las usamos como a caballos",
+      "Sí, las usamos como a caballos"
+     ],
+     "eu": [
+      "Bai, zaldiak bezala erabiltzen ditugu",
+      "Bai, zaldiak bezala erabiltzen ditugu"
+     ]
+    },
+    {
+     "from": 15,
+     "to": 17,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Pasteles?",
+      "Abuelita folklorika",
+      "Abuelita folklorika"
+     ],
+     "en": [
+      "Cakes?",
+      "Folkloric granny",
+      "Folkloric granny"
+     ],
+     "es": null,
+     "eu": [
+      "Pastelak?",
+      "Amona folklorikoa",
+      "Amona folklorikoa"
+     ]
+    },
+    {
+     "from": 18,
+     "to": 20,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Now you do what she does yeah",
+      "Now you do what she does yeah",
+      "Now you do what she does yeah"
+     ],
+     "en": null,
+     "es": [
+      "Ahora haz tú lo que hace ella, yeah",
+      "Ahora haz tú lo que hace ella, yeah",
+      "Ahora haz tú lo que hace ella, yeah"
+     ],
+     "eu": [
+      "Orain egin ezazu berak egiten duena, yeah",
+      "Orain egin ezazu berak egiten duena, yeah",
+      "Orain egin ezazu berak egiten duena, yeah"
+     ]
+    },
+    {
+     "from": 21,
+     "to": 21,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Abuelita folklorika"
+     ],
+     "en": [
+      "Folkloric granny"
+     ],
+     "es": null,
+     "eu": [
+      "Amona folklorikoa"
+     ]
+    },
+    {
+     "from": 22,
+     "to": 22,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Now you do what she does yeah"
+     ],
+     "en": null,
+     "es": [
+      "Ahora haz tú lo que hace ella, yeah"
+     ],
+     "eu": [
+      "Orain egin ezazu berak egiten duena, yeah"
+     ]
+    },
+    {
+     "from": 23,
+     "to": 25,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Abuelita folklorika",
+      "Abuelita folklorika",
+      "Abuelita folklorika"
+     ],
+     "en": [
+      "Folkloric granny",
+      "Folkloric granny",
+      "Folkloric granny"
+     ],
+     "es": null,
+     "eu": [
+      "Amona folklorikoa",
+      "Amona folklorikoa",
+      "Amona folklorikoa"
+     ]
+    },
+    {
+     "from": 26,
+     "to": 31,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Now you clean your fucking socks",
+      "Now you make your fucking cakes",
+      "Now you grow your fucking child",
+      "Now you take care of yourself",
+      "Now you take care of yourself",
+      "Now you take care of yourself"
+     ],
+     "en": null,
+     "es": [
+      "Ahora te lavas tus putos calcetines",
+      "Ahora te haces tus putos pasteles",
+      "Ahora te crías a tu puto crío",
+      "Ahora te cuidas tú",
+      "Ahora te cuidas tú",
+      "Ahora te cuidas tú"
+     ],
+     "eu": [
+      "Orain garbitu zure galtzerdi madarikatuak",
+      "Orain egin zure pastel madarikatuak",
+      "Orain hazi zure ume madarikatua",
+      "Orain zaindu zeure burua",
+      "Orain zaindu zeure burua",
+      "Orain zaindu zeure burua"
+     ]
+    },
+    {
+     "from": 32,
+     "to": 57,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Abuelita folklorika",
+      "Estoy vieja estoy chocha?",
+      "Abuelita folklorika",
+      "Pastilla por aquí, pastilla por allá",
+      "Huelga de abuelita!",
+      "Ir a cuidar aquí, ir a cuidar allá",
+      "Sube por aquí, sube por allá",
+      "Coje el carrito, coje eeel bebee",
+      "El chupete, todo",
+      "Basta!",
+      "Huegla de abuelita",
+      "Abuelitas en huelga, no cocinaremos más",
+      "Te gustaban las galletas de la abuela?",
+      "Pues no!, ni galletas, ni pasteles",
+      "Ni coserte calcetines",
+      "Ni jerseys que luego no te pondrás",
+      "Y además los tiras",
+      "Y me desprecias!",
+      "Huelga de abuelita",
+      "Huelga de abuelita",
+      "Cuándo es mi cumpleaños?",
+      "Huegla de abuelita",
+      "Mi color favorito?",
+      "Huelga de abuelita",
+      "Cúales son mis hobbies?",
+      "Huelga de abuelita"
+     ],
+     "en": [
+      "Folkloric granny",
+      "Am I old, am I senile?",
+      "Folkloric granny",
+      "Pill here, pill there",
+      "Granny strike!",
+      "Off to care here, off to care there",
+      "Up you go here, up you go there",
+      "Grab the stroller, grab the baaaby",
+      "The pacifier, the lot",
+      "Enough!",
+      "Granny strike",
+      "Grannies on strike, we won't cook anymore",
+      "Did you like granny's cookies?",
+      "Well, no! No cookies, no cakes",
+      "No darning your socks",
+      "No sweaters you'll never wear",
+      "And on top of that you throw them away",
+      "And you look down on me!",
+      "Granny strike",
+      "Granny strike",
+      "When's my birthday?",
+      "Granny strike",
+      "My favourite colour?",
+      "Granny strike",
+      "What are my hobbies?",
+      "Granny strike"
+     ],
+     "es": null,
+     "eu": [
+      "Amona folklorikoa",
+      "Zaharra naiz, txoroa naiz?",
+      "Amona folklorikoa",
+      "Pilula hemendik, pilula handik",
+      "Amonen greba!",
+      "Zaintzera hona, zaintzera hara",
+      "Igo hemendik, igo handik",
+      "Hartu kotxetxoa, hartu beeebea",
+      "Txupetea, dena",
+      "Aski da!",
+      "Amonen greba",
+      "Amonak greban, ez dugu gehiago sukaldatuko",
+      "Gustatzen zitzaizkizun amonaren galletak?",
+      "Ba ez!, ez galletarik, ez pastelik",
+      "Ez zure galtzerdiak josi",
+      "Ez gero jantziko ez dituzun jertseak",
+      "Eta gainera botatzen dituzu",
+      "Eta mespretxatu egiten nauzu!",
+      "Amonen greba",
+      "Amonen greba",
+      "Noiz da nire urtebetetzea?",
+      "Amonen greba",
+      "Zein da nire kolore gogokoena?",
+      "Amonen greba",
+      "Zein dira nire zaletasunak?",
+      "Amonen greba"
+     ]
+    },
+    {
+     "from": 58,
+     "to": 58,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Now you do what she does yeah"
+     ],
+     "en": null,
+     "es": [
+      "Ahora haz tú lo que hace ella, yeah"
+     ],
+     "eu": [
+      "Orain egin ezazu berak egiten duena, yeah"
+     ]
+    },
+    {
+     "from": 59,
+     "to": 62,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Huelga de abuelita",
+      "Huelga de abuelita",
+      "Huelga de abuelita",
+      "Huelga de abuelita"
+     ],
+     "en": [
+      "Granny strike",
+      "Granny strike",
+      "Granny strike",
+      "Granny strike"
+     ],
+     "es": null,
+     "eu": [
+      "Amonen greba",
+      "Amonen greba",
+      "Amonen greba",
+      "Amonen greba"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 1,
+   "segments": [
+    {
+     "from": 0,
+     "to": 2,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "",
+      "Fucking gentrification!",
+      "My best friend sold freshly ground coffee but Starbucks put her out of work!  "
+     ],
+     "en": null,
+     "es": [
+      "",
+      "¡Puta gentrificación!",
+      "¡Mi mejor amiga vendía café recién molido y Starbucks la dejó sin curro!"
+     ],
+     "eu": [
+      "",
+      "Gentrifikazio madarikatua!",
+      "Nire lagun minak eskuz ehotako kafea saltzen zuen eta Starbucksek lanik gabe utzi zuen!"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 2,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "i can't walk to the park with this highway down the middle of the city, no grandma paths!  just fast lanes for businesscreeps on electric monowheels!"
+     ],
+     "en": null,
+     "es": [
+      "¡No puedo ir andando al parque con esta autopista en mitad de la ciudad, ni caminitos de abuela! ¡Solo carriles rápidos pa' los babosos de los negocios en monociclos eléctricos!"
+     ],
+     "eu": [
+      "Ezin dut parkera oinez joan hiriaren erdian autopista honekin, ez amonen bidezidorrik! Bide azkarrak bakarrik negozio-ziztrinentzat monoroda elektrikoetan!"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 3,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "i'm going to beach, to get tanned, and find me a daddy, or a butch queen, to take down this patriarchy with fire and flames to roast my chocolate sundea!"
+     ],
+     "en": null,
+     "es": [
+      "¡Me voy a la playa, a ponerme morena y a buscarme un daddy, o una butch queen, pa' tumbar este patriarcado con fuego y llamas y asar mi sundae de chocolate!"
+     ],
+     "eu": [
+      "Hondartzara noa, beltzarantzeko eta daddy bat edo butch queen bat bilatzera, patriarkatu hau su eta garretan botatzeko eta nire txokolatezko sundaea errausteko!"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 4,
+   "segments": [
+    {
+     "from": 0,
+     "to": 2,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Huelga de abuelita",
+      "Huelga!",
+      "Huelga!"
+     ],
+     "en": [
+      "Granny strike",
+      "Strike!",
+      "Strike!"
+     ],
+     "es": null,
+     "eu": [
+      "Amonen greba",
+      "Greba!",
+      "Greba!"
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 0,
+   "line": 13,
+   "original": "Yes we use them like horses",
+   "issue": "'them' presumably grannies, sarcastic; I kept it as a plain statement"
+  },
+  {
+   "block": 0,
+   "line": 33,
+   "original": "Estoy vieja estoy chocha?",
+   "issue": "'chocha' = doddering/senile but also vulgar slang for vulva; double meaning lost"
+  },
+  {
+   "block": 0,
+   "line": 46,
+   "original": "Ni coserte calcetines",
+   "issue": "'coserte calcetines' = darning/sewing socks; ok"
+  },
+  {
+   "block": 2,
+   "line": 0,
+   "original": "businesscreeps",
+   "issue": "coinage; rendered as 'babosos de los negocios' / 'negozio-ziztrinak'"
+  },
+  {
+   "block": 3,
+   "line": 0,
+   "original": "to roast my chocolate sundea",
+   "issue": "probably sexual innuendo ('chocolate sundae' + 'roast'); 'sundea' typo for sundae; kept the innuendo open"
+  }
+ ]
+}

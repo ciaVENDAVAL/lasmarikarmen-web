@@ -1,0 +1,305 @@
+{
+ "song": "Lágrimas de hombres cis",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "(Soft crying)"
+     ],
+     "en": null,
+     "es": [
+      "(Llanto suave)"
+     ],
+     "eu": [
+      "(Negar xume)"
+     ]
+    },
+    {
+     "from": 1,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "No!",
+      "Lágrimas de hombres cis",
+      "No!"
+     ],
+     "en": [
+      "No!",
+      "Cis men's tears",
+      "No!"
+     ],
+     "es": null,
+     "eu": [
+      "Ez!",
+      "Gizon zisen malkak",
+      "Ez!"
+     ]
+    },
+    {
+     "from": 4,
+     "to": 9,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "(Loud crying)",
+      "Boys don't cry",
+      "Boys don't...",
+      "No!",
+      "(Loud crying)",
+      "No no no no… NOOOOOOO!"
+     ],
+     "en": null,
+     "es": [
+      "(Llanto a moco tendido)",
+      "Los chicos no lloran",
+      "Los chicos no...",
+      "¡No!",
+      "(Llanto a moco tendido)",
+      "¡No no no no… NOOOOOOO!"
+     ],
+     "eu": [
+      "(Negar zotinka)",
+      "Mutilek ez dute negarrik egiten",
+      "Mutilek ez dute...",
+      "Ez!",
+      "(Negar zotinka)",
+      "Ez ez ez ez… EEEEEZ!"
+     ]
+    },
+    {
+     "from": 10,
+     "to": 10,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Lágrimas de hombres"
+     ],
+     "en": [
+      "Men's tears"
+     ],
+     "es": null,
+     "eu": [
+      "Gizonen malkak"
+     ]
+    },
+    {
+     "from": 11,
+     "to": 19,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Cis men's tears",
+      "(Loud crying)",
+      "How delightful, men do cry",
+      "No!",
+      "(Laughing)",
+      "I can't believe they're not dry",
+      "Just add water",
+      "Tears of cis men",
+      "Due to global warming"
+     ],
+     "en": null,
+     "es": [
+      "Lágrimas de hombres cis",
+      "(Llanto a moco tendido)",
+      "Qué delicia, los hombres sí lloran",
+      "¡No!",
+      "(Risas)",
+      "No me puedo creer que no estén secas",
+      "Solo añade agua",
+      "Lágrimas de hombres cis",
+      "Por el calentamiento global"
+     ],
+     "eu": [
+      "Gizon zisen malkak",
+      "(Negar zotinka)",
+      "Zein gozagarria, gizonek negar egiten dute",
+      "Ez!",
+      "(Barreak)",
+      "Ezin dut sinetsi lehor ez daudenik",
+      "Gehitu ura besterik ez",
+      "Gizon zisen malkak",
+      "Berotze globalagatik"
+     ]
+    },
+    {
+     "from": 20,
+     "to": 20,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Por el primer gol de tu hijo"
+     ],
+     "en": [
+      "For your son's first goal"
+     ],
+     "es": null,
+     "eu": [
+      "Zure semearen lehen golagatik"
+     ]
+    },
+    {
+     "from": 21,
+     "to": 21,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "While cutting onions"
+     ],
+     "en": null,
+     "es": [
+      "Cortando cebolla"
+     ],
+     "eu": [
+      "Tipula mozten"
+     ]
+    },
+    {
+     "from": 22,
+     "to": 22,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "No fuiste el más musculoso?"
+     ],
+     "en": [
+      "Weren't you the most ripped?"
+     ],
+     "es": null,
+     "eu": [
+      "Ez al zinen zu muskulatsuena?"
+     ]
+    },
+    {
+     "from": 23,
+     "to": 24,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "From the pain of a toothache",
+      "Great on cornflakes!"
+     ],
+     "en": null,
+     "es": [
+      "Del dolor de muelas",
+      "¡Buenísimas con cereales!"
+     ],
+     "eu": [
+      "Hortz-minaren ondorioz",
+      "Ederki doaz kornflakesekin!"
+     ]
+    },
+    {
+     "from": 25,
+     "to": 26,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Tu equipo de fútbol perdió",
+      "Eres un hombre?"
+     ],
+     "en": [
+      "Your football team lost",
+      "Are you a man?"
+     ],
+     "es": null,
+     "eu": [
+      "Zure futbol taldeak galdu du",
+      "Gizona zara?"
+     ]
+    },
+    {
+     "from": 27,
+     "to": 28,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "No no no no no no no no no no",
+      "(Laughing)"
+     ],
+     "en": null,
+     "es": [
+      "No no no no no no no no no no",
+      "(Risas)"
+     ],
+     "eu": [
+      "Ez ez ez ez ez ez ez ez ez ez",
+      "(Barreak)"
+     ]
+    },
+    {
+     "from": 29,
+     "to": 29,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Lágrimas de hombres cis!"
+     ],
+     "en": [
+      "Cis men's tears!"
+     ],
+     "es": null,
+     "eu": [
+      "Gizon zisen malkak!"
+     ]
+    },
+    {
+     "from": 30,
+     "to": 30,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Rarities, the perfect touch for any evening look."
+     ],
+     "en": null,
+     "es": [
+      "Rarezas, el toque perfecto para cualquier look de noche."
+     ],
+     "eu": [
+      "Bitxikeriak, edozein gaueko itxuratarako ukitu perfektua."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 0,
+   "line": 16,
+   "original": "I can't believe they're not dry",
+   "issue": "Parody of the ad slogan 'I can't believe it's not butter'; rendered as a parody of the slogan, es/eu lose the exact reference."
+  },
+  {
+   "block": 0,
+   "line": 30,
+   "original": "Rarities, the perfect touch for any evening look.",
+   "issue": "Sounds like a perfume/fashion advert voice-over; 'Rarities' possibly a brand or product name - translated as a common noun, check."
+  },
+  {
+   "block": 0,
+   "line": 22,
+   "original": "No fuiste el más musculoso?",
+   "issue": "Assumed 'musculoso' generic masculine addressed to a cis man (mocking); en rendered gender-neutral."
+  }
+ ]
+}

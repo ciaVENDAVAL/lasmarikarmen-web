@@ -1,0 +1,443 @@
+{
+ "song": "Ratón vacilón",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "other",
+     "skip": true,
+     "keep": false,
+     "orig": [
+      "Kiltreo Oskuro con *Las Marikarmen *"
+     ],
+     "en": null,
+     "es": null,
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 1,
+   "segments": [
+    {
+     "from": 0,
+     "to": 7,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "en tu coxe suena bakalao",
+      "yasta to pintao yo no veo bien",
+      "sin pasar x la olla voy",
+      "columpiao vasileo preparao parder",
+      "yo kiero ketu me axuxes ke",
+      "suenen las xuxes kedame peluxe, digo",
+      "traigo un material pepino pa",
+      "poneme fino subime a baila contigo"
+     ],
+     "en": [
+      "your car's blasting bakalao",
+      "I'm already all painted, I can't see right",
+      "without going through the pot I go",
+      "swinging, teasing, ready to get lost",
+      "I want you to squeeze me so that",
+      "the candies ring, get me a plushie, I mean",
+      "I bring killer stuff so",
+      "get me nice, take me up to dance with you"
+     ],
+     "es": null,
+     "eu": [
+      "zure kotxean bakalaoa entzuten da",
+      "jada dena margotuta, ez dut ondo ikusten",
+      "eltzetik pasatu gabe noa",
+      "kulunkatuta, zirikatzen, prest galtzeko",
+      "nahi dut besarkatzea nazazun, eta",
+      "entzun daitezela gozokiak, emaidazu peluxea, esan dut",
+      "material bikaina dakart, eta",
+      "fin jarri nazazu, igo nazazu zurekin dantzatzera"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 2,
+   "segments": [
+    {
+     "from": 0,
+     "to": 7,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "me creo ke soy un dragon",
+      "hexo de luces y fuego",
+      "voy to moñeko esa es la verda",
+      "pura sustancia y jaleo",
+      "llevo un xanda suzio y nose baila",
+      "pero toy motivao y takoneo",
+      "este viaje no se pue akaba",
+      "me como to loke veo"
+     ],
+     "en": [
+      "I think I'm a dragon",
+      "made of lights and fire",
+      "I'm all dolled up, that's the truth",
+      "pure substance and ruckus",
+      "I'm wearing a dirty tracksuit and I can't dance",
+      "but I'm motivated and I stomp my heels",
+      "this trip can't end",
+      "I eat everything I see"
+     ],
+     "es": null,
+     "eu": [
+      "dragoi naizela uste dut",
+      "argiz eta suz egina",
+      "panpina bezala noa, hori da egia",
+      "substantzia hutsa eta zalaparta",
+      "txandal zikina daramat eta ez dakit dantzatzen",
+      "baina motibatuta nago eta orpoa jotzen dut",
+      "bidai hau ezin da amaitu",
+      "ikusten dudan guztia jaten dut"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 3,
+   "segments": [
+    {
+     "from": 0,
+     "to": 7,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Entre curvas me has camelado",
+      "adicta dopada dame sado rabo",
+      "Sirenita voy al toke lucecita todo loke",
+      "En la feria te doy choke to salvaje mononoke",
+      "En la jaula ereh mi amo",
+      "Me atas me subes dame falo rabo",
+      "Todo brilla lucecitas engranajes y tetitas",
+      "Soy tu polvo pika pika to salida to Sueltita"
+     ],
+     "en": [
+      "Among curves you've sweet-talked me",
+      "addicted, doped, give me sado cock",
+      "Little mermaid I'm on it, little light, all of it",
+      "At the fair I crash into you, all wild Mononoke",
+      "In the cage you're my master",
+      "You tie me, you lift me up, give me cock",
+      "Everything glitters, little lights, gears and little tits",
+      "I'm your fuck, pika pika, all horny, all loose"
+     ],
+     "es": null,
+     "eu": [
+      "kurben artean limurtu nauzu",
+      "adikta, dopatuta, emaidazu sado buztana",
+      "sirenatxoa, berehala noa, argitxoa, dena",
+      "azokan talka egiten dizut, basati-basati mononoke",
+      "kaiolan zaude nire jabe",
+      "lotzen nauzu, igotzen nauzu, emaidazu falo buztana",
+      "dena distiratsu, argitxoak, engranajeak eta titixkak",
+      "zure polboa naiz, pika pika, irteteko prest, aske-aske"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 4,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Entre ese humo te quiero encontrar",
+      "Tengo el latido que me va a explotar",
+      "Esto sí que es una atracción letal",
+      "Porque esa luz es la de tu mirá"
+     ],
+     "en": [
+      "In that smoke I want to find you",
+      "I've got a heartbeat that's about to burst me",
+      "Now this is a lethal attraction",
+      "Because that light is the one in your gaze"
+     ],
+     "es": null,
+     "eu": [
+      "Kea horren artean zu aurkitu nahi zaitut",
+      "Lehertu behar nauen bihotz-taupada daukat",
+      "Hau bai erakarmen hilgarria",
+      "Zure begirada da argi hori eta"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 6,
+   "segments": [
+    {
+     "from": 0,
+     "to": 7,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Subete conmigo al raton vacilon",
+      "Tu sabes ke yo contigo me pongo facilón",
+      "Tas fumando un piti-no tienes mi bombón",
+      "Entre el humo y tu boka tengo un buen calentón",
+      "En los coches choke, tiritando e la gustera",
+      "Te consigo un peluxe a golpe deskopeta",
+      "Tu mira frente ala mía en el baile e la verbena",
+      "Debajo del vestio habita una sirena"
+     ],
+     "en": [
+      "Climb up with me on the Ratón Vacilón",
+      "You know with you I get easy",
+      "You're smoking a ciggie, you don't have my hottie",
+      "Between the smoke and your mouth I'm good and horny",
+      "In the bumper cars, shivering with pleasure",
+      "I win you a plushie by shotgun blast",
+      "You look right across from me at the dance at the fiesta",
+      "Under the dress lives a mermaid"
+     ],
+     "es": null,
+     "eu": [
+      "Igo zaitez nirekin Ratón Vacilónera",
+      "Badakizu zurekin errazegi jartzen naizela",
+      "Pitillo bat erretzen ari zara, ez duzu nire bonboia",
+      "Kearen eta zure ahoaren artean berotasun galanta dut",
+      "Talka-autoetan, gustuz dardarka",
+      "Peluxe bat lortzen dizut eskopeta-kolpez",
+      "Begira nazazu aurrez aurre dantzaldian, jaian",
+      "Soinekoaren azpian sirena bat bizi da"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 7,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Bajo dando tumbos por la cuesta de la feria",
+      "Por bulerias te entro a baila me ponen a camela",
+      "roneo bien flamenkita agarro fuerte tu melena",
+      "Tus ganas y las mias dando rumbo a una certeza"
+     ],
+     "en": [
+      "I go down stumbling along the fairground slope",
+      "To bulerías I come in to dance with you, they make me swoon",
+      "I flirt real flamenca-style, I grab your mane tight",
+      "Your desire and mine heading toward a certainty"
+     ],
+     "es": null,
+     "eu": [
+      "Behera nator estropezuka azokako aldapatik",
+      "Bulerietan zurekin dantzatzera sartzen naiz, maitemintzen naute",
+      "flamenkito ondo ligatzen dut, zure ilea indarrez heltzen dut",
+      "Zure gogoak eta nireak ziurtasun baterantz"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 8,
+   "segments": [
+    {
+     "from": 0,
+     "to": 1,
+     "lang": "eu",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Txosnetan zebilen",
+      "eta orain dabil barraketan"
+     ],
+     "en": [
+      "was hanging around the txosnas",
+      "and now is hanging around the fairground stalls"
+     ],
+     "es": [
+      "andaba por las txosnas",
+      "y ahora anda por las barracas"
+     ],
+     "eu": null
+    },
+    {
+     "from": 2,
+     "to": 13,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "me quedo mirando el graffiti",
+      "es él quien me quiere montar",
+      "dame muchas fichas",
+      "le espero en la pista",
+      "suena la vocina",
+      "danza kuduro me pega muy duro",
+      "el euskal folklore moviéndome el culo",
+      "me enamoré en los coches de choque",
+      "por esa femmme yo convoco al derroche",
+      "tanga de hilo harrijasotzaile",
+      "yo me enamoré en terapia de choque",
+      "vamos mi reine te veo brillar"
+     ],
+     "en": [
+      "I stay staring at the graffiti",
+      "it's him who wants to ride me",
+      "give me lots of tokens",
+      "I wait for him on the dance floor",
+      "the horn's blaring",
+      "kuduro dance hits me so hard",
+      "Basque folklore shaking my ass",
+      "I fell in love in the bumper cars",
+      "for that femmme I summon the splurge",
+      "g-string stone-lifter",
+      "I fell in love in shock therapy",
+      "come on my reine, I see you shining"
+     ],
+     "es": null,
+     "eu": [
+      "graffitia begira geratzen naiz",
+      "hura da niri ibili nahi didana",
+      "emaidazu fitxa asko",
+      "pistan zain dut",
+      "tuta jotzen du",
+      "kuduro dantzak oso gogor jotzen nau",
+      "euskal folklorea ipurdia mugiarazten",
+      "talka-autoetan maitemindu nintzen",
+      "femme horrengatik xahutzea deitzen dut",
+      "hari-tanga harrijasotzaile",
+      "talka-terapian maitemindu nintzen",
+      "goazen nire reine, distiratzen ikusten zaitut"
+     ]
+    },
+    {
+     "from": 14,
+     "to": 14,
+     "lang": "eu",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "hemen da gure eguzkilorea"
+     ],
+     "en": [
+      "here is our eguzkilore"
+     ],
+     "es": [
+      "aquí está nuestro eguzkilore"
+     ],
+     "eu": null
+    },
+    {
+     "from": 15,
+     "to": 16,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "ez bitarra viene se mueve recabrón",
+      "qué pasa si te monto en el ratón maricón"
+     ],
+     "en": [
+      "ez bitarra (non-binary) comes, shakes it, fucking hell",
+      "what happens if I take you for a ride on the Ratón, faggot"
+     ],
+     "es": null,
+     "eu": [
+      "ez bitarra dator, mugitzen da, kabroi galanta",
+      "zer gertatzen da Ratónean ibiltzen bazaitut, maritxu"
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 1,
+   "line": 1,
+   "original": "yasta to pintao yo no veo bien",
+   "issue": "'pintao' unclear: painted/made-up, or high/trippy (colourful vision). Rendered literally."
+  },
+  {
+   "block": 1,
+   "line": 2,
+   "original": "sin pasar x la olla voy",
+   "issue": "'pasar por la olla' not a known idiom to me; rendered literally ('without going through the pot'). Maybe 'olla' = head or a drug-related pot."
+  },
+  {
+   "block": 2,
+   "line": 2,
+   "original": "voy to moñeko esa es la verda",
+   "issue": "'moñeko' probably 'muñeco' (doll/puppet) or 'moñeco' (out of it); rendered 'all dolled up'."
+  },
+  {
+   "block": 3,
+   "line": 2,
+   "original": "Sirenita voy al toke lucecita todo loke",
+   "issue": "'todo loke' = 'todo lo que' but with no continuation; may be 'todo loco'. Rendered 'all of it'."
+  },
+  {
+   "block": 6,
+   "line": 2,
+   "original": "Tas fumando un piti-no tienes mi bombón",
+   "issue": "Hyphen 'piti-no tienes' unclear; read as 'piti, no tienes mi bombón'."
+  },
+  {
+   "block": 6,
+   "line": 4,
+   "original": "En los coches choke, tiritando e la gustera",
+   "issue": "'gustera' unknown, guessed as a word for pleasure ('gustito'); rendered 'with pleasure'."
+  },
+  {
+   "block": 7,
+   "line": 1,
+   "original": "Por bulerias te entro a baila me ponen a camela",
+   "issue": "'me ponen a camela' unclear: 'camela' = love/swoon in caló, or 'a camelo' (sweet-talk). Rendered 'they make me swoon'."
+  },
+  {
+   "block": 8,
+   "line": 11,
+   "original": "tanga de hilo harrijasotzaile",
+   "issue": "harrijasotzaile = stone-lifter (Basque rural sport). Rendered 'g-string stone-lifter'; the Basque word stays as pun on strength."
+  },
+  {
+   "block": 8,
+   "line": 12,
+   "original": "yo me enamoré en terapia de choque",
+   "issue": "Pun between 'coches de choque' (bumper cars) and 'terapia de choque' (shock therapy); English cannot keep the same word 'choque' in both."
+  },
+  {
+   "block": 8,
+   "line": 14,
+   "original": "hemen da gure eguzkilorea",
+   "issue": "'eguzkilore' = sun-flower, also the carline thistle hung on Basque doors for protection. Kept the Basque word."
+  },
+  {
+   "block": 8,
+   "line": 15,
+   "original": "ez bitarra viene se mueve recabrón",
+   "issue": "Mixed-language line: 'ez bitarra' (non-binary) + Spanish. Treated as Spanish, kept 'ez bitarra' in the Basque version."
+  },
+  {
+   "block": 8,
+   "line": 16,
+   "original": "qué pasa si te monto en el ratón maricón",
+   "issue": "'montar' = to give a ride / to mount (sexual) and 'ratón' = the ride; double meaning. 'maricón' rendered 'faggot' (reclaimed)."
+  }
+ ]
+}

@@ -1,0 +1,246 @@
+<title>Letras Las Marikarmen</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Letras de Las Marikarmen con traducción por sección a castellano, English y euskara.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Space+Mono:wght@400;700&display=swap">
+<style>
+/* Layout: sticky A–Z index on the left, one long column of songs on the right.
+   Each song = title, language chips, lyric stanzas with per-stanza translate chips, then a description + video block. */
+:root{
+  --bg:#0e0b12; --surface:#17121f; --surface2:#211a2d; --fg:#f4edf8; --muted:#a89bb8;
+  --line:#33283f; --accent:#ff3fa4; --accent-ink:#1a0612; --tr:#c3b0ff; --warn:#ffd36b;
+  --f-display:"Unbounded","Arial Black",system-ui,sans-serif;
+  --f-body:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"Space Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
+  --bg:#fbf5fa; --surface:#ffffff; --surface2:#f3e8f1; --fg:#1c1424; --muted:#6b5a7c;
+  --line:#e3d6ea; --accent:#c80e72; --accent-ink:#ffffff; --tr:#5a3bc2; --warn:#8a5a00; color-scheme:light}}
+:root[data-theme="light"]{
+  --bg:#fbf5fa; --surface:#ffffff; --surface2:#f3e8f1; --fg:#1c1424; --muted:#6b5a7c;
+  --line:#e3d6ea; --accent:#c80e72; --accent-ink:#ffffff; --tr:#5a3bc2; --warn:#8a5a00; color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto}
+header.hero{padding-block:40px 28px;display:grid;gap:14px}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(34px,7vw,76px);line-height:1;margin:0;text-wrap:balance;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--accent)}
+.lede{max-width:62ch;color:var(--muted);margin:0}
+.note{max-width:62ch;font-size:14px;color:var(--muted);border-left:3px solid var(--accent);padding-left:12px;margin:0}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-block:1px solid var(--line);
+  padding-block:10px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.bar .grp{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.bar .lbl{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.chip{font:600 13px/1 var(--f-mono);letter-spacing:.04em;border:1px solid var(--line);background:var(--surface);color:var(--fg);
+  padding:8px 11px;border-radius:999px;cursor:pointer;min-height:34px}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:40px;padding-top:28px;align-items:start}
+nav.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px);max-height:calc(100vh - 100px);overflow:auto;padding-right:6px}
+nav.toc input{width:100%;font:inherit;font-size:14px;padding:9px 12px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--fg);margin-bottom:10px}
+nav.toc ol{list-style:none;margin:0;padding:0;display:grid;gap:1px}
+nav.toc a{display:flex;justify-content:space-between;gap:8px;text-decoration:none;color:var(--fg);padding:6px 10px;border-radius:8px;font-size:15px;line-height:1.25}
+nav.toc a:hover{background:var(--surface2)}
+nav.toc a.on{background:var(--surface2);color:var(--accent);font-weight:600}
+nav.toc .pl{font-family:var(--f-mono);font-size:11px;color:var(--muted);flex:none;padding-top:2px}
+details.tocm{display:none}
+main{min-width:0}
+article.song{padding-block:34px 40px;border-top:1px solid var(--line)}
+article.song:first-child{border-top:0;padding-top:0}
+.song h2{font-family:var(--f-display);font-weight:800;font-size:clamp(24px,4.4vw,40px);line-height:1.08;margin:0 0 10px;text-wrap:balance;letter-spacing:-.01em}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px}
+.tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);color:var(--muted);padding:3px 8px;border-radius:6px}
+.tag.vid{color:var(--accent);border-color:var(--accent)}
+.stanza{display:grid;grid-template-columns:minmax(0,1fr);gap:6px;margin:0 0 22px;max-width:62ch}
+.stanza.after{opacity:.92;border-top:1px dashed var(--line);padding-top:18px}
+.tools{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.tools .chip{font-size:11px;padding:5px 9px;min-height:26px}
+.tools .lg{font-family:var(--f-mono);font-size:11px;color:var(--muted);margin-right:2px}
+.ln{margin:0;overflow-wrap:anywhere}
+.ln.tr{color:var(--tr)}
+.ln.sp{height:.6em}
+.ln .tg{font-family:var(--f-mono);font-size:.78em;color:var(--accent);margin-right:6px}
+.ln.sg{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-top:4px}
+.ln.cr{font-family:var(--f-mono);font-size:13px;color:var(--muted);font-style:italic}
+.ln .o{display:block;font-size:.82em;color:var(--muted);opacity:.85}
+.q{font:700 11px/1 var(--f-mono);display:inline-grid;place-items:center;width:18px;height:18px;margin-left:6px;border-radius:50%;
+  border:1px solid var(--warn);color:var(--warn);background:transparent;cursor:pointer;vertical-align:2px;padding:0}
+.q:hover,.q[aria-expanded="true"]{background:var(--warn);color:var(--bg)}
+.qtip{margin:2px 0 6px;font-size:13px;line-height:1.4;color:var(--warn);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.hide-q .q{display:none}
+.desc{margin-top:26px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;display:grid;gap:16px;max-width:760px}
+.desc h3{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}
+.desc p{margin:0;max-width:62ch}
+.desc .pend{color:var(--muted);font-style:italic}
+dl.cred{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 16px;margin:0;font-size:15px}
+dl.cred dt{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+dl.cred dd{margin:0}
+.video{display:grid;gap:8px}
+.vbtn{position:relative;aspect-ratio:16/9;width:100%;border:1px solid var(--line);border-radius:12px;background:var(--surface2) center/cover no-repeat;cursor:pointer;display:grid;place-items:center;color:#fff;padding:0;overflow:hidden}
+.vbtn::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(14,11,18,.75))}
+.vbtn span{position:relative;z-index:1;font:700 15px var(--f-mono);background:var(--accent);color:var(--accent-ink);padding:12px 18px;border-radius:999px}
+.video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:12px;background:#000}
+.vlink{font-family:var(--f-mono);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 16px}
+.vnote{font-size:13px;color:var(--muted);margin:0}
+.src{font-size:13px;color:var(--muted)}
+.top{justify-self:start;font-family:var(--f-mono);font-size:13px;letter-spacing:.04em;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 14px;color:var(--fg);margin-top:18px;display:inline-block}
+.top:hover{border-color:var(--accent);color:var(--accent)}
+.src a{color:var(--muted)}
+details.dq{font-size:14px}
+details.dq summary{cursor:pointer;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:var(--warn)}
+details.dq ul{margin:8px 0 0;padding-left:18px;display:grid;gap:8px;color:var(--muted)}
+details.dq li b{color:var(--fg);font-weight:600}
+footer{margin-top:40px;padding-top:24px;border-top:1px solid var(--line);display:grid;gap:12px;font-size:14px;color:var(--muted)}
+footer .soc{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:var(--f-mono);font-size:13px}
+@media (max-width:900px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:0}
+  nav.toc{display:none}
+  details.tocm{display:block;margin-bottom:14px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+  details.tocm summary{cursor:pointer;padding:12px 14px;font-family:var(--f-mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+  details.tocm ol{list-style:none;margin:0;padding:0 8px 10px;display:grid}
+  details.tocm a{display:flex;justify-content:space-between;gap:8px;padding:9px 8px;text-decoration:none;color:var(--fg);border-top:1px solid var(--line)}
+  .bar{position:static;padding-block:10px}
+  dl.cred{grid-template-columns:minmax(0,1fr)}
+  dl.cred dt{padding-top:6px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<div class="wrap">
+<header class="hero">
+  <div class="eyebrow"><a href="./" style="color:inherit">Las Marikarmen</a> · Barcelona · Collserola · <a href="musica.html" style="color:inherit">← Música</a></div>
+  <h1>Letras <em>y</em> traducciones</h1>
+  <p class="lede">Banda travesti nutrida del transfeminismo y lo queer. Mezclamos música, performance, drag y vivencias para destruir el heteropatriarcado, la cis-normalidad y el binarismo obligado.</p>
+  <p class="note">Las letras van tal cual, con su jerga. Cada estrofa tiene botones para pasarla a English, castellano o euskara; lo que ya está en ese idioma se queda como está. Las traducciones están hechas con IA y todavía sin revisar: el <b>?</b> marca las líneas dudosas.</p>
+</header>
+<div class="bar" role="toolbar" aria-label="Opciones de traducción">
+  <div class="grp"><span class="lbl">Traducir todo</span>
+    <button class="chip" data-g="orig" aria-pressed="true">Original</button>
+    <button class="chip" data-g="en" aria-pressed="false">English</button>
+    <button class="chip" data-g="es" aria-pressed="false">Castellano</button>
+    <button class="chip" data-g="eu" aria-pressed="false">Euskara</button></div>
+  <div class="grp">
+    <button class="chip" id="tOrig" aria-pressed="false">Ver original debajo</button>
+    <button class="chip" id="tQ" aria-pressed="true">Dudas ?</button></div>
+</div>
+<div class="layout" id="indice">
+  <nav class="toc" aria-label="Índice"><input id="flt" type="search" placeholder="Buscar canción" aria-label="Buscar canción"><ol id="tocL"></ol></nav>
+  <main>
+    <details class="tocm"><summary>Índice (<span id="cnt"></span> canciones)</summary><ol id="tocM"></ol></details>
+    <div id="songs"></div>
+    <footer>
+      <div class="soc" id="soc"></div>
+      <div>Letras corregidas por la banda. Traducciones y dudas generadas con IA, pendientes de revisión. Créditos y fechas tomados de YouTube, SoundCloud, Spotify y lasmarikarmen.com.</div>
+    </footer>
+  </main>
+</div>
+</div>
+
+<script>
+const EMBED=__EMBED__;
+const SONGS=__DATA__;
+const LN={en:"English",es:"Castellano",eu:"Euskara"};
+const LC={es:"ES",en:"EN",eu:"EU",ru:"RU",gl:"GL",ca:"CA",other:"··"};
+const $=(s,r=document)=>r.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let G="orig", showO=false;
+const BM={}; // per-block override: "songIdx:blockIdx" -> lang or "orig"
+
+function avail(b){const a={};for(const t of["en","es","eu"]){a[t]=b.segs.some(s=>!s.skip&&!s.keep&&s.lang!==t&&s[t])}return a}
+function modeOf(si,bi){return BM[si+":"+bi]||G}
+function lineHTML(l,q,key){
+  let t=l.text;
+  if(l.cls==="cr")return `<p class="ln cr">${esc(t)}</p>`;
+  if(!t.trim())return `<p class="ln sp"></p>`;
+  if(/^\[[^\]]+\]$/.test(t.trim()))return `<p class="ln sg">${esc(t)}</p>`;
+  const m=t.match(/^(\[[^\]]+\])\s*(.*)$/);
+  let h=m?`<span class="tg">${esc(m[1])}</span>${esc(m[2])}`:esc(t);
+  if(l.o&&showO){h+=`<span class="o">${esc(l.o)}</span>`}
+  if(q)h+=`<button class="q" type="button" aria-expanded="false" data-k="${key}" aria-label="Duda de traducción">?</button>`;
+  return `<p class="ln${l.tr?" tr":""}">${h}</p>`+(q?`<div class="qtip" hidden id="qt-${key}">${esc(q.issue)}</div>`:"");
+}
+function stanzaHTML(si,bi){
+  const b=SONGS[si].blocks[bi], m=modeOf(si,bi), av=avail(b);
+  const qm={};(b.qs||[]).forEach(q=>qm[q.line]=q);
+  let lines=[];
+  for(const s of b.segs){
+    s.o.forEach((o,i)=>{
+      const idx=s.from+i;
+      if(s.skip){lines.push({text:o,cls:"cr",idx});return}
+      const T=(m!=="orig"&&m!==s.lang&&!s.keep&&s[m])?s[m][i]:null;
+      lines.push(T!==null&&T!==undefined?{text:T,tr:true,o,idx}:{text:o,idx});
+    });
+  }
+  const langs=[...new Set(b.segs.filter(s=>!s.skip).map(s=>s.lang))];
+  let tools="";
+  const opts=["en","es","eu"].filter(t=>av[t]);
+  if(opts.length){
+    tools=`<div class="tools"><span class="lg">${langs.map(l=>LC[l]||l).join("·")} →</span>`+
+      ["orig",...opts].map(t=>`<button class="chip" type="button" data-s="${si}:${bi}" data-m="${t}" aria-pressed="${m===t}">${t==="orig"?"Original":LC[t]}</button>`).join("")+`</div>`;
+  }
+  const body=lines.map(l=>{const q=qm[l.idx];return lineHTML(l,q,si+"-"+bi+"-"+l.idx)}).join("");
+  return `<section class="stanza${b.after?" after":""}" id="st-${si}-${bi}">${tools}<div>${body}</div></section>`;
+}
+function descHTML(si){
+  const s=SONGS[si], d=s.desc||{};
+  let h=`<h3>Descripción</h3>`;
+  if(d.text&&d.text.length)h+=d.text.map(p=>`<p>${esc(p)}</p>`).join("");
+  else h+=`<p class="pend">Descripción pendiente.</p>`;
+  if(d.credits&&d.credits.length)h+=`<dl class="cred">`+d.credits.map(c=>`<dt>${esc(c[0])}</dt><dd>${c[2]?`<a href="${c[2]}" target="_blank" rel="noopener">${esc(c[1])}</a>`:esc(c[1])}</dd>`).join("")+`</dl>`;
+  if(d.video){
+    const id=d.video, url="https://www.youtube.com/watch?v="+id;
+    h+=`<div class="video">`;
+    if(EMBED)h+=`<button class="vbtn" type="button" data-v="${id}" style="background-image:url(https://i.ytimg.com/vi/${id}/hqdefault.jpg)" aria-label="Reproducir videoclip de ${esc(s.title)}"><span>▶ Ver aquí</span></button>`;
+    h+=`<div class="vlink"><a href="${url}" target="_blank" rel="noopener">Ver en YouTube ↗</a>`+(d.links||[]).map(l=>`<a href="${l[1]}" target="_blank" rel="noopener">${esc(l[0])} ↗</a>`).join("")+`</div>`;
+    h+=`<p class="vnote">Subtítulos: pulsa CC en el reproductor. Salen si el canal los ha subido.</p></div>`;
+  }else{
+    h+=`<div class="vlink"><a href="https://www.youtube.com/@lasmarikarmen" target="_blank" rel="noopener">Canal de YouTube ↗</a></div><p class="vnote">Esta canción no tiene videoclip en el canal.</p>`;
+  }
+  if(d.src&&d.src.length)h+=`<div class="src">Fuentes: `+d.src.map(x=>`<a href="${x[1]}" target="_blank" rel="noopener">${esc(x[0])}</a>`).join(" · ")+`</div>`;
+  const qs=[];s.blocks.forEach(b=>(b.qs||[]).forEach(q=>qs.push(q)));
+  if(qs.length)h+=`<details class="dq"><summary>Dudas de traducción (${qs.length})</summary><ul>`+qs.map(q=>`<li><b>${esc(q.original)}</b><br>${esc(q.issue)}</li>`).join("")+`</ul></details>`;
+  return `<div class="desc">${h}</div>`;
+}
+function songHTML(si){
+  const s=SONGS[si];
+  const langs=new Set();s.blocks.forEach(b=>(b.segs||[]).forEach(g=>{if(!g.skip)langs.add(g.lang)}));
+  const tags=[...langs].map(l=>`<span class="tag">${LC[l]||l}</span>`).join("")+(s.desc&&s.desc.video?`<span class="tag vid">vídeo</span>`:"");
+  return `<article class="song" id="${s.slug}"><h2>${esc(s.title)}</h2><div class="meta">${tags}</div>`+
+    s.blocks.map((b,bi)=>b.hr?`<div class="stanza" style="margin:6px 0 20px"><hr style="border:0;border-top:1px dashed var(--line);width:100%"></div>`:`<div data-b="${si}:${bi}">${stanzaHTML(si,bi)}</div>`).join("")+descHTML(si)+`<a class="top" href="#indice">↑ Índice</a></article>`;
+}
+function renderAll(){$("#songs").innerHTML=SONGS.map((_,i)=>songHTML(i)).join("")}
+function rerenderBlock(si,bi){const w=$(`[data-b="${si}:${bi}"]`);w.innerHTML=stanzaHTML(si,bi)}
+function buildToc(){
+  const li=SONGS.map(s=>`<li data-t="${esc(s.title.toLowerCase())}"><a href="#${s.slug}">${esc(s.title)}${s.desc&&s.desc.video?'<span class="pl">▶</span>':''}</a></li>`).join("");
+  $("#tocL").innerHTML=li;$("#tocM").innerHTML=li;$("#cnt").textContent=SONGS.length;
+  $("#flt").addEventListener("input",e=>{const v=e.target.value.toLowerCase().trim();$("#tocL").querySelectorAll("li").forEach(x=>x.hidden=v&&!x.dataset.t.includes(v))});
+  $("#tocM").addEventListener("click",e=>{if(e.target.closest("a"))$(".tocm").open=false});
+  const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){document.querySelectorAll("nav.toc a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+en.target.id))}})},{rootMargin:"-20% 0px -70% 0px"});
+  document.querySelectorAll("article.song").forEach(a=>io.observe(a));
+}
+document.addEventListener("click",e=>{
+  const g=e.target.closest("[data-g]");
+  if(g){G=g.dataset.g;for(const k in BM)delete BM[k];document.querySelectorAll("[data-g]").forEach(b=>b.setAttribute("aria-pressed",b===g));renderAll();return}
+  const m=e.target.closest("[data-m]");
+  if(m){const [si,bi]=m.dataset.s.split(":").map(Number);BM[si+":"+bi]=m.dataset.m;rerenderBlock(si,bi);return}
+  const q=e.target.closest(".q");
+  if(q){const t=document.getElementById("qt-"+q.dataset.k);if(t){t.hidden=!t.hidden;q.setAttribute("aria-expanded",!t.hidden)}return}
+  const tp=e.target.closest(".top");
+  if(tp){const d=$(".tocm");if(d&&d.offsetParent!==null)d.open=true;return}
+  const v=e.target.closest("[data-v]");
+  if(v){const id=v.dataset.v;const f=document.createElement("iframe");
+    f.src="https://www.youtube-nocookie.com/embed/"+id+"?autoplay=1&cc_load_policy=1&cc_lang_pref=es&hl=es&rel=0";
+    f.title="Videoclip";f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";f.referrerPolicy="strict-origin-when-cross-origin";f.allowFullscreen=true;
+    v.replaceWith(f);return}
+});
+$("#tOrig").addEventListener("click",e=>{showO=!showO;e.currentTarget.setAttribute("aria-pressed",showO);renderAll()});
+$("#tQ").addEventListener("click",e=>{const on=e.currentTarget.getAttribute("aria-pressed")!=="true";e.currentTarget.setAttribute("aria-pressed",on);document.body.classList.toggle("hide-q",!on)});
+$("#soc").innerHTML=[["YouTube","https://www.youtube.com/@lasmarikarmen"],["Spotify","https://open.spotify.com/artist/5Rh261ShPjFw5zqis2nbtF"],["Bandcamp","https://lasmarikarmen.bandcamp.com/"],["SoundCloud","https://soundcloud.com/lasmarikarmen"],["Instagram","https://www.instagram.com/lasmarikarmen/"]].map(x=>`<a href="${x[1]}" target="_blank" rel="noopener">${x[0]}</a>`).join("");
+renderAll();buildToc();
+</script>

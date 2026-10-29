@@ -1,0 +1,552 @@
+{
+ "song": "Ladyboi con Capitano Barbacoño",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "[Hilary Hurst] We are interrupting this program to bring you a special message from the women's army",
+      "queer queer queer army",
+      "[Bruce LaBruce] Heterosexuality is the opiate of the masses",
+      "masses ma-ma-masses"
+     ],
+     "en": null,
+     "es": [
+      "[Hilary Hurst] Interrumpimos este programa para traeros un mensaje especial del ejército de mujeres",
+      "ejército queer queer queer",
+      "[Bruce LaBruce] La heterosexualidad es el opio del pueblo",
+      "masas ma-ma-masas"
+     ],
+     "eu": [
+      "[Hilary Hurst] Programa hau eten egiten dugu emakumeen armadaren mezu berezi bat ekartzeko",
+      "armada queer queer queer",
+      "[Bruce LaBruce] Heterosexualitatea herriaren opioa da",
+      "masak ma-ma-masak"
+     ]
+    },
+    {
+     "from": 4,
+     "to": 4,
+     "lang": "es",
+     "skip": false,
+     "keep": true,
+     "orig": [
+      "Ma-ri-kar-men Ma-ri-kar-men"
+     ],
+     "en": [
+      "Ma-ri-kar-men Ma-ri-kar-men"
+     ],
+     "es": null,
+     "eu": [
+      "Ma-ri-kar-men Ma-ri-kar-men"
+     ]
+    },
+    {
+     "from": 5,
+     "to": 6,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Marikas, trans, trabolos, bolleras",
+      "monstruas, putas, desalojadas"
+     ],
+     "en": [
+      "Fags, trans, trabolos, dykes",
+      "monsters, whores, evicted"
+     ],
+     "es": null,
+     "eu": [
+      "Marikoiak, transak, trabolo, bollerak",
+      "munstroak, putak, kaleratuak"
+     ]
+    },
+    {
+     "from": 7,
+     "to": 7,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "[Aunt Ida (Edith Massey)] The world of heterosexual is a sick and boring life"
+     ],
+     "en": null,
+     "es": [
+      "[Aunt Ida (Edith Massey)] El mundo hetero es una vida enferma y aburrida"
+     ],
+     "eu": [
+      "[Aunt Ida (Edith Massey)] Heteroen mundua bizitza gaixo eta aspergarria da"
+     ]
+    },
+    {
+     "from": 8,
+     "to": 8,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "[La Veneno] He sido la travesti más guapa del mundo"
+     ],
+     "en": [
+      "[La Veneno] I've been the prettiest travesti in the world"
+     ],
+     "es": null,
+     "eu": [
+      "[La Veneno] Munduko trabesti politena izan naiz"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 1,
+   "segments": [
+    {
+     "from": 0,
+     "to": 7,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Soy el ladyboi, travesti yo no soy barata,",
+      "tengo diamantes escondidos en el bocata",
+      "pierna larga, minifalda toa una niñata",
+      "callarme?...quita boca-piñata",
+      "Las monstruas en escena digierete este tema",
+      "ketu mente sena jena",
+      "trabolo en tu barrio, mira tú qué crema",
+      "cuidado si te acercas que también te quema"
+     ],
+     "en": [
+      "I'm the ladyboi, this travesti ain't cheap, babe,",
+      "got diamonds hid in my sandwich",
+      "long legs, miniskirt, total brat",
+      "shut me up?... get lost, piñata-mouth",
+      "Monsters on stage, swallow this tune",
+      "ketu mente sena jena",
+      "trabolo in your hood, ain't that a treat",
+      "careful if you come close, she'll burn you too"
+     ],
+     "es": null,
+     "eu": [
+      "Ni ladyboia naiz, trabesti hau ez da merkea,",
+      "diamanteak ditut ezkutatuta nire ogitartekoan",
+      "hanka luzeak, gona motza, neskato hutsa",
+      "isilarazi nahi nauzu?... aldendu, ahoa-piñata",
+      "Munstruak agertokian, irentsezazu gai hau",
+      "ketu mente sena jena",
+      "trabolo zure auzoan, begira zer pasada",
+      "kontuz hurbiltzen bazara zu ere erretzen zaitu"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 2,
+   "segments": [
+    {
+     "from": 0,
+     "to": 7,
+     "lang": "en",
+     "skip": false,
+     "keep": true,
+     "orig": [
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi"
+     ],
+     "en": null,
+     "es": [
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi"
+     ],
+     "eu": [
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 3,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "[Kathleen Hanna] All girls to the front, i'm not kidding",
+      "[Wendy-O Matik] I am not on display for you to yell bitch or baby",
+      "Binary disease",
+      "[Kathleen Hanna] We got a fucking right to be hostile"
+     ],
+     "en": null,
+     "es": [
+      "[Kathleen Hanna] Todas las chicas al frente, no es broma",
+      "[Wendy-O Matik] No estoy de escaparate para que me grites perra o nena",
+      "Enfermedad binaria",
+      "[Kathleen Hanna] Tenemos un puto derecho a ser hostiles"
+     ],
+     "eu": [
+      "[Kathleen Hanna] Neska guztiak aurrera, ez da txantxa",
+      "[Wendy-O Matik] Ez nago erakusgai zuk 'puta' edo 'maitia' oihukatzeko",
+      "Gaixotasun bitarra",
+      "[Kathleen Hanna] Eskubide putaren bat dugu hostil izateko"
+     ]
+    },
+    {
+     "from": 4,
+     "to": 5,
+     "lang": "ru",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Я не существую, я неизвестного пола",
+      "{Yo no existo, soy de género desconocido}"
+     ],
+     "en": [
+      "I don't exist, I'm of unknown gender",
+      "{I don't exist, I'm of unknown gender}"
+     ],
+     "es": [
+      "No existo, soy de género desconocido",
+      "{Yo no existo, soy de género desconocido}"
+     ],
+     "eu": [
+      "Ez naiz existitzen, genero ezezagunekoa naiz",
+      "{Yo no existo, soy de género desconocido}"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 4,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Te keas pasmaoa con mi caminar",
+      "mi uñas, mi barba, mis tacones de matar",
+      "tu armario de deseos da asquito chaval",
+      "no soy solo porno déjame dominar"
+     ],
+     "en": [
+      "You stand there gobsmacked by my strut",
+      "my nails, my beard, my killer heels",
+      "your closet of desires is kinda gross, dude",
+      "I'm not just porn, let me dominate"
+     ],
+     "es": null,
+     "eu": [
+      "Txundituta geratzen zara nire ibilerarekin",
+      "nire azazkalak, nire bizarra, nire takoi hiltzaileak",
+      "zure desiren armairuak nazka pixka bat ematen du, txo",
+      "ez naiz porno hutsa, utzi mandatzen"
+     ]
+    },
+    {
+     "from": 4,
+     "to": 7,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Las monstruas en escena digierete este tema",
+      "ketu mente sena j-ena",
+      "trabolo en tu barrio, mira tú qué crema",
+      "cuidado si te acercas que también te quema"
+     ],
+     "en": [
+      "Monsters on stage, swallow this tune",
+      "ketu mente sena jena",
+      "trabolo in your hood, ain't that a treat",
+      "careful if you come close, she'll burn you too"
+     ],
+     "es": null,
+     "eu": [
+      "Munstruak agertokian, irentsezazu gai hau",
+      "ketu mente sena jena",
+      "trabolo zure auzoan, begira zer pasada",
+      "kontuz hurbiltzen bazara zu ere erretzen zaitu"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 5,
+   "segments": [
+    {
+     "from": 0,
+     "to": 8,
+     "lang": "en",
+     "skip": false,
+     "keep": true,
+     "orig": [
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Ladyboi..."
+     ],
+     "en": null,
+     "es": [
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Ladyboi..."
+     ],
+     "eu": [
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Lady lady lady boi lady boi lady boi",
+      "Lady lady lady boi boi",
+      "Ladyboi..."
+     ]
+    }
+   ]
+  },
+  {
+   "block": 6,
+   "segments": [
+    {
+     "from": 0,
+     "to": 9,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Mira ese Ladyboi del barrio precario",
+      "viene a romper las reglas del escenario",
+      "junta los supuestos dale a no binario",
+      "tu mente yo quiero salir del armario",
+      "junta subleva organiza la rabia",
+      "transforma el entorno que eficacia",
+      "aplasta el sistema con elegancia",
+      "nuestras identidades no son falacia",
+      "aqui llega la disidesde el barrio precario",
+      "desde el margen"
+     ],
+     "en": [
+      "Look at that Ladyboi from the precarious hood",
+      "coming to break the rules of the stage",
+      "gather the so-called, go on, hit nonbinary",
+      "your mind, I want it out of the closet",
+      "unite, rise up, organise the rage",
+      "transform your surroundings, what efficiency",
+      "crush the system with elegance",
+      "our identities are no fallacy",
+      "here comes the dissidence from the precarious hood",
+      "from the margins"
+     ],
+     "es": null,
+     "eu": [
+      "Begira ladyboi hori auzo prekariokoa",
+      "dator oholtzako arauak apurtzera",
+      "bildu supostuak, emaiozu ez-binarioari",
+      "zure burua nahi dut armairutik atera",
+      "bildu, altxa, antolatu amorrua",
+      "eraldatu ingurunea, zer eraginkortasuna",
+      "zapaldu sistema dotoreziaz",
+      "gure identitateak ez dira falazia",
+      "hemen dator dis-identzia auzo prekariotik",
+      "ertzetik"
+     ]
+    },
+    {
+     "from": 10,
+     "to": 11,
+     "lang": "es",
+     "skip": false,
+     "keep": true,
+     "orig": [
+      "trabolo….tra...trr.aa..TRABOL...",
+      "marika...mmmm….marik...marika"
+     ],
+     "en": [
+      "trabolo….tra...trr.aa..TRABOL...",
+      "marika...mmmm….marik...marika"
+     ],
+     "es": null,
+     "eu": [
+      "trabolo….tra...trr.aa..TRABOL...",
+      "marika...mmmm….marik...marika"
+     ]
+    },
+    {
+     "from": 12,
+     "to": 12,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "[Kathleen Hanna] fucking right to be hostile"
+     ],
+     "en": null,
+     "es": [
+      "[Kathleen Hanna] puto derecho a ser hostiles"
+     ],
+     "eu": [
+      "[Kathleen Hanna] eskubide putaren bat hostil izateko"
+     ]
+    },
+    {
+     "from": 13,
+     "to": 13,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "trabolos… marikas..."
+     ],
+     "en": [
+      "trabolos… fags..."
+     ],
+     "es": null,
+     "eu": [
+      "trabolo… marikoiak..."
+     ]
+    },
+    {
+     "from": 14,
+     "to": 15,
+     "lang": "en",
+     "skip": false,
+     "keep": true,
+     "orig": [
+      "Ladyboi",
+      "iobydaL iobydaL iobydaL iobydaL"
+     ],
+     "en": null,
+     "es": [
+      "Ladyboi",
+      "iobydaL iobydaL iobydaL iobydaL"
+     ],
+     "eu": [
+      "Ladyboi",
+      "iobydaL iobydaL iobydaL iobydaL"
+     ]
+    },
+    {
+     "from": 16,
+     "to": 16,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "[Lynn Breedlove] This is the new feminism. If you don't like it, suck my dick."
+     ],
+     "en": null,
+     "es": [
+      "[Lynn Breedlove] Este es el nuevo feminismo. Si no te mola, chúpame la polla."
+     ],
+     "eu": [
+      "[Lynn Breedlove] Hau da feminismo berria. Gustatzen ez bazaizu, txupatu nire zakila."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 0,
+   "line": 5,
+   "original": "Marikas, trans, trabolos, bolleras",
+   "issue": "'trabolo' (travesti + bollo, gender-nonconforming/trans-masc-ish queer identity) has no English equivalent; kept as 'trabolos'. 'desalojadas' read as evicted (anti-gentrification)."
+  },
+  {
+   "block": 1,
+   "line": 1,
+   "original": "tengo diamantes escondidos en el bocata",
+   "issue": "'bocata' (sandwich) is probably a sexual innuendo (hidden diamonds = hidden genitals); rendered literally with sandwich."
+  },
+  {
+   "block": 1,
+   "line": 3,
+   "original": "callarme?...quita boca-piñata",
+   "issue": "'boca-piñata' is a made-up compound (mouth like a piñata, to be hit?); rendered literally."
+  },
+  {
+   "block": 1,
+   "line": 5,
+   "original": "ketu mente sena jena",
+   "issue": "'ketu mente sena jena' is rhyme filler/near-nonsense, possibly 'que tu mente sea ajena'; left as is in en/eu, would need confirmation."
+  },
+  {
+   "block": 1,
+   "line": 6,
+   "original": "trabolo en tu barrio, mira tú qué crema",
+   "issue": "'qué crema' = how cool/neat, also rhymes with 'quema'; rhyme not reproduced in en/eu."
+  },
+  {
+   "block": 3,
+   "line": 5,
+   "original": "{Yo no existo, soy de género desconocido}",
+   "issue": "Spanish gloss in braces: eu version keeps the Spanish gloss unchanged to preserve the original format; change if a Basque gloss is wanted."
+  },
+  {
+   "block": 4,
+   "line": 5,
+   "original": "ketu mente sena j-ena",
+   "issue": "Same nonsense/rhyme line as block 1."
+  },
+  {
+   "block": 6,
+   "line": 2,
+   "original": "junta los supuestos dale a no binario",
+   "issue": "Unclear: 'junta los supuestos, dale a no binario' - read as 'bring together the assumptions/so-called (categories), hit nonbinary'; could also be an imperative 'dale a' = press play on nonbinary."
+  },
+  {
+   "block": 6,
+   "line": 3,
+   "original": "tu mente yo quiero salir del armario",
+   "issue": "Ambiguous grammar: 'tu mente yo quiero salir del armario' - either 'I want your mind to come out of the closet' or 'I want to come out of the closet (with) your mind'."
+  },
+  {
+   "block": 6,
+   "line": 8,
+   "original": "aqui llega la disidesde el barrio precario",
+   "issue": "'disidesde' is a pun/portmanteau of 'disidencia' + 'desde' (dissidence from); not reproducible, rendered as 'dissidence from'."
+  }
+ ]
+}

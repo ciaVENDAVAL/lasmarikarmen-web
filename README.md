@@ -14,11 +14,13 @@ Short info on the home page, one page per topic:
 | Conciertos (próximas fechas + memorables) | `conciertos.html` |
 | Prensa | `prensa.html` |
 | Contacto + ficha artística | `contacto.html` |
+| Letras y traducciones (castellano; EN/ES/EU per verse) | `letras.html`, source in `letras/` |
 
 Social icons, contact and press kit appear once, in the footer of every page.
 Bottom left: pink triangle ▼ opens the accessibility options. Bottom right: ▲ back to top.
 
 **Gigs:** add lines under `gigs:` in `content/site.yaml` (posters in `assets/img/posters/`). Past dates move by themselves to "Lo petamos…", grouped by year (the site rebuilds every night).
+**Lyrics:** edit lyrics in `letras/songs.json`, translations in `letras/out/*.json`, descriptions and credits in `letras/build.py`. The site build regenerates `letras.html`.
 **Shop:** products are under `merch:` in `site.yaml`; remove a line when it sells out.
 
 ## Where things live

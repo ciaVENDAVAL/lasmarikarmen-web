@@ -1,0 +1,163 @@
+{
+ "song": "69 el número del amor",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "other",
+     "skip": true,
+     "keep": false,
+     "orig": [
+      "*Las Marikarmen*"
+     ],
+     "en": null,
+     "es": null,
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 1,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Tiene un brillito que me deslumbra la cara",
+      "cuatro afiladitas me dejó muy bien planchada",
+      "soñé con tu almohada y me imaginé tu cara",
+      "veo tu anillito al despertar por la mañana"
+     ],
+     "en": [
+      "It's got a little shine that dazzles my face",
+      "four sharp little ones left me properly flattened",
+      "I dreamt of your pillow and pictured your face",
+      "I see your little ring when I wake up in the morning"
+     ],
+     "es": null,
+     "eu": [
+      "Distira txiki bat dauka, aurpegia lausotzen didana",
+      "lau zorrotz txikik lau-lau utzi ninduten",
+      "zure burukoaz amets egin nuen eta zure aurpegia irudikatu",
+      "zure eraztuntxoa ikusten dut goizean esnatzean"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 3,
+   "segments": [
+    {
+     "from": 0,
+     "to": 6,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Todos los cartones que jugué",
+      "los que no gané",
+      "los que no pagué",
+      "a los que invité los jugaré contigo",
+      "los ganaré contigo",
+      "los perderé contigo",
+      "los llevaré adonde esté tu anillito"
+     ],
+     "en": [
+      "All the cards I ever played",
+      "the ones I didn't win",
+      "the ones I didn't pay for",
+      "the ones I treated people to I'll play with you",
+      "I'll win them with you",
+      "I'll lose them with you",
+      "I'll take them wherever your little ring is"
+     ],
+     "es": null,
+     "eu": [
+      "Jokatu ditudan kartoi guztiak",
+      "irabazi ez nituenak",
+      "ordaindu ez nituenak",
+      "gonbidatu nituenak zurekin jokatuko ditut",
+      "zurekin irabaziko ditut",
+      "zurekin galduko ditut",
+      "zure eraztuntxoa dagoen tokira eramango ditut"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 4,
+   "segments": [
+    {
+     "from": 0,
+     "to": 7,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Desfasadas, modelitos mood pedroche",
+      "ciega en el bingo, noche de derroche",
+      "Arruinade perdí todo, intenté robar el bote",
+      "bofetón giró mi cara, estoy enamorada",
+      "disturbios no veo nada, quien me dio esa bofetada",
+      "el amor de mi vida, de mi cuento de hadas",
+      "su anillo quedó marcado, en el borde de mi cara",
+      "busco por los bares, a ver cuál encaja"
+     ],
+     "en": [
+      "Out of sync, outfits mood Pedroche",
+      "blind at the bingo, night of splurging",
+      "Ruined, I lost everything, tried to steal the jackpot",
+      "a slap spun my face round, I'm in love",
+      "riot, I can't see a thing, who gave me that slap",
+      "the love of my life, out of my fairy tale",
+      "his ring left a mark on the edge of my face",
+      "I search the bars to see which one fits"
+     ],
+     "es": null,
+     "eu": [
+      "Mundutik aparte, Pedroche mood-eko modelitoak",
+      "itsu bingoan, xahutze gaua",
+      "Hondatuta dena galdu nuen, potea lapurtzen saiatu nintzen",
+      "mastaka batek aurpegia biratu zidan, maiteminduta nago",
+      "istiluak, ez dut ezer ikusten, nork eman zidan mastaka hori",
+      "nire bizitzako maitasuna, nire maitasun-ipuinekoa",
+      "bere eraztunak marka utzi zuen nire aurpegiaren ertzean",
+      "tabernetan bilatzen dut, ea zeinek egokitzen duen"
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 1,
+   "line": 1,
+   "original": "cuatro afiladitas me dejó muy bien planchada",
+   "issue": "'cuatro afiladitas' unclear (four sharp lines/cards/hits?) and 'planchada' = ironed/flattened/knocked out; I used 'flattened' (basque 'lau' = four and flat)"
+  },
+  {
+   "block": 3,
+   "line": 3,
+   "original": "a los que invité los jugaré contigo",
+   "issue": "'a los que invité' ambiguous: cards I bought for others / bingo cards I treated people to"
+  },
+  {
+   "block": 4,
+   "line": 0,
+   "original": "Desfasadas, modelitos mood pedroche",
+   "issue": "Reference to Cristina Pedroche's New Year's Eve outfits; 'desfasadas' could mean out of fashion/out of it. Kept 'Pedroche'"
+  },
+  {
+   "block": 4,
+   "line": 4,
+   "original": "disturbios no veo nada, quien me dio esa bofetada",
+   "issue": "'disturbios' may be literal riots or the chaos of the bingo; kept literal"
+  }
+ ]
+}

@@ -1307,6 +1307,17 @@ listen_here:
   it: "Ascolta qui"
   de: "Hier anhören"
   ja: "ここで聴く"
+lyrics_link:
+  es: Letras y traducciones
+  en: "Lyrics and translations"
+  ca: "Lletres i traduccions"
+  gl: "Letras e traducións"
+  eu: "Letrak eta itzulpenak"
+  pt: "Letras e traduções"
+  fr: "Paroles et traductions"
+  it: "Testi e traduzioni"
+  de: "Songtexte und Übersetzungen"
+  ja: "歌詞と翻訳"
 hero_video_link:
   es: "Ver en YouTube"
   en: "Watch on YouTube"

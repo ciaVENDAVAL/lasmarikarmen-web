@@ -1,0 +1,395 @@
+{
+ "song": "Secuestro",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "other",
+     "skip": true,
+     "keep": false,
+     "orig": [
+      "*Las Marikarmen *"
+     ],
+     "en": null,
+     "es": null,
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 1,
+   "segments": [
+    {
+     "from": 0,
+     "to": 14,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "si te acercas a los matorrales",
+      "cuidado, no te pinches",
+      "hay zarzas cardos y puñales",
+      "a oscurita trepo andamios",
+      "veo la city desde lo alto",
+      "ojos de gata desvelados",
+      "gota a gota colma vasos",
+      "con las cuentas de un rosario",
+      "de mi abuela entre las manos",
+      "disociando entre gritos",
+      "pelea y fandangos",
+      "vi que te pone mi tanga",
+      "asomando por el chándal",
+      "hoy te pondré una velita",
+      "y te tiraré la cera"
+     ],
+     "en": [
+      "if you come near the brambles",
+      "careful, don't get pricked",
+      "there's thistles, thorns and daggers",
+      "in the dark I climb the scaffolding",
+      "I see the city from up high",
+      "sleepless cat eyes",
+      "drop by drop fills the glasses",
+      "with the beads of a rosary",
+      "my grandma's, in my hands",
+      "dissociating between screams",
+      "brawl and fandangos",
+      "I saw my thong turns you on",
+      "peeking out of your tracksuit",
+      "tonight I'll light you a little candle",
+      "and I'll pour you the wax"
+     ],
+     "es": null,
+     "eu": [
+      "sasien ondora hurbiltzen bazara",
+      "kontuz, ez ziztatu zaitezen",
+      "hor dago kardua, elorria eta labanak",
+      "iluntasunean aldamioetan gora noa",
+      "hiria goitik ikusten dut",
+      "katu-begi esnatuak",
+      "tanta eta tanta edalontziak betetzen dira",
+      "errosarioaren aleekin",
+      "amonarena, eskuen artean",
+      "disoziatzen garrasien artean",
+      "borroka eta fandangoak",
+      "ikusi dut nire tanga gustatzen zaizula",
+      "txandalaren azpitik ateraz",
+      "gaur kandela bat piztuko dizut",
+      "eta argizaria botako dizut"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 2,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Sácame del coche aunque tengas que arrastrar",
+      "el peso autodestructivo de este pobre animal",
+      "me quedé pegando todas las piecitas",
+      "respira y come bien que yo siempre te iré a buscar"
+     ],
+     "en": [
+      "Get me out of the car even if you have to drag",
+      "the self-destructive weight of this poor animal",
+      "I stayed behind gluing all the little pieces back together",
+      "breathe and eat well, I'll always come find you"
+     ],
+     "es": null,
+     "eu": [
+      "Atera nazazu autotik, arrastatu behar baduzu ere",
+      "animalia pobre honen pisu autosuntsitzailea",
+      "geratu nintzen pieza txiki guztiak itsasten",
+      "arnasa hartu eta jan ondo, nik beti zure bila etorriko naiz"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 3,
+   "segments": [
+    {
+     "from": 0,
+     "to": 7,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "mago un moño mientras cucho",
+      "que me dijo enel audio",
+      "ganas tengo deti mucho",
+      "del secuestro fuel preludio",
+      "vente no lo pienses más",
+      "no te quedes mal",
+      "y a partir de ahora mia",
+      "tu voluntad"
+     ],
+     "en": [
+      "I twist up a bun while I listen",
+      "to what he told me in the voice note",
+      "I want you so bad",
+      "the kidnapping was the prelude",
+      "come on, don't think it over anymore",
+      "don't leave it feeling off",
+      "and from now on, mine",
+      "your will"
+     ],
+     "es": null,
+     "eu": [
+      "ile-motots bat egiten dut entzuten dudan bitartean",
+      "audioan esan zidana",
+      "zuri hainbeste gogo dizut",
+      "bahiketa aitzinsolasa izan zen",
+      "zatoz, ez pentsatu gehiago",
+      "ez gelditu gaizki",
+      "eta hemendik aurrera nirea",
+      "zure borondatea"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 4,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "eu",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "pozten zara beldurra sumatzen duzunean",
+      "gaur mozorrotuko dut, nirea pairamena",
+      "ez dut utziko ezertxo ere zure ohean",
+      "guzti guztia eramango dut, eramango dut"
+     ],
+     "en": [
+      "you rejoice when you sense fear",
+      "today I'll disguise it, my suffering",
+      "I won't leave a single thing in your bed",
+      "I'll take absolutely everything, I'll take it"
+     ],
+     "es": [
+      "te alegras cuando notas el miedo",
+      "hoy lo disfrazaré, mi sufrimiento",
+      "no dejaré nada de nada en tu cama",
+      "me lo llevaré absolutamente todo, me lo llevaré"
+     ],
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 5,
+   "segments": [
+    {
+     "from": 0,
+     "to": 4,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "esta noche no hay amarre",
+      "que sujete que lo agarre",
+      "secuestró los temporales",
+      "pa' que la tormenta mate",
+      "a los mismos que vieron nacer"
+     ],
+     "en": [
+      "tonight there's no mooring",
+      "let it hold, let it grab on",
+      "she kidnapped the storms",
+      "so the tempest kills",
+      "the very ones who saw her born"
+     ],
+     "es": null,
+     "eu": [
+      "gaur gauean ez dago amarrarik",
+      "eutsi dezala, har dezala",
+      "ekaitzak bahitu zituen",
+      "ekaitzak hil ditzan",
+      "jaiotzen ikusi zutenak berak"
+     ]
+    },
+    {
+     "from": 5,
+     "to": 5,
+     "lang": "eu",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "lamiak basoetan madarikatzen"
+     ],
+     "en": [
+      "lamias cursing in the forests"
+     ],
+     "es": [
+      "lamias maldiciendo en los bosques"
+     ],
+     "eu": null
+    },
+    {
+     "from": 6,
+     "to": 9,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Escucharon su lamento",
+      "y llovió veneno",
+      "ahogaron los alimentos",
+      "no estuvieron atentos"
+     ],
+     "en": [
+      "They heard her lament",
+      "and it rained poison",
+      "they drowned the food",
+      "they weren't paying attention"
+     ],
+     "es": null,
+     "eu": [
+      "Haren intziria entzun zuten",
+      "eta pozoia euritu zuen",
+      "janariak ito zituzten",
+      "ez ziren adi egon"
+     ]
+    },
+    {
+     "from": 10,
+     "to": 11,
+     "lang": "eu",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "azkar joan ziren bedeinkatuak",
+      "gaueko ahotsen oihuak, oihuak"
+     ],
+     "en": [
+      "the blessed ones quickly went away",
+      "the cries, the cries of the night voices"
+     ],
+     "es": [
+      "les bendecides se fueron rápido",
+      "los gritos de las voces de la noche, los gritos"
+     ],
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 6,
+   "segments": [
+    {
+     "from": 0,
+     "to": 1,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "si te acercas a lo matorrales",
+      "cuidado hay cardos, zarzas y puñales"
+     ],
+     "en": [
+      "if you come near the brambles",
+      "careful, there's thistles, thorns and daggers"
+     ],
+     "es": null,
+     "eu": [
+      "sasien ondora hurbiltzen bazara",
+      "kontuz, kardu, elorri eta labanak daude"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 7,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Tiene muchas cosas feas para decirme a mi",
+      "hice todo lo que pude cuando estuve allí",
+      "tiene muchas cosas feas para decirme a mi",
+      "te escucharé cuando el cora lo pueda resistir"
+     ],
+     "en": [
+      "He's got lots of ugly things to tell me",
+      "I did everything I could when I was there",
+      "he's got lots of ugly things to tell me",
+      "I'll listen to you when the heart can take it"
+     ],
+     "es": null,
+     "eu": [
+      "Gauza itsats asko ditu niri esateko",
+      "egin nuen ahal nuen guztia han nintzenean",
+      "gauza itsats asko ditu niri esateko",
+      "entzungo zaitut bihotzak jasan dezakeenean"
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 1,
+   "line": 6,
+   "original": "gota a gota colma vasos",
+   "issue": "'gota a gota colma vasos' = 'drop by drop fills the glasses' (idiom: little by little things overflow); kept literal in all versions."
+  },
+  {
+   "block": 1,
+   "line": 13,
+   "original": "hoy te pondré una velita",
+   "issue": "'velita' + 'tirar la cera' reads as a candle/wax ritual or curse (witchcraft theme of the song), not literally pouring wax in a sexual sense; I kept it ambiguous."
+  },
+  {
+   "block": 1,
+   "line": 9,
+   "original": "disociando entre gritos",
+   "issue": "'disociando entre gritos pelea y fandangos' - unclear whether 'pelea y fandangos' = 'fight and party' (fandango = ruckus/fiesta); translated as brawl and fandangos."
+  },
+  {
+   "block": 3,
+   "line": 6,
+   "original": "y a partir de ahora mia",
+   "issue": "'mia' (written without accent) could be 'mía' (your will is mine) or 'mi a(...)'; translated as 'mine'. Also 'no te quedes mal' could mean 'don't be left upset' or 'don't leave things half-way'."
+  },
+  {
+   "block": 3,
+   "line": 0,
+   "original": "mago un moño mientras cucho",
+   "issue": "'mago un moño' = 'hago un moño' (phonetic spelling); 'moño' could be a hair bun or an idiom (making a fuss); chose hair bun."
+  },
+  {
+   "block": 4,
+   "line": 1,
+   "original": "gaur mozorrotuko dut, nirea pairamena",
+   "issue": "'nirea pairamena' (my suffering) is syntactically odd/dialectal; also unclear whether 'mozorrotuko dut' disguises the suffering or the speaker ('I will dress up')."
+  },
+  {
+   "block": 5,
+   "line": 0,
+   "original": "esta noche no hay amarre",
+   "issue": "'amarre' = mooring/tie but also a love-binding spell (amarre de amor); both meanings plausible. Also the subject of 'secuestró' (she/he/I) is unclear - rendered 'she'."
+  },
+  {
+   "block": 7,
+   "line": 3,
+   "original": "te escucharé cuando el cora lo pueda resistir",
+   "issue": "'cora' is a clipped 'corazón' (heart); also the shift from 'tiene' (3rd person) to 'te escucharé' (2nd person) is kept as in the original."
+  }
+ ]
+}

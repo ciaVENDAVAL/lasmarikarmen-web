@@ -1,0 +1,37 @@
+{
+ "song": "Nos pegan",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "gl",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Nos pegan… Como? Que? Que dixeches, que? … NOS PEGAN"
+     ],
+     "en": [
+      "They hit us… What? Huh? What did you say, huh? … THEY HIT US"
+     ],
+     "es": [
+      "Nos pegan… ¿Cómo? ¿Qué? ¿Qué dijiste, qué? … NOS PEGAN"
+     ],
+     "eu": [
+      "Jotzen gaituzte… Zer? Zer? Zer esan duzu, zer? … JOTZEN GAITUZTE"
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 0,
+   "line": 0,
+   "original": "Nos pegan… Como? Que? Que dixeches, que? … NOS PEGAN",
+   "issue": "'Que dixeches' is Galician (confirmed by you); the rest is Spanish. 'Nos pegan' = they hit us (violence); it could also mean 'they stick to us'. I chose violence."
+  }
+ ]
+}

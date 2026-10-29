@@ -1,0 +1,250 @@
+{
+ "song": "El afilador",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 5,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Quien se meta con nosotres, tendrá problemas",
+      "Quien se meta con nosotres, los tiros vuelan",
+      "reshuleo vacileo salimos de roneo",
+      "mete el bafle enel coche keoi hay parkineo",
+      "modelito bien fresquito enseña totito",
+      "donde vamos donde estamos nos hemo perdido"
+     ],
+     "en": [
+      "Whoever messes with us is gonna have problems",
+      "Whoever messes with us, the bullets fly",
+      "showing off, showboating, we go out on the prowl",
+      "put the speaker in the car, there's parking today",
+      "cute cool little outfit, show it all off",
+      "where are we going, where are we, we're lost"
+     ],
+     "es": null,
+     "eu": [
+      "Gurekin sartzen denak arazoak izango ditu",
+      "Gurekin sartzen denak, tiroak hegan",
+      "harro-harro, txantxetan, kalera ateratzen gara",
+      "sartu bafle autoan, gaur aparkalekua dago",
+      "mozorro fresko-fresko, dena erakutsi",
+      "nora goaz, non gaude, galdu egin gara"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 1,
+   "segments": [
+    {
+     "from": 0,
+     "to": 5,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Las almendras marcan, cuadradas levantan, ballarina raja y stiletto clava",
+      "Las almendras marcan, cuadradas levantan, ballarina raja y stiletto clava",
+      "Estoy en mi piso y pasa el afilador",
+      "ella está en pijama y baja en el ascensor",
+      "\"No llevo cuchillos, no llevo navajas,",
+      "afílame las uñas que mi sugar me lo paga\""
+     ],
+     "en": [
+      "Almonds mark, squares lift, ballerina slashes and stiletto stabs",
+      "Almonds mark, squares lift, ballerina slashes and stiletto stabs",
+      "I'm in my flat and the knife-grinder goes by",
+      "she's in her pyjamas and takes the lift down",
+      "\"I'm not carrying knives, I'm not carrying blades,",
+      "sharpen my nails, my sugar's paying for it\""
+     ],
+     "es": null,
+     "eu": [
+      "Almendrak markatzen dute, karratuak altxatzen, ballerinak urratzen eta stilettoak ziztatzen",
+      "Almendrak markatzen dute, karratuak altxatzen, ballerinak urratzen eta stilettoak ziztatzen",
+      "Nire pisuan nago eta zorrotzailea pasatzen da",
+      "bera pijamarekin dago eta igogailuan jaisten da",
+      "\"Ez daramat labanarik, ez daramat labana txikirik,",
+      "zorrotz iezazkidazu azazkalak, nire sugarrak ordaintzen du\""
+     ]
+    }
+   ]
+  },
+  {
+   "block": 2,
+   "segments": [
+    {
+     "from": 0,
+     "to": 4,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Quien se meta con nosotres tendrá problemas",
+      "hemos llegado a unas kelis menudo poderío",
+      "mucho money mucho cash ki vamos a robar",
+      "drones camara kiero ese vestido",
+      "de vuelta a la rave llegamos en un navío"
+     ],
+     "en": [
+      "Whoever messes with us is gonna have problems",
+      "we've landed at some cribs, talk about power",
+      "so much money so much cash that we're gonna rob",
+      "drones camera I want that dress",
+      "back to the rave we arrive on a ship"
+     ],
+     "es": null,
+     "eu": [
+      "Gurekin sartzen denak arazoak izango ditu",
+      "etxe batzuetara iritsi gara, zer ahalmena",
+      "diru asko, cash asko, lapurtuko duguna",
+      "dronea kamera, soineko hori nahi dut",
+      "rave-ra bueltan itsasontzi batean iristen gara"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 3,
+   "segments": [
+    {
+     "from": 0,
+     "to": 5,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Las almendras marcan, cuadradas levantan, ballarina raja y stiletto clava",
+      "Las almendras marcan, cuadradas levantan, ballarina raja y stiletto clava",
+      "Estoy en mi piso y pasa el afilador",
+      "Ella está en pijama y baja en el ascensor",
+      "\"No llevo cuchillos, no llevo navajas,",
+      "afílame las uñas que mi sugar me lo paga\""
+     ],
+     "en": [
+      "Almonds mark, squares lift, ballerina slashes and stiletto stabs",
+      "Almonds mark, squares lift, ballerina slashes and stiletto stabs",
+      "I'm in my flat and the knife-grinder goes by",
+      "she's in her pyjamas and takes the lift down",
+      "\"I'm not carrying knives, I'm not carrying blades,",
+      "sharpen my nails, my sugar's paying for it\""
+     ],
+     "es": null,
+     "eu": [
+      "Almendrak markatzen dute, karratuak altxatzen, ballerinak urratzen eta stilettoak ziztatzen",
+      "Almendrak markatzen dute, karratuak altxatzen, ballerinak urratzen eta stilettoak ziztatzen",
+      "Nire pisuan nago eta zorrotzailea pasatzen da",
+      "bera pijamarekin dago eta igogailuan jaisten da",
+      "\"Ez daramat labanarik, ez daramat labana txikirik,",
+      "zorrotz iezazkidazu azazkalak, nire sugarrak ordaintzen du\""
+     ]
+    }
+   ]
+  },
+  {
+   "block": 4,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Estoy en mi piso y pasa el afilador",
+      "Ella está en pijama y baja en el ascensor",
+      "\"No llevo cuchillos, no llevo navajas,",
+      "afílame las uñas que mi sugar me lo paga\""
+     ],
+     "en": [
+      "I'm in my flat and the knife-grinder goes by",
+      "she's in her pyjamas and takes the lift down",
+      "\"I'm not carrying knives, I'm not carrying blades,",
+      "sharpen my nails, my sugar's paying for it\""
+     ],
+     "es": null,
+     "eu": [
+      "Nire pisuan nago eta zorrotzailea pasatzen da",
+      "bera pijamarekin dago eta igogailuan jaisten da",
+      "\"Ez daramat labanarik, ez daramat labana txikirik,",
+      "zorrotz iezazkidazu azazkalak, nire sugarrak ordaintzen du\""
+     ]
+    }
+   ]
+  },
+  {
+   "block": 5,
+   "segments": [
+    {
+     "from": 0,
+     "to": 1,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Quien se meta con nosotres tendrá problemas",
+      "Quien se meta con nosotres tendrá problemas"
+     ],
+     "en": [
+      "Whoever messes with us is gonna have problems",
+      "Whoever messes with us is gonna have problems"
+     ],
+     "es": null,
+     "eu": [
+      "Gurekin sartzen denak arazoak izango ditu",
+      "Gurekin sartzen denak arazoak izango ditu"
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 0,
+   "line": 2,
+   "original": "reshuleo vacileo salimos de roneo",
+   "issue": "'reshuleo vacileo salimos de roneo': 'roneo' unclear (rum/cruising? 'ronear'=hang around); translated as going out on the prowl."
+  },
+  {
+   "block": 0,
+   "line": 3,
+   "original": "mete el bafle enel coche keoi hay parkineo",
+   "issue": "'keoi hay parkineo' - unsure of 'keoi' ('que hoy'? 'ke oye'?); translated as 'there's parking today'."
+  },
+  {
+   "block": 1,
+   "line": 0,
+   "original": "Las almendras marcan, cuadradas levantan, ballarina raja y stiletto clava",
+   "issue": "Nail shapes (almond, square, ballerina/coffin, stiletto) with verbs marcan/levantan/raja/clava; kept literal, 'marcan/levantan' are probably double entendres about fighting."
+  },
+  {
+   "block": 1,
+   "line": 2,
+   "original": "Estoy en mi piso y pasa el afilador",
+   "issue": "'afilador' = knife-grinder who passes through streets with a pan-pipe whistle; Basque 'zorrotzailea' may sound odd, but nothing better."
+  },
+  {
+   "block": 1,
+   "line": 4,
+   "original": "\"No llevo cuchillos, no llevo navajas,",
+   "issue": "Basque for 'No llevo navajas' - I used 'labana txikirik' (small knife) because 'nabaja' is the Basque loan; check, could use 'nabajarik'."
+  },
+  {
+   "block": 2,
+   "line": 1,
+   "original": "hemos llegado a unas kelis menudo poderío",
+   "issue": "'kelis' = houses/cribs (caló 'keli'); 'menudo poderío' translated as 'talk about power'."
+  },
+  {
+   "block": 2,
+   "line": 3,
+   "original": "drones camara kiero ese vestido",
+   "issue": "'drones camara kiero ese vestido': unsure what 'camara' refers to; translated literally."
+  }
+ ]
+}

@@ -1,0 +1,240 @@
+{
+ "song": "Travestis por la carretera",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "other",
+     "skip": true,
+     "keep": false,
+     "orig": [
+      "*Las Marikarmen *"
+     ],
+     "en": null,
+     "es": null,
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 1,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "eu",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Badatoz emakume amorrua antolatzen,",
+      "badator dixidente amorrua antolatzen,",
+      "bakoitzak badaki zertan dabilen dexente,",
+      "zurea, gurea, amorrua antolatzen"
+     ],
+     "en": [
+      "Women are coming, organizing the rage,",
+      "the dissident is coming, organizing the rage,",
+      "everyone knows pretty well what they're up to,",
+      "yours, ours, organizing the rage"
+     ],
+     "es": [
+      "Vienen mujeres organizando la rabia,",
+      "viene le disidente organizando la rabia,",
+      "cada cual sabe bastante bien lo que se trae entre manos,",
+      "la tuya, la nuestra, organizando la rabia"
+     ],
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 2,
+   "segments": [
+    {
+     "from": 0,
+     "to": 7,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Número uno del deskite,",
+      "ke aquí nadie me limite,",
+      "tirando por el suelo",
+      "los valores que constituyen",
+      "una norma rancia",
+      "mis tacones la diluyen",
+      "Travistiendo desde abajo,",
+      "destruyendo la elite"
+     ],
+     "en": [
+      "Number one in payback,",
+      "'cause nobody here limits me,",
+      "throwing on the floor",
+      "the values that make up",
+      "a rancid norm",
+      "my heels dissolve it",
+      "Travesti-dressing from below,",
+      "destroying the elite"
+     ],
+     "es": null,
+     "eu": [
+      "Errebantxaren lehen zenbakia,",
+      "hemen inork ez nazala mugatu,",
+      "lurrera botaz",
+      "osatzen duten balioak,",
+      "arau ustel bat",
+      "nire takoiek desegiten dute",
+      "Trabestituz behetik,",
+      "eliteari amaiera emanez"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 3,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "En la sombra no la esperan,",
+      "lanzan puñales como vuelan,",
+      "navajita en la cartera,",
+      "travestis por la carretera"
+     ],
+     "en": [
+      "In the shadows they don't expect her",
+      "they throw daggers like they fly",
+      "little switchblade in the purse",
+      "travestis on the highway"
+     ],
+     "es": null,
+     "eu": [
+      "Itzalean ez dute haren zain egoten",
+      "labanak jaurtitzen dituzte hegan bezala",
+      "labana txikia poltsan",
+      "trabestiak errepidean"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 4,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "eu",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Espaloiko suan altxatu harria",
+      "neguko aire hotzetan berotu eztarriak",
+      "txalaparta, alboka, ginena, garena",
+      "amorrua antolatu, zurea gurea"
+     ],
+     "en": [
+      "Stone raised in the fire of the pavement",
+      "throats warmed in the cold winter air",
+      "txalaparta, alboka, who we were, who we are",
+      "organize the rage, yours, ours"
+     ],
+     "es": [
+      "Piedra alzada en el fuego de la acera",
+      "en el aire frío del invierno se calientan las gargantas",
+      "txalaparta, alboka, lo que fuimos, lo que somos",
+      "organizar la rabia, la tuya, la nuestra"
+     ],
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 5,
+   "segments": [
+    {
+     "from": 0,
+     "to": 7,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Entre matorrales asoman",
+      "tokan a une token a toda",
+      "siempre organizades",
+      "maquillaje spray y bate",
+      "ala espera, dela seña",
+      "tolo arrasan, tolo destruyen",
+      "travistiendo desde abajo",
+      "destruyendo la elite"
+     ],
+     "en": [
+      "Among the bushes they peek out",
+      "they touch one, they touch all of us, all at once",
+      "always organized",
+      "makeup, spray and bat",
+      "waiting for the signal",
+      "they sweep it all, they destroy it all",
+      "Travesti-dressing from below",
+      "destroying the elite"
+     ],
+     "es": null,
+     "eu": [
+      "Sasien artetik azaltzen dira",
+      "bati ukitu, guztioi ukitu, bat-batean",
+      "beti antolatuta",
+      "makillajea, spray-a eta bata",
+      "seinalearen zain",
+      "dena arrasatzen dute, dena suntsitzen dute",
+      "Trabestituz behetik",
+      "eliteari amaiera emanez"
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 1,
+   "line": 1,
+   "original": "badator dixidente amorrua antolatzen,",
+   "issue": "'dixidente' (dissident, nonstandard spelling, no gender in Basque) - rendered with inclusive 'le disidente'; 'amorrua' = rage/anger (organizing rage slogan)."
+  },
+  {
+   "block": 2,
+   "line": 0,
+   "original": "Número uno del deskite,",
+   "issue": "'deskite' = phonetic 'desquite' (payback/revenge), maybe also 'descoque'/'desquiciar'; translated as payback."
+  },
+  {
+   "block": 2,
+   "line": 6,
+   "original": "Travistiendo desde abajo,",
+   "issue": "'Travistiendo' = pun on 'travesti' + 'vistiendo/(in)virtiendo' (dressing/turning things upside down); English 'Travesti-dressing' approximates it, no exact equivalent."
+  },
+  {
+   "block": 3,
+   "line": 0,
+   "original": "En la sombra no la esperan,",
+   "issue": "'no la esperan' - who is 'la' (a travesti waiting for clients? someone they don't expect to be armed?); and 'como vuelan' could be 'as they fly' or 'fast'. Translated literally."
+  },
+  {
+   "block": 4,
+   "line": 0,
+   "original": "Espaloiko suan altxatu harria",
+   "issue": "'Espaloiko suan altxatu harria' - 'the stone raised in the pavement fire' might allude to harri-jasotzea / barricade or thrown stones; unclear grammar, translated literally."
+  },
+  {
+   "block": 5,
+   "line": 1,
+   "original": "tokan a une token a toda",
+   "issue": "'tokan a une token a toda' - phonetic 'tocan a une, tocan a toda' echoing 'si tocan a una, nos tocan a todas'; 'a toda' could also be 'at full speed'. Translated as the slogan."
+  }
+ ]
+}

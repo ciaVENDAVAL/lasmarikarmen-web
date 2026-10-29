@@ -1,0 +1,450 @@
+{
+ "song": "Patadas",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "pintadas como puertas que tiramos a patadas"
+     ],
+     "en": [
+      "painted up like doors that we kick down"
+     ],
+     "es": null,
+     "eu": [
+      "ateak bezala margotuta, ostikoka botatzen ditugun ateak bezala"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 1,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "other",
+     "skip": true,
+     "keep": false,
+     "orig": [
+      "**[Grieta]**"
+     ],
+     "en": null,
+     "es": null,
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 2,
+   "segments": [
+    {
+     "from": 0,
+     "to": 8,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Yo gorda mondonga, tragona y mandona",
+      "la foca jamona que estorba en la zona",
+      "sodoma y gomorra, me pongo reinona",
+      "me aprieto la cola y te corto la broma",
+      "Aquí está la tropa en guardia cabrona",
+      "contra el acoso, el insulto y la mofa",
+      "la calle es muy ancha pero si provocas",
+      "patada en la chancla que tienes por boca",
+      "La gorda en venganza…"
+     ],
+     "en": [
+      "Me, fat slob, glutton and bossy",
+      "the big ol' seal who's cramping the zone",
+      "Sodom and Gomorrah, I go full queen",
+      "I cinch my tail and cut your joke dead",
+      "Here's the troop on guard, bitch",
+      "against harassment, insults and mockery",
+      "the street is wide but if you provoke",
+      "a kick in the flip-flop you've got for a mouth",
+      "Fat girl out for revenge…"
+     ],
+     "es": null,
+     "eu": [
+      "Ni gizenkote lodia, jale eta agintaria",
+      "fokaka potolo hori, zonaldean traba egiten duena",
+      "Sodoma eta Gomorra, erregina jartzen naiz",
+      "isatsa estutzen dut eta txantxa mozten dizut",
+      "hemen dago tropa zain, kabroia",
+      "jazarpenaren, irainaren eta burlaren aurka",
+      "kalea oso zabala da baina probokatzen baduzu",
+      "ostiko bat txankleta ahoan duzunari",
+      "Gizena mendekuan…"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 3,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Chusma choni altavoz en mano",
+      "tangas bien alto el oro es falso",
+      "uñas largas cejas cortadas",
+      "eyeliner a litros que vuelan patadas"
+     ],
+     "en": [
+      "Chav rabble, speaker in hand",
+      "thongs hiked high, the gold is fake",
+      "long nails, cut-down brows",
+      "liters of eyeliner and kicks are flying"
+     ],
+     "es": null,
+     "eu": [
+      "Choni zaborra, bozgorailua eskuan",
+      "tangak goian, urrea faltsua da",
+      "azazkal luzeak, betzuluak mozturik",
+      "eyeliner litrotan eta ostikadak hegan"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 4,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "other",
+     "skip": true,
+     "keep": false,
+     "orig": [
+      "**[****V****ictoria]**"
+     ],
+     "en": null,
+     "es": null,
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 5,
+   "segments": [
+    {
+     "from": 0,
+     "to": 4,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Alterada eufórica tarareo guarradas",
+      "bailando cual ordas desbocadas",
+      "escándalo que parece un éscandálo",
+      "que fui de peregrina y no cogi tu mano",
+      "Travesti en venganza…"
+     ],
+     "en": [
+      "Wired, euphoric, I hum filth",
+      "dancing like runaway hordes",
+      "a scandal that looks like a scandal",
+      "I went as a pilgrim and didn't take your hand",
+      "Travesti out for revenge…"
+     ],
+     "es": null,
+     "eu": [
+      "Alteratua, euforikoa, zikinkeriak kantari",
+      "dantzan agintaritzarik gabeko hordak bezala",
+      "eskandalua eskandalua dirudiena",
+      "erromes joan nintzen eta ez nuen zure eskua hartu",
+      "Trabesti mendekuan…"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 6,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Rabia y alegria la party necesaria",
+      "purpurina gasolina lleva la contraria",
+      "toma que tomamos la palabra",
+      "toma comando en venganza"
+     ],
+     "en": [
+      "Rage and joy, the party we need",
+      "glitter gasoline, goes against the grain",
+      "take it, because we take the floor",
+      "take command, out for revenge"
+     ],
+     "es": null,
+     "eu": [
+      "Amorrua eta poza, behar dugun festa",
+      "purpurina gasolina, kontrakoa darama",
+      "hartu, hartzen dugulako hitza",
+      "hartu agintea, mendekuan"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 7,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "other",
+     "skip": true,
+     "keep": false,
+     "orig": [
+      "**[Malet]**"
+     ],
+     "en": null,
+     "es": null,
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 8,
+   "segments": [
+    {
+     "from": 0,
+     "to": 6,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Ni gorda ni travola pero igual te como",
+      "No somos manikis objetos de moda",
+      "Si tocas a una compa vigila tu cara no te la rompa",
+      "Mira a tu lado pues la guerra ya comenzó",
+      "escupiendole al micro quemando el telón",
+      "como las termitas mordemos",
+      "hasta haceros miguitas"
+     ],
+     "en": [
+      "Neither fat nor travola but I'll still eat you up",
+      "We're not mannequins, fashion objects",
+      "touch one of my girls and watch your face, don't let her break it",
+      "look beside you, the war has already begun",
+      "spitting at the mic, burning the curtain",
+      "like termites we bite",
+      "till we make crumbs of you"
+     ],
+     "es": null,
+     "eu": [
+      "Ez gizena ez travola baina berdin jango zaitut",
+      "ez gara manikiak, modako objektuak",
+      "gure lagun bati ukitzen badiozu begira ezazu zure aurpegia ez dizula hausten",
+      "begiratu alboan, gerra hasi da dagoeneko",
+      "mikrofonoari txistu egiten, oholtzako oihala erretzen",
+      "termitak bezala hozkatzen dugu",
+      "apurtxoak egin arte"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 9,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "other",
+     "skip": true,
+     "keep": false,
+     "orig": [
+      "**[****Hipogrifa****]**"
+     ],
+     "en": null,
+     "es": null,
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 10,
+   "segments": [
+    {
+     "from": 0,
+     "to": 6,
+     "lang": "eu",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Ez dago oliorik ez erremediorik orbainak kenduko dituen",
+      "ez zazu pentsa betaurreko horiekin kenduko dituzunik",
+      "aizpen orbainak ikusten",
+      "azala ateratzen",
+      "odol gardena begietatik ateratzen",
+      "zein itsasora doa erreka hau",
+      "zein itsasora doa erreka hau"
+     ],
+     "en": [
+      "There's no balm, no remedy that will take away the scars",
+      "don't think you'll remove them with those glasses",
+      "sisters' scars being seen",
+      "skin peeling off",
+      "clear blood coming out of the eyes",
+      "which sea does this river flow to",
+      "which sea does this river flow to"
+     ],
+     "es": [
+      "No hay bálsamo ni remedio que quite las cicatrices",
+      "no pienses que las quitarás con esas gafas",
+      "viendo las cicatrices de las hermanas",
+      "pelando la piel",
+      "sangre transparente saliendo de los ojos",
+      "a qué mar va este río",
+      "a qué mar va este río"
+     ],
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 11,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "other",
+     "skip": true,
+     "keep": false,
+     "orig": [
+      "**[****O****li]**"
+     ],
+     "en": null,
+     "es": null,
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 12,
+   "segments": [
+    {
+     "from": 0,
+     "to": 5,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "La femme que ya no te da cancha",
+      "se queda tan pancha",
+      "se quemó y ahora te plancha",
+      "tiempo de revancha",
+      "tan bien con su tandem de mamarrachas",
+      "vienen pa quedarse en modo cucarachas"
+     ],
+     "en": [
+      "The femme who ain't giving you any more room",
+      "stays cool as a cucumber",
+      "she burned out and now she irons you flat",
+      "time for payback",
+      "doing great with her tandem of hot messes",
+      "here to stay in cockroach mode"
+     ],
+     "es": null,
+     "eu": [
+      "Femmeak ez dizu jada tarterik ematen",
+      "lasai-lasai gelditzen da",
+      "erre zen eta orain lauan uzten zaitu",
+      "mendeku garaia",
+      "oso ondo bere mamarratxa-bikotearekin",
+      "hemen gelditzeko datoz, labezomorro moduan"
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 0,
+   "line": 0,
+   "original": "pintadas como puertas que tiramos a patadas",
+   "issue": "'pintada como una puerta' = heavily made up; 'tirar puertas a patadas' = kick doors in. Both senses merged."
+  },
+  {
+   "block": 2,
+   "line": 3,
+   "original": "me aprieto la cola y te corto la broma",
+   "issue": "'me aprieto la cola' - 'cola' could be ponytail, tail, or ass (cinching/tucking); rendered as 'tail'."
+  },
+  {
+   "block": 2,
+   "line": 7,
+   "original": "patada en la chancla que tienes por boca",
+   "issue": "'chancla que tienes por boca' - flip-flop as insult for a mouth; kept literal."
+  },
+  {
+   "block": 5,
+   "line": 3,
+   "original": "que fui de peregrina y no cogi tu mano",
+   "issue": "'peregrina' can mean pilgrim or 'strange/odd'; unclear line (possibly a religion/Camino reference). Literal rendering."
+  },
+  {
+   "block": 6,
+   "line": 2,
+   "original": "toma que tomamos la palabra",
+   "issue": "'toma que tomamos la palabra' plays on 'toma' (take it!) and 'tomar la palabra' (take the floor)."
+  },
+  {
+   "block": 8,
+   "line": 0,
+   "original": "Ni gorda ni travola pero igual te como",
+   "issue": "'travola' unclear (travesti-derived slang? variant of 'trabolo'); kept as is. 'te como' = I'll eat you (sexual and/or threatening)."
+  },
+  {
+   "block": 8,
+   "line": 2,
+   "original": "Si tocas a una compa vigila tu cara no te la rompa",
+   "issue": "'no te la rompa' - subject unclear (the 'compa' or 'I'); read as the friend breaking your face."
+  },
+  {
+   "block": 10,
+   "line": 0,
+   "original": "Ez dago oliorik ez erremediorik orbainak kenduko dituen",
+   "issue": "'oliorik' = oil/ointment/balm (oil as remedy); 'aizpen' = of the (female) sisters, 'aizpa' is a woman's sister specifically."
+  },
+  {
+   "block": 10,
+   "line": 2,
+   "original": "aizpen orbainak ikusten",
+   "issue": "'azala ateratzen' = removing/peeling the skin or cover; could mean taking off the surface. 'betaurreko horiekin' (with those glasses) is probably figurative (blind/privileged lens)."
+  },
+  {
+   "block": 10,
+   "line": 4,
+   "original": "odol gardena begietatik ateratzen",
+   "issue": "'odol gardena' = clear/transparent blood, probably tears; poetic image."
+  },
+  {
+   "block": 12,
+   "line": 2,
+   "original": "se quemó y ahora te plancha",
+   "issue": "'se quemó y ahora te plancha' - burn/iron pun (burnt out then presses/irons you flat); rendered 'burned out' + 'irons flat'."
+  },
+  {
+   "block": 12,
+   "line": 4,
+   "original": "tan bien con su tandem de mamarrachas",
+   "issue": "'mamarrachas' = ridiculous/ugly/clownish people, often reclaimed; 'tandem' used playfully."
+  }
+ ]
+}

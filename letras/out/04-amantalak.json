@@ -1,0 +1,178 @@
+{
+ "song": "Amantalak",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 15,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Pasas de estar cómoda y algo más fuerte",
+      "aunque estuvieras al borde del acantilado",
+      "a caerte al mar como si fueras peso muerto",
+      "con oleaje, rocas y bandera roja",
+      "Y vuelves a estar dentro del pozo, queride amigue",
+      "donde ya ni ves la parte de arriba del acantilado",
+      "y ni siquiera encuentras la salida del agua",
+      "para poder respirar",
+      "ni siquiera puedes nadar",
+      "es que ya no te apetece nadar",
+      "ya no quieres nadar",
+      "no te importa hundirte",
+      "y es que a lo mejor llegar a la superficie",
+      "no vale tanto la pena",
+      "porque al final todo vuelve a ser culpa tuya",
+      "pesa tanto la idea que ya no piensas en flotar"
+     ],
+     "en": [
+      "You go from being comfy and a bit stronger",
+      "even if you were at the edge of the cliff",
+      "to falling into the sea like dead weight",
+      "with swell, rocks and a red flag",
+      "And you're back down in the well, dear friend",
+      "where you can't even see the top of the cliff",
+      "and you can't even find the way out of the water",
+      "to be able to breathe",
+      "you can't even swim",
+      "it's just that you don't feel like swimming anymore",
+      "you don't want to swim anymore",
+      "you don't care about sinking",
+      "and maybe getting to the surface",
+      "isn't worth that much",
+      "because in the end everything is your fault again",
+      "the idea weighs so much you no longer think about floating"
+     ],
+     "es": null,
+     "eu": [
+      "Eroso eta apur bat indartsuago egotetik",
+      "itsaslabarraren ertzean egon arren",
+      "itsasora erortzera, pisu hilak bezala",
+      "olatuekin, harkaitzekin eta bandera gorriarekin",
+      "Eta berriro zulo-putzuaren barruan zaude, lagun maite",
+      "non jada ez baituzu itsaslabarraren goiko aldea ikusten",
+      "eta ez duzu uretatik ateratzeko biderik aurkitzen",
+      "arnasa hartu ahal izateko",
+      "ezta igeri egin ere",
+      "jada ez zaizulako igeri egiteko gogorik",
+      "ez duzu igeri egin nahi jada",
+      "ez zaizu axola hondoratzea",
+      "eta agian gainazalera iristeak",
+      "ez du hainbeste merezi",
+      "azkenean dena zure errua dela berriro",
+      "ideiak hainbeste pisatzen duenez jada ez duzu flotatzea pentsatzen"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 1,
+   "segments": [
+    {
+     "from": 0,
+     "to": 7,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "puertas cierran en tu cara",
+      "sirenas azules tan exao a patadas",
+      "silencio chapa bocas tapiadas",
+      "no hay cizalla que rompa esta lacra",
+      "amigues nos han echado",
+      "ni un centro social ha quedado",
+      "el super del barrio ahora es un banco con",
+      "gente sonriendo nel cristal estampado"
+     ],
+     "en": [
+      "doors shut in your face",
+      "blue sirens, so kicked to the curb",
+      "silence shutters mouths, walled-up lips",
+      "no bolt-cutter breaks this scourge",
+      "friends, they've thrown us out",
+      "not one social centre left",
+      "the neighbourhood supermarket is now a bank with",
+      "people smiling on the plastered window"
+     ],
+     "es": null,
+     "eu": [
+      "ateak ixten zaizkizu aurpegira",
+      "sirena urdinak, ostikoka kanporatuta",
+      "isiltasunak ahoak ixten ditu, ahoak horma eginda",
+      "ez dago ezpainik plaga hau apurtzen duenik",
+      "lagunek kanporatu gaituzte",
+      "ez da gizarte-zentrorik geratu",
+      "auzoko supermerkatua banku bat da orain",
+      "jendea irribarrez beirate estanpatuan"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 2,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "eu",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Bi tabernako komunetan",
+      "nahasita ahulak baina ez zeuden zikinak",
+      "garbitzera eramango behar",
+      "ostirala amantalak etxera, etxera"
+     ],
+     "en": [
+      "In the toilets of two bars",
+      "mixed up, faded but they weren't dirty",
+      "have to be taken to wash",
+      "Friday aprons home, home"
+     ],
+     "es": [
+      "En los baños de dos bares",
+      "mezcladas, desgastadas pero no estaban sucias",
+      "hay que llevarlas a lavar",
+      "el viernes los delantales a casa, a casa"
+     ],
+     "eu": null
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 1,
+   "line": 1,
+   "original": "sirenas azules tan exao a patadas",
+   "issue": "'exao' likely 'echao' (thrown out) but could be 'exagerado'; read as evicted/kicked out by police (blue sirens)"
+  },
+  {
+   "block": 1,
+   "line": 3,
+   "original": "no hay cizalla que rompa esta lacra",
+   "issue": "'lacra' = scourge/blight; fine"
+  },
+  {
+   "block": 1,
+   "line": 4,
+   "original": "amigues nos han echado",
+   "issue": "Ambiguous: friends have been evicted / people have kicked us out as friends; chose 'they've thrown us out' reading"
+  },
+  {
+   "block": 2,
+   "line": 1,
+   "original": "nahasita ahulak baina ez zeuden zikinak",
+   "issue": "'ahulak' (weak/faint) – unclear what subject (aprons? people?); read as aprons, worn/faded"
+  },
+  {
+   "block": 2,
+   "line": 3,
+   "original": "ostirala amantalak etxera, etxera",
+   "issue": "Unsure if 'ostirala' (Friday) is the day aprons go home or a time marker; read as 'on Friday'"
+  }
+ ]
+}

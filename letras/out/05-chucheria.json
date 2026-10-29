@@ -1,0 +1,405 @@
+{
+ "song": "Chuchería",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 1,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Fuego!!! fuego y sirenas de policía si, y agentes por el suelo, pidiendo clemencia de que no estampáramos nuestros tacones en su cccc-ca-cara.",
+      "Y mientras tanto tú sí, ahi viendo Netflix en el sofá, sentadito, que bien se está no?"
+     ],
+     "en": [
+      "Fire!!! fire and police sirens yeah, and cops on the floor, begging for mercy so we wouldn't stomp our heels in their fff-fa-face.",
+      "And meanwhile you, yeah, sitting there watching Netflix on the couch, all comfy, nice and cozy huh?"
+     ],
+     "es": null,
+     "eu": [
+      "Sua!!! sua eta polizia-sirenak bai, eta agenteak lurrean, erruki eske, gure takoiak haien aaa-a-aurpegian ez zapaltzeko.",
+      "Eta bitartean zu bai, hor Netflix ikusten sofan, eseritxo, ederki zaude, ezta?"
+     ]
+    },
+    {
+     "from": 2,
+     "to": 6,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "And I have to tell you this because a reason, because you have to say it, and know it, and share it.",
+      "Everything began, everything, fucking everything began, because they thought that she was a woman",
+      "And i tell yah, she was everything but a woman.",
+      "She was not a woman, not a woman...",
+      "[riot police] dispersion of the area"
+     ],
+     "en": null,
+     "es": [
+      "Y tengo ke contarte esto porke sí, porke hay ke decirlo, y saberlo, y compartirlo.",
+      "Todo empezó, todo, joder, todo empezó, porke pensaron ke era una mujer",
+      "Y te lo digo yo, era de todo menos una mujer.",
+      "No era una mujer, no una mujer...",
+      "[riot police] dispersión de la zona"
+     ],
+     "eu": [
+      "Eta hau esan behar dizut arrazoi bategatik, esan egin behar delako, jakin behar delako eta partekatu behar delako.",
+      "Dena hasi zen, dena, dena delakoa hasi zen, emakumea zela uste zutelako",
+      "Eta nik diotsut, edozer zen emakumea izan ezik.",
+      "Ez zen emakumea, ez emakumea...",
+      "[riot police] eremua sakabanatzea"
+     ]
+    },
+    {
+     "from": 7,
+     "to": 7,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Masc x masc? Que anticuados tía."
+     ],
+     "en": [
+      "Masc for masc? So outdated, girl."
+     ],
+     "es": null,
+     "eu": [
+      "Masc masc-ekin? Zeinen zaharkituak, neska."
+     ]
+    }
+   ]
+  },
+  {
+   "block": 1,
+   "segments": [
+    {
+     "from": 0,
+     "to": 5,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Dame chuchería, dame dame chuchería",
+      "Dame chuchería, dame dame chuchería",
+      "dame dame dame dame",
+      "chuche-chuche-chucheria",
+      "dame dame dame dame tu",
+      "CHUCHERIA"
+     ],
+     "en": [
+      "Gimme candy, gimme gimme candy",
+      "Gimme candy, gimme gimme candy",
+      "gimme gimme gimme gimme",
+      "sweet-sweet-sweeties",
+      "gimme gimme gimme gimme your",
+      "CANDY"
+     ],
+     "es": null,
+     "eu": [
+      "Eman gozokia, eman eman gozokia",
+      "Eman gozokia, eman eman gozokia",
+      "eman eman eman eman",
+      "gozo-gozo-gozokia",
+      "eman eman eman eman zure",
+      "GOZOKIA"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 2,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "give me sugar papa, give me sugar mama"
+     ],
+     "en": [
+      "give me sugar papa, give me sugar mama"
+     ],
+     "es": [
+      "dame sugar papá, dame sugar mamá"
+     ],
+     "eu": [
+      "eman sugar aitatxo, eman sugar amatxo"
+     ]
+    },
+    {
+     "from": 1,
+     "to": 10,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "te digo que dont play with tita",
+      "quiero mi zapatos mi peluquita",
+      "sí sí y mis papitas fritas",
+      "jelly jelly jelly dinamita",
+      "invita a esta churrita",
+      "que además es so-do-mi-ta",
+      "rimmel sombra mascarilla",
+      "y con el highlighter estoy to diva",
+      "carros joyas limusina",
+      "y con el highlighter estoy to piva"
+     ],
+     "en": [
+      "I'm telling you don't play with tita",
+      "I want my shoes, my little wig",
+      "yes yes and my french fries",
+      "jelly jelly jelly dynamite",
+      "treat this little cutie",
+      "who's also a so-do-mite",
+      "mascara eyeshadow face mask",
+      "and with the highlighter I'm so diva",
+      "cars jewels limousine",
+      "and with the highlighter I'm such a babe"
+     ],
+     "es": null,
+     "eu": [
+      "diotsut ez jolastu tita-rekin",
+      "nire zapatak nahi ditut, nire peluka txikia",
+      "bai bai eta nire patata frijituak",
+      "jelly jelly jelly dinamita",
+      "gonbida ezazu txurri txiki hau",
+      "gainera so-do-mi-ta da",
+      "rimela, betazal-itzala, aurpegiko maskara",
+      "eta highlighterrarekin diva galanta naiz",
+      "autoak bitxiak limusina",
+      "eta highlighterrarekin neska galanta naiz"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 4,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "give me sugar papa, give me sugar mama"
+     ],
+     "en": [
+      "give me sugar papa, give me sugar mama"
+     ],
+     "es": [
+      "dame sugar papá, dame sugar mamá"
+     ],
+     "eu": [
+      "eman sugar aitatxo, eman sugar amatxo"
+     ]
+    },
+    {
+     "from": 1,
+     "to": 10,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "te digo que dont play with tita",
+      "quiero mi ropita y mi joyita",
+      "y mis papitas fritas",
+      "madalena mojadita chorreadita",
+      "invita a esta churrita",
+      "además que es so-do-mi-ta",
+      "rimmel sombra mascarilla",
+      "y con el highlighter estoy to diva",
+      "carros joyas limusina",
+      "y con el highlighter estoy to piva"
+     ],
+     "en": [
+      "I'm telling you don't play with tita",
+      "I want my cute clothes and my little jewel",
+      "and my french fries",
+      "soaking-wet little madeleine, dripping",
+      "treat this little cutie",
+      "plus she's a so-do-mite",
+      "mascara eyeshadow face mask",
+      "and with the highlighter I'm so diva",
+      "cars jewels limousine",
+      "and with the highlighter I'm such a babe"
+     ],
+     "es": null,
+     "eu": [
+      "diotsut ez jolastu tita-rekin",
+      "nahi ditut nire arropatxoak eta nire bitxitxoa",
+      "eta nire patata frijituak",
+      "madalena bustita, tantaka",
+      "gonbida ezazu txurri txiki hau",
+      "gainera so-do-mi-ta da",
+      "rimela, betazal-itzala, aurpegiko maskara",
+      "eta highlighterrarekin diva galanta naiz",
+      "autoak bitxiak limusina",
+      "eta highlighterrarekin neska galanta naiz"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 6,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "glory sugar papa, deep sugar mama"
+     ],
+     "en": null,
+     "es": [
+      "sugar papá glory, sugar mamá garganta profunda"
+     ],
+     "eu": [
+      "glory sugar aitatxo, sugar amatxo sakon"
+     ]
+    },
+    {
+     "from": 1,
+     "to": 9,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "te digo que no juegues figurita",
+      "donde están mis papitas, tu grasita y tu cosita?",
+      "nube pica pica golosina",
+      "piña rababa gelatina",
+      "jelly fruti no seas puti",
+      "rimmel sombra mascarilla",
+      "y con el highlighter estoy to diva",
+      "carros joyas limusina",
+      "y con el highlighter estoy to piva"
+     ],
+     "en": [
+      "I'm telling you don't play, little poser",
+      "where are my fries, your grease and your little thing?",
+      "marshmallow pop-rocks sweetie",
+      "pineapple rababa jelly",
+      "jelly fruity don't be bitchy",
+      "mascara eyeshadow face mask",
+      "and with the highlighter I'm so diva",
+      "cars jewels limousine",
+      "and with the highlighter I'm such a babe"
+     ],
+     "es": null,
+     "eu": [
+      "diotsut ez jolastu, figurina",
+      "non daude nire patatak, zure koipetxoa eta zure gauzatxoa?",
+      "marshmallow, pika-pika, gozokia",
+      "ananas rababa gelatina",
+      "jelly fruti ez izan puti",
+      "rimela, betazal-itzala, aurpegiko maskara",
+      "eta highlighterrarekin diva galanta naiz",
+      "autoak bitxiak limusina",
+      "eta highlighterrarekin neska galanta naiz"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 7,
+   "segments": [
+    {
+     "from": 0,
+     "to": 5,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "dame porquería, dame dame alcaldia",
+      "dame tuberia, dame dame fiscalía",
+      "dame dame dame dame",
+      "grosegrosegrosería",
+      "dame, dame dame tu...",
+      "SODOMÍA"
+     ],
+     "en": [
+      "gimme filth, gimme gimme city hall",
+      "gimme pipes, gimme gimme the DA's office",
+      "gimme gimme gimme gimme",
+      "nasty-nasty-nastiness",
+      "gimme, gimme gimme your...",
+      "SODOMY"
+     ],
+     "es": null,
+     "eu": [
+      "eman zikinkeria, eman eman alkatetza",
+      "eman hodiak, eman eman fiskaltza",
+      "eman eman eman eman",
+      "astasasasakeria",
+      "eman, eman eman zure...",
+      "SODOMIA"
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 1,
+   "line": 0,
+   "original": "Dame chuchería, dame dame chuchería",
+   "issue": "'Chuchería' = sweets/trinkets, but 'chucha' is also slang for pussy; I used 'candy/gozokia' and lose the double meaning. Maybe want 'cooch-candy' style wordplay?"
+  },
+  {
+   "block": 2,
+   "line": 1,
+   "original": "te digo que dont play with tita",
+   "issue": "'tita' = auntie, but also slang for dick/pussy in some regions; left as 'tita' in en/eu."
+  },
+  {
+   "block": 2,
+   "line": 5,
+   "original": "invita a esta churrita",
+   "issue": "'churrita' = little cutie/hottie, also 'churra' = vulva; translated as 'little cutie' / 'txurri txiki'."
+  },
+  {
+   "block": 6,
+   "line": 0,
+   "original": "glory sugar papa, deep sugar mama",
+   "issue": "'glory' probably a glory-hole pun and 'deep' = deep throat; unsure, translated 'garganta profunda' in es but kept 'glory'."
+  },
+  {
+   "block": 6,
+   "line": 2,
+   "original": "donde están mis papitas, tu grasita y tu cosita?",
+   "issue": "'grasita' and 'cosita' double entendre (grease/fluids, little thing); translated literally."
+  },
+  {
+   "block": 6,
+   "line": 4,
+   "original": "piña rababa gelatina",
+   "issue": "'rababa' not a word I know (typo for 'rabaná'/'rebaba'? or invented); left as-is."
+  },
+  {
+   "block": 6,
+   "line": 5,
+   "original": "jelly fruti no seas puti",
+   "issue": "'puti' = diminutive of puta; in en I used 'bitchy' for rhyme with 'jelly fruity' but it loses the sex-worker reference; consider 'don't be a ho'."
+  },
+  {
+   "block": 7,
+   "line": 1,
+   "original": "dame tuberia, dame dame fiscalía",
+   "issue": "'tubería' = pipes but also dick; 'fiscalía' = public prosecutor's office; translated literally."
+  },
+  {
+   "block": 7,
+   "line": 3,
+   "original": "grosegrosegrosería",
+   "issue": "'grosegrosegrosería' = grosería (crudeness) stuttered; Basque 'astasasasakeria' is my invention for the stutter on 'astakeria'."
+  }
+ ]
+}

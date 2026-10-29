@@ -1,0 +1,382 @@
+{
+ "song": "Compost your gender con Capitano Barbacoño",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Are you ready bitches?"
+     ],
+     "en": null,
+     "es": [
+      "¿Estáis listas, bichas?"
+     ],
+     "eu": [
+      "Prest zaudete, putak?"
+     ]
+    },
+    {
+     "from": 1,
+     "to": 1,
+     "lang": "es",
+     "skip": true,
+     "keep": false,
+     "orig": [
+      "Las Marikarmen"
+     ],
+     "en": null,
+     "es": null,
+     "eu": null
+    },
+    {
+     "from": 2,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Destruir 2000 años de cultura",
+      "Culturaaaaaaaaaaa"
+     ],
+     "en": [
+      "Destroy 2000 years of culture",
+      "Cultuuuuuure"
+     ],
+     "es": null,
+     "eu": [
+      "2000 urteko kultura suntsitu",
+      "Kulturaaaaaaa"
+     ]
+    },
+    {
+     "from": 4,
+     "to": 4,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "[Silvia Rivera] Ya'll better quiet down!"
+     ],
+     "en": null,
+     "es": [
+      "[Silvia Rivera] ¡Más os vale callaros ya!"
+     ],
+     "eu": [
+      "[Silvia Rivera] Isiltzen zaretela hobe!"
+     ]
+    },
+    {
+     "from": 5,
+     "to": 7,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Cataclismo social",
+      "Nuestra madre Lady Marikarmen nos decía:",
+      "Sal y mira al frente, nunca hacia abajo."
+     ],
+     "en": [
+      "Social cataclysm",
+      "Our mother Lady Marikarmen used to tell us:",
+      "Step out and look ahead, never down."
+     ],
+     "es": null,
+     "eu": [
+      "Kataklismo soziala",
+      "Gure ama Lady Marikarmenek esaten ziguen:",
+      "Atera eta begira aurrera, inoiz ez behera."
+     ]
+    },
+    {
+     "from": 8,
+     "to": 9,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "[1950s radio] Every woman needs to be herself at times, your answer: baking. baking good, baking often.",
+      "Honey! you killed the petunias, you killed the petunias."
+     ],
+     "en": null,
+     "es": [
+      "[1950s radio] Toda mujer necesita ser ella misma de vez en cuando, tu respuesta: hornear. Hornear bien, hornear a menudo.",
+      "¡Cariño! Has matado las petunias, has matado las petunias."
+     ],
+     "eu": [
+      "[1950s radio] Emakume orok bere buruarekin egon behar du noizean behin, zure erantzuna: labean egitea. Ondo egin, sarri egin.",
+      "Maitea! Petuniak hil dituzu, petuniak hil dituzu."
+     ]
+    },
+    {
+     "from": 10,
+     "to": 11,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "[Manuela Trasobares] No puedo más… con esta… sociedad que nos tiene marginadas, que tú lo veis!",
+      "Descodificando el patrón de género"
+     ],
+     "en": [
+      "[Manuela Trasobares] I can't take it anymore… with this… society that keeps us marginalised, can't you see it!",
+      "Decoding the gender pattern"
+     ],
+     "es": null,
+     "eu": [
+      "[Manuela Trasobares] Ezin dut gehiago… gizarte honekin… baztertuta gaituena, ez al duzue ikusten!",
+      "Genero-patroia deskodetzen"
+     ]
+    },
+    {
+     "from": 12,
+     "to": 13,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Update your gender",
+      "I need to know what do you have inside of your pantalón"
+     ],
+     "en": null,
+     "es": [
+      "Actualiza tu género",
+      "Necesito saber qué tienes dentro del pantalón"
+     ],
+     "eu": [
+      "Eguneratu zure generoa",
+      "Jakin behar dut zer daukazun galtzen barruan"
+     ]
+    },
+    {
+     "from": 14,
+     "to": 14,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "[Manuela Trasobares] Tira la copa!"
+     ],
+     "en": [
+      "[Manuela Trasobares] Throw down the glass!"
+     ],
+     "es": null,
+     "eu": [
+      "[Manuela Trasobares] Bota kopa!"
+     ]
+    },
+    {
+     "from": 15,
+     "to": 15,
+     "lang": "ru",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "мальчик или девочка? {chico o chica}"
+     ],
+     "en": [
+      "Boy or girl?"
+     ],
+     "es": [
+      "¿Chico o chica?"
+     ],
+     "eu": [
+      "Mutila ala neska?"
+     ]
+    },
+    {
+     "from": 16,
+     "to": 17,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Multigender identity",
+      "Gender updated"
+     ],
+     "en": null,
+     "es": [
+      "Identidad multigénero",
+      "Género actualizado"
+     ],
+     "eu": [
+      "Identitate multigeneroa",
+      "Generoa eguneratuta"
+     ]
+    },
+    {
+     "from": 18,
+     "to": 18,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Tu género se ha acabado!"
+     ],
+     "en": [
+      "Your gender is over!"
+     ],
+     "es": null,
+     "eu": [
+      "Zure generoa bukatu da!"
+     ]
+    },
+    {
+     "from": 19,
+     "to": 19,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "[1950s radio] Mmm you can really taste the difference! Crispy but not greasy like fried chicken!"
+     ],
+     "en": null,
+     "es": [
+      "[1950s radio] ¡Mmm, se nota la diferencia! ¡Crujiente pero sin grasa como el pollo frito!"
+     ],
+     "eu": [
+      "[1950s radio] Mmm, ederki antzematen da aldea! Kurruskaria baina ez koipetsua, oilasko frijitua bezala!"
+     ]
+    },
+    {
+     "from": 20,
+     "to": 20,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Cultura del caos genérico"
+     ],
+     "en": [
+      "Culture of gender chaos"
+     ],
+     "es": null,
+     "eu": [
+      "Genero-kaosaren kultura"
+     ]
+    },
+    {
+     "from": 21,
+     "to": 26,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "[Silvia Rivera] Revolution noooow!",
+      "Gender revolution",
+      "You thought we were going to vanish?",
+      "[Assata Shakur] I have advocated and I still advocate revolutionary changes.",
+      "Queer and legendary.",
+      "[Assata Shakur] Self determination, an end to capitalist exploitation."
+     ],
+     "en": null,
+     "es": [
+      "[Silvia Rivera] ¡Revolución yaaaa!",
+      "Revolución de género",
+      "¿Pensabais que íbamos a desaparecer?",
+      "[Assata Shakur] He defendido y sigo defendiendo cambios revolucionarios.",
+      "Queer y legendarie.",
+      "[Assata Shakur] Autodeterminación, el fin de la explotación capitalista."
+     ],
+     "eu": [
+      "[Silvia Rivera] Iraultza orainnn!",
+      "Genero-iraultza",
+      "Desagertuko ginela uste zenuten?",
+      "[Assata Shakur] Aldaketa iraultzaileen aldeko izan naiz eta oraindik ere banaiz.",
+      "Queer eta legendarioak.",
+      "[Assata Shakur] Autodeterminazioa, esplotazio kapitalistaren amaiera."
+     ]
+    },
+    {
+     "from": 27,
+     "to": 27,
+     "lang": "es",
+     "skip": true,
+     "keep": false,
+     "orig": [
+      "Las Marikarmen."
+     ],
+     "en": null,
+     "es": null,
+     "eu": null
+    },
+    {
+     "from": 28,
+     "to": 35,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "[Assata Shakur] The abolition of racist policies, the eradication of sexism and the elimination of political repression.",
+      "Exploitation.",
+      "[Assata Shakur] If that is a crime, then i am totally guilty.",
+      "Guilty",
+      "Totally guilty",
+      "In between",
+      "[Assata Shakur] An end to capitalist exploitation… When my people receive justice, I am sure that I will receive it too.",
+      "You've got many options and not just two."
+     ],
+     "en": null,
+     "es": [
+      "[Assata Shakur] La abolición de las políticas racistas, la erradicación del sexismo y la eliminación de la represión política.",
+      "Explotación.",
+      "[Assata Shakur] Si eso es un delito, entonces soy totalmente culpable.",
+      "Culpable",
+      "Totalmente culpable",
+      "Entre medias",
+      "[Assata Shakur] El fin de la explotación capitalista… Cuando mi gente reciba justicia, estoy segura de que yo también la recibiré.",
+      "Tienes muchas opciones y no solo dos."
+     ],
+     "eu": [
+      "[Assata Shakur] Politika arrazisten abolizioa, sexismoaren desagerrarazpena eta errepresio politikoaren ezabapena.",
+      "Esplotazioa.",
+      "[Assata Shakur] Hori delitu bada, erabat errudun naiz.",
+      "Errudun",
+      "Erabat errudun",
+      "Tartean",
+      "[Assata Shakur] Esplotazio kapitalistaren amaiera… Nire herriak justizia jasotzen duenean, ziur nago nik ere jasoko dudala.",
+      "Aukera asko dituzu, ez soilik bi."
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 0,
+   "line": 1,
+   "original": "Las Marikarmen",
+   "issue": "Treated 'Las Marikarmen' (lines 1 and 27) as band-name credit labels and skipped them; confirm."
+  },
+  {
+   "block": 0,
+   "line": 14,
+   "original": "[Manuela Trasobares] Tira la copa!",
+   "issue": "'Tira la copa' (Manuela Trasobares sample): unsure whether 'throw down/knock back the glass' or an idiom; translated literally."
+  },
+  {
+   "block": 0,
+   "line": 15,
+   "original": "мальчик или девочка? {chico o chica}",
+   "issue": "Russian line: I translated only the meaning (boy or girl) in all three versions and dropped the original Russian + {gloss}; check how the app should present it."
+  },
+  {
+   "block": 0,
+   "line": 10,
+   "original": "[Manuela Trasobares] No puedo más… con esta… sociedad que nos tiene marginadas, que tú lo veis!",
+   "issue": "Source has 'que tú lo veis' (ungrammatical, sample speech); translated as natural 'can't you see it'."
+  },
+  {
+   "block": 0,
+   "line": 0,
+   "original": "Are you ready bitches?",
+   "issue": "'bitches' in es rendered as 'bichas', in eu as 'putak' (reclaimed); alternative eu: 'marikoiak'."
+  }
+ ]
+}

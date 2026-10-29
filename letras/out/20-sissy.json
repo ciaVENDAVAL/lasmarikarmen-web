@@ -1,0 +1,170 @@
+{
+ "song": "Sissy",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "other",
+     "skip": true,
+     "keep": false,
+     "orig": [
+      "*Las Marikarmen *"
+     ],
+     "en": null,
+     "es": null,
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 1,
+   "segments": [
+    {
+     "from": 0,
+     "to": 1,
+     "lang": "other",
+     "skip": false,
+     "keep": true,
+     "orig": [
+      "tukutu tukutu . . .",
+      "Marikarmen, tukutu tukutu"
+     ],
+     "en": [
+      "tukutu tukutu . . .",
+      "Marikarmen, tukutu tukutu"
+     ],
+     "es": [
+      "tukutu tukutu . . .",
+      "Marikarmen, tukutu tukutu"
+     ],
+     "eu": [
+      "tukutu tukutu . . .",
+      "Marikarmen, tukutu tukutu"
+     ]
+    },
+    {
+     "from": 2,
+     "to": 3,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "touch me and you can twerk me",
+      "so i can get my Marikarmen . . ."
+     ],
+     "en": null,
+     "es": [
+      "tócame y me puedes twerkear",
+      "pa' sacar a mi Marikarmen . . ."
+     ],
+     "eu": [
+      "ukitu nazazu eta twerka nazakezu",
+      "nire Marikarmen kanporatzeko . . ."
+     ]
+    },
+    {
+     "from": 4,
+     "to": 9,
+     "lang": "other",
+     "skip": false,
+     "keep": true,
+     "orig": [
+      "tukutu tukutu . . .",
+      "hehehehe",
+      "Marikarmen",
+      "rukukuku",
+      "MARIKARMEN",
+      "riiiiiiiii!"
+     ],
+     "en": [
+      "tukutu tukutu . . .",
+      "hehehehe",
+      "Marikarmen",
+      "rukukuku",
+      "MARIKARMEN",
+      "riiiiiiiii!"
+     ],
+     "es": [
+      "tukutu tukutu . . .",
+      "hehehehe",
+      "Marikarmen",
+      "rukukuku",
+      "MARIKARMEN",
+      "riiiiiiiii!"
+     ],
+     "eu": [
+      "tukutu tukutu . . .",
+      "hehehehe",
+      "Marikarmen",
+      "rukukuku",
+      "MARIKARMEN",
+      "riiiiiiiii!"
+     ]
+    },
+    {
+     "from": 10,
+     "to": 12,
+     "lang": "en",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "now sissy that walk",
+      "touch me and you can twerk me",
+      "so i can get my Marikarmen . . ."
+     ],
+     "en": null,
+     "es": [
+      "ahora sissy that walk",
+      "tócame y me puedes twerkear",
+      "pa' sacar a mi Marikarmen . . ."
+     ],
+     "eu": [
+      "orain sissy that walk",
+      "ukitu nazazu eta twerka nazakezu",
+      "nire Marikarmen kanporatzeko . . ."
+     ]
+    },
+    {
+     "from": 13,
+     "to": 13,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "marika"
+     ],
+     "en": [
+      "fag"
+     ],
+     "es": null,
+     "eu": [
+      "marikoi"
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 1,
+   "line": 3,
+   "original": "so i can get my Marikarmen . . .",
+   "issue": "'so i can get my Marikarmen' - 'get' is ambiguous (receive / summon / bring out / get to be); translated as bringing out her Marikarmen persona."
+  },
+  {
+   "block": 1,
+   "line": 10,
+   "original": "now sissy that walk",
+   "issue": "'sissy that walk' is RuPaul's catchphrase/song title; left in English in es and eu (title rule). Say if you prefer a translated version."
+  },
+  {
+   "block": 1,
+   "line": 13,
+   "original": "marika",
+   "issue": "'marika' reclaimed slur; English 'fag' chosen as the equivalent reclaimed register; could also be left as 'marika'."
+  }
+ ]
+}

@@ -1,0 +1,380 @@
+{
+ "song": "Poca ropa",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "other",
+     "skip": true,
+     "keep": false,
+     "orig": [
+      "*Las Marikarmen* *y* *La Maga (prod. Carlo Juranccelli)*"
+     ],
+     "en": null,
+     "es": null,
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 1,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "no postureo es momento de perreo",
+      "bichas sueltas, monstruas diosas divineo",
+      "sudor disidente que no es palabreo",
+      "mood travesti el hype del jaleo"
+     ],
+     "en": [
+      "no posing, it's perreo time",
+      "loose bitches, monster goddesses, divine-ing",
+      "dissident sweat that ain't just talk",
+      "travesti mood, the hype of the ruckus"
+     ],
+     "es": null,
+     "eu": [
+      "postureorik ez, perreoaren garaia da",
+      "bicha askeak, munstro jainkosak, jainkotsu-jaialdia",
+      "izerdi disidentea, hitzontzia ez dena",
+      "trabesti mood-a, zalaparta-hype-a"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 2,
+   "segments": [
+    {
+     "from": 0,
+     "to": 6,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Tranki aquí con mis amis. Llegamos al pary modo Happy",
+      "antifasitanti rat.i Mami esto Calienta rapido",
+      "Dollys sabor honey. Tumban fiestas fumigan a machis",
+      "y Menean. Marikarmen suena",
+      "Las pibas perrean. En la pista Gastan suela",
+      "Suda callejera. Perra de la buena",
+      "Busca su manera. De bailar como ella quiera"
+     ],
+     "en": [
+      "Chill here with my pals. We hit the party in happy mode",
+      "antifascist anti-rat.i Mami this heats up fast",
+      "Dollies honey flavor. They crash parties, fumigate machos",
+      "and they shake it. Marikarmen's playing",
+      "The girls perrean. On the floor they wear out their soles",
+      "Street sweat. A proper bitch",
+      "Looking for her way. To dance however she wants"
+     ],
+     "es": null,
+     "eu": [
+      "Lasai hemen nire lagunekin. Festara iritsi gara happy modua",
+      "antifaxista anti-rat.i Mami hau azkar berotzen da",
+      "Dolly-ak ezti zaporea. Festak erortzen dituzte, matxistak fumigatzen",
+      "eta mugitzen dira. Marikarmen entzuten da",
+      "Neskek perreatzen dute. Pistan zola higatzen dute",
+      "Kaleko izerdia. Zakur ona benetan",
+      "Bere bidea bilatzen du. Nahi duen bezala dantzatzeko"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 3,
+   "segments": [
+    {
+     "from": 0,
+     "to": 7,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "que parte no entiendes en que vives nos queremos",
+      "si nos ves huye, que responderemos",
+      "a la yugular y es que no nos sometemos",
+      "ira bujarra por todos los extremos",
+      "libres de todo shame, espacio para el culeo",
+      "muslo sudor carne y también bamboleo",
+      "colgantito y brillito cuerpa yo chuleo",
+      "dejando atrás la cueva de lo cis-hetero"
+     ],
+     "en": [
+      "what part of 'we want us alive' don't you get",
+      "if you see us, run, because we'll answer",
+      "right at the jugular and we don't submit",
+      "fag rage from every extreme",
+      "free of all shame, room for the ass-fucking",
+      "thigh, sweat, flesh and also swaying",
+      "little pendant and little sparkle, I strut my bodyyy",
+      "leaving the cis-hetero cave behind"
+     ],
+     "es": null,
+     "eu": [
+      "zer ez duzu ulertzen 'bizirik nahi gaitugu' horretan",
+      "ikusten bagaituzu, ihes egin, erantzungo baitugu",
+      "lepo-zainera eta ez gara menderatzen",
+      "amorru bujarra muturreko guztietatik",
+      "lotsa guztitik aske, ipurtz-lanerako tokia",
+      "izterra, izerdia, haragia eta baita kulunka",
+      "zintzilikariño eta distira, gorputza txuleatzen dut",
+      "cis-heteroaren kobazuloa atzean utziz"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 4,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "no postureo es momento de perreo",
+      "bichas sueltas, monstruas (diosas) divineo",
+      "sudor disidente que no es palabreo",
+      "mood travesti el hype del jaleo"
+     ],
+     "en": [
+      "no posing, it's perreo time",
+      "loose bitches, monster (goddesses) divine-ing",
+      "dissident sweat that ain't just talk",
+      "travesti mood, the hype of the ruckus"
+     ],
+     "es": null,
+     "eu": [
+      "postureorik ez, perreoaren garaia da",
+      "bicha askeak, munstro (jainkosak) jainkotsu-jaialdia",
+      "izerdi disidentea, hitzontzia ez dena",
+      "trabesti mood-a, zalaparta-hype-a"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 5,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Hoy vengo perrita, ves que estoy bonita",
+      "no tengo grandes tetas pero están peluditas",
+      "cuerpa de proscrita destruye tu cabecita",
+      "despierto transformo tu deseo transita"
+     ],
+     "en": [
+      "Today I come in bitch mode, see how pretty I am",
+      "I don't have big tits but they're hairy",
+      "outlaw bodyyy wrecks your little head",
+      "awake I transform, your desire transits"
+     ],
+     "es": null,
+     "eu": [
+      "Gaur zakurkume modura natorkizu, ikusten duzu polita naizela",
+      "ez ditut titi handiak baina iletsuak dira",
+      "gorputz proskribatua, zure buru txikia suntsitzen du",
+      "esna transformatzen dut, zure desira transitatzen da"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 6,
+   "segments": [
+    {
+     "from": 0,
+     "to": 5,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Madre nuestra que estás en la tierra santificada sea está perra",
+      "Rompió su cadena y se fue con la manada",
+      "Fiera no va camuflada, va brillando pa que veas",
+      "Salir sin miedo a comentarios obscenos",
+      "Si mi cuerpa es mi terreno, no empodero más su imperio",
+      "Se que igual quieres comerlo, no soy tu alimento homi lo lamento"
+     ],
+     "en": [
+      "Our mother who art on earth, hallowed be this bitch",
+      "She broke her chain and left with the pack",
+      "A beast doesn't go camouflaged, she goes shining so you can see",
+      "Going out without fear of obscene comments",
+      "If my bodyyy is my territory, I don't empower your empire anymore",
+      "I know you might wanna eat it, I'm not your food, homie, sorry"
+     ],
+     "es": null,
+     "eu": [
+      "Gure ama, lur santifikatuan zaudena, santifikatua izan bedi zakurkume hau",
+      "Katea hautsi zuen eta artaldearekin joan zen",
+      "Piztia ez doa kamuflatuta, distiratzen doa ikus dezazun",
+      "Beldurrik gabe irtetea iruzkin lizunei",
+      "Nire gorputza nire lurraldea bada, ez dut gehiago haien inperioa ahalduntzen",
+      "Badakit agian jan nahi duzula, ez naiz zure janaria, lagun, sentitzen dut"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 7,
+   "segments": [
+    {
+     "from": 0,
+     "to": 2,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Seremos libres mientras no sigamos normas",
+      "con esos pelos harás que el hetero corra",
+      "bailemos hasta quedar con poca ropa"
+     ],
+     "en": [
+      "We'll be free as long as we don't follow rules",
+      "with that hair you'll make the straight guy run",
+      "let's dance till we're down to almost no clothes"
+     ],
+     "es": null,
+     "eu": [
+      "Aske izango gara arauei jarraitzen ez diegun bitartean",
+      "ile horiekin heterosexuala korrika jarriko duzu",
+      "dantza dezagun arropa gutxirekin geratu arte"
+     ]
+    },
+    {
+     "from": 3,
+     "to": 3,
+     "lang": "en",
+     "skip": false,
+     "keep": true,
+     "orig": [
+      "madafaka dance dance modafoc"
+     ],
+     "en": [
+      "madafaka dance dance modafoc"
+     ],
+     "es": [
+      "madafaka dance dance modafoc"
+     ],
+     "eu": [
+      "madafaka dance dance modafoc"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 9,
+   "segments": [
+    {
+     "from": 0,
+     "to": 2,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Seremos libres mientras no sigamos normas",
+      "con esos pelos harás que el hetero corra",
+      "bailemos hasta quedar con poca ropa"
+     ],
+     "en": [
+      "We'll be free as long as we don't follow rules",
+      "with that hair you'll make the straight guy run",
+      "let's dance till we're down to almost no clothes"
+     ],
+     "es": null,
+     "eu": [
+      "Aske izango gara arauei jarraitzen ez diegun bitartean",
+      "ile horiekin heterosexuala korrika jarriko duzu",
+      "dantza dezagun arropa gutxirekin geratu arte"
+     ]
+    },
+    {
+     "from": 3,
+     "to": 3,
+     "lang": "en",
+     "skip": false,
+     "keep": true,
+     "orig": [
+      "madafaka dance dance madafaka"
+     ],
+     "en": [
+      "madafaka dance dance madafaka"
+     ],
+     "es": [
+      "madafaka dance dance madafaka"
+     ],
+     "eu": [
+      "madafaka dance dance madafaka"
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 1,
+   "line": 1,
+   "original": "bichas sueltas, monstruas diosas divineo",
+   "issue": "'divineo' seems a coined word (divine + vacileo/jaleo, 'divine partying'); rendered as 'divine-ing'."
+  },
+  {
+   "block": 2,
+   "line": 1,
+   "original": "antifasitanti rat.i Mami esto Calienta rapido",
+   "issue": "'rat.i' is unclear: maybe 'rati' (slang for cops) giving 'anti-cops', or a typo/wordplay. Kept it as is."
+  },
+  {
+   "block": 2,
+   "line": 2,
+   "original": "Dollys sabor honey. Tumban fiestas fumigan a machis",
+   "issue": "'Dollys' kept as a loan (dolls = trans/drag girls); 'machis' = machos."
+  },
+  {
+   "block": 3,
+   "line": 0,
+   "original": "que parte no entiendes en que vives nos queremos",
+   "issue": "Read as the feminist slogan 'vivas nos queremos' (we want us alive), written 'vives'. If it is literally 'you live, we love each other' the meaning changes."
+  },
+  {
+   "block": 3,
+   "line": 3,
+   "original": "ira bujarra por todos los extremos",
+   "issue": "'bujarra' (reclaimed slur for gay man); rendered as 'fag rage' in English."
+  },
+  {
+   "block": 5,
+   "line": 3,
+   "original": "despierto transformo tu deseo transita",
+   "issue": "Pun: 'transita' (transits) plays on trans; also 'despierto' could be adjective 'awake' or verb 'I wake'. Kept both ambiguities approximately."
+  },
+  {
+   "block": 6,
+   "line": 5,
+   "original": "Se que igual quieres comerlo, no soy tu alimento homi lo lamento",
+   "issue": "'comerlo' refers to 'mi cuerpa' (eat it / eat me); sexual-predator sense kept. 'homi' = 'homie/hombre', rendered 'homie'."
+  },
+  {
+   "block": 7,
+   "line": 3,
+   "original": "madafaka dance dance modafoc",
+   "issue": "Phonetic English ('motherfucker'); treated as pure sound/wordplay and kept untranslated in all versions (block 7 and 9)."
+  }
+ ]
+}

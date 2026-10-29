@@ -75,6 +75,13 @@ def build(langs, text, site):
         shutil.rmtree(OUT)
     shutil.copytree(ROOT / "assets", OUT / "assets")
     (OUT / ".nojekyll").write_text("")
+    # Lyrics page (castellano UI, translations EN/ES/EU) — source in letras/
+    import subprocess
+    subprocess.run([sys.executable, "build.py"], cwd=ROOT / "letras", check=True, stdout=subprocess.DEVNULL)
+    lyr = (ROOT / "letras" / "page-embed.html").read_text(encoding="utf-8")
+    (OUT / "letras.html").write_text('<!doctype html>\n<html lang="es">\n<head>\n<meta charset="utf-8">\n'
+        '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
+        '<link rel="icon" href="favicon.ico">\n</head>\n<body>\n' + lyr + '\n</body>\n</html>\n', encoding="utf-8")
     if (ROOT / "favicon.ico").exists():
         shutil.copy(ROOT / "favicon.ico", OUT / "favicon.ico")
     import hashlib

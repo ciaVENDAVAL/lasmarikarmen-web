@@ -1,0 +1,114 @@
+{
+ "song": "Tiene un brillito",
+ "blocks": [
+  {
+   "block": 0,
+   "segments": [
+    {
+     "from": 0,
+     "to": 0,
+     "lang": "other",
+     "skip": true,
+     "keep": false,
+     "orig": [
+      "*Las Marikarmen *"
+     ],
+     "en": null,
+     "es": null,
+     "eu": null
+    }
+   ]
+  },
+  {
+   "block": 1,
+   "segments": [
+    {
+     "from": 0,
+     "to": 3,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Tiene un brillito que me deslumbra la cara",
+      "cuatro afiladitas me dejó muy bien planchada",
+      "soñé con tu almohada y me imaginé tu cara",
+      "veo tu anillito al despertar por la mañana"
+     ],
+     "en": [
+      "It's got a little sparkle that dazzles my face",
+      "four little sharpened ones left me nicely pressed flat",
+      "I dreamed of your pillow and pictured your face",
+      "I see your little ring when I wake up in the morning"
+     ],
+     "es": null,
+     "eu": [
+      "Distira txiki bat du, aurpegia lausotzen didana",
+      "lau zorrotxok primeran plantxatuta utzi ninduten",
+      "zure burkoaz amets egin nuen eta zure aurpegia imajinatu nuen",
+      "zure eraztuntxoa ikusten dut goizean esnatzean"
+     ]
+    }
+   ]
+  },
+  {
+   "block": 3,
+   "segments": [
+    {
+     "from": 0,
+     "to": 6,
+     "lang": "es",
+     "skip": false,
+     "keep": false,
+     "orig": [
+      "Todos los cartones que jugué",
+      "los que no gané",
+      "los que no pagué",
+      "a los que invité los jugaré contigo",
+      "los ganaré contigo",
+      "los perderé contigo",
+      "los llevaré adonde esté tu anillito"
+     ],
+     "en": [
+      "All the bingo cards I ever played",
+      "the ones I didn't win",
+      "the ones I didn't pay for",
+      "the ones I treated people to I'll play with you",
+      "I'll win them with you",
+      "I'll lose them with you",
+      "I'll take them wherever your little ring is"
+     ],
+     "es": null,
+     "eu": [
+      "Jokatu ditudan bingo-kartoi guztiak",
+      "irabazi ez ditudanak",
+      "ordaindu ez ditudanak",
+      "gonbidatu ditudanak zurekin jokatuko ditut",
+      "zurekin irabaziko ditut",
+      "zurekin galduko ditut",
+      "zure eraztuntxoa dagoen tokira eramango ditut"
+     ]
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "block": 1,
+   "line": 1,
+   "original": "cuatro afiladitas me dejó muy bien planchada",
+   "issue": "'cuatro afiladitas' and 'me dejó muy bien planchada' are unclear (sharpened ones = lines? 'planchada' = flat/ironed/knocked out/hair straightened); translated literally."
+  },
+  {
+   "block": 1,
+   "line": 3,
+   "original": "veo tu anillito al despertar por la mañana",
+   "issue": "'anillito' = little ring, possibly also a sexual double meaning (anus); kept as ring."
+  },
+  {
+   "block": 3,
+   "line": 0,
+   "original": "Todos los cartones que jugué",
+   "issue": "'cartones' - assumed bingo cards (could also be cardboard/cards/cartons of cigarettes or drinks). 'a los que invité' - assumed 'the ones I treated/invited'."
+  }
+ ]
+}
