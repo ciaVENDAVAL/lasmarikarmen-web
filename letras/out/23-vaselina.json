@@ -295,30 +295,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 1,
-   "line": 3,
-   "original": "Que se preparen, que lo que viene, s'pa que le den,",
-   "issue": "'s'pa que le den' is ambiguous: 'sepa que le den' (let them know they'll get it), 'es pa' que le den' (it's for them to get it) or 'que le den' (screw 'em). Translated as 'so you know, they'll get it'."
-  },
-  {
-   "block": 1,
-   "line": 0,
-   "original": "Coje el dildo pa'que mi ano prenda lo colore",
-   "issue": "'prenda lo colore' = 'prenda los colores' - 'prender' = light up/turn on; could also be 'put on/wear the colors'. Chose light up."
-  },
-  {
-   "block": 4,
-   "line": 3,
-   "original": "Se aciquala, pa la esquina",
-   "issue": "'Se aciquala' = 'se achicala' (dresses up/gets dolled up, Caribbean spelling); subject gender and who 'me domina' refers to is unclear - rendered as 'she'."
-  },
-  {
-   "block": 7,
-   "line": 2,
-   "original": "Conmigo ellos se pierdeeen X2",
-   "issue": "'Conmigo ellos se pierden' - could mean 'they lose their way / lose themselves (go wild) with me'; also shifts between tú and él/ellos. Translated literally."
-  }
- ]
+ "questions": []
 }

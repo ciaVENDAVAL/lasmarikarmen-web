@@ -150,7 +150,7 @@
       "y con el highlighter estoy to piva"
      ],
      "en": [
-      "I'm telling you don't play with tita",
+      "I'm telling you don't play with auntie",
       "I want my shoes, my little wig",
       "yes yes and my french fries",
       "jelly jelly jelly dynamite",
@@ -163,7 +163,7 @@
      ],
      "es": null,
      "eu": [
-      "diotsut ez jolastu tita-rekin",
+      "diotsut ez jolastu izebarekin",
       "nire zapatak nahi ditut, nire peluka txikia",
       "bai bai eta nire patata frijituak",
       "jelly jelly jelly dinamita",
@@ -218,7 +218,7 @@
       "y con el highlighter estoy to piva"
      ],
      "en": [
-      "I'm telling you don't play with tita",
+      "I'm telling you don't play with auntie",
       "I want my cute clothes and my little jewel",
       "and my french fries",
       "soaking-wet little madeleine, dripping",
@@ -231,7 +231,7 @@
      ],
      "es": null,
      "eu": [
-      "diotsut ez jolastu tita-rekin",
+      "diotsut ez jolastu izebarekin",
       "nahi ditut nire arropatxoak eta nire bitxitxoa",
       "eta nire patata frijituak",
       "madalena bustita, tantaka",
@@ -259,7 +259,7 @@
      ],
      "en": null,
      "es": [
-      "sugar papá glory, sugar mamá garganta profunda"
+      "glory sugar papá, profunda sugar mamá"
      ],
      "eu": [
       "glory sugar aitatxo, sugar amatxo sakon"
@@ -286,8 +286,8 @@
       "I'm telling you don't play, little poser",
       "where are my fries, your grease and your little thing?",
       "marshmallow pop-rocks sweetie",
-      "pineapple rababa jelly",
-      "jelly fruity don't be bitchy",
+      "pineapple rhubarb jelly",
+      "jelly fruity don't be a hoe",
       "mascara eyeshadow face mask",
       "and with the highlighter I'm so diva",
       "cars jewels limousine",
@@ -298,7 +298,7 @@
       "diotsut ez jolastu, figurina",
       "non daude nire patatak, zure koipetxoa eta zure gauzatxoa?",
       "marshmallow, pika-pika, gozokia",
-      "ananas rababa gelatina",
+      "ananas errubarbo gelatina",
       "jelly fruti ez izan puti",
       "rimela, betazal-itzala, aurpegiko maskara",
       "eta highlighterrarekin diva galanta naiz",
@@ -327,7 +327,7 @@
      ],
      "en": [
       "gimme filth, gimme gimme city hall",
-      "gimme pipes, gimme gimme the DA's office",
+      "gimme pipes, gimme gimme the prosecutor's office",
       "gimme gimme gimme gimme",
       "nasty-nasty-nastiness",
       "gimme, gimme gimme your...",
@@ -346,60 +346,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 1,
-   "line": 0,
-   "original": "Dame chuchería, dame dame chuchería",
-   "issue": "'Chuchería' = sweets/trinkets, but 'chucha' is also slang for pussy; I used 'candy/gozokia' and lose the double meaning. Maybe want 'cooch-candy' style wordplay?"
-  },
-  {
-   "block": 2,
-   "line": 1,
-   "original": "te digo que dont play with tita",
-   "issue": "'tita' = auntie, but also slang for dick/pussy in some regions; left as 'tita' in en/eu."
-  },
-  {
-   "block": 2,
-   "line": 5,
-   "original": "invita a esta churrita",
-   "issue": "'churrita' = little cutie/hottie, also 'churra' = vulva; translated as 'little cutie' / 'txurri txiki'."
-  },
-  {
-   "block": 6,
-   "line": 0,
-   "original": "glory sugar papa, deep sugar mama",
-   "issue": "'glory' probably a glory-hole pun and 'deep' = deep throat; unsure, translated 'garganta profunda' in es but kept 'glory'."
-  },
-  {
-   "block": 6,
-   "line": 2,
-   "original": "donde están mis papitas, tu grasita y tu cosita?",
-   "issue": "'grasita' and 'cosita' double entendre (grease/fluids, little thing); translated literally."
-  },
-  {
-   "block": 6,
-   "line": 4,
-   "original": "piña rababa gelatina",
-   "issue": "'rababa' not a word I know (typo for 'rabaná'/'rebaba'? or invented); left as-is."
-  },
-  {
-   "block": 6,
-   "line": 5,
-   "original": "jelly fruti no seas puti",
-   "issue": "'puti' = diminutive of puta; in en I used 'bitchy' for rhyme with 'jelly fruity' but it loses the sex-worker reference; consider 'don't be a ho'."
-  },
-  {
-   "block": 7,
-   "line": 1,
-   "original": "dame tuberia, dame dame fiscalía",
-   "issue": "'tubería' = pipes but also dick; 'fiscalía' = public prosecutor's office; translated literally."
-  },
-  {
-   "block": 7,
-   "line": 3,
-   "original": "grosegrosegrosería",
-   "issue": "'grosegrosegrosería' = grosería (crudeness) stuttered; Basque 'astasasasakeria' is my invention for the stutter on 'astakeria'."
-  }
- ]
+ "questions": []
 }

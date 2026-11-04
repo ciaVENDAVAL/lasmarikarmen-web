@@ -147,24 +147,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 1,
-   "line": 3,
-   "original": "so i can get my Marikarmen . . .",
-   "issue": "'so i can get my Marikarmen' - 'get' is ambiguous (receive / summon / bring out / get to be); translated as bringing out her Marikarmen persona."
-  },
-  {
-   "block": 1,
-   "line": 10,
-   "original": "now sissy that walk",
-   "issue": "'sissy that walk' is RuPaul's catchphrase/song title; left in English in es and eu (title rule). Say if you prefer a translated version."
-  },
-  {
-   "block": 1,
-   "line": 13,
-   "original": "marika",
-   "issue": "'marika' reclaimed slur; English 'fag' chosen as the equivalent reclaimed register; could also be left as 'marika'."
-  }
- ]
+ "questions": []
 }

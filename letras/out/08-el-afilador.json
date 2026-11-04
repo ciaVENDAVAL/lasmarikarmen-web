@@ -22,7 +22,7 @@
       "Whoever messes with us is gonna have problems",
       "Whoever messes with us, the bullets fly",
       "showing off, showboating, we go out on the prowl",
-      "put the speaker in the car, there's parking today",
+      "put the speaker in the car, there's a tailgate party today",
       "cute cool little outfit, show it all off",
       "where are we going, where are we, we're lost"
      ],
@@ -31,7 +31,7 @@
       "Gurekin sartzen denak arazoak izango ditu",
       "Gurekin sartzen denak, tiroak hegan",
       "harro-harro, txantxetan, kalera ateratzen gara",
-      "sartu bafle autoan, gaur aparkalekua dago",
+      "sartu bafle autoan, gaur aparkalekuan festa dago",
       "mozorro fresko-fresko, dena erakutsi",
       "nora goaz, non gaude, galdu egin gara"
      ]
@@ -93,7 +93,7 @@
      ],
      "en": [
       "Whoever messes with us is gonna have problems",
-      "we've landed at some cribs, talk about power",
+      "we've landed at some cribs, what an impressive setup",
       "so much money so much cash that we're gonna rob",
       "drones camera I want that dress",
       "back to the rave we arrive on a ship"
@@ -101,7 +101,7 @@
      "es": null,
      "eu": [
       "Gurekin sartzen denak arazoak izango ditu",
-      "etxe batzuetara iritsi gara, zer ahalmena",
+      "etxe batzuetara iritsi gara, zer muntaia ikusgarria",
       "diru asko, cash asko, lapurtuko duguna",
       "dronea kamera, soineko hori nahi dut",
       "rave-ra bueltan itsasontzi batean iristen gara"
@@ -203,48 +203,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 0,
-   "line": 2,
-   "original": "reshuleo vacileo salimos de roneo",
-   "issue": "'reshuleo vacileo salimos de roneo': 'roneo' unclear (rum/cruising? 'ronear'=hang around); translated as going out on the prowl."
-  },
-  {
-   "block": 0,
-   "line": 3,
-   "original": "mete el bafle enel coche keoi hay parkineo",
-   "issue": "'keoi hay parkineo' - unsure of 'keoi' ('que hoy'? 'ke oye'?); translated as 'there's parking today'."
-  },
-  {
-   "block": 1,
-   "line": 0,
-   "original": "Las almendras marcan, cuadradas levantan, ballarina raja y stiletto clava",
-   "issue": "Nail shapes (almond, square, ballerina/coffin, stiletto) with verbs marcan/levantan/raja/clava; kept literal, 'marcan/levantan' are probably double entendres about fighting."
-  },
-  {
-   "block": 1,
-   "line": 2,
-   "original": "Estoy en mi piso y pasa el afilador",
-   "issue": "'afilador' = knife-grinder who passes through streets with a pan-pipe whistle; Basque 'zorrotzailea' may sound odd, but nothing better."
-  },
-  {
-   "block": 1,
-   "line": 4,
-   "original": "\"No llevo cuchillos, no llevo navajas,",
-   "issue": "Basque for 'No llevo navajas' - I used 'labana txikirik' (small knife) because 'nabaja' is the Basque loan; check, could use 'nabajarik'."
-  },
-  {
-   "block": 2,
-   "line": 1,
-   "original": "hemos llegado a unas kelis menudo poderío",
-   "issue": "'kelis' = houses/cribs (caló 'keli'); 'menudo poderío' translated as 'talk about power'."
-  },
-  {
-   "block": 2,
-   "line": 3,
-   "original": "drones camara kiero ese vestido",
-   "issue": "'drones camara kiero ese vestido': unsure what 'camara' refers to; translated literally."
-  }
- ]
+ "questions": []
 }

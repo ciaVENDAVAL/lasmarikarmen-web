@@ -450,36 +450,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 0,
-   "line": 13,
-   "original": "Yes we use them like horses",
-   "issue": "'them' presumably grannies, sarcastic; I kept it as a plain statement"
-  },
-  {
-   "block": 0,
-   "line": 33,
-   "original": "Estoy vieja estoy chocha?",
-   "issue": "'chocha' = doddering/senile but also vulgar slang for vulva; double meaning lost"
-  },
-  {
-   "block": 0,
-   "line": 46,
-   "original": "Ni coserte calcetines",
-   "issue": "'coserte calcetines' = darning/sewing socks; ok"
-  },
-  {
-   "block": 2,
-   "line": 0,
-   "original": "businesscreeps",
-   "issue": "coinage; rendered as 'babosos de los negocios' / 'negozio-ziztrinak'"
-  },
-  {
-   "block": 3,
-   "line": 0,
-   "original": "to roast my chocolate sundea",
-   "issue": "probably sexual innuendo ('chocolate sundae' + 'roast'); 'sundea' typo for sundae; kept the innuendo open"
-  }
- ]
+ "questions": []
 }

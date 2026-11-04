@@ -342,54 +342,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 1,
-   "line": 6,
-   "original": "gota a gota colma vasos",
-   "issue": "'gota a gota colma vasos' = 'drop by drop fills the glasses' (idiom: little by little things overflow); kept literal in all versions."
-  },
-  {
-   "block": 1,
-   "line": 13,
-   "original": "hoy te pondré una velita",
-   "issue": "'velita' + 'tirar la cera' reads as a candle/wax ritual or curse (witchcraft theme of the song), not literally pouring wax in a sexual sense; I kept it ambiguous."
-  },
-  {
-   "block": 1,
-   "line": 9,
-   "original": "disociando entre gritos",
-   "issue": "'disociando entre gritos pelea y fandangos' - unclear whether 'pelea y fandangos' = 'fight and party' (fandango = ruckus/fiesta); translated as brawl and fandangos."
-  },
-  {
-   "block": 3,
-   "line": 6,
-   "original": "y a partir de ahora mia",
-   "issue": "'mia' (written without accent) could be 'mía' (your will is mine) or 'mi a(...)'; translated as 'mine'. Also 'no te quedes mal' could mean 'don't be left upset' or 'don't leave things half-way'."
-  },
-  {
-   "block": 3,
-   "line": 0,
-   "original": "mago un moño mientras cucho",
-   "issue": "'mago un moño' = 'hago un moño' (phonetic spelling); 'moño' could be a hair bun or an idiom (making a fuss); chose hair bun."
-  },
-  {
-   "block": 4,
-   "line": 1,
-   "original": "gaur mozorrotuko dut, nirea pairamena",
-   "issue": "'nirea pairamena' (my suffering) is syntactically odd/dialectal; also unclear whether 'mozorrotuko dut' disguises the suffering or the speaker ('I will dress up')."
-  },
-  {
-   "block": 5,
-   "line": 0,
-   "original": "esta noche no hay amarre",
-   "issue": "'amarre' = mooring/tie but also a love-binding spell (amarre de amor); both meanings plausible. Also the subject of 'secuestró' (she/he/I) is unclear - rendered 'she'."
-  },
-  {
-   "block": 7,
-   "line": 3,
-   "original": "te escucharé cuando el cora lo pueda resistir",
-   "issue": "'cora' is a clipped 'corazón' (heart); also the shift from 'tiene' (3rd person) to 'te escucharé' (2nd person) is kept as in the original."
-  }
- ]
+ "questions": []
 }

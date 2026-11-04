@@ -58,7 +58,7 @@
       "monstruas, putas, desalojadas"
      ],
      "en": [
-      "Fags, trans, trabolos, dykes",
+      "Fags, trans, butches, dykes",
       "monsters, whores, evicted"
      ],
      "es": null,
@@ -128,8 +128,8 @@
       "long legs, miniskirt, total brat",
       "shut me up?... get lost, piñata-mouth",
       "Monsters on stage, swallow this tune",
-      "ketu mente sena jena",
-      "trabolo in your hood, ain't that a treat",
+      "may your mind be detached",
+      "butch in your hood, ain't that a treat",
       "careful if you come close, she'll burn you too"
      ],
      "es": null,
@@ -139,7 +139,7 @@
       "hanka luzeak, gona motza, neskato hutsa",
       "isilarazi nahi nauzu?... aldendu, ahoa-piñata",
       "Munstruak agertokian, irentsezazu gai hau",
-      "ketu mente sena jena",
+      "zure gogoa aske izan dadila",
       "trabolo zure auzoan, begira zer pasada",
       "kontuz hurbiltzen bazara zu ere erretzen zaitu"
      ]
@@ -220,25 +220,21 @@
     },
     {
      "from": 4,
-     "to": 5,
+     "to": 4,
      "lang": "ru",
      "skip": false,
      "keep": false,
      "orig": [
-      "Я не существую, я неизвестного пола",
-      "{Yo no existo, soy de género desconocido}"
+      "Я не существую, я неизвестного пола"
      ],
      "en": [
-      "I don't exist, I'm of unknown gender",
-      "{I don't exist, I'm of unknown gender}"
+      "I don't exist, I'm of unknown gender"
      ],
      "es": [
-      "No existo, soy de género desconocido",
-      "{Yo no existo, soy de género desconocido}"
+      "No existo, soy de género desconocido"
      ],
      "eu": [
-      "Ez naiz existitzen, genero ezezagunekoa naiz",
-      "{Yo no existo, soy de género desconocido}"
+      "Ez naiz existitzen, genero ezezagunekoa naiz"
      ]
     }
    ]
@@ -286,14 +282,14 @@
      ],
      "en": [
       "Monsters on stage, swallow this tune",
-      "ketu mente sena jena",
-      "trabolo in your hood, ain't that a treat",
+      "may your mind be detached",
+      "butch in your hood, ain't that a treat",
       "careful if you come close, she'll burn you too"
      ],
      "es": null,
      "eu": [
       "Munstruak agertokian, irentsezazu gai hau",
-      "ketu mente sena jena",
+      "zure gogoa aske izan dadila",
       "trabolo zure auzoan, begira zer pasada",
       "kontuz hurbiltzen bazara zu ere erretzen zaitu"
      ]
@@ -370,7 +366,7 @@
      "en": [
       "Look at that Ladyboi from the precarious hood",
       "coming to break the rules of the stage",
-      "gather the so-called, go on, hit nonbinary",
+      "gather the so-called, go on, switch to nonbinary",
       "your mind, I want it out of the closet",
       "unite, rise up, organise the rage",
       "transform your surroundings, what efficiency",
@@ -383,7 +379,7 @@
      "eu": [
       "Begira ladyboi hori auzo prekariokoa",
       "dator oholtzako arauak apurtzera",
-      "bildu supostuak, emaiozu ez-binarioari",
+      "bildu supostuak, pasa ez-binariora",
       "zure burua nahi dut armairutik atera",
       "bildu, altxa, antolatu amorrua",
       "eraldatu ingurunea, zer eraginkortasuna",
@@ -440,7 +436,7 @@
       "trabolos… marikas..."
      ],
      "en": [
-      "trabolos… fags..."
+      "butches… fags..."
      ],
      "es": null,
      "eu": [
@@ -487,66 +483,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 0,
-   "line": 5,
-   "original": "Marikas, trans, trabolos, bolleras",
-   "issue": "'trabolo' (travesti + bollo, gender-nonconforming/trans-masc-ish queer identity) has no English equivalent; kept as 'trabolos'. 'desalojadas' read as evicted (anti-gentrification)."
-  },
-  {
-   "block": 1,
-   "line": 1,
-   "original": "tengo diamantes escondidos en el bocata",
-   "issue": "'bocata' (sandwich) is probably a sexual innuendo (hidden diamonds = hidden genitals); rendered literally with sandwich."
-  },
-  {
-   "block": 1,
-   "line": 3,
-   "original": "callarme?...quita boca-piñata",
-   "issue": "'boca-piñata' is a made-up compound (mouth like a piñata, to be hit?); rendered literally."
-  },
-  {
-   "block": 1,
-   "line": 5,
-   "original": "ketu mente sena jena",
-   "issue": "'ketu mente sena jena' is rhyme filler/near-nonsense, possibly 'que tu mente sea ajena'; left as is in en/eu, would need confirmation."
-  },
-  {
-   "block": 1,
-   "line": 6,
-   "original": "trabolo en tu barrio, mira tú qué crema",
-   "issue": "'qué crema' = how cool/neat, also rhymes with 'quema'; rhyme not reproduced in en/eu."
-  },
-  {
-   "block": 3,
-   "line": 5,
-   "original": "{Yo no existo, soy de género desconocido}",
-   "issue": "Spanish gloss in braces: eu version keeps the Spanish gloss unchanged to preserve the original format; change if a Basque gloss is wanted."
-  },
-  {
-   "block": 4,
-   "line": 5,
-   "original": "ketu mente sena j-ena",
-   "issue": "Same nonsense/rhyme line as block 1."
-  },
-  {
-   "block": 6,
-   "line": 2,
-   "original": "junta los supuestos dale a no binario",
-   "issue": "Unclear: 'junta los supuestos, dale a no binario' - read as 'bring together the assumptions/so-called (categories), hit nonbinary'; could also be an imperative 'dale a' = press play on nonbinary."
-  },
-  {
-   "block": 6,
-   "line": 3,
-   "original": "tu mente yo quiero salir del armario",
-   "issue": "Ambiguous grammar: 'tu mente yo quiero salir del armario' - either 'I want your mind to come out of the closet' or 'I want to come out of the closet (with) your mind'."
-  },
-  {
-   "block": 6,
-   "line": 8,
-   "original": "aqui llega la disidesde el barrio precario",
-   "issue": "'disidesde' is a pun/portmanteau of 'disidencia' + 'desde' (dissidence from); not reproducible, rendered as 'dissidence from'."
-  }
- ]
+ "questions": []
 }

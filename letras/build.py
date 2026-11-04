@@ -21,7 +21,7 @@ D['amantalak']=track(6)
 D['nos pegan']=track(1,["Es también el título del espectáculo de 60 minutos: el funeral folclórico de Lady Marikarmen convertido en fiesta multimedia, con electrónica, vientos en directo, drag, vídeo y una columna de humo sincronizada al beat."])
 D['nos pegan']['src']=[MUS,("espectáculo","espectaculo.html")]
 D['compost']={"video":"JFXqMnMFqnI","text":["Título del primer álbum de la banda (2021): «Composta, recicla y repiensa la manera en que percibes el género.»"],"credits":[("Álbum","Compost your Gender (2021)")],"src":[MUS]}
-D['el afilador']=track(5,["Single de 2023."],[("Con","Suzio Tarik")]); D['el afilador']['video']="8dQ9giAwwBE"
+D['el afilador']=track(5,["Single de 2023."]); D['el afilador']['video']="8dQ9giAwwBE"
 D['electrodomesticos']={"video":"6WE9o7PjveA","text":[],"credits":[]}
 D['ladyboi']={"video":"mYE5oTtRIMw","text":["Publicada en SoundCloud el 7 de marzo de 2021."],"credits":[],"src":[("SoundCloud","https://soundcloud.com/lasmarikarmen")]}
 D['lagrimas']={"video":"b6LuZoB04w0","text":[],"credits":[]}

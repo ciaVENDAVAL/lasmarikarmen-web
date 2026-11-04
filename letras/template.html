@@ -117,7 +117,6 @@ footer .soc{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:var(--f-mono);f
   <div class="eyebrow"><a href="./" style="color:inherit">Las Marikarmen</a> · Barcelona · Collserola · <a href="musica.html" style="color:inherit">← Música</a></div>
   <h1>Letras <em>y</em> traducciones</h1>
   <p class="lede">Banda travesti nutrida del transfeminismo y lo queer. Mezclamos música, performance, drag y vivencias para destruir el heteropatriarcado, la cis-normalidad y el binarismo obligado.</p>
-  <p class="note">Las letras van tal cual, con su jerga. Cada estrofa tiene botones para pasarla a English, castellano o euskara; lo que ya está en ese idioma se queda como está. Las traducciones están hechas con IA y todavía sin revisar: el <b>?</b> marca las líneas dudosas.</p>
 </header>
 <div class="bar" role="toolbar" aria-label="Opciones de traducción">
   <div class="grp"><span class="lbl">Traducir todo</span>
@@ -126,8 +125,7 @@ footer .soc{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:var(--f-mono);f
     <button class="chip" data-g="es" aria-pressed="false">Castellano</button>
     <button class="chip" data-g="eu" aria-pressed="false">Euskara</button></div>
   <div class="grp">
-    <button class="chip" id="tOrig" aria-pressed="false">Ver original debajo</button>
-    <button class="chip" id="tQ" aria-pressed="true">Dudas ?</button></div>
+    <button class="chip" id="tOrig" aria-pressed="false">Ver original debajo</button></div>
 </div>
 <div class="layout" id="indice">
   <nav class="toc" aria-label="Índice"><input id="flt" type="search" placeholder="Buscar canción" aria-label="Buscar canción"><ol id="tocL"></ol></nav>
@@ -136,7 +134,6 @@ footer .soc{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:var(--f-mono);f
     <div id="songs"></div>
     <footer>
       <div class="soc" id="soc"></div>
-      <div>Letras corregidas por la banda. Traducciones y dudas generadas con IA, pendientes de revisión. Créditos y fechas tomados de YouTube, SoundCloud, Spotify y lasmarikarmen.com.</div>
     </footer>
   </main>
 </div>
@@ -189,9 +186,8 @@ function stanzaHTML(si,bi){
 }
 function descHTML(si){
   const s=SONGS[si], d=s.desc||{};
-  let h=`<h3>Descripción</h3>`;
-  if(d.text&&d.text.length)h+=d.text.map(p=>`<p>${esc(p)}</p>`).join("");
-  else h+=`<p class="pend">Descripción pendiente.</p>`;
+  let h="";
+  if(d.text&&d.text.length)h+=`<h3>Descripción</h3>`+d.text.map(p=>`<p>${esc(p)}</p>`).join("");
   if(d.credits&&d.credits.length)h+=`<dl class="cred">`+d.credits.map(c=>`<dt>${esc(c[0])}</dt><dd>${c[2]?`<a href="${c[2]}" target="_blank" rel="noopener">${esc(c[1])}</a>`:esc(c[1])}</dd>`).join("")+`</dl>`;
   if(d.video){
     const id=d.video, url="https://www.youtube.com/watch?v="+id;
@@ -202,7 +198,7 @@ function descHTML(si){
   }else{
     h+=`<div class="vlink"><a href="https://www.youtube.com/@lasmarikarmen" target="_blank" rel="noopener">Canal de YouTube ↗</a></div><p class="vnote">Esta canción no tiene videoclip en el canal.</p>`;
   }
-  if(d.src&&d.src.length)h+=`<div class="src">Fuentes: `+d.src.map(x=>`<a href="${x[1]}" target="_blank" rel="noopener">${esc(x[0])}</a>`).join(" · ")+`</div>`;
+  if(d.src&&d.src.length)h+=`<div class="src">Más: `+d.src.map(x=>`<a href="${x[1]}" target="_blank" rel="noopener">${esc(x[0])}</a>`).join(" · ")+`</div>`;
   const qs=[];s.blocks.forEach(b=>(b.qs||[]).forEach(q=>qs.push(q)));
   if(qs.length)h+=`<details class="dq"><summary>Dudas de traducción (${qs.length})</summary><ul>`+qs.map(q=>`<li><b>${esc(q.original)}</b><br>${esc(q.issue)}</li>`).join("")+`</ul></details>`;
   return `<div class="desc">${h}</div>`;
@@ -240,7 +236,7 @@ document.addEventListener("click",e=>{
     v.replaceWith(f);return}
 });
 $("#tOrig").addEventListener("click",e=>{showO=!showO;e.currentTarget.setAttribute("aria-pressed",showO);renderAll()});
-$("#tQ").addEventListener("click",e=>{const on=e.currentTarget.getAttribute("aria-pressed")!=="true";e.currentTarget.setAttribute("aria-pressed",on);document.body.classList.toggle("hide-q",!on)});
+$("#tQ")&&$("#tQ").addEventListener("click",e=>{const on=e.currentTarget.getAttribute("aria-pressed")!=="true";e.currentTarget.setAttribute("aria-pressed",on);document.body.classList.toggle("hide-q",!on)});
 $("#soc").innerHTML=[["YouTube","https://www.youtube.com/@lasmarikarmen"],["Spotify","https://open.spotify.com/artist/5Rh261ShPjFw5zqis2nbtF"],["Bandcamp","https://lasmarikarmen.bandcamp.com/"],["SoundCloud","https://soundcloud.com/lasmarikarmen"],["Instagram","https://www.instagram.com/lasmarikarmen/"]].map(x=>`<a href="${x[1]}" target="_blank" rel="noopener">${x[0]}</a>`).join("");
 renderAll();buildToc();
 </script>

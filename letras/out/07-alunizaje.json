@@ -69,7 +69,7 @@
       "but I can't promise I'll be able to start up",
       "you push the car, I give it to you from behind",
       "always drive uphill, don't look down",
-      "I learned to fly like Carrero Blanco",
+      "I learned to fly like Carrero Blanco (Franco's PM blown up by ETA in 1973)",
       "but if you ask me to, if you want, I'll get off",
       "hazards on and I kiss your lips"
      ],
@@ -80,7 +80,7 @@
       "baina ez dizut ziurtatzen abiarazi ahal izango dudanik",
       "zuk autoa bultzatzen duzu, nik atzetik ematen dizut",
       "beti gorantz gidatu, behera ez begiratu",
-      "hegan egiten ikasi nuen Carrero Blanco bezala",
+      "hegan egiten ikasi nuen Carrero Blanco bezala (ETAk 1973an lehertu zuen Francoren lehen ministroa)",
       "baina eskatzen badidazu, nahi baduzu, jaisten naiz",
       "larrialdi-argiak piztu eta ezpainak musukatzen dizkizut"
      ]
@@ -141,7 +141,7 @@
       "don't interrupt us even if there's smoke",
       "seize up, vandalise, burn rubber",
       "in bed with no helmet even if it hurts",
-      "your cum drips down the dashboard",
+      "your milk drips down the dashboard",
       "my slobbery hand slides down your body",
       "I look for the lock to see if I get it right",
       "boom! one less tourist flat",
@@ -253,60 +253,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 0,
-   "line": 1,
-   "original": "salud es soltar estrés en tu badajo",
-   "issue": "'badajo' = bell clapper, cock slang; en 'clapper' keeps double meaning only partly."
-  },
-  {
-   "block": 0,
-   "line": 2,
-   "original": "te meto mano en un banco so-be-te-o",
-   "issue": "'banco' (bank / bench) + 'sobeteo' (groping) vs 'sabotaje' rhyme; en/eu keep the sound-split but lose the exact rhyme."
-  },
-  {
-   "block": 1,
-   "line": 1,
-   "original": "por mi lesbiana me caigo para atras",
-   "issue": "'por mi lesbiana' reads like an oath ('por mi madre') with 'lesbiana' in place of mother; translated as 'I swear on my lesbian' (en) / 'nire bollerarengatik' (eu); unsure."
-  },
-  {
-   "block": 1,
-   "line": 5,
-   "original": "aprendi a volar como carrero blanco",
-   "issue": "'carrero blanco' = Franco's PM blown up by ETA in 1973; kept the name, the allusion is lost for non-Spanish audiences."
-  },
-  {
-   "block": 2,
-   "line": 2,
-   "original": "vistiendote a golpe de alunizaje",
-   "issue": "'alunizaje' = ram-raid (car smashed into shop window); en 'ram-raid style', eu keeps 'alunizajeen' (no good Basque term)."
-  },
-  {
-   "block": 3,
-   "line": 3,
-   "original": "tu leche el salpicadero chorrea",
-   "issue": "'leche' = milk/cum; translated as cum (en) and 'esnea' (eu, also milk/cum)."
-  },
-  {
-   "block": 6,
-   "line": 5,
-   "original": "so cut the washing - the green and the pink",
-   "issue": "Source 'cut the washing' = stop greenwashing/pinkwashing; es/eu spell it out."
-  },
-  {
-   "block": 6,
-   "line": 4,
-   "original": "it's genocide, i can't erase your face",
-   "issue": "'I can't erase your face' ambiguous (victims' faces? Palestinian faces?); translated literally."
-  },
-  {
-   "block": 6,
-   "line": 7,
-   "original": "we take it to the stage and connect the struggles",
-   "issue": "'montemos un pollo' = idiom for 'raise hell'; chose that for 'make a stink'."
-  }
- ]
+ "questions": []
 }

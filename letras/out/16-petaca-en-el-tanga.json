@@ -275,36 +275,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 0,
-   "line": 0,
-   "original": "Cheiser me ronea cuando va drogado",
-   "issue": "'Cheiser' = 'chaser' (cis man who fetishizes trans women), kept as 'Chaser'; 'ronear' = to flirt/hit on."
-  },
-  {
-   "block": 1,
-   "line": 0,
-   "original": "Ke me esconda pa besarte en el baño",
-   "issue": "Unclear who speaks and whether 'ke me esconda' is 'let me hide' or 'make me hide' (the chaser demanding secrecy). Lines 0-1 may be the chaser's demands; rendered neutrally."
-  },
-  {
-   "block": 2,
-   "line": 3,
-   "original": "doy lache engancha a este pinpin",
-   "issue": "'lache' (caló, shame/disgust/'dar lache') and 'pinpin' are unclear; I kept both words and guessed 'pinpin' is a slang term for the guy (a sucker/fool)."
-  },
-  {
-   "block": 5,
-   "line": 0,
-   "original": "Miradas ajenas me pongo una vela",
-   "issue": "'me pongo una vela' unclear: light a candle (fits the 'shining' image), or 'put on a sail'. Rendered as light a candle."
-  },
-  {
-   "block": 7,
-   "line": 1,
-   "original": "bihotzak bum bum eta harma tiro pum",
-   "issue": "Basque, with 'harma' (dialectal 'arma') and Spanish 'tiro'. 'bihotzak' could be singular ergative or plural 'hearts'; I chose singular 'the heart'."
-  }
- ]
+ "questions": []
 }

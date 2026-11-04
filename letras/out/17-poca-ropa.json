@@ -327,54 +327,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 1,
-   "line": 1,
-   "original": "bichas sueltas, monstruas diosas divineo",
-   "issue": "'divineo' seems a coined word (divine + vacileo/jaleo, 'divine partying'); rendered as 'divine-ing'."
-  },
-  {
-   "block": 2,
-   "line": 1,
-   "original": "antifasitanti rat.i Mami esto Calienta rapido",
-   "issue": "'rat.i' is unclear: maybe 'rati' (slang for cops) giving 'anti-cops', or a typo/wordplay. Kept it as is."
-  },
-  {
-   "block": 2,
-   "line": 2,
-   "original": "Dollys sabor honey. Tumban fiestas fumigan a machis",
-   "issue": "'Dollys' kept as a loan (dolls = trans/drag girls); 'machis' = machos."
-  },
-  {
-   "block": 3,
-   "line": 0,
-   "original": "que parte no entiendes en que vives nos queremos",
-   "issue": "Read as the feminist slogan 'vivas nos queremos' (we want us alive), written 'vives'. If it is literally 'you live, we love each other' the meaning changes."
-  },
-  {
-   "block": 3,
-   "line": 3,
-   "original": "ira bujarra por todos los extremos",
-   "issue": "'bujarra' (reclaimed slur for gay man); rendered as 'fag rage' in English."
-  },
-  {
-   "block": 5,
-   "line": 3,
-   "original": "despierto transformo tu deseo transita",
-   "issue": "Pun: 'transita' (transits) plays on trans; also 'despierto' could be adjective 'awake' or verb 'I wake'. Kept both ambiguities approximately."
-  },
-  {
-   "block": 6,
-   "line": 5,
-   "original": "Se que igual quieres comerlo, no soy tu alimento homi lo lamento",
-   "issue": "'comerlo' refers to 'mi cuerpa' (eat it / eat me); sexual-predator sense kept. 'homi' = 'homie/hombre', rendered 'homie'."
-  },
-  {
-   "block": 7,
-   "line": 3,
-   "original": "madafaka dance dance modafoc",
-   "issue": "Phonetic English ('motherfucker'); treated as pure sound/wordplay and kept untranslated in all versions (block 7 and 9)."
-  }
- ]
+ "questions": []
 }

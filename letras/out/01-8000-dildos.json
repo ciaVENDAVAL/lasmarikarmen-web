@@ -392,42 +392,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 3,
-   "line": 0,
-   "original": "hoy me siento guaper",
-   "issue": "'guaper' playful form of guapo/guapa; rendered as 'fine' gender-neutral"
-  },
-  {
-   "block": 3,
-   "line": 3,
-   "original": "y los curasanes",
-   "issue": "'curasanes' = playful spelling of cruasanes (croissants); possible pun with 'cura' (priest) not rendered"
-  },
-  {
-   "block": 5,
-   "line": 0,
-   "original": "[Lynn Breedlove] Every time they see titis...",
-   "issue": "'titis' probably intentional slang for tits/titties (or typo for 'tits'); translated as 'titis'"
-  },
-  {
-   "block": 6,
-   "line": 1,
-   "original": "de pillar cacho",
-   "issue": "'pillar cacho' = to get laid; rendered accordingly"
-  },
-  {
-   "block": 10,
-   "line": 0,
-   "original": "50 dollars digital intercourse",
-   "issue": "'digital' most likely means manual/fingering (from 'digit') but could be read as online; chose neutral 'sexo digital'"
-  },
-  {
-   "block": 11,
-   "line": 1,
-   "original": "véndemo el cuerpo pillalo vamo",
-   "issue": "'véndemo' could be 'véndeme' (client: sell me the body) or 'vendemos' (we sell); chose 'we sell' to fit sex-worker solidarity"
-  }
- ]
+ "questions": []
 }

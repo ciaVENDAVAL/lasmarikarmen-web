@@ -282,24 +282,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 0,
-   "line": 16,
-   "original": "I can't believe they're not dry",
-   "issue": "Parody of the ad slogan 'I can't believe it's not butter'; rendered as a parody of the slogan, es/eu lose the exact reference."
-  },
-  {
-   "block": 0,
-   "line": 30,
-   "original": "Rarities, the perfect touch for any evening look.",
-   "issue": "Sounds like a perfume/fashion advert voice-over; 'Rarities' possibly a brand or product name - translated as a common noun, check."
-  },
-  {
-   "block": 0,
-   "line": 22,
-   "original": "No fuiste el más musculoso?",
-   "issue": "Assumed 'musculoso' generic masculine addressed to a cis man (mocking); en rendered gender-neutral."
-  }
- ]
+ "questions": []
 }

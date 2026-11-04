@@ -164,7 +164,7 @@
       "[Manuela Trasobares] Tira la copa!"
      ],
      "en": [
-      "[Manuela Trasobares] Throw down the glass!"
+      "[Manuela Trasobares] Throw the glass!"
      ],
      "es": null,
      "eu": [
@@ -178,7 +178,7 @@
      "skip": false,
      "keep": false,
      "orig": [
-      "мальчик или девочка? {chico o chica}"
+      "мальчик или девочка?"
      ],
      "en": [
       "Boy or girl?"
@@ -347,36 +347,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 0,
-   "line": 1,
-   "original": "Las Marikarmen",
-   "issue": "Treated 'Las Marikarmen' (lines 1 and 27) as band-name credit labels and skipped them; confirm."
-  },
-  {
-   "block": 0,
-   "line": 14,
-   "original": "[Manuela Trasobares] Tira la copa!",
-   "issue": "'Tira la copa' (Manuela Trasobares sample): unsure whether 'throw down/knock back the glass' or an idiom; translated literally."
-  },
-  {
-   "block": 0,
-   "line": 15,
-   "original": "мальчик или девочка? {chico o chica}",
-   "issue": "Russian line: I translated only the meaning (boy or girl) in all three versions and dropped the original Russian + {gloss}; check how the app should present it."
-  },
-  {
-   "block": 0,
-   "line": 10,
-   "original": "[Manuela Trasobares] No puedo más… con esta… sociedad que nos tiene marginadas, que tú lo veis!",
-   "issue": "Source has 'que tú lo veis' (ungrammatical, sample speech); translated as natural 'can't you see it'."
-  },
-  {
-   "block": 0,
-   "line": 0,
-   "original": "Are you ready bitches?",
-   "issue": "'bitches' in es rendered as 'bichas', in eu as 'putak' (reclaimed); alternative eu: 'marikoiak'."
-  }
- ]
+ "questions": []
 }

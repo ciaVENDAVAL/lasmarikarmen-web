@@ -355,54 +355,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 1,
-   "line": 0,
-   "original": "No horno pa bollos, no horno pa bollos hoy",
-   "issue": "'No horno pa bollos' = 'no está el horno para bollos' (it's not the time/mood); 'bollo' also = dyke, double meaning that cannot be kept in en/eu. Chose 'not hot for buns' (keeps bun + sexual sense); alternative 'no time for dykes today'."
-  },
-  {
-   "block": 3,
-   "line": 4,
-   "original": "papi ven que te como el morro.",
-   "issue": "'comer el morro' = to snog / kiss hard (morro also = lips/snout); rendered as snogging."
-  },
-  {
-   "block": 4,
-   "line": 0,
-   "original": "Me se sale el huevo de la falda",
-   "issue": "'huevo' = ball/testicle; in eu 'arrautza' (egg) used jokingly, check preferred slang for balls. 'Me se sale' is deliberately ungrammatical colloquial Spanish, not reproduced."
-  },
-  {
-   "block": 4,
-   "line": 3,
-   "original": "Es que ni con medias me sagarra",
-   "issue": "'me sagarra' is a typo/phonetic spelling of 'me se agarra' (block 7 spells it correctly)."
-  },
-  {
-   "block": 5,
-   "line": 0,
-   "original": "Que estoy to guapa to flaman",
-   "issue": "'to flaman' unclear: maybe 'flamante' (brand new/stunning) or 'flamenco/flaming'. Rendered as 'flamin''."
-  },
-  {
-   "block": 6,
-   "line": 3,
-   "original": "no ves que tengo todo el pica pica?",
-   "issue": "'pica pica' = finger food/nibbles and also itching/stinging; both senses forced into en/eu. 'Xica' is Catalan/Galician-style spelling of 'chica'."
-  },
-  {
-   "block": 9,
-   "line": 8,
-   "original": "Me puedo multiplicar contigo o no?",
-   "issue": "'multiplicarse contigo' - unclear whether a math/gender-binary joke (one+one) or sexual/reproductive; translated literally."
-  },
-  {
-   "block": 9,
-   "line": 1,
-   "original": "Congratulations it's a boy, you must be so proud, SO PROUD!",
-   "issue": "es/eu translation addresses the parents in inclusive plural ('orgulloses'); original 'you must be so proud' is gender-neutral."
-  }
- ]
+ "questions": []
 }

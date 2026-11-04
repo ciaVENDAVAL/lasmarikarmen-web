@@ -199,42 +199,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 1,
-   "line": 1,
-   "original": "badator dixidente amorrua antolatzen,",
-   "issue": "'dixidente' (dissident, nonstandard spelling, no gender in Basque) - rendered with inclusive 'le disidente'; 'amorrua' = rage/anger (organizing rage slogan)."
-  },
-  {
-   "block": 2,
-   "line": 0,
-   "original": "Número uno del deskite,",
-   "issue": "'deskite' = phonetic 'desquite' (payback/revenge), maybe also 'descoque'/'desquiciar'; translated as payback."
-  },
-  {
-   "block": 2,
-   "line": 6,
-   "original": "Travistiendo desde abajo,",
-   "issue": "'Travistiendo' = pun on 'travesti' + 'vistiendo/(in)virtiendo' (dressing/turning things upside down); English 'Travesti-dressing' approximates it, no exact equivalent."
-  },
-  {
-   "block": 3,
-   "line": 0,
-   "original": "En la sombra no la esperan,",
-   "issue": "'no la esperan' - who is 'la' (a travesti waiting for clients? someone they don't expect to be armed?); and 'como vuelan' could be 'as they fly' or 'fast'. Translated literally."
-  },
-  {
-   "block": 4,
-   "line": 0,
-   "original": "Espaloiko suan altxatu harria",
-   "issue": "'Espaloiko suan altxatu harria' - 'the stone raised in the pavement fire' might allude to harri-jasotzea / barricade or thrown stones; unclear grammar, translated literally."
-  },
-  {
-   "block": 5,
-   "line": 1,
-   "original": "tokan a une token a toda",
-   "issue": "'tokan a une token a toda' - phonetic 'tocan a une, tocan a toda' echoing 'si tocan a una, nos tocan a todas'; 'a toda' could also be 'at full speed'. Translated as the slogan."
-  }
- ]
+ "questions": []
 }

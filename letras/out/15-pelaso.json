@@ -320,36 +320,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 3,
-   "line": 1,
-   "original": "quesi tacerca bestia tecoloca",
-   "issue": "'te coloca' is ambiguous: puts you in your place, or gets you high/turned on. I rendered it as 'sets you straight' (puts you in place); could be 'gets you high'."
-  },
-  {
-   "block": 3,
-   "line": 3,
-   "original": "blinblin travesti vuela pelaso",
-   "issue": "'pelaso' = big/great hair (also the song title); rendered as 'big hair flying'. Not sure if it also means 'bald'/'by a hair'."
-  },
-  {
-   "block": 6,
-   "line": 2,
-   "original": "ma-chakarte sin man-charme",
-   "issue": "Wordplay: 'machacarte' (crush you) + 'sin mancharme' (without staining myself), with 'ma-'/'man-' likely hinting at macho/man. I split it in English as 'smash-ing... stain-ed'; the pun is only approximated."
-  },
-  {
-   "block": 6,
-   "line": 0,
-   "original": "endulzarte gasolina vamo a darte",
-   "issue": "'gasolina' probably references the reggaeton hit 'Gasolina' (dame mas gasolina); kept as 'gasoline'."
-  },
-  {
-   "block": 10,
-   "line": 1,
-   "original": "kien te dijo questoy pa tu maaan",
-   "issue": "'man' could be 'mano' (hand, matching 'tocar') or English 'man' (your man). I took 'your man'; the Basque version follows that too."
-  }
- ]
+ "questions": []
 }

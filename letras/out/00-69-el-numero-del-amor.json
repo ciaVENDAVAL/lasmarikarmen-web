@@ -134,30 +134,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 1,
-   "line": 1,
-   "original": "cuatro afiladitas me dejó muy bien planchada",
-   "issue": "'cuatro afiladitas' unclear (four sharp lines/cards/hits?) and 'planchada' = ironed/flattened/knocked out; I used 'flattened' (basque 'lau' = four and flat)"
-  },
-  {
-   "block": 3,
-   "line": 3,
-   "original": "a los que invité los jugaré contigo",
-   "issue": "'a los que invité' ambiguous: cards I bought for others / bingo cards I treated people to"
-  },
-  {
-   "block": 4,
-   "line": 0,
-   "original": "Desfasadas, modelitos mood pedroche",
-   "issue": "Reference to Cristina Pedroche's New Year's Eve outfits; 'desfasadas' could mean out of fashion/out of it. Kept 'Pedroche'"
-  },
-  {
-   "block": 4,
-   "line": 4,
-   "original": "disturbios no veo nada, quien me dio esa bofetada",
-   "issue": "'disturbios' may be literal riots or the chaos of the bingo; kept literal"
-  }
- ]
+ "questions": []
 }

@@ -91,24 +91,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 1,
-   "line": 1,
-   "original": "cuatro afiladitas me dejó muy bien planchada",
-   "issue": "'cuatro afiladitas' and 'me dejó muy bien planchada' are unclear (sharpened ones = lines? 'planchada' = flat/ironed/knocked out/hair straightened); translated literally."
-  },
-  {
-   "block": 1,
-   "line": 3,
-   "original": "veo tu anillito al despertar por la mañana",
-   "issue": "'anillito' = little ring, possibly also a sexual double meaning (anus); kept as ring."
-  },
-  {
-   "block": 3,
-   "line": 0,
-   "original": "Todos los cartones que jugué",
-   "issue": "'cartones' - assumed bingo cards (could also be cardboard/cards/cartons of cigarettes or drinks). 'a los que invité' - assumed 'the ones I treated/invited'."
-  }
- ]
+ "questions": []
 }

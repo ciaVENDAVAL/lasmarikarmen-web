@@ -77,9 +77,9 @@
      ],
      "en": [
       "Toaster, vacuum, dryer",
-      "Fucker, blender, caregiver, washer, iron",
+      "Dildo, blender, caregiver, washer, iron",
       "Toaster, vacuum, dryer",
-      "Fucker, blender, caregiver, washer, mixer",
+      "Dildo, blender, caregiver, washer, mixer",
       "All I want is my appliances",
       "Mixer",
       "All I want is my appliances",
@@ -92,9 +92,9 @@
       "Dryer",
       "All I want is my appliances",
       "Toaster, vacuum, dryer",
-      "Fucker, blender, caregiver, washer, iron",
+      "Dildo, blender, caregiver, washer, iron",
       "Toaster, vacuum, dryer",
-      "Fucker, blender, caregiver, washer, mixer",
+      "Dildo, blender, caregiver, washer, mixer",
       "Iron",
       "Vacuum cleaner",
       "Vacuum cleaner",
@@ -109,9 +109,9 @@
      "es": null,
      "eu": [
       "Ogi-txigorgailua, xurgagailua, lehorgailua",
-      "Kakatzailea, irabiagailua, zaintzailea, garbigailua, plantxa",
+      "Dildoa, irabiagailua, zaintzailea, garbigailua, plantxa",
       "Ogi-txigorgailua, xurgagailua, lehorgailua",
-      "Kakatzailea, irabiagailua, zaintzailea, garbigailua, mixerra",
+      "Dildoa, irabiagailua, zaintzailea, garbigailua, mixerra",
       "Nahi dudan guztia nire etxetresna elektrikoak dira",
       "Mixerra",
       "Nahi dudan guztia nire etxetresna elektrikoak dira",
@@ -124,9 +124,9 @@
       "Lehorgailua",
       "Nahi dudan guztia nire etxetresna elektrikoak dira",
       "Ogi-txigorgailua, xurgagailua, lehorgailua",
-      "Kakatzailea, irabiagailua, zaintzailea, garbigailua, plantxa",
+      "Dildoa, irabiagailua, zaintzailea, garbigailua, plantxa",
       "Ogi-txigorgailua, xurgagailua, lehorgailua",
-      "Kakatzailea, irabiagailua, zaintzailea, garbigailua, mixerra",
+      "Dildoa, irabiagailua, zaintzailea, garbigailua, mixerra",
       "Plantxa",
       "Xurgagailua",
       "Xurgagailua",
@@ -142,30 +142,5 @@
    ]
   }
  ],
- "questions": [
-  {
-   "block": 0,
-   "line": 3,
-   "original": "Folladora, batidora, cuidadora, lavadora, plancha",
-   "issue": "'Folladora' = (female) fucker; as an appliance name it's a made-up 'fuck-machine'. Basque 'kakatzailea' is a loose invention (kakatu = to fuck, colloquial)."
-  },
-  {
-   "block": 0,
-   "line": 24,
-   "original": "LavoCocino al vapor",
-   "issue": "'LavoCocino' looks like a brand-name pun (lavo + cocino = I wash + I cook); translated 'WashCook'."
-  },
-  {
-   "block": 0,
-   "line": 3,
-   "original": "Folladora, batidora, cuidadora, lavadora, plancha",
-   "issue": "'cuidadora' = caregiver / domestic care worker; kept as carer figure among the appliances (political reading: unpaid care labour)."
-  },
-  {
-   "block": 0,
-   "line": 1,
-   "original": "From the house of las marikarmen",
-   "issue": "'las marikarmen' rendered in Basque as 'etxekoa' (ballroom house); check."
-  }
- ]
+ "questions": []
 }
