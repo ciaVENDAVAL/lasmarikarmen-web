@@ -150,6 +150,17 @@ nav_music:
   it: "Musica"
   de: "Musik"
   ja: "音楽"
+nav_lyrics:
+  es: Letras
+  en: "Lyrics"
+  ca: "Lletres"
+  gl: "Letras"
+  eu: "Letrak"
+  pt: "Letras"
+  fr: "Paroles"
+  it: "Testi"
+  de: "Songtexte"
+  ja: "歌詞"
 nav_shop:
   es: Tienda
   en: "Shop"

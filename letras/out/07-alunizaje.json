@@ -25,7 +25,7 @@
       "health is shaking the stress out of your clapper",
       "I feel you up in a bank, grop-ing",
       "hold up the banks hands-on, sab-o-tage",
-      "goat hoof around your waist",
+      "little crowbar on your hip",
       "there your sweat that cures everything",
       "climbing up, riding your wet back",
       "expropriate what they've taken from the neighbourhood"
@@ -36,7 +36,7 @@
       "osasuna estresa zure kanpai-mihian askatzea",
       "banku batean eskua sartzen dizut, uki-ke-ta",
       "bankuari eskuz-esku lapurreta, sa-bo-ta-tze-a",
-      "ahuntz-hanka zure gerrian",
+      "palanka txikia zure gerrian",
       "hor zure izerdia, dena sendatzen duena",
       "igo, zure bizkar bustietan zaldiz ibili",
       "auzotik eraman dutena desjabetu"
@@ -139,7 +139,7 @@
      ],
      "en": [
       "don't interrupt us even if there's smoke",
-      "grip it, vandalise it, burn rubber",
+      "seize up, vandalise, burn rubber",
       "in bed with no helmet even if it hurts",
       "your cum drips down the dashboard",
       "my slobbery hand slides down your body",
@@ -150,7 +150,7 @@
      "es": null,
      "eu": [
       "ez gaitzatela eten, kea egon arren",
-      "heldu, bandalizatu, gurpila erre",
+      "blokeatu, bandalizatu, gurpila erre",
       "ohean kaskorik gabe, min eman arren",
       "zure esnea arbelean ixurika dago",
       "listuz bustitako nire eskua zure gorputzean irristatzen da",
@@ -267,12 +267,6 @@
    "issue": "'banco' (bank / bench) + 'sobeteo' (groping) vs 'sabotaje' rhyme; en/eu keep the sound-split but lose the exact rhyme."
   },
   {
-   "block": 0,
-   "line": 4,
-   "original": "patita de cabra en tu cintura",
-   "issue": "'patita de cabra' could be a literal goat hoof (heel/leg) or a sex-position/strap image; translated literally."
-  },
-  {
    "block": 1,
    "line": 1,
    "original": "por mi lesbiana me caigo para atras",
@@ -289,12 +283,6 @@
    "line": 2,
    "original": "vistiendote a golpe de alunizaje",
    "issue": "'alunizaje' = ram-raid (car smashed into shop window); en 'ram-raid style', eu keeps 'alunizajeen' (no good Basque term)."
-  },
-  {
-   "block": 3,
-   "line": 1,
-   "original": "gripa vandaliza quema rueda",
-   "issue": "'gripa' unclear (flu? 'agripa'? from 'agarrar'/'gripar' = to seize up); translated as 'grip it', uncertain."
   },
   {
    "block": 3,
