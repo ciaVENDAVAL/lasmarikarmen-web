@@ -30,6 +30,7 @@ PAGES = [
     ("quienes-somos",  "quienes-somos.html",  "nav_bio",       "nav_bio"),
     ("espectaculo",    "espectaculo.html",    "nav_show",      "nav_show"),
     ("musica",         "musica.html",         "nav_music",     "nav_music"),
+    ("letras",         "letras.html",         "nav_lyrics",    "nav_lyrics"),
     ("tienda",         "tienda.html",         "nav_shop",      "nav_shop"),
     ("talleres",       "talleres.html",       "nav_workshops", "nav_workshops"),
     ("conciertos",     "conciertos.html",     "nav_gigs",      "nav_gigs"),
@@ -76,18 +77,14 @@ def build(langs, text, site):
         shutil.rmtree(OUT)
     shutil.copytree(ROOT / "assets", OUT / "assets")
     (OUT / ".nojekyll").write_text("")
-    # Lyrics page (castellano UI, translations EN/ES/EU) — source in letras/
-    import subprocess
+    # Lyrics: letras/build.py turns the lyrics + translations into letras/data.json
+    import subprocess, json as _json
     subprocess.run([sys.executable, "build.py"], cwd=ROOT / "letras", check=True, stdout=subprocess.DEVNULL)
-    lyr = (ROOT / "letras" / "page-embed.html").read_text(encoding="utf-8")
-    (OUT / "letras.html").write_text('<!doctype html>\n<html lang="es">\n<head>\n<meta charset="utf-8">\n'
-        '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
-        '<link rel="icon" href="favicon.ico">\n' + og_tags(site, "letras.html", "Letras y traducciones · Las Marikarmen",
-        "Letras de Las Marikarmen con traducción por estrofa a castellano, English y euskara.", "letras", "es") + '</head>\n<body>\n' + lyr + '\n</body>\n</html>\n', encoding="utf-8")
+    lyrics = _json.loads((ROOT / "letras" / "data.json").read_text(encoding="utf-8"))
     if (ROOT / "favicon.ico").exists():
         shutil.copy(ROOT / "favicon.ico", OUT / "favicon.ico")
     import hashlib
-    asset_v = hashlib.sha1(b''.join((ROOT / f).read_bytes() for f in ('assets/css/style.css', 'assets/js/site.js'))).hexdigest()[:8]
+    asset_v = hashlib.sha1(b''.join((ROOT / f).read_bytes() for f in ('assets/css/style.css', 'assets/js/site.js', 'assets/js/letras.js'))).hexdigest()[:8]
     today = date.today().isoformat()
     all_gigs = site.get("gigs") or []
     gigs = sorted((g for g in all_gigs if str(g["date"]) >= today), key=lambda g: str(g["date"]))
@@ -128,7 +125,7 @@ def build(langs, text, site):
         for slug, tpl, nav_key, title_key in PAGES:
             ctx = dict(
                 t=t, lang=lang, langs=langs if len(langs) > 1 else [], site=site,
-                lang_names=site["language_names"], root=root, page_url=page_url, og_tags=og_tags,
+                lang_names=site["language_names"], root=root, page_url=page_url, og_tags=og_tags, lyrics_json=lambda: lyrics_for(lyrics, t, page_url),
                 slug=slug, pages=PAGES, icons=icons, asset_v=asset_v, gigs=gigs, past_gigs=past_gigs, past_years=past_years, presskit=root + presskit,
                 page_title=(t(title_key) if title_key else None),
                 canonical=f"{site['site_url'].rstrip('/')}/{sub}{'' if slug == 'index' else slug + '.html'}",
@@ -144,6 +141,24 @@ def build(langs, text, site):
 
 OG_LOCALE = {"es": "es_ES", "en": "en_GB", "ca": "ca_ES", "gl": "gl_ES", "eu": "eu_ES", "pt": "pt_PT",
              "fr": "fr_FR", "it": "it_IT", "de": "de_DE", "ja": "ja_JP"}
+
+
+def lyrics_for(songs, t, page_url):
+    """Lyrics data for one site language: '@key' texts become translated strings, '@page:x' site links."""
+    import json as _json
+    def r(v):
+        if not isinstance(v, str) or not v.startswith("@"):
+            return v
+        k, _, n = v[1:].partition(":")
+        if k == "page":
+            return page_url(n)
+        return str(t(k)).replace("{n}", n)
+    def walk(x):
+        if isinstance(x, list): return [walk(i) for i in x]
+        if isinstance(x, dict): return {k: walk(v) for k, v in x.items()}
+        return r(x)
+    data = [dict(s, desc=walk(s["desc"])) for s in songs]
+    return Markup(_json.dumps(data, ensure_ascii=False).replace("</", "<\\/"))
 
 
 def og_tags(site, path, title, desc, image, lang):

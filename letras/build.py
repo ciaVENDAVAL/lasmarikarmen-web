@@ -7,37 +7,38 @@ ALB="Nos pegan (2023)"
 KIL="https://www.instagram.com/kiltreoskuro"
 CAPI="https://www.instagram.com/capitano_barbaconyo"
 PROD="Suzio Tarik, Slowbou, Carlo Jurancelli"
-MUS=("lasmarikarmen.com","musica.html")
-SPA=("Spotify","https://open.spotify.com/album/0K5Uj5ANW0CpvLUnNLWD9D")
+# Texts starting with "@" are keys in ../content/text.yaml (translated per site language);
+# "@key:N" fills {n}; "@page:slug" links to that page of the site in the visitor's language.
+MUS=("@nav_music","@page:musica")
+SPOT_TR=("Spotify","https://open.spotify.com/track/7rVY7nSi1jSgkNe6u7987Z")
 def track(n,extra=None,more=None):
-    d={"text":[f"Pista {n} de 9 del disco Nos pegan (2023)."]+(extra or []),"credits":[("Disco",ALB),("Producción del disco",PROD)]+(more or []),"src":[MUS]}
-    return d
+    return {"text":[f"@lyr_d_track:{n}"]+(extra or []),"credits":[("@lyr_c_album",ALB),("@lyr_c_prod_album",PROD)]+(more or []),"src":[MUS]}
 D={}
 D['69']=track(9)
 D['8000']={"video":"SLqGfI1X_9A","text":[],"credits":[]}
-D['abuelita']={"video":"ou99LABzxKU","text":["Publicada en SoundCloud el 13 de julio de 2020. El vídeo enlazado es la versión en directo en Paral·lel 62.","Las abuelitas folclóricas son una de las pasiones declaradas de la banda."],"credits":[],"src":[("SoundCloud","https://soundcloud.com/lasmarikarmen"),("YouTube","https://www.youtube.com/watch?v=hxHuym02RKc")]}
-D['alta bajeza']={"video":"KQJ2nJZBHCs","text":["Single con Kiltreo Oskuro."],"credits":[("Con","Kiltreo Oskuro",KIL)],"src":[MUS]}
+D['abuelita']={"video":"ou99LABzxKU","text":["@lyr_d_abuelita1","@lyr_d_abuelita2"],"credits":[("@lyr_c_with","Capitano Barbaconyo",CAPI)],"src":[("SoundCloud","https://soundcloud.com/lasmarikarmen")]}
+D['alta bajeza']={"video":"KQJ2nJZBHCs","text":[],"credits":[("@lyr_c_with","Kiltreo Oskuro",KIL)],"src":[MUS]}
 D['amantalak']=track(6)
-D['nos pegan']=track(1,["Es también el título del espectáculo de 60 minutos: el funeral folclórico de Lady Marikarmen convertido en fiesta multimedia, con electrónica, vientos en directo, drag, vídeo y una columna de humo sincronizada al beat."])
-D['nos pegan']['src']=[MUS,("espectáculo","espectaculo.html")]
-D['compost']={"video":"JFXqMnMFqnI","text":["Título del primer álbum de la banda (2021): «Composta, recicla y repiensa la manera en que percibes el género.»"],"credits":[("Álbum","Compost your Gender (2021)")],"src":[MUS]}
-D['el afilador']=track(5,["Single de 2023."]); D['el afilador']['video']="8dQ9giAwwBE"
+D['nos pegan']=track(1,["@lyr_d_nospegan"])
+D['nos pegan']['src']=[MUS,("@nav_show","@page:espectaculo")]
+D['compost']={"video":"JFXqMnMFqnI","text":["@lyr_d_compost"],"credits":[("@lyr_c_first_album","Compost your Gender (2021)"),("@lyr_c_with","Capitano Barbaconyo",CAPI)],"src":[MUS]}
+D['el afilador']=track(5,["@lyr_d_single:2023"]); D['el afilador']['video']="8dQ9giAwwBE"
 D['electrodomesticos']={"video":"6WE9o7PjveA","text":[],"credits":[]}
-D['ladyboi']={"video":"mYE5oTtRIMw","text":["Publicada en SoundCloud el 7 de marzo de 2021."],"credits":[],"src":[("SoundCloud","https://soundcloud.com/lasmarikarmen")]}
+D['ladyboi']={"video":"mYE5oTtRIMw","text":["@lyr_d_ladyboi"],"credits":[("@lyr_c_with","Capitano Barbaconyo",CAPI)],"src":[("SoundCloud","https://soundcloud.com/lasmarikarmen")]}
 D['lagrimas']={"video":"b6LuZoB04w0","text":[],"credits":[]}
 D['me se sale']={"video":"hXvmgjbpTI0","text":[],"credits":[]}
 D['patadas']=track(7)
-D['pelaso']={"video":"IFF7f8r7nbA","text":["Single de Las Marikarmen."],"credits":[("Producción","Carlo Jurancelli")],"src":[MUS]}
+D['pelaso']={"video":"IFF7f8r7nbA","text":[],"credits":[("@lyr_c_prod","Carlo Jurancelli")],"src":[MUS]}
 D['petaca']=track(8)
-D['poca ropa']={"video":"DgmGpjpw-Pk","text":["Una reclamación poderosa y reivindicativa de los espacios públicos por personas disidentes de género y queer, que nace de la autodefensa ante las agresiones al colectivo LGBTI+ en la calle.","Primera colaboración musical de Las Marikarmen con la rapera argentina La Maga. Videoclip publicado el 3 de marzo de 2022; salió como single el 4 de marzo de 2022."],
- "credits":[("Voces","Victoria Sickness, La Maga"),("Clarinete","Hipogrifa"),("Saxo barítono","Contàmina Perpétua"),("Producción musical","Carlo Jurancelli"),("Dirección","Las Marikarmen"),("Edición","Tyle Fernández"),("Cámara y fotografía","Àmal Benelmekki, Sergio L, Pat Garrido, Àlbert Garcia"),("Gracias","Cowper Films y la crew de skaters que se sumó al rodaje")],
- "links":[("En directo, Fiesta Wacha · Sala Upload (7 enero 2023)","https://www.youtube.com/watch?v=K9G7XC3IBqU")],"src":[("YouTube","https://www.youtube.com/watch?v=DgmGpjpw-Pk")]}
-D['raton']={"video":"k4cl3OAWrPg","text":["Single de 2022."],"credits":[("Con","Kiltreo Oskuro",KIL)],"src":[("Spotify","https://open.spotify.com/track/7rVY7nSi1jSgkNe6u7987Z")]}
+D['poca ropa']={"video":"DgmGpjpw-Pk","text":["@lyr_d_pocaropa1","@lyr_d_pocaropa2"],
+ "credits":[("@lyr_c_vocals","Victoria Sickness, La Maga"),("@lyr_c_clarinet","Hipogrifa"),("@lyr_c_bari","Contàmina Perpétua"),("@lyr_c_musprod","Carlo Jurancelli"),("@lyr_c_direction","Las Marikarmen"),("@lyr_c_editing","tyle fernández"),("@lyr_c_camera_photo","Àmal Benelmekki, Sergio L, Pat Garrido, Àlbert Garcia"),("@lyr_c_thanks","@lyr_cv_thanks")],
+ "links":[("@lyr_l_wacha","https://www.youtube.com/watch?v=K9G7XC3IBqU")],"src":[]}
+D['raton']={"video":"k4cl3OAWrPg","text":["@lyr_d_single:2022"],"credits":[("@lyr_c_with","Kiltreo Oskuro",KIL)],"src":[SPOT_TR]}
 D['secuestro']=track(3)
-D['sissy']={"video":"hxHuym02RKc","text":["Primer videoclip de Las Marikarmen (17 de mayo de 2019, 4:24): cabaret musical queer-punk de Barcelona que mezcla la fuerza de una banda de metales con el arte del drag y reescribe en clave transfeminista tus temazos pop.","Inspirada en «Sissy That Walk» de RuPaul y «Satisfaction» de Benny Benassi."],
- "credits":[("Cámara y edición","Mónica Romero"),("Postproducción","Bicialta"),("Sonido","Shaman Sound Barcelona"),("Batería y voz","Remy Troubadour"),("Teclado","Masha Satskaia"),("Saxo tenor","Victoria Sickness"),("Saxo barítono","tyle fernández")],"src":[("YouTube","https://www.youtube.com/watch?v=hxHuym02RKc")]}
+D['sissy']={"video":"hxHuym02RKc","text":["@lyr_d_sissy1","@lyr_d_sissy2"],
+ "credits":[("@lyr_c_camera_edit","Mónica Romero"),("@lyr_c_post","Bicialta"),("@lyr_c_sound","Shaman Sound Barcelona"),("@lyr_c_drums_voice","Remy Troubadour"),("@lyr_c_keys","Masha Satskaia"),("@lyr_c_tenor","Victoria Sickness"),("@lyr_c_bari","tyle fernández")],"src":[]}
 D['tiene un brillito']=track(4)
-D['travestis']=track(2,["Existe también una versión en directo, publicada como single en 2026."],[("Con","Suzio Tarik")]); D['travestis']['src']=[MUS,("Spotify","https://open.spotify.com/track/7rVY7nSi1jSgkNe6u7987Z")]
+D['travestis']=track(2,["@lyr_d_travestis"]); D['travestis']['src']=[MUS,SPOT_TR]
 def find_desc(title):
     n=norm(title)
     for k,v in D.items():
@@ -71,9 +72,22 @@ for si,s in enumerate(S):
     m=re.search(r'\s+con\s+Capitano Barbaco[ñn]o\s*$',title)
     if m:
         title=title[:m.start()]
-        d['credits']=list(d.get('credits',[]))+[("Con","Capitano Barbaconyo",CAPI)]
     out.append({"title":title,"slug":norm(title).replace(' ','-'),"blocks":blocks,"desc":d})
 out.sort(key=lambda s:norm(s['title']))
+json.dump(out,open('data.json','w'),ensure_ascii=False)
+import yaml
+T=yaml.safe_load(open('../content/text.yaml',encoding='utf-8'))
+def R(v):
+    if not isinstance(v,str) or not v.startswith('@'): return v
+    k,_,n=v[1:].partition(':')
+    if k=='page': return f"https://ciavendaval.github.io/lasmarikarmen-web/{n}.html"
+    return str(T[k]['es']).replace('{n}',n)
+def RD(x):
+    if isinstance(x,list): return [RD(i) for i in x]
+    if isinstance(x,tuple): return [RD(i) for i in x]
+    if isinstance(x,dict): return {k:RD(v) for k,v in x.items()}
+    return R(x)
+out=[dict(s,desc=RD(s['desc'])) for s in out]
 tpl=open('template.html').read()
 for name,emb in (('embed',True),('preview',False)):
     h=tpl.replace('__EMBED__','true' if emb else 'false').replace('__DATA__',json.dumps(out,ensure_ascii=False).replace('</','<\\/'))

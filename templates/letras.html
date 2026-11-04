@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% from "_macros.html" import pagehead %}
+{% block main %}
+{{ pagehead(root ~ 'assets/img/photos/live-smoke-green.jpg', t('lyr_kicker'), t('nav_lyrics'), t('lyr_title2'), 'center 40%') }}
+
+<section class="band band--cream ly">
+  <div class="wrap">
+    <p class="lead ly-intro">{{ t('lyr_intro') }}</p>
+    <div class="ly-bar" role="toolbar" aria-label="{{ t('lyr_translate_all') }}">
+      <span class="label">{{ t('lyr_translate_all') }}</span>
+      <button class="ly-chip" type="button" data-g="orig" aria-pressed="true">{{ t('lyr_original') }}</button>
+      <button class="ly-chip" type="button" data-g="en" aria-pressed="false" lang="en">English</button>
+      <button class="ly-chip" type="button" data-g="es" aria-pressed="false" lang="es">Castellano</button>
+      <button class="ly-chip" type="button" data-g="eu" aria-pressed="false" lang="eu">Euskara</button>
+      <button class="ly-chip ly-chip--alt" type="button" id="ly-orig" aria-pressed="false">{{ t('lyr_show_orig') }}</button>
+    </div>
+    <div class="ly-layout" id="ly-index">
+      <nav class="ly-toc" aria-label="{{ t('lyr_index') }}">
+        <p class="label">{{ t('lyr_index') }} · <span class="ly-cnt"></span> {{ t('lyr_songs') }}</p>
+        <input id="ly-flt" type="search" placeholder="{{ t('lyr_search') }}" aria-label="{{ t('lyr_search') }}">
+        <ol id="ly-tocL"></ol>
+      </nav>
+      <div class="ly-main">
+        <details class="ly-tocm"><summary class="label">{{ t('lyr_index') }} · <span class="ly-cnt"></span> {{ t('lyr_songs') }}</summary><ol id="ly-tocM"></ol></details>
+        <div id="ly-songs"><noscript><p>JavaScript.</p></noscript></div>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="application/json" id="ly-data">{{ lyrics_json() }}</script>
+<script type="application/json" id="ly-ui">{{ {
+  'original': t('lyr_original')|string, 'index': t('lyr_index')|string, 'desc': t('lyr_desc')|string,
+  'watch_here': t('lyr_watch_here')|string, 'watch_yt': t('lyr_watch_yt')|string, 'cc': t('lyr_cc')|string,
+  'more': t('lyr_more')|string, 'video': t('lyr_video')|string, 'lang': lang } | tojson }}</script>
+<script src="{{ root }}assets/js/letras.js?v={{ asset_v }}" defer></script>
+{% endblock %}

@@ -59,7 +59,6 @@ for(var k in s){if(k==='size'){h.style.fontSize=s.size+'%'}else if(s[k]){h.class
       <ul>
       {% for p_slug, _tpl, nav_key, _tk in pages if p_slug != 'index' %}
         <li><a href="{{ page_url(p_slug) }}"{% if p_slug == slug %} aria-current="page"{% endif %}>{{ t(nav_key) }}</a></li>
-        {% if p_slug == 'musica' %}<li><a href="{{ root }}letras.html" hreflang="es">{{ t('nav_lyrics') }}</a></li>{% endif %}
       {% endfor %}
       </ul>
     </nav>
