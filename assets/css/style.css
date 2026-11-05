@@ -575,4 +575,5 @@ html:lang(ja) .ly-ln { line-height: 1.8; }
 html.a11y-contrast .ly-bar, html.a11y-contrast .ly-desc, html.a11y-contrast .ly-tocm { background: #000 !important; }
 html.a11y-contrast .ly-chip, html.a11y-contrast .ly-mini { background: #000 !important; color: #fff !important; border-color: #fff !important; }
 html.a11y-contrast .ly-chip[aria-pressed="true"], html.a11y-contrast .ly-mini[aria-pressed="true"] { background: #ffe600 !important; color: #000 !important; }
-
+.vid__lyr { display: inline-block; margin-left: .5rem; font: 700 .68rem/1 var(--mono); text-transform: uppercase; letter-spacing: .1em; color: var(--pink); text-decoration: none; border-bottom: 2px solid currentColor; padding-bottom: .15em; white-space: nowrap; }
+.vid__lyr:hover { color: var(--green); }

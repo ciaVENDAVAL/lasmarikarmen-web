@@ -19,6 +19,27 @@
      ],
      "eu": [
       "Prest zaudete, putak?"
+     ],
+     "ca": [
+      "Esteu a punt, bitches?"
+     ],
+     "gl": [
+      "Estades listas, bitches?"
+     ],
+     "pt": [
+      "Estão prontas, bitches?"
+     ],
+     "fr": [
+      "Vous êtes prêtes, bitches ?"
+     ],
+     "it": [
+      "Siete pronte, bitches?"
+     ],
+     "de": [
+      "Seid ihr bereit, Bitches?"
+     ],
+     "ja": [
+      "準備はいい、ビッチたち？"
      ]
     },
     {
@@ -52,6 +73,34 @@
      "eu": [
       "2000 urteko kultura suntsitu",
       "Kulturaaaaaaa"
+     ],
+     "ca": [
+      "Destruir 2000 anys de cultura",
+      "Culturaaaaaaaaaaa"
+     ],
+     "gl": [
+      "Destruír 2000 anos de cultura",
+      "Culturaaaaaaaaaaa"
+     ],
+     "pt": [
+      "Destruir 2000 anos de cultura",
+      "Culturaaaaaaaaaaa"
+     ],
+     "fr": [
+      "Détruire 2000 ans de culture",
+      "Cultuuuuuuuuure"
+     ],
+     "it": [
+      "Distruggere 2000 anni di cultura",
+      "Culturaaaaaaaaaaa"
+     ],
+     "de": [
+      "2000 Jahre Kultur zerstören",
+      "Kultuuuuuuuuur"
+     ],
+     "ja": [
+      "2000年の文化をぶっ壊せ",
+      "ぶんかーーーーー"
      ]
     },
     {
@@ -69,6 +118,27 @@
      ],
      "eu": [
       "[Silvia Rivera] Isiltzen zaretela hobe!"
+     ],
+     "ca": [
+      "[Silvia Rivera] Més us val callar!"
+     ],
+     "gl": [
+      "[Silvia Rivera] Máis vos vale calar!"
+     ],
+     "pt": [
+      "[Silvia Rivera] É melhor calarem-se!"
+     ],
+     "fr": [
+      "[Silvia Rivera] Vous feriez mieux de vous taire !"
+     ],
+     "it": [
+      "[Silvia Rivera] Fareste meglio a stare zitti!"
+     ],
+     "de": [
+      "[Silvia Rivera] Ihr seid besser mal still!"
+     ],
+     "ja": [
+      "［シルヴィア・リヴェラ］静かにしたほうがいいよ！"
      ]
     },
     {
@@ -92,6 +162,41 @@
       "Kataklismo soziala",
       "Gure ama Lady Marikarmenek esaten ziguen:",
       "Atera eta begira aurrera, inoiz ez behera."
+     ],
+     "ca": [
+      "Cataclisme social",
+      "La nostra mare Lady Marikarmen ens deia:",
+      "Surt i mira endavant, mai cap avall."
+     ],
+     "gl": [
+      "Cataclismo social",
+      "A nosa nai Lady Marikarmen dicíanos:",
+      "Sae e mira á fronte, nunca cara abaixo."
+     ],
+     "pt": [
+      "Cataclismo social",
+      "A nossa mãe Lady Marikarmen dizia-nos:",
+      "Sai e olha em frente, nunca para baixo."
+     ],
+     "fr": [
+      "Cataclysme social",
+      "Notre mère Lady Marikarmen nous disait :",
+      "Sors et regarde devant toi, jamais vers le bas."
+     ],
+     "it": [
+      "Cataclisma sociale",
+      "Nostra madre Lady Marikarmen ci diceva:",
+      "Esci e guarda avanti, mai in basso."
+     ],
+     "de": [
+      "Sozialer Kataklysmus",
+      "Unsere Mutter Lady Marikarmen sagte immer:",
+      "Geh raus und schau nach vorn, nie nach unten."
+     ],
+     "ja": [
+      "社会の大異変",
+      "私たちの母レディ・マリカルメンはいつも言っていた",
+      "外に出て前を見なさい、決して下を見ないで。"
      ]
     },
     {
@@ -112,6 +217,34 @@
      "eu": [
       "[1950s radio] Emakume orok bere buruarekin egon behar du noizean behin, zure erantzuna: labean egitea. Ondo egin, sarri egin.",
       "Maitea! Petuniak hil dituzu, petuniak hil dituzu."
+     ],
+     "ca": [
+      "[ràdio dels anys 50] Tota dona necessita ser ella mateixa de tant en tant; la teva resposta: cuinar al forn. Cuinar bé, cuinar sovint.",
+      "Carinyo! Has matat les petúnies, has matat les petúnies."
+     ],
+     "gl": [
+      "[radio dos anos 50] Toda muller precisa ser ela mesma de cando en vez; a túa resposta: hornear. Hornear ben, hornear a miúdo.",
+      "Cariño! Mataches as petunias, mataches as petunias."
+     ],
+     "pt": [
+      "[rádio dos anos 50] Toda a mulher precisa de ser ela mesma de vez em quando; a tua resposta: fazer bolos. Fazer bem, fazer muitas vezes.",
+      "Querido! Mataste as petúnias, mataste as petúnias."
+     ],
+     "fr": [
+      "[radio des années 50] Toute femme a besoin d'être elle-même parfois ; ta réponse : la pâtisserie. Bien cuire, cuire souvent.",
+      "Chéri ! Tu as tué les pétunias, tu as tué les pétunias."
+     ],
+     "it": [
+      "[radio anni '50] Ogni donna ha bisogno di essere se stessa ogni tanto; la tua risposta: infornare. Infornare bene, infornare spesso.",
+      "Tesoro! Hai ucciso le petunie, hai ucciso le petunie."
+     ],
+     "de": [
+      "[Radio der 50er] Jede Frau muss manchmal sie selbst sein; deine Antwort: Backen. Gut backen, oft backen.",
+      "Schatz! Du hast die Petunien umgebracht, du hast die Petunien umgebracht."
+     ],
+     "ja": [
+      "［1950年代のラジオ］女性にはときどき自分らしくいる時間が必要。答えはお菓子づくり。上手に焼いて、たくさん焼いて。",
+      "あなた！ペチュニアを枯らしたわね、ペチュニアを枯らしたわね。"
      ]
     },
     {
@@ -132,6 +265,34 @@
      "eu": [
       "[Manuela Trasobares] Ezin dut gehiago… gizarte honekin… baztertuta gaituena, ez al duzue ikusten!",
       "Genero-patroia deskodetzen"
+     ],
+     "ca": [
+      "[Manuela Trasobares] No puc més… amb aquesta… societat que ens té marginades, que no ho veieu!",
+      "Descodificant el patró de gènere"
+     ],
+     "gl": [
+      "[Manuela Trasobares] Non podo máis… con esta… sociedade que nos ten marxinadas, que non o vedes!",
+      "Descodificando o patrón de xénero"
+     ],
+     "pt": [
+      "[Manuela Trasobares] Não aguento mais… esta… sociedade que nos tem marginalizadas, não estão a ver!",
+      "A descodificar o padrão de género"
+     ],
+     "fr": [
+      "[Manuela Trasobares] J'en peux plus… de cette… société qui nous marginalise, vous le voyez bien !",
+      "Décodage du schéma de genre"
+     ],
+     "it": [
+      "[Manuela Trasobares] Non ne posso più… di questa… società che ci tiene ai margini, non lo vedete!",
+      "Decodificando lo schema di genere"
+     ],
+     "de": [
+      "[Manuela Trasobares] Ich kann nicht mehr… mit dieser… Gesellschaft, die uns ausgrenzt, seht ihr das nicht!",
+      "Das Geschlechtermuster wird entschlüsselt"
+     ],
+     "ja": [
+      "［マヌエラ・トラソバレス］もう無理…この…私たちを隅に追いやる社会には、見ればわかるでしょ！",
+      "ジェンダーのパターンを解読中"
      ]
     },
     {
@@ -152,6 +313,34 @@
      "eu": [
       "Eguneratu zure generoa",
       "Jakin behar dut zer daukazun galtzen barruan"
+     ],
+     "ca": [
+      "Actualitza el teu gènere",
+      "Necessito saber què tens dins del pantaló"
+     ],
+     "gl": [
+      "Actualiza o teu xénero",
+      "Preciso saber que tes dentro do pantalón"
+     ],
+     "pt": [
+      "Atualiza o teu género",
+      "Preciso de saber o que tens dentro da calça"
+     ],
+     "fr": [
+      "Mets à jour ton genre",
+      "J'ai besoin de savoir ce que t'as dans le pantalon"
+     ],
+     "it": [
+      "Aggiorna il tuo genere",
+      "Devo sapere cosa hai dentro i pantaloni"
+     ],
+     "de": [
+      "Aktualisiere dein Geschlecht",
+      "Ich muss wissen, was du in der Hose hast"
+     ],
+     "ja": [
+      "ジェンダーを更新して",
+      "パンツの中に何があるのか知りたいの"
      ]
     },
     {
@@ -169,6 +358,27 @@
      "es": null,
      "eu": [
       "[Manuela Trasobares] Bota kopa!"
+     ],
+     "ca": [
+      "[Manuela Trasobares] Llença la copa!"
+     ],
+     "gl": [
+      "[Manuela Trasobares] Tira a copa!"
+     ],
+     "pt": [
+      "[Manuela Trasobares] Atira o copo!"
+     ],
+     "fr": [
+      "[Manuela Trasobares] Jette le verre !"
+     ],
+     "it": [
+      "[Manuela Trasobares] Butta il bicchiere!"
+     ],
+     "de": [
+      "[Manuela Trasobares] Wirf das Glas!"
+     ],
+     "ja": [
+      "［マヌエラ・トラソバレス］グラスを投げて！"
      ]
     },
     {
@@ -188,6 +398,27 @@
      ],
      "eu": [
       "Mutila ala neska?"
+     ],
+     "ca": [
+      "Nen o nena?"
+     ],
+     "gl": [
+      "Neno ou nena?"
+     ],
+     "pt": [
+      "Menino ou menina?"
+     ],
+     "fr": [
+      "Garçon ou fille ?"
+     ],
+     "it": [
+      "Maschio o femmina?"
+     ],
+     "de": [
+      "Junge oder Mädchen?"
+     ],
+     "ja": [
+      "男の子？女の子？"
      ]
     },
     {
@@ -208,6 +439,34 @@
      "eu": [
       "Identitate multigeneroa",
       "Generoa eguneratuta"
+     ],
+     "ca": [
+      "Identitat multigènere",
+      "Gènere actualitzat"
+     ],
+     "gl": [
+      "Identidade multixénero",
+      "Xénero actualizado"
+     ],
+     "pt": [
+      "Identidade multigénero",
+      "Género atualizado"
+     ],
+     "fr": [
+      "Identité multigenre",
+      "Genre mis à jour"
+     ],
+     "it": [
+      "Identità multigenere",
+      "Genere aggiornato"
+     ],
+     "de": [
+      "Multigender-Identität",
+      "Geschlecht aktualisiert"
+     ],
+     "ja": [
+      "マルチジェンダー・アイデンティティ",
+      "ジェンダー更新完了"
      ]
     },
     {
@@ -225,6 +484,27 @@
      "es": null,
      "eu": [
       "Zure generoa bukatu da!"
+     ],
+     "ca": [
+      "El teu gènere s'ha acabat!"
+     ],
+     "gl": [
+      "O teu xénero acabouse!"
+     ],
+     "pt": [
+      "O teu género acabou!"
+     ],
+     "fr": [
+      "Ton genre, c'est fini !"
+     ],
+     "it": [
+      "Il tuo genere è finito!"
+     ],
+     "de": [
+      "Dein Geschlecht ist vorbei!"
+     ],
+     "ja": [
+      "あんたのジェンダーは終わり！"
      ]
     },
     {
@@ -242,6 +522,27 @@
      ],
      "eu": [
       "[1950s radio] Mmm, ederki antzematen da aldea! Kurruskaria baina ez koipetsua, oilasko frijitua bezala!"
+     ],
+     "ca": [
+      "[ràdio dels anys 50] Mmm, de debò que se'n nota la diferència! Cruixent però no greixós com el pollastre fregit!"
+     ],
+     "gl": [
+      "[radio dos anos 50] Mmm, nótase de verdade a diferenza! Crocante pero non graxento coma o polo frito!"
+     ],
+     "pt": [
+      "[rádio dos anos 50] Mmm, nota-se mesmo a diferença! Estaladiço mas não gorduroso como frango frito!"
+     ],
+     "fr": [
+      "[radio des années 50] Mmm, on sent vraiment la différence ! Croustillant mais pas gras comme du poulet frit !"
+     ],
+     "it": [
+      "[radio anni '50] Mmm, si sente davvero la differenza! Croccante ma non unto come il pollo fritto!"
+     ],
+     "de": [
+      "[Radio der 50er] Mmm, da schmeckt man den Unterschied! Knusprig, aber nicht fettig wie Brathähnchen!"
+     ],
+     "ja": [
+      "［1950年代のラジオ］うーん、違いがはっきりわかる！フライドチキンみたいにサクサク、でも脂っこくない！"
      ]
     },
     {
@@ -259,6 +560,27 @@
      "es": null,
      "eu": [
       "Genero-kaosaren kultura"
+     ],
+     "ca": [
+      "Cultura del caos de gènere"
+     ],
+     "gl": [
+      "Cultura do caos xenérico"
+     ],
+     "pt": [
+      "Cultura do caos de género"
+     ],
+     "fr": [
+      "Culture du chaos de genre"
+     ],
+     "it": [
+      "Cultura del caos di genere"
+     ],
+     "de": [
+      "Kultur des Geschlechterchaos"
+     ],
+     "ja": [
+      "ジェンダー・カオスの文化"
      ]
     },
     {
@@ -291,6 +613,62 @@
       "[Assata Shakur] Aldaketa iraultzaileen aldeko izan naiz eta oraindik ere banaiz.",
       "Queer eta legendarioak.",
       "[Assata Shakur] Autodeterminazioa, esplotazio kapitalistaren amaiera."
+     ],
+     "ca": [
+      "[Silvia Rivera] Revolució araaaa!",
+      "Revolució de gènere",
+      "Et pensaves que desapareixeríem?",
+      "[Assata Shakur] He defensat i encara defenso canvis revolucionaris.",
+      "Queer i llegendàries.",
+      "[Assata Shakur] Autodeterminació, la fi de l'explotació capitalista."
+     ],
+     "gl": [
+      "[Silvia Rivera] Revolución xaaaa!",
+      "Revolución de xénero",
+      "Pensabas que iamos desaparecer?",
+      "[Assata Shakur] Defendín e sigo a defender cambios revolucionarios.",
+      "Queer e lendarias.",
+      "[Assata Shakur] Autodeterminación, o fin da explotación capitalista."
+     ],
+     "pt": [
+      "[Silvia Rivera] Revolução jáaaa!",
+      "Revolução de género",
+      "Achavas que íamos desaparecer?",
+      "[Assata Shakur] Defendi e ainda defendo mudanças revolucionárias.",
+      "Queer e lendárias.",
+      "[Assata Shakur] Autodeterminação, o fim da exploração capitalista."
+     ],
+     "fr": [
+      "[Silvia Rivera] La révolution maintenaaaant !",
+      "Révolution de genre",
+      "Tu croyais qu'on allait disparaître ?",
+      "[Assata Shakur] J'ai défendu et je défends toujours des changements révolutionnaires.",
+      "Queer et légendaires.",
+      "[Assata Shakur] L'autodétermination, la fin de l'exploitation capitaliste."
+     ],
+     "it": [
+      "[Silvia Rivera] Rivoluzione adessooo!",
+      "Rivoluzione di genere",
+      "Pensavi che saremmo sparite?",
+      "[Assata Shakur] Ho sostenuto e sostengo ancora cambiamenti rivoluzionari.",
+      "Queer e leggendarie.",
+      "[Assata Shakur] Autodeterminazione, la fine dello sfruttamento capitalista."
+     ],
+     "de": [
+      "[Silvia Rivera] Revolution jetzt!!!",
+      "Geschlechterrevolution",
+      "Dachtest du, wir verschwinden?",
+      "[Assata Shakur] Ich habe mich für revolutionäre Veränderungen eingesetzt und tue es noch immer.",
+      "Queer und legendär.",
+      "[Assata Shakur] Selbstbestimmung, ein Ende der kapitalistischen Ausbeutung."
+     ],
+     "ja": [
+      "［シルヴィア・リヴェラ］革命を今すぐーー！",
+      "ジェンダー革命",
+      "私たちが消えると思った？",
+      "［アサタ・シャクール］私は革命的な変化を訴えてきたし、今も訴えている。",
+      "クィアで伝説的。",
+      "［アサタ・シャクール］自己決定、資本主義的搾取の終わり。"
      ]
     },
     {
@@ -342,6 +720,76 @@
       "Tartean",
       "[Assata Shakur] Esplotazio kapitalistaren amaiera… Nire herriak justizia jasotzen duenean, ziur nago nik ere jasoko dudala.",
       "Aukera asko dituzu, ez soilik bi."
+     ],
+     "ca": [
+      "[Assata Shakur] L'abolició de les polítiques racistes, l'eradicació del sexisme i l'eliminació de la repressió política.",
+      "Explotació.",
+      "[Assata Shakur] Si això és un delicte, aleshores sóc totalment culpable.",
+      "Culpable",
+      "Totalment culpable",
+      "Entremig",
+      "[Assata Shakur] La fi de l'explotació capitalista… Quan el meu poble rebi justícia, estic segura que jo també la rebré.",
+      "Tens moltes opcions i no només dues."
+     ],
+     "gl": [
+      "[Assata Shakur] A abolición das políticas racistas, a erradicación do sexismo e a eliminación da represión política.",
+      "Explotación.",
+      "[Assata Shakur] Se iso é un delito, entón son totalmente culpable.",
+      "Culpable",
+      "Totalmente culpable",
+      "No medio",
+      "[Assata Shakur] O fin da explotación capitalista… Cando o meu pobo reciba xustiza, estou segura de que eu tamén a recibirei.",
+      "Tes moitas opcións e non só dúas."
+     ],
+     "pt": [
+      "[Assata Shakur] A abolição das políticas racistas, a erradicação do sexismo e a eliminação da repressão política.",
+      "Exploração.",
+      "[Assata Shakur] Se isso é crime, então sou totalmente culpada.",
+      "Culpada",
+      "Totalmente culpada",
+      "No meio",
+      "[Assata Shakur] O fim da exploração capitalista… Quando o meu povo receber justiça, tenho a certeza de que eu também a receberei.",
+      "Tens muitas opções e não apenas duas."
+     ],
+     "fr": [
+      "[Assata Shakur] L'abolition des politiques racistes, l'éradication du sexisme et la fin de la répression politique.",
+      "Exploitation.",
+      "[Assata Shakur] Si c'est un crime, alors je suis totalement coupable.",
+      "Coupable",
+      "Totalement coupable",
+      "Entre les deux",
+      "[Assata Shakur] La fin de l'exploitation capitaliste… Quand mon peuple obtiendra justice, je suis sûre que je l'obtiendrai aussi.",
+      "T'as plein d'options, pas seulement deux."
+     ],
+     "it": [
+      "[Assata Shakur] L'abolizione delle politiche razziste, lo sradicamento del sessismo e l'eliminazione della repressione politica.",
+      "Sfruttamento.",
+      "[Assata Shakur] Se questo è un crimine, allora sono totalmente colpevole.",
+      "Colpevole",
+      "Totalmente colpevole",
+      "Nel mezzo",
+      "[Assata Shakur] La fine dello sfruttamento capitalista… Quando il mio popolo avrà giustizia, sono sicura che l'avrò anch'io.",
+      "Hai tante opzioni, non solo due."
+     ],
+     "de": [
+      "[Assata Shakur] Die Abschaffung rassistischer Politik, die Ausrottung des Sexismus und das Ende politischer Repression.",
+      "Ausbeutung.",
+      "[Assata Shakur] Wenn das ein Verbrechen ist, dann bin ich voll und ganz schuldig.",
+      "Schuldig",
+      "Voll und ganz schuldig",
+      "Dazwischen",
+      "[Assata Shakur] Ein Ende der kapitalistischen Ausbeutung… Wenn mein Volk Gerechtigkeit erfährt, bin ich sicher, dass auch ich sie erfahre.",
+      "Du hast viele Optionen, nicht nur zwei."
+     ],
+     "ja": [
+      "［アサタ・シャクール］人種差別的な政策の廃止、性差別の根絶、そして政治的弾圧の撤廃。",
+      "搾取。",
+      "［アサタ・シャクール］それが罪なら、私は完全に有罪だ。",
+      "有罪",
+      "完全に有罪",
+      "そのあいだ",
+      "［アサタ・シャクール］資本主義的搾取の終わり…私の人々が正義を手にしたとき、私もきっと手にするだろう。",
+      "選択肢はたくさん、ふたつだけじゃない。"
      ]
     }
    ]

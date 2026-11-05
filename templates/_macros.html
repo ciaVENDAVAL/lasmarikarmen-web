@@ -14,14 +14,14 @@
 {% endmacro %}
 
 {# YouTube video, loads the player only on click #}
-{% macro video(v, root, t) %}
+{% macro video(v, root, t, lyrics_href=None) %}
 <figure class="vid">
   <a class="vid__btn" href="https://www.youtube.com/watch?v={{ v.id }}" data-embed="https://www.youtube-nocookie.com/embed/{{ v.id }}?autoplay=1&amp;rel=0" data-title="{{ v.title }} · Las Marikarmen" target="_blank" rel="noopener">
     <img src="{{ root }}assets/img/video/{{ v.id }}.jpg" alt="" loading="lazy" width="960" height="540">
     <span class="vid__play" aria-hidden="true"></span>
     <span class="sr">{{ t('video_play') }}: {{ v.title }}</span>
   </a>
-  <figcaption><b>{{ v.title }}</b>{% if v.get('feat') %} <span class="muted">{{ v.feat }}</span>{% endif %}</figcaption>
+  <figcaption><b>{{ v.title }}</b>{% if v.get('feat') %} <span class="muted">{{ v.feat }}</span>{% endif %}{% if lyrics_href %} <a class="vid__lyr" href="{{ lyrics_href }}">{{ t('lyr_lyric') }} →</a>{% endif %}</figcaption>
 </figure>
 {% endmacro %}
 

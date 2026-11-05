@@ -79,6 +79,125 @@
       "txandalaren azpitik ateraz",
       "gaur kandela bat piztuko dizut",
       "eta argizaria botako dizut"
+     ],
+     "ca": [
+      "si t'acostes als matolls",
+      "compte, no et punxis",
+      "hi ha esbarzers, cards i punyals",
+      "a les fosques m'enfilo a les bastides",
+      "veig la city des de dalt",
+      "ulls de gata desvetllats",
+      "gota a gota omple gots",
+      "amb els grans d'un rosari",
+      "de la meva àvia entre les mans",
+      "dissociant entre crits",
+      "baralla i fandangos",
+      "vaig veure que et posa el meu tanga",
+      "traient el cap pel xandall",
+      "avui t'encendré una espelmeta",
+      "i et tiraré la cera"
+     ],
+     "gl": [
+      "se te achegas ás matogueiras",
+      "coidado, non te pinches",
+      "hai silvas, cardos e puñais",
+      "ás escuras rubo aos andamios",
+      "vexo a city dende o alto",
+      "ollos de gata desvelados",
+      "pinga a pinga enche vasos",
+      "coas contas dun rosario",
+      "da miña avoa entre as mans",
+      "disociando entre berros",
+      "liorta e fandangos",
+      "vin que te pon o meu tanga",
+      "asomando polo chándal",
+      "hoxe poñereiche unha veliña",
+      "e tirareiche a cera"
+     ],
+     "pt": [
+      "se te aproximas dos matagais",
+      "cuidado, não te piques",
+      "há silvas, cardos e punhais",
+      "às escuras trepo andaimes",
+      "vejo a city lá do alto",
+      "olhos de gata sem sono",
+      "gota a gota enche copos",
+      "com as contas de um rosário",
+      "da minha avó entre as mãos",
+      "a dissociar entre gritos",
+      "briga e fandangos",
+      "vi que te excita o meu fio dental",
+      "a espreitar pelo fato de treino",
+      "hoje acendo-te uma velinha",
+      "e atiro-te a cera"
+     ],
+     "fr": [
+      "si tu t'approches des fourrés",
+      "attention, ne te pique pas",
+      "il y a des ronces, des chardons et des poignards",
+      "dans le noir je grimpe aux échafaudages",
+      "je vois la city d'en haut",
+      "yeux de chatte insomniaques",
+      "goutte à goutte, ça fait déborder les verres",
+      "avec les grains d'un chapelet",
+      "de ma grand-mère entre les mains",
+      "dissociant entre les cris",
+      "bagarre et fandangos",
+      "j'ai vu que mon string t'excite",
+      "qui dépasse du survêt",
+      "ce soir je t'allume une petite bougie",
+      "et je te verse la cire"
+     ],
+     "it": [
+      "se ti avvicini ai cespugli",
+      "attento, non pungerti",
+      "ci sono rovi, cardi e pugnali",
+      "al buio mi arrampico sulle impalcature",
+      "vedo la city dall'alto",
+      "occhi di gatta insonni",
+      "goccia a goccia fa traboccare i bicchieri",
+      "con i grani di un rosario",
+      "di mia nonna tra le mani",
+      "dissociando tra le urla",
+      "rissa e fandangos",
+      "ho visto che ti eccita il mio perizoma",
+      "che spunta dalla tuta",
+      "stasera ti accendo una candelina",
+      "e ti verso la cera"
+     ],
+     "de": [
+      "wenn du dem Gestrüpp zu nahe kommst",
+      "pass auf, stich dich nicht",
+      "da sind Brombeeren, Disteln und Dolche",
+      "im Dunkeln kletter ich auf Gerüste",
+      "ich seh die City von oben",
+      "schlaflose Katzenaugen",
+      "Tropfen für Tropfen bringt Gläser zum Überlaufen",
+      "mit den Perlen eines Rosenkranzes",
+      "von meiner Oma in den Händen",
+      "dissoziierend zwischen Schreien",
+      "Prügelei und Fandangos",
+      "ich hab gesehen, dass dich mein Tanga anmacht",
+      "der aus dem Jogginganzug lugt",
+      "heute zünd ich dir eine kleine Kerze an",
+      "und tropf dir das Wachs auf"
+     ],
+     "ja": [
+      "茂みに近づくなら",
+      "気をつけて、刺さないように",
+      "イバラにアザミに短剣があるから",
+      "暗闇で足場をよじ登る",
+      "高いところから街を見下ろす",
+      "眠れない猫の目",
+      "一滴ずつ、グラスがあふれる",
+      "ロザリオの珠を",
+      "おばあちゃんの珠を手に",
+      "叫び声のあいだで解離して",
+      "けんかとファンダンゴ",
+      "私のTバックにあんたが興奮するのを見た",
+      "ジャージからのぞいてる",
+      "今夜はあんたに小さなろうそくを灯して",
+      "ロウを垂らしてあげる"
      ]
     }
    ]
@@ -110,6 +229,48 @@
       "animalia pobre honen pisu autosuntsitzailea",
       "geratu nintzen pieza txiki guztiak itsasten",
       "arnasa hartu eta jan ondo, nik beti zure bila etorriko naiz"
+     ],
+     "ca": [
+      "Treu-me del cotxe encara que hagis d'arrossegar",
+      "el pes autodestructiu d'aquest pobre animal",
+      "em vaig quedar enganxant totes les peces",
+      "respira i menja bé, que jo sempre t'aniré a buscar"
+     ],
+     "gl": [
+      "Sácame do coche aínda que teñas que arrastrar",
+      "o peso autodestrutivo deste pobre animal",
+      "quedei pegando todas as peciñas",
+      "respira e come ben, que eu sempre te irei buscar"
+     ],
+     "pt": [
+      "Tira-me do carro mesmo que tenhas de arrastar",
+      "o peso autodestrutivo deste pobre animal",
+      "fiquei a colar todas as pecinhas",
+      "respira e come bem, que eu vou sempre buscar-te"
+     ],
+     "fr": [
+      "Sors-moi de la voiture même si tu dois traîner",
+      "le poids autodestructeur de ce pauvre animal",
+      "je suis restée à recoller tous les petits morceaux",
+      "respire et mange bien, je viendrai toujours te chercher"
+     ],
+     "it": [
+      "Tirami fuori dalla macchina anche se devi trascinare",
+      "il peso autodistruttivo di questo povero animale",
+      "sono rimasta a incollare tutti i pezzettini",
+      "respira e mangia bene, che verrò sempre a cercarti"
+     ],
+     "de": [
+      "Hol mich aus dem Auto, auch wenn du schleppen musst",
+      "das selbstzerstörerische Gewicht dieses armen Tiers",
+      "ich bin geblieben und hab alle Teilchen geklebt",
+      "atme und iss gut, ich hol dich immer ab"
+     ],
+     "ja": [
+      "車から出して、引きずってでも",
+      "このかわいそうな動物の自己破壊的な重さを",
+      "私は残って、小さなかけらを全部貼り合わせた",
+      "息をして、ちゃんと食べて、いつだって迎えに行くから"
      ]
     }
    ]
@@ -153,6 +314,76 @@
       "ez gelditu gaizki",
       "eta hemendik aurrera nirea",
       "zure borondatea"
+     ],
+     "ca": [
+      "em faig un monyo mentre escolto",
+      "el que em va dir a l'àudio",
+      "tinc moltes ganes de tu",
+      "el segrest en va ser el preludi",
+      "vine, no t'ho pensis més",
+      "no et quedis malament",
+      "i a partir d'ara meva",
+      "la teva voluntat"
+     ],
+     "gl": [
+      "fágome un moño mentres escoito",
+      "o que me dixo no audio",
+      "teño moitas ganas de ti",
+      "do secuestro foi o preludio",
+      "ven, non o penses máis",
+      "non quedes mal",
+      "e a partir de agora miña",
+      "a túa vontade"
+     ],
+     "pt": [
+      "faço um carrapito enquanto ouço",
+      "o que ele me disse no áudio",
+      "tenho tanta vontade de ti",
+      "do sequestro foi o prelúdio",
+      "anda, não penses mais",
+      "não fiques mal",
+      "e a partir de agora minha",
+      "a tua vontade"
+     ],
+     "fr": [
+      "je me fais un chignon en écoutant",
+      "ce qu'il m'a dit dans le vocal",
+      "j'ai tellement envie de toi",
+      "c'était le prélude de l'enlèvement",
+      "viens, réfléchis plus",
+      "reste pas mal",
+      "et à partir de maintenant, à moi",
+      "ta volonté"
+     ],
+     "it": [
+      "mi faccio uno chignon mentre ascolto",
+      "quello che mi ha detto nell'audio",
+      "ho tanta voglia di te",
+      "è stato il preludio del sequestro",
+      "vieni, non pensarci più",
+      "non restare male",
+      "e da adesso mia",
+      "la tua volontà"
+     ],
+     "de": [
+      "ich dreh mir einen Dutt, während ich hör",
+      "was er mir in der Sprachnachricht gesagt hat",
+      "ich hab so Bock auf dich",
+      "es war das Vorspiel der Entführung",
+      "komm, denk nicht mehr nach",
+      "fühl dich nicht schlecht",
+      "und ab jetzt gehört mir",
+      "dein Wille"
+     ],
+     "ja": [
+      "お団子を結びながら聞く",
+      "彼がボイスメッセージで言ったことを",
+      "あんたが欲しくてたまらない",
+      "それが誘拐の前奏曲だった",
+      "おいで、もう考えないで",
+      "気まずいままにしないで",
+      "これからは私のもの",
+      "あんたの意志は"
      ]
     }
    ]
@@ -184,7 +415,49 @@
       "no dejaré nada de nada en tu cama",
       "me lo llevaré absolutamente todo, me lo llevaré"
      ],
-     "eu": null
+     "eu": null,
+     "ca": [
+      "t'alegres quan notes la por",
+      "avui ho disfressaré, el meu patiment",
+      "no deixaré res de res al teu llit",
+      "m'ho enduré tot, m'ho enduré"
+     ],
+     "gl": [
+      "alégraste cando notas o medo",
+      "hoxe disfrazareino, o meu padecemento",
+      "non deixarei nada de nada na túa cama",
+      "levarei todo, levareino"
+     ],
+     "pt": [
+      "alegras-te quando sentes o medo",
+      "hoje vou disfarçá-lo, o meu sofrimento",
+      "não vou deixar nada mesmo na tua cama",
+      "vou levar tudo, vou levar"
+     ],
+     "fr": [
+      "tu te réjouis quand tu sens la peur",
+      "aujourd'hui je vais la déguiser, ma souffrance",
+      "je ne laisserai rien du tout dans ton lit",
+      "j'emporterai absolument tout, je l'emporterai"
+     ],
+     "it": [
+      "ti rallegri quando senti la paura",
+      "oggi la travestirò, la mia sofferenza",
+      "non lascerò proprio niente nel tuo letto",
+      "porterò via tutto, lo porterò via"
+     ],
+     "de": [
+      "du freust dich, wenn du die Angst spürst",
+      "heute verkleide ich es, mein Leiden",
+      "ich lass rein gar nichts in deinem Bett",
+      "ich nehm alles mit, ich nehm's mit"
+     ],
+     "ja": [
+      "恐怖を感じとると、あんたは喜ぶ",
+      "今日は私の苦しみに仮装させる",
+      "あんたのベッドには何ひとつ残さない",
+      "全部持っていく、持っていく"
+     ]
     }
    ]
   },
@@ -218,6 +491,55 @@
       "ekaitzak bahitu zituen",
       "ekaitzak hil ditzan",
       "jaiotzen ikusi zutenak berak"
+     ],
+     "ca": [
+      "aquesta nit no hi ha amarratge",
+      "que subjecti, que ho agafi",
+      "va segrestar els temporals",
+      "perquè la tempesta mati",
+      "els mateixos que la van veure néixer"
+     ],
+     "gl": [
+      "esta noite non hai amarre",
+      "que suxeite, que o agarre",
+      "secuestrou os temporais",
+      "para que a tormenta mate",
+      "aos mesmos que a viron nacer"
+     ],
+     "pt": [
+      "esta noite não há amarra",
+      "que segure, que agarre",
+      "sequestrou os temporais",
+      "para que a tempestade mate",
+      "os mesmos que a viram nascer"
+     ],
+     "fr": [
+      "cette nuit il n'y a pas d'amarre",
+      "qui tienne, qui retienne",
+      "elle a enlevé les tempêtes",
+      "pour que l'orage tue",
+      "ceux-là mêmes qui l'ont vue naître"
+     ],
+     "it": [
+      "stanotte non c'è ormeggio",
+      "che tenga, che afferri",
+      "ha sequestrato le tempeste",
+      "perché la burrasca uccida",
+      "gli stessi che l'hanno vista nascere"
+     ],
+     "de": [
+      "heute Nacht gibt es keine Vertäuung",
+      "die hält, die festhält",
+      "sie hat die Unwetter entführt",
+      "damit der Sturm tötet",
+      "genau die, die sie geboren werden sahen"
+     ],
+     "ja": [
+      "今夜は係留なんてない",
+      "つなぎとめるものも、つかまえるものも",
+      "彼女は嵐を誘拐した",
+      "嵐が殺すように",
+      "彼女の誕生を見届けた者たちを"
      ]
     },
     {
@@ -235,7 +557,28 @@
      "es": [
       "lamias maldiciendo en los bosques"
      ],
-     "eu": null
+     "eu": null,
+     "ca": [
+      "les lamies maleint als boscos"
+     ],
+     "gl": [
+      "as lamias maldicindo nos bosques"
+     ],
+     "pt": [
+      "as lâmias a amaldiçoar nos bosques"
+     ],
+     "fr": [
+      "les lamias maudissant dans les forêts"
+     ],
+     "it": [
+      "le lamie che maledicono nei boschi"
+     ],
+     "de": [
+      "Lamias, die in den Wäldern fluchen"
+     ],
+     "ja": [
+      "森で呪いをかけるラミアたち"
+     ]
     },
     {
      "from": 6,
@@ -261,6 +604,48 @@
       "eta pozoia euritu zuen",
       "janariak ito zituzten",
       "ez ziren adi egon"
+     ],
+     "ca": [
+      "Van escoltar el seu lament",
+      "i va ploure verí",
+      "van ofegar els aliments",
+      "no van estar atents"
+     ],
+     "gl": [
+      "Escoitaron o seu lamento",
+      "e choveu veleno",
+      "afogaron os alimentos",
+      "non estiveron atentos"
+     ],
+     "pt": [
+      "Ouviram o seu lamento",
+      "e choveu veneno",
+      "afogaram os alimentos",
+      "não estiveram atentos"
+     ],
+     "fr": [
+      "Ils ont entendu sa plainte",
+      "et il a plu du poison",
+      "ils ont noyé les vivres",
+      "ils n'ont pas fait attention"
+     ],
+     "it": [
+      "Hanno sentito il suo lamento",
+      "ed è piovuto veleno",
+      "hanno annegato il cibo",
+      "non sono stati attenti"
+     ],
+     "de": [
+      "Sie hörten ihre Klage",
+      "und es regnete Gift",
+      "sie ertränkten die Nahrung",
+      "sie passten nicht auf"
+     ],
+     "ja": [
+      "彼らは彼女の嘆きを聞いた",
+      "そして毒の雨が降った",
+      "食べ物は水に沈んだ",
+      "彼らは気づかなかった"
      ]
     },
     {
@@ -281,7 +666,35 @@
       "les bendecides se fueron rápido",
       "los gritos de las voces de la noche, los gritos"
      ],
-     "eu": null
+     "eu": null,
+     "ca": [
+      "els beneïts van marxar de pressa",
+      "els crits, els crits de les veus de la nit"
+     ],
+     "gl": [
+      "os benditos marcharon axiña",
+      "os berros, os berros das voces da noite"
+     ],
+     "pt": [
+      "os abençoados foram-se depressa",
+      "os gritos, os gritos das vozes da noite"
+     ],
+     "fr": [
+      "les bénis sont vite partis",
+      "les cris, les cris des voix de la nuit"
+     ],
+     "it": [
+      "i benedetti se ne sono andati in fretta",
+      "le grida, le grida delle voci della notte"
+     ],
+     "de": [
+      "die Gesegneten gingen schnell",
+      "die Schreie, die Schreie der Stimmen der Nacht"
+     ],
+     "ja": [
+      "祝福された者たちは足早に去った",
+      "夜の声の叫び、叫び"
+     ]
     }
    ]
   },
@@ -306,6 +719,34 @@
      "eu": [
       "sasien ondora hurbiltzen bazara",
       "kontuz, kardu, elorri eta labanak daude"
+     ],
+     "ca": [
+      "si t'acostes als matolls",
+      "compte, hi ha cards, esbarzers i punyals"
+     ],
+     "gl": [
+      "se te achegas ás matogueiras",
+      "coidado, hai cardos, silvas e puñais"
+     ],
+     "pt": [
+      "se te aproximas dos matagais",
+      "cuidado, há cardos, silvas e punhais"
+     ],
+     "fr": [
+      "si tu t'approches des fourrés",
+      "attention, il y a des chardons, des ronces et des poignards"
+     ],
+     "it": [
+      "se ti avvicini ai cespugli",
+      "attento, ci sono cardi, rovi e pugnali"
+     ],
+     "de": [
+      "wenn du dem Gestrüpp zu nahe kommst",
+      "pass auf, da sind Disteln, Brombeeren und Dolche"
+     ],
+     "ja": [
+      "茂みに近づくなら",
+      "気をつけて、アザミとイバラと短剣があるから"
      ]
     }
    ]
@@ -337,6 +778,48 @@
       "egin nuen ahal nuen guztia han nintzenean",
       "gauza itsats asko ditu niri esateko",
       "entzungo zaitut bihotzak jasan dezakeenean"
+     ],
+     "ca": [
+      "Té moltes coses lletges per dir-me a mi",
+      "vaig fer tot el que vaig poder quan hi era",
+      "té moltes coses lletges per dir-me a mi",
+      "t'escoltaré quan el cor ho pugui resistir"
+     ],
+     "gl": [
+      "Ten moitas cousas feas para dicirme a min",
+      "fixen todo o que puiden cando estiven alí",
+      "ten moitas cousas feas para dicirme a min",
+      "escoitareite cando o corazón o poida resistir"
+     ],
+     "pt": [
+      "Tem muitas coisas feias para me dizer",
+      "fiz tudo o que pude quando lá estive",
+      "tem muitas coisas feias para me dizer",
+      "vou ouvir-te quando o coração aguentar"
+     ],
+     "fr": [
+      "Il a plein de choses moches à me dire",
+      "j'ai fait tout ce que j'ai pu quand j'étais là-bas",
+      "il a plein de choses moches à me dire",
+      "je t'écouterai quand le cœur pourra le supporter"
+     ],
+     "it": [
+      "Ha tante cose brutte da dirmi",
+      "ho fatto tutto quello che potevo quando ero lì",
+      "ha tante cose brutte da dirmi",
+      "ti ascolterò quando il cuore potrà reggerlo"
+     ],
+     "de": [
+      "Er hat viele hässliche Dinge, die er mir sagen will",
+      "ich hab getan, was ich konnte, als ich dort war",
+      "er hat viele hässliche Dinge, die er mir sagen will",
+      "ich hör dir zu, wenn das Herz es aushält"
+     ],
+     "ja": [
+      "彼は私にひどいことをたくさん言いたがってる",
+      "あそこにいたとき、できることは全部やった",
+      "彼は私にひどいことをたくさん言いたがってる",
+      "心が耐えられるようになったら、あんたの話を聞く"
      ]
     }
    ]

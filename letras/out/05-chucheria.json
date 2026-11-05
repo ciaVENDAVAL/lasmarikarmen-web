@@ -22,6 +22,34 @@
      "eu": [
       "Sua!!! sua eta polizia-sirenak bai, eta agenteak lurrean, erruki eske, gure takoiak haien aaa-a-aurpegian ez zapaltzeko.",
       "Eta bitartean zu bai, hor Netflix ikusten sofan, eseritxo, ederki zaude, ezta?"
+     ],
+     "ca": [
+      "Foc!!! foc i sirenes de policia, sí, i agents per terra, demanant clemència perquè no els clavéssim els talons a la cccc-ca-cara.",
+      "I mentrestant tu, sí, allà mirant Netflix al sofà, assegudet, que bé que s'hi està, oi?"
+     ],
+     "gl": [
+      "Lume!!! lume e sirenas de policía, si, e axentes polo chan, pedindo clemencia para que non lles cravásemos os tacóns na cccc-ca-cara.",
+      "E mentres tanto ti, si, aí vendo Netflix no sofá, sentadiño, que ben se está, non?"
+     ],
+     "pt": [
+      "Fogo!!! fogo e sirenes da polícia, sim, e agentes no chão, a implorar clemência para não lhes espetarmos os saltos na cccc-ca-cara.",
+      "E entretanto tu, sim, aí a ver Netflix no sofá, sentadinho, que bem que se está, não?"
+     ],
+     "fr": [
+      "Le feu !!! le feu et les sirènes de police, ouais, et des flics par terre, implorant pitié pour qu'on ne leur plante pas nos talons dans la ggg-gu-gueule.",
+      "Et pendant ce temps toi, ouais, devant Netflix sur le canapé, bien assis, on est bien, hein ?"
+     ],
+     "it": [
+      "Fuoco!!! fuoco e sirene della polizia sì, e agenti a terra, che implorano pietà perché non gli piantassimo i tacchi in fff-fa-faccia.",
+      "E intanto tu sì, lì a guardare Netflix sul divano, seduto comodo, che bello eh?"
+     ],
+     "de": [
+      "Feuer!!! Feuer und Polizeisirenen, ja, und Bullen am Boden, die um Gnade betteln, dass wir ihnen nicht die Absätze ins Ggg-Ge-Gesicht rammen.",
+      "Und du sitzt derweil schön auf dem Sofa und guckst Netflix, ganz gemütlich, nicht wahr?"
+     ],
+     "ja": [
+      "火事だ！！！炎とパトカーのサイレン、そう、床に転がる警官たちが、ヒールを顔に、か、か、顔にめり込ませないでって命乞い。",
+      "そのあいだあんたは、ソファに座ってNetflix、いいご身分だね？"
      ]
     },
     {
@@ -51,6 +79,55 @@
       "Eta nik diotsut, edozer zen emakumea izan ezik.",
       "Ez zen emakumea, ez emakumea...",
       "[riot police] eremua sakabanatzea"
+     ],
+     "ca": [
+      "I t'ho he de dir per una raó, perquè s'ha de dir, i saber, i compartir.",
+      "Tot va començar, tot, tot de les collons va començar, perquè es pensaven que era una dona",
+      "I t'ho dic, era de tot menys una dona.",
+      "No era una dona, no una dona...",
+      "[antiavalots] dispersió de la zona"
+     ],
+     "gl": [
+      "E teño que dicircho por unha razón, porque hai que dicilo, e sabelo, e compartilo.",
+      "Todo comezou, todo, todo o carallo comezou, porque pensaban que era unha muller",
+      "E dígocho, era calquera cousa menos unha muller.",
+      "Non era unha muller, non unha muller...",
+      "[antidisturbios] dispersión da zona"
+     ],
+     "pt": [
+      "E tenho de te dizer isto por uma razão, porque tem de ser dito, e sabido, e partilhado.",
+      "Tudo começou, tudo, tudo, caralho, começou porque pensavam que ela era uma mulher",
+      "E digo-te, ela era tudo menos uma mulher.",
+      "Não era uma mulher, não uma mulher...",
+      "[polícia de choque] dispersão da área"
+     ],
+     "fr": [
+      "Et je dois te le dire pour une raison, parce qu'il faut le dire, le savoir et le partager.",
+      "Tout a commencé, tout, tout putain a commencé parce qu'ils croyaient qu'elle était une femme",
+      "Et je te le dis, elle était tout sauf une femme.",
+      "Ce n'était pas une femme, pas une femme...",
+      "[CRS] dispersion de la zone"
+     ],
+     "it": [
+      "E te lo devo dire per una ragione, perché va detto, e saputo, e condiviso.",
+      "Tutto è cominciato, tutto, tutto cazzo è cominciato perché pensavano che fosse una donna",
+      "E te lo dico, era tutto tranne che una donna.",
+      "Non era una donna, non una donna...",
+      "[celere] dispersione dell'area"
+     ],
+     "de": [
+      "Und ich muss dir das aus einem Grund sagen, weil man es sagen muss, und wissen, und teilen.",
+      "Alles fing an, alles, alles verdammt nochmal fing an, weil sie dachten, sie sei eine Frau",
+      "Und ich sag dir, sie war alles, nur keine Frau.",
+      "Sie war keine Frau, keine Frau...",
+      "[Bereitschaftspolizei] Räumung des Bereichs"
+     ],
+     "ja": [
+      "これは言わなきゃいけない理由がある。言って、知って、分かち合わなきゃいけないから。",
+      "すべては始まった、すべて、全部くそったれに始まったのは、あいつらが彼女を女だと思ったから",
+      "言っとくけど、彼女は女以外のなんだって。",
+      "女じゃなかった、女じゃ…",
+      "［機動隊］この区域から退去せよ"
      ]
     },
     {
@@ -68,6 +145,27 @@
      "es": null,
      "eu": [
       "Masc masc-ekin? Zeinen zaharkituak, neska."
+     ],
+     "ca": [
+      "Masc x masc? Que antiquats, tia."
+     ],
+     "gl": [
+      "Masc x masc? Que anticuados, tía."
+     ],
+     "pt": [
+      "Masc x masc? Que antiquados, miga."
+     ],
+     "fr": [
+      "Masc x masc ? Trop ringards, meuf."
+     ],
+     "it": [
+      "Masc x masc? Che antiquati, tesoro."
+     ],
+     "de": [
+      "Masc x Masc? Wie altmodisch, Schätzchen."
+     ],
+     "ja": [
+      "マスク×マスク？古くさいって、あんた。"
      ]
     }
    ]
@@ -105,6 +203,62 @@
       "gozo-gozo-gozokia",
       "eman eman eman eman zure",
       "GOZOKIA"
+     ],
+     "ca": [
+      "dona'm llaminadura, dona'm dona'm llaminadura",
+      "dona'm llaminadura, dona'm dona'm llaminadura",
+      "dona'm dona'm dona'm dona'm",
+      "llam-llam-llaminadura",
+      "dona'm dona'm dona'm dona'm la teva",
+      "LLAMINADURA"
+     ],
+     "gl": [
+      "dáme lambetada, dáme dáme lambetada",
+      "dáme lambetada, dáme dáme lambetada",
+      "dáme dáme dáme dáme",
+      "lamb-lamb-lambetada",
+      "dáme dáme dáme dáme a túa",
+      "LAMBETADA"
+     ],
+     "pt": [
+      "dá-me guloseima, dá-me dá-me guloseima",
+      "dá-me guloseima, dá-me dá-me guloseima",
+      "dá-me dá-me dá-me dá-me",
+      "gulo-gulo-guloseima",
+      "dá-me dá-me dá-me dá-me a tua",
+      "GULOSEIMA"
+     ],
+     "fr": [
+      "donne-moi bonbon, donne-moi donne-moi bonbon",
+      "donne-moi bonbon, donne-moi donne-moi bonbon",
+      "donne-moi donne-moi donne-moi donne-moi",
+      "bonb-bonb-bonbon",
+      "donne-moi donne-moi donne-moi donne-moi ta",
+      "BONBON"
+     ],
+     "it": [
+      "dammi caramella, dammi dammi caramella",
+      "dammi caramella, dammi dammi caramella",
+      "dammi dammi dammi dammi",
+      "cara-cara-caramella",
+      "dammi dammi dammi dammi la tua",
+      "CARAMELLA"
+     ],
+     "de": [
+      "gib mir Süßkram, gib mir gib mir Süßkram",
+      "gib mir Süßkram, gib mir gib mir Süßkram",
+      "gib mir gib mir gib mir gib mir",
+      "Süßk-Süßk-Süßkram",
+      "gib mir gib mir gib mir gib mir deinen",
+      "SÜSSKRAM"
+     ],
+     "ja": [
+      "ちょうだい お菓子, ちょうだい ちょうだい お菓子",
+      "ちょうだい お菓子, ちょうだい ちょうだい お菓子",
+      "ちょうだい ちょうだい ちょうだい ちょうだい",
+      "お菓子-お菓子-お菓子",
+      "ちょうだい ちょうだい ちょうだい ちょうだい あなたの",
+      "お菓子"
      ]
     }
    ]
@@ -129,6 +283,27 @@
      ],
      "eu": [
       "eman sugar aitatxo, eman sugar amatxo"
+     ],
+     "ca": [
+      "dona'm sugar papa, dona'm sugar mama"
+     ],
+     "gl": [
+      "dáme sugar papá, dáme sugar mamá"
+     ],
+     "pt": [
+      "dá-me sugar papá, dá-me sugar mamã"
+     ],
+     "fr": [
+      "donne-moi sugar papa, donne-moi sugar mama"
+     ],
+     "it": [
+      "dammi sugar papà, dammi sugar mamma"
+     ],
+     "de": [
+      "gib mir Sugar Papa, gib mir Sugar Mama"
+     ],
+     "ja": [
+      "シュガーパパをちょうだい、シュガーママをちょうだい"
      ]
     },
     {
@@ -173,6 +348,90 @@
       "eta highlighterrarekin diva galanta naiz",
       "autoak bitxiak limusina",
       "eta highlighterrarekin neska galanta naiz"
+     ],
+     "ca": [
+      "et dic que don't play amb la tieta",
+      "vull les meves sabates, la meva perruqueta",
+      "sí sí i les meves patatetes fregides",
+      "jelly jelly jelly dinamita",
+      "convida aquesta xurreta",
+      "que a més és so-do-mi-ta",
+      "rímel, ombra, mascareta",
+      "i amb l'highlighter estic tota diva",
+      "cotxes, joies, limusina",
+      "i amb l'highlighter estic ben piva"
+     ],
+     "gl": [
+      "dígoche que don't play coa tía",
+      "quero os meus zapatos, a miña perruquiña",
+      "si si e as miñas patacas fritas",
+      "jelly jelly jelly dinamita",
+      "convida a esta churriña",
+      "que ademais é so-do-mi-ta",
+      "rímel, sombra, máscara",
+      "e co highlighter estou toda diva",
+      "coches, xoias, limusina",
+      "e co highlighter estou toda piva"
+     ],
+     "pt": [
+      "digo-te que don't play com a titia",
+      "quero os meus sapatos, a minha perruquinha",
+      "sim sim e as minhas batatinhas fritas",
+      "jelly jelly jelly dinamite",
+      "convida esta docinha",
+      "que além disso é so-do-mi-ta",
+      "rímel, sombra, máscara",
+      "e com o highlighter estou toda diva",
+      "carros, joias, limusina",
+      "e com o highlighter estou toda gata"
+     ],
+     "fr": [
+      "je te dis don't play avec tata",
+      "je veux mes chaussures, ma petite perruque",
+      "oui oui et mes petites frites",
+      "jelly jelly jelly dynamite",
+      "invite cette petite chérie",
+      "qui en plus est so-do-mite",
+      "mascara, fard, masque",
+      "et avec l'highlighter je suis trop diva",
+      "bagnoles, bijoux, limousine",
+      "et avec l'highlighter je suis trop bombe"
+     ],
+     "it": [
+      "ti dico don't play con la zietta",
+      "voglio le mie scarpe, la mia parrucchina",
+      "sì sì e le mie patatine fritte",
+      "jelly jelly jelly dinamite",
+      "offri a questa tesorina",
+      "che per di più è so-do-mi-ta",
+      "mascara, ombretto, maschera",
+      "e con l'highlighter sono tutta diva",
+      "macchine, gioielli, limousine",
+      "e con l'highlighter sono una gnocca"
+     ],
+     "de": [
+      "ich sag dir, don't play mit Tantchen",
+      "ich will meine Schuhe, mein Perückchen",
+      "ja ja und meine Pommes",
+      "Jelly Jelly Jelly Dynamit",
+      "lad diese Süße ein",
+      "die außerdem so-do-mi-tisch ist",
+      "Wimperntusche, Lidschatten, Maske",
+      "und mit dem Highlighter bin ich voll Diva",
+      "Autos, Schmuck, Limousine",
+      "und mit dem Highlighter bin ich voll heiß"
+     ],
+     "ja": [
+      "おばちゃんと遊ぶなって言ってんの",
+      "私の靴、私のウィッグがほしい",
+      "そうそう、私のフライドポテトも",
+      "ジェリー・ジェリー・ジェリー・ダイナマイト",
+      "このかわい子ちゃんにおごって",
+      "おまけにソ・ド・ミ・ストなの",
+      "マスカラ、アイシャドウ、パック",
+      "ハイライターでもう完全にディーヴァ",
+      "車、宝石、リムジン",
+      "ハイライターでもう最高にイケてる"
      ]
     }
    ]
@@ -197,6 +456,27 @@
      ],
      "eu": [
       "eman sugar aitatxo, eman sugar amatxo"
+     ],
+     "ca": [
+      "dona'm sugar papa, dona'm sugar mama"
+     ],
+     "gl": [
+      "dáme sugar papá, dáme sugar mamá"
+     ],
+     "pt": [
+      "dá-me sugar papá, dá-me sugar mamã"
+     ],
+     "fr": [
+      "donne-moi sugar papa, donne-moi sugar mama"
+     ],
+     "it": [
+      "dammi sugar papà, dammi sugar mamma"
+     ],
+     "de": [
+      "gib mir Sugar Papa, gib mir Sugar Mama"
+     ],
+     "ja": [
+      "シュガーパパをちょうだい、シュガーママをちょうだい"
      ]
     },
     {
@@ -241,6 +521,90 @@
       "eta highlighterrarekin diva galanta naiz",
       "autoak bitxiak limusina",
       "eta highlighterrarekin neska galanta naiz"
+     ],
+     "ca": [
+      "et dic que don't play amb la tieta",
+      "vull la meva robeta i la meva joieta",
+      "i les meves patatetes fregides",
+      "magdalena molladeta, regalimant",
+      "convida aquesta xurreta",
+      "que a més és so-do-mi-ta",
+      "rímel, ombra, mascareta",
+      "i amb l'highlighter estic tota diva",
+      "cotxes, joies, limusina",
+      "i amb l'highlighter estic ben piva"
+     ],
+     "gl": [
+      "dígoche que don't play coa tía",
+      "quero a miña roupiña e a miña xoiña",
+      "e as miñas patacas fritas",
+      "madalena mollada, escorrendo",
+      "convida a esta churriña",
+      "que ademais é so-do-mi-ta",
+      "rímel, sombra, máscara",
+      "e co highlighter estou toda diva",
+      "coches, xoias, limusina",
+      "e co highlighter estou toda piva"
+     ],
+     "pt": [
+      "digo-te que don't play com a titia",
+      "quero a minha roupinha e a minha joiazinha",
+      "e as minhas batatinhas fritas",
+      "madalena molhadinha, a escorrer",
+      "convida esta docinha",
+      "que além disso é so-do-mi-ta",
+      "rímel, sombra, máscara",
+      "e com o highlighter estou toda diva",
+      "carros, joias, limusina",
+      "e com o highlighter estou toda gata"
+     ],
+     "fr": [
+      "je te dis don't play avec tata",
+      "je veux mes petites fringues et mon petit bijou",
+      "et mes petites frites",
+      "madeleine toute mouillée, dégoulinante",
+      "invite cette petite chérie",
+      "qui en plus est so-do-mite",
+      "mascara, fard, masque",
+      "et avec l'highlighter je suis trop diva",
+      "bagnoles, bijoux, limousine",
+      "et avec l'highlighter je suis trop bombe"
+     ],
+     "it": [
+      "ti dico don't play con la zietta",
+      "voglio i miei vestitini e il mio gioiellino",
+      "e le mie patatine fritte",
+      "madeleine bagnatina, gocciolante",
+      "offri a questa tesorina",
+      "che per di più è so-do-mi-ta",
+      "mascara, ombretto, maschera",
+      "e con l'highlighter sono tutta diva",
+      "macchine, gioielli, limousine",
+      "e con l'highlighter sono una gnocca"
+     ],
+     "de": [
+      "ich sag dir, don't play mit Tantchen",
+      "ich will meine Klamöttchen und mein Schmuckstück",
+      "und meine Pommes",
+      "Madeleine, ganz nass und tropfend",
+      "lad diese Süße ein",
+      "die außerdem so-do-mi-tisch ist",
+      "Wimperntusche, Lidschatten, Maske",
+      "und mit dem Highlighter bin ich voll Diva",
+      "Autos, Schmuck, Limousine",
+      "und mit dem Highlighter bin ich voll heiß"
+     ],
+     "ja": [
+      "おばちゃんと遊ぶなって言ってんの",
+      "私の服と私のアクセがほしい",
+      "それとフライドポテトも",
+      "びしょびしょのマドレーヌ、したたって",
+      "このかわい子ちゃんにおごって",
+      "おまけにソ・ド・ミ・ストなの",
+      "マスカラ、アイシャドウ、パック",
+      "ハイライターでもう完全にディーヴァ",
+      "車、宝石、リムジン",
+      "ハイライターでもう最高にイケてる"
      ]
     }
    ]
@@ -263,6 +627,27 @@
      ],
      "eu": [
       "glory sugar aitatxo, sugar amatxo sakon"
+     ],
+     "ca": [
+      "glory sugar papa, profunda sugar mama"
+     ],
+     "gl": [
+      "glory sugar papá, profunda sugar mamá"
+     ],
+     "pt": [
+      "glory sugar papá, profunda sugar mamã"
+     ],
+     "fr": [
+      "glory sugar papa, profonde sugar mama"
+     ],
+     "it": [
+      "glory sugar papà, profonda sugar mamma"
+     ],
+     "de": [
+      "Glory Sugar Papa, tiefe Sugar Mama"
+     ],
+     "ja": [
+      "グローリー・シュガーパパ、ディープ・シュガーママ"
      ]
     },
     {
@@ -304,6 +689,83 @@
       "eta highlighterrarekin diva galanta naiz",
       "autoak bitxiak limusina",
       "eta highlighterrarekin neska galanta naiz"
+     ],
+     "ca": [
+      "et dic que no juguis, figureta",
+      "on són les meves patatetes, el teu greixet i la teva coseta?",
+      "núvol, pica-pica, llaminadura",
+      "pinya, ruibarbre, gelatina",
+      "jelly fruti no siguis puti",
+      "rímel, ombra, mascareta",
+      "i amb l'highlighter estic tota diva",
+      "cotxes, joies, limusina",
+      "i amb l'highlighter estic ben piva"
+     ],
+     "gl": [
+      "dígoche que non xogues, figuriña",
+      "onde están as miñas patacas, a túa graxiña e a túa cousiña?",
+      "nube, peta-zetas, lambetada",
+      "piña, ruibarbo, xelatina",
+      "jelly fruti non sexas puti",
+      "rímel, sombra, máscara",
+      "e co highlighter estou toda diva",
+      "coches, xoias, limusina",
+      "e co highlighter estou toda piva"
+     ],
+     "pt": [
+      "digo-te que não brinques, figurinha",
+      "onde estão as minhas batatinhas, a tua gordurinha e a tua coisinha?",
+      "marshmallow, pica-pica, guloseima",
+      "ananás, ruibarbo, gelatina",
+      "jelly fruti não sejas puti",
+      "rímel, sombra, máscara",
+      "e com o highlighter estou toda diva",
+      "carros, joias, limusina",
+      "e com o highlighter estou toda gata"
+     ],
+     "fr": [
+      "je te dis de pas jouer, petite poseuse",
+      "où sont mes frites, ta petite graisse et ton petit truc ?",
+      "guimauve, pétillant, bonbon",
+      "ananas, rhubarbe, gelée",
+      "jelly fruti fais pas ta puti",
+      "mascara, fard, masque",
+      "et avec l'highlighter je suis trop diva",
+      "bagnoles, bijoux, limousine",
+      "et avec l'highlighter je suis trop bombe"
+     ],
+     "it": [
+      "ti dico di non giocare, figurina",
+      "dove sono le mie patatine, il tuo grassetto e la tua cosina?",
+      "marshmallow, frizzantino, caramella",
+      "ananas, rabarbaro, gelatina",
+      "jelly fruti non fare la puti",
+      "mascara, ombretto, maschera",
+      "e con l'highlighter sono tutta diva",
+      "macchine, gioielli, limousine",
+      "e con l'highlighter sono una gnocca"
+     ],
+     "de": [
+      "ich sag dir, spiel nicht, kleine Poserin",
+      "wo sind meine Pommes, dein Fettchen und dein Dingsda?",
+      "Marshmallow, Brausepulver, Süßkram",
+      "Ananas, Rhabarber, Wackelpudding",
+      "Jelly Fruti, sei keine Puti",
+      "Wimperntusche, Lidschatten, Maske",
+      "und mit dem Highlighter bin ich voll Diva",
+      "Autos, Schmuck, Limousine",
+      "und mit dem Highlighter bin ich voll heiß"
+     ],
+     "ja": [
+      "かっこつけて遊ぶなって言ってんの",
+      "私のポテトと、あんたの脂と、あんたのアレはどこ？",
+      "マシュマロ、パチパチキャンディ、お菓子",
+      "パイナップル、ルバーブ、ゼリー",
+      "ジェリー・フルーティ、ビッチになるな",
+      "マスカラ、アイシャドウ、パック",
+      "ハイライターでもう完全にディーヴァ",
+      "車、宝石、リムジン",
+      "ハイライターでもう最高にイケてる"
      ]
     }
    ]
@@ -341,6 +803,62 @@
       "astasasasakeria",
       "eman, eman eman zure...",
       "SODOMIA"
+     ],
+     "ca": [
+      "dona'm porqueria, dona'm dona'm alcaldia",
+      "dona'm canonada, dona'm dona'm fiscalia",
+      "dona'm dona'm dona'm dona'm",
+      "groller-groller-grolleria",
+      "dona'm, dona'm dona'm la teva...",
+      "SODOMIA"
+     ],
+     "gl": [
+      "dáme porcallada, dáme dáme alcaldía",
+      "dáme tubaxe, dáme dáme fiscalía",
+      "dáme dáme dáme dáme",
+      "grose-grose-grosería",
+      "dáme, dáme dáme a túa...",
+      "SODOMÍA"
+     ],
+     "pt": [
+      "dá-me porcaria, dá-me dá-me câmara municipal",
+      "dá-me canos, dá-me dá-me procuradoria",
+      "dá-me dá-me dá-me dá-me",
+      "gros-gros-grosseria",
+      "dá-me, dá-me dá-me a tua...",
+      "SODOMIA"
+     ],
+     "fr": [
+      "donne-moi des saloperies, donne-moi donne-moi la mairie",
+      "donne-moi des tuyaux, donne-moi donne-moi le parquet",
+      "donne-moi donne-moi donne-moi donne-moi",
+      "gross-gross-grossièreté",
+      "donne-moi, donne-moi donne-moi ta...",
+      "SODOMIE"
+     ],
+     "it": [
+      "dammi porcheria, dammi dammi il municipio",
+      "dammi tubature, dammi dammi la procura",
+      "dammi dammi dammi dammi",
+      "volga-volga-volgarità",
+      "dammi, dammi dammi la tua...",
+      "SODOMIA"
+     ],
+     "de": [
+      "gib mir Dreck, gib mir gib mir das Rathaus",
+      "gib mir Rohre, gib mir gib mir die Staatsanwaltschaft",
+      "gib mir gib mir gib mir gib mir",
+      "Ord-Ord-Ordinäres",
+      "gib mir, gib mir gib mir dein...",
+      "SODOMIE"
+     ],
+     "ja": [
+      "ガラクタちょうだい、ちょうだい市役所",
+      "パイプちょうだい、ちょうだい検察庁",
+      "ちょうだいちょうだいちょうだいちょうだい",
+      "ゲ、ゲ、ゲスいの",
+      "ちょうだい、ちょうだい、あなたの…",
+      "ソドミー"
      ]
     }
    ]

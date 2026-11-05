@@ -19,6 +19,27 @@
      ],
      "eu": [
       "(Negar xume)"
+     ],
+     "ca": [
+      "(Plor suau)"
+     ],
+     "gl": [
+      "(Choro suave)"
+     ],
+     "pt": [
+      "(Choro suave)"
+     ],
+     "fr": [
+      "(Pleurs doux)"
+     ],
+     "it": [
+      "(Pianto sommesso)"
+     ],
+     "de": [
+      "(Leises Weinen)"
+     ],
+     "ja": [
+      "（静かに泣く）"
      ]
     },
     {
@@ -42,6 +63,41 @@
       "Ez!",
       "Gizon zisen malkak",
       "Ez!"
+     ],
+     "ca": [
+      "No!",
+      "Llàgrimes d'homes cis",
+      "No!"
+     ],
+     "gl": [
+      "No!",
+      "Bágoas de homes cis",
+      "No!"
+     ],
+     "pt": [
+      "No!",
+      "Lágrimas de homens cis",
+      "No!"
+     ],
+     "fr": [
+      "No!",
+      "Larmes d'hommes cis",
+      "No!"
+     ],
+     "it": [
+      "No!",
+      "Lacrime di uomini cis",
+      "No!"
+     ],
+     "de": [
+      "No!",
+      "Tränen von Cis-Männern",
+      "No!"
+     ],
+     "ja": [
+      "No!",
+      "シス男性の涙",
+      "No!"
      ]
     },
     {
@@ -74,6 +130,62 @@
       "Ez!",
       "(Negar zotinka)",
       "Ez ez ez ez… EEEEEZ!"
+     ],
+     "ca": [
+      "(Plor fort)",
+      "Els nens no ploren",
+      "Els nens no...",
+      "No!",
+      "(Plor fort)",
+      "No no no no… NOOOOOOO!"
+     ],
+     "gl": [
+      "(Choro forte)",
+      "Os rapaces non choran",
+      "Os rapaces non...",
+      "Non!",
+      "(Choro forte)",
+      "Non non non non… NOOOOOON!"
+     ],
+     "pt": [
+      "(Choro alto)",
+      "Os rapazes não choram",
+      "Os rapazes não...",
+      "Não!",
+      "(Choro alto)",
+      "Não não não não… NÃOOOOOO!"
+     ],
+     "fr": [
+      "(Pleurs bruyants)",
+      "Les garçons ne pleurent pas",
+      "Les garçons ne...",
+      "Non !",
+      "(Pleurs bruyants)",
+      "Non non non non… NOOOOOON !"
+     ],
+     "it": [
+      "(Pianto forte)",
+      "I maschi non piangono",
+      "I maschi non...",
+      "No!",
+      "(Pianto forte)",
+      "No no no no… NOOOOOO!"
+     ],
+     "de": [
+      "(Lautes Weinen)",
+      "Jungs weinen nicht",
+      "Jungs weinen...",
+      "Nein!",
+      "(Lautes Weinen)",
+      "Nein nein nein nein… NEEEEEIN!"
+     ],
+     "ja": [
+      "（大声で泣く）",
+      "男の子は泣かない",
+      "男の子は…",
+      "やだ！",
+      "（大声で泣く）",
+      "やだやだやだやだ… やだーーー！"
      ]
     },
     {
@@ -91,6 +203,27 @@
      "es": null,
      "eu": [
       "Gizonen malkak"
+     ],
+     "ca": [
+      "Llàgrimes d'homes"
+     ],
+     "gl": [
+      "Bágoas de homes"
+     ],
+     "pt": [
+      "Lágrimas de homens"
+     ],
+     "fr": [
+      "Larmes d'hommes"
+     ],
+     "it": [
+      "Lacrime di uomini"
+     ],
+     "de": [
+      "Tränen von Männern"
+     ],
+     "ja": [
+      "男の涙"
      ]
     },
     {
@@ -132,6 +265,83 @@
       "Gehitu ura besterik ez",
       "Gizon zisen malkak",
       "Berotze globalagatik"
+     ],
+     "ca": [
+      "Llàgrimes d'homes cis",
+      "(Plor fort)",
+      "Quina delícia, els homes sí que ploren",
+      "No!",
+      "(Riures)",
+      "No m'ho puc creure, no s'assequen",
+      "Només cal afegir-hi aigua",
+      "Llàgrimes d'homes cis",
+      "Per l'escalfament global"
+     ],
+     "gl": [
+      "Bágoas de homes cis",
+      "(Choro forte)",
+      "Que delicia, os homes si choran",
+      "Non!",
+      "(Risas)",
+      "Non o podo crer, non secan",
+      "Só hai que engadir auga",
+      "Bágoas de homes cis",
+      "Polo quecemento global"
+     ],
+     "pt": [
+      "Lágrimas de homens cis",
+      "(Choro alto)",
+      "Que delícia, os homens choram mesmo",
+      "Não!",
+      "(Risos)",
+      "Nem acredito, não secam",
+      "É só juntar água",
+      "Lágrimas de homens cis",
+      "Por causa do aquecimento global"
+     ],
+     "fr": [
+      "Larmes d'hommes cis",
+      "(Pleurs bruyants)",
+      "Quel délice, les hommes pleurent bel et bien",
+      "Non !",
+      "(Rires)",
+      "J'arrive pas à croire qu'elles ne sèchent pas",
+      "Il suffit d'ajouter de l'eau",
+      "Larmes d'hommes cis",
+      "À cause du réchauffement climatique"
+     ],
+     "it": [
+      "Lacrime di uomini cis",
+      "(Pianto forte)",
+      "Che delizia, gli uomini piangono eccome",
+      "No!",
+      "(Risate)",
+      "Non ci credo, non si asciugano",
+      "Basta aggiungere acqua",
+      "Lacrime di uomini cis",
+      "Per il riscaldamento globale"
+     ],
+     "de": [
+      "Tränen von Cis-Männern",
+      "(Lautes Weinen)",
+      "Wie herrlich, Männer weinen doch",
+      "Nein!",
+      "(Lachen)",
+      "Ich fass es nicht, sie trocknen nicht",
+      "Einfach Wasser dazugeben",
+      "Tränen von Cis-Männern",
+      "Wegen der Erderwärmung"
+     ],
+     "ja": [
+      "シス男性の涙",
+      "（大声で泣く）",
+      "なんて素敵、男だって泣くのね",
+      "やだ！",
+      "（笑い）",
+      "乾かないなんて信じられない",
+      "水を足すだけ",
+      "シス男性の涙",
+      "地球温暖化のせいで"
      ]
     },
     {
@@ -149,6 +359,27 @@
      "es": null,
      "eu": [
       "Zure semearen lehen golagatik"
+     ],
+     "ca": [
+      "Pel primer gol del teu fill"
+     ],
+     "gl": [
+      "Polo primeiro gol do teu fillo"
+     ],
+     "pt": [
+      "Pelo primeiro golo do teu filho"
+     ],
+     "fr": [
+      "Pour le premier but de ton fils"
+     ],
+     "it": [
+      "Per il primo gol di tuo figlio"
+     ],
+     "de": [
+      "Wegen des ersten Tors deines Sohnes"
+     ],
+     "ja": [
+      "息子の初ゴールに"
      ]
     },
     {
@@ -166,6 +397,27 @@
      ],
      "eu": [
       "Tipula mozten"
+     ],
+     "ca": [
+      "Mentre talles cebes"
+     ],
+     "gl": [
+      "Mentres cortas cebolas"
+     ],
+     "pt": [
+      "Enquanto cortas cebolas"
+     ],
+     "fr": [
+      "En coupant des oignons"
+     ],
+     "it": [
+      "Mentre tagli le cipolle"
+     ],
+     "de": [
+      "Beim Zwiebelschneiden"
+     ],
+     "ja": [
+      "玉ねぎを切りながら"
      ]
     },
     {
@@ -183,6 +435,27 @@
      "es": null,
      "eu": [
       "Ez al zinen zu muskulatsuena?"
+     ],
+     "ca": [
+      "No vas ser el més musculós?"
+     ],
+     "gl": [
+      "Non fuches o máis musculoso?"
+     ],
+     "pt": [
+      "Não foste o mais musculado?"
+     ],
+     "fr": [
+      "T'étais pas le plus musclé ?"
+     ],
+     "it": [
+      "Non eri il più muscoloso?"
+     ],
+     "de": [
+      "Warst du nicht der Muskulöseste?"
+     ],
+     "ja": [
+      "いちばんムキムキじゃなかったの？"
      ]
     },
     {
@@ -203,6 +476,34 @@
      "eu": [
       "Hortz-minaren ondorioz",
       "Ederki doaz kornflakesekin!"
+     ],
+     "ca": [
+      "Pel dolor d'un mal de queixal",
+      "Boníssimes amb cornflakes!"
+     ],
+     "gl": [
+      "Pola dor dunha moa",
+      "Xeniais con cornflakes!"
+     ],
+     "pt": [
+      "Pela dor de uma dor de dentes",
+      "Ótimas com cornflakes!"
+     ],
+     "fr": [
+      "À cause d'une rage de dents",
+      "Parfaites sur des cornflakes !"
+     ],
+     "it": [
+      "Per il dolore di un mal di denti",
+      "Ottime sui cornflakes!"
+     ],
+     "de": [
+      "Vor Zahnschmerzen",
+      "Super auf Cornflakes!"
+     ],
+     "ja": [
+      "歯痛の痛みで",
+      "コーンフレークにぴったり！"
      ]
     },
     {
@@ -223,6 +524,34 @@
      "eu": [
       "Zure futbol taldeak galdu du",
       "Gizona zara?"
+     ],
+     "ca": [
+      "El teu equip de futbol va perdre",
+      "Ets un home?"
+     ],
+     "gl": [
+      "O teu equipo de fútbol perdeu",
+      "Es un home?"
+     ],
+     "pt": [
+      "A tua equipa de futebol perdeu",
+      "És um homem?"
+     ],
+     "fr": [
+      "Ton équipe de foot a perdu",
+      "T'es un homme ?"
+     ],
+     "it": [
+      "La tua squadra di calcio ha perso",
+      "Sei un uomo?"
+     ],
+     "de": [
+      "Dein Fußballverein hat verloren",
+      "Bist du ein Mann?"
+     ],
+     "ja": [
+      "応援してるサッカーチームが負けた",
+      "あんた男でしょ？"
      ]
     },
     {
@@ -243,6 +572,34 @@
      "eu": [
       "Ez ez ez ez ez ez ez ez ez ez",
       "(Barreak)"
+     ],
+     "ca": [
+      "No no no no no no no no no no",
+      "(Riures)"
+     ],
+     "gl": [
+      "Non non non non non non non non non non",
+      "(Risas)"
+     ],
+     "pt": [
+      "Não não não não não não não não não não",
+      "(Risos)"
+     ],
+     "fr": [
+      "Non non non non non non non non non non",
+      "(Rires)"
+     ],
+     "it": [
+      "No no no no no no no no no no",
+      "(Risate)"
+     ],
+     "de": [
+      "Nein nein nein nein nein nein nein nein nein nein",
+      "(Lachen)"
+     ],
+     "ja": [
+      "やだやだやだやだやだやだやだやだやだやだ",
+      "（笑い）"
      ]
     },
     {
@@ -260,6 +617,27 @@
      "es": null,
      "eu": [
       "Gizon zisen malkak!"
+     ],
+     "ca": [
+      "Llàgrimes d'homes cis!"
+     ],
+     "gl": [
+      "Bágoas de homes cis!"
+     ],
+     "pt": [
+      "Lágrimas de homens cis!"
+     ],
+     "fr": [
+      "Larmes d'hommes cis!"
+     ],
+     "it": [
+      "Lacrime di uomini cis!"
+     ],
+     "de": [
+      "Tränen von Cis-Männern!"
+     ],
+     "ja": [
+      "シス男性の涙!"
      ]
     },
     {
@@ -277,6 +655,27 @@
      ],
      "eu": [
       "Bitxikeriak, edozein gaueko itxuratarako ukitu perfektua."
+     ],
+     "ca": [
+      "Raresa, el toc perfecte per a qualsevol look de nit."
+     ],
+     "gl": [
+      "Rarezas, o toque perfecto para calquera look de noite."
+     ],
+     "pt": [
+      "Raridades, o toque perfeito para qualquer look de noite."
+     ],
+     "fr": [
+      "Raretés, la touche parfaite pour tout look de soirée."
+     ],
+     "it": [
+      "Rarità, il tocco perfetto per ogni look da sera."
+     ],
+     "de": [
+      "Raritäten, der perfekte Touch für jeden Abend-Look."
+     ],
+     "ja": [
+      "希少品。どんな夜のルックにも完璧なひと味。"
      ]
     }
    ]

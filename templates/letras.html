@@ -9,9 +9,7 @@
     <div class="ly-bar" role="toolbar" aria-label="{{ t('lyr_translate_all') }}">
       <span class="label">{{ t('lyr_translate_all') }}</span>
       <button class="ly-chip" type="button" data-g="orig" aria-pressed="true">{{ t('lyr_original') }}</button>
-      <button class="ly-chip" type="button" data-g="en" aria-pressed="false" lang="en">English</button>
-      <button class="ly-chip" type="button" data-g="es" aria-pressed="false" lang="es">Castellano</button>
-      <button class="ly-chip" type="button" data-g="eu" aria-pressed="false" lang="eu">Euskara</button>
+      <button class="ly-chip" type="button" data-g="{{ lang }}" aria-pressed="false">{{ t('lyr_lang_name') }}</button>
       <button class="ly-chip ly-chip--alt" type="button" id="ly-orig" aria-pressed="false">{{ t('lyr_show_orig') }}</button>
     </div>
     <div class="ly-layout" id="ly-index">
@@ -31,6 +29,6 @@
 <script type="application/json" id="ly-ui">{{ {
   'original': t('lyr_original')|string, 'index': t('lyr_index')|string, 'desc': t('lyr_desc')|string,
   'watch_here': t('lyr_watch_here')|string, 'watch_yt': t('lyr_watch_yt')|string, 'cc': t('lyr_cc')|string,
-  'more': t('lyr_more')|string, 'video': t('lyr_video')|string, 'lang': lang } | tojson }}</script>
+  'more': t('lyr_more')|string, 'lang_code': t('lyr_lang_code')|string, 'video': t('lyr_video')|string, 'lang': lang } | tojson }}</script>
 <script src="{{ root }}assets/js/letras.js?v={{ asset_v }}" defer></script>
 {% endblock %}

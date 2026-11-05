@@ -34,6 +34,62 @@
       "sartu bafle autoan, gaur aparkalekuan festa dago",
       "mozorro fresko-fresko, dena erakutsi",
       "nora goaz, non gaude, galdu egin gara"
+     ],
+     "ca": [
+      "Qui es fiqui amb nosaltres tindrà problemes",
+      "Qui es fiqui amb nosaltres, volen els trets",
+      "fatxenda, vacil·lada, sortim de festa",
+      "fica el bafle al cotxe que avui hi ha festa al pàrquing",
+      "modelet ben fresquet, ensenya-ho tot",
+      "on anem, on som, ens hem perdut"
+     ],
+     "gl": [
+      "Quen se meta con nós terá problemas",
+      "Quen se meta con nós, voan os tiros",
+      "fachenda, vacile, saímos de rolda",
+      "mete o altofalante no coche que hoxe hai festa no parking",
+      "modeliño ben fresquiño, ensina todo",
+      "onde imos, onde estamos, perdémonos"
+     ],
+     "pt": [
+      "Quem se meter connosco vai ter problemas",
+      "Quem se meter connosco, voam os tiros",
+      "exibição, gozo, saímos na farra",
+      "mete a coluna no carro que hoje há festa no parque",
+      "modelito bem fresquinho, mostra tudo",
+      "para onde vamos, onde estamos, perdemo-nos"
+     ],
+     "fr": [
+      "Qui s'en prend à nous aura des problèmes",
+      "Qui s'en prend à nous, ça tire dans tous les sens",
+      "frime, vanne, on sort draguer",
+      "mets l'enceinte dans la bagnole, aujourd'hui y a une fête sur le parking",
+      "petite tenue bien fraîche, montre tout",
+      "on va où, on est où, on s'est perdues"
+     ],
+     "it": [
+      "Chi se la prende con noi avrà problemi",
+      "Chi se la prende con noi, volano i colpi",
+      "sbruffonate, sfottò, usciamo a rimorchiare",
+      "metti la cassa in macchina che oggi c'è festa al parcheggio",
+      "outfit bello fresco, fai vedere tutto",
+      "dove andiamo, dove siamo, ci siamo perse"
+     ],
+     "de": [
+      "Wer sich mit uns anlegt, kriegt Probleme",
+      "Wer sich mit uns anlegt, da fliegen die Kugeln",
+      "Angeberei, Sprüche, wir ziehen um die Häuser",
+      "pack die Box ins Auto, heute ist Parkplatzparty",
+      "frisches Outfit, zeig alles her",
+      "wo gehen wir hin, wo sind wir, wir haben uns verirrt"
+     ],
+     "ja": [
+      "私たちに手を出すやつは痛い目にあう",
+      "私たちに手を出すやつ、弾が飛ぶよ",
+      "見せびらかして、からかって、ナンパに出かける",
+      "車にスピーカー積んで、今日は駐車場パーティー",
+      "涼しげな衣装で、全部見せちゃって",
+      "どこへ行くの、ここはどこ、迷子になった"
      ]
     }
    ]
@@ -71,6 +127,62 @@
       "bera pijamarekin dago eta igogailuan jaisten da",
       "\"Ez daramat labanarik, ez daramat labana txikirik,",
       "zorrotz iezazkidazu azazkalak, nire sugarrak ordaintzen du\""
+     ],
+     "ca": [
+      "Les ametlles marquen, les quadrades aixequen, la bailarina talla i l'stiletto clava",
+      "Les ametlles marquen, les quadrades aixequen, la bailarina talla i l'stiletto clava",
+      "Sóc al meu pis i passa l'esmolet",
+      "ella va en pijama i baixa amb l'ascensor",
+      "\"No porto ganivets, no porto navalles,",
+      "esmola'm les ungles, que el meu sugar m'ho paga\""
+     ],
+     "gl": [
+      "As améndoas marcan, as cadradas levantan, a bailarina raña e o stiletto crava",
+      "As améndoas marcan, as cadradas levantan, a bailarina raña e o stiletto crava",
+      "Estou no meu piso e pasa o afiador",
+      "ela está en pixama e baixa no ascensor",
+      "\"Non levo coitelos, non levo navallas,",
+      "afíame as unllas, que o meu sugar mo paga\""
+     ],
+     "pt": [
+      "As amêndoas marcam, as quadradas levantam, a bailarina rasga e o stiletto crava",
+      "As amêndoas marcam, as quadradas levantam, a bailarina rasga e o stiletto crava",
+      "Estou no meu apartamento e passa o amolador",
+      "ela está de pijama e desce no elevador",
+      "\"Não trago facas, não trago navalhas,",
+      "afia-me as unhas, que o meu sugar paga\""
+     ],
+     "fr": [
+      "Les amandes marquent, les carrés soulèvent, la ballerine tranche et le stiletto plante",
+      "Les amandes marquent, les carrés soulèvent, la ballerine tranche et le stiletto plante",
+      "Je suis dans mon appart et le rémouleur passe",
+      "elle est en pyjama et descend par l'ascenseur",
+      "« J'ai pas de couteaux, j'ai pas de lames,",
+      "aiguise-moi les ongles, c'est mon sugar qui paie »"
+     ],
+     "it": [
+      "Le mandorle segnano, le quadrate sollevano, la ballerina squarcia e lo stiletto infilza",
+      "Le mandorle segnano, le quadrate sollevano, la ballerina squarcia e lo stiletto infilza",
+      "Sono nel mio appartamento e passa l'arrotino",
+      "lei è in pigiama e scende in ascensore",
+      "«Non ho coltelli, non ho lame,",
+      "affilami le unghie, che me lo paga il mio sugar»"
+     ],
+     "de": [
+      "Mandeln markieren, Eckige heben an, Ballerina schlitzt und Stiletto sticht",
+      "Mandeln markieren, Eckige heben an, Ballerina schlitzt und Stiletto sticht",
+      "Ich bin in meiner Wohnung und der Scherenschleifer kommt vorbei",
+      "sie ist im Pyjama und fährt mit dem Aufzug runter",
+      "„Ich hab keine Messer, ich hab keine Klingen,",
+      "schleif mir die Nägel, mein Sugar zahlt das\""
+     ],
+     "ja": [
+      "アーモンドは跡をつけ、スクエアは持ち上げ、バレリーナは切り裂き、スティレットは突き刺す",
+      "アーモンドは跡をつけ、スクエアは持ち上げ、バレリーナは切り裂き、スティレットは突き刺す",
+      "部屋にいると研ぎ屋が通る",
+      "彼女はパジャマのままエレベーターで降りる",
+      "「包丁も持ってない、ナイフも持ってない",
+      "爪を研いで、お金はシュガーが払うから」"
      ]
     }
    ]
@@ -105,6 +217,55 @@
       "diru asko, cash asko, lapurtuko duguna",
       "dronea kamera, soineko hori nahi dut",
       "rave-ra bueltan itsasontzi batean iristen gara"
+     ],
+     "ca": [
+      "Qui es fiqui amb nosaltres tindrà problemes",
+      "hem arribat a unes cases, quin muntatge més impressionant",
+      "molt money, molt cash, que robarem",
+      "drons, càmera, vull aquell vestit",
+      "de tornada a la rave arribem amb un vaixell"
+     ],
+     "gl": [
+      "Quen se meta con nós terá problemas",
+      "chegamos a unhas casoplas, que montaxe máis impresionante",
+      "moito money, moito cash, que imos roubar",
+      "drons, cámara, quero ese vestido",
+      "de volta á rave chegamos nun navío"
+     ],
+     "pt": [
+      "Quem se meter connosco vai ter problemas",
+      "chegámos a umas mansões, que aparato impressionante",
+      "muito money, muito cash, que vamos roubar",
+      "drones, câmara, quero aquele vestido",
+      "de volta à rave chegamos num navio"
+     ],
+     "fr": [
+      "Qui s'en prend à nous aura des problèmes",
+      "on a débarqué dans des villas, quel dispositif impressionnant",
+      "plein de money, plein de cash qu'on va voler",
+      "drones, caméra, je veux cette robe",
+      "retour à la rave, on arrive en bateau"
+     ],
+     "it": [
+      "Chi se la prende con noi avrà problemi",
+      "siamo arrivate in certe ville, che allestimento impressionante",
+      "tanti money, tanto cash che ruberemo",
+      "droni, telecamera, voglio quel vestito",
+      "di ritorno al rave arriviamo in nave"
+     ],
+     "de": [
+      "Wer sich mit uns anlegt, kriegt Probleme",
+      "wir sind bei ein paar Villen gelandet, was für ein beeindruckendes Setup",
+      "viel Money, viel Cash, das wir klauen",
+      "Drohnen, Kamera, ich will das Kleid",
+      "zurück zum Rave kommen wir mit einem Schiff"
+     ],
+     "ja": [
+      "私たちに手を出すやつは痛い目にあう",
+      "豪邸に着いたら、なんてすごい設備",
+      "たっぷりのマネー、たっぷりのキャッシュ、盗んでやる",
+      "ドローン、カメラ、あのドレスが欲しい",
+      "レイヴへ戻るのは船で"
      ]
     }
    ]
@@ -142,6 +303,62 @@
       "bera pijamarekin dago eta igogailuan jaisten da",
       "\"Ez daramat labanarik, ez daramat labana txikirik,",
       "zorrotz iezazkidazu azazkalak, nire sugarrak ordaintzen du\""
+     ],
+     "ca": [
+      "Les ametlles marquen, les quadrades aixequen, la bailarina talla i l'stiletto clava",
+      "Les ametlles marquen, les quadrades aixequen, la bailarina talla i l'stiletto clava",
+      "Sóc al meu pis i passa l'esmolet",
+      "ella va en pijama i baixa amb l'ascensor",
+      "\"No porto ganivets, no porto navalles,",
+      "esmola'm les ungles, que el meu sugar m'ho paga\""
+     ],
+     "gl": [
+      "As améndoas marcan, as cadradas levantan, a bailarina raña e o stiletto crava",
+      "As améndoas marcan, as cadradas levantan, a bailarina raña e o stiletto crava",
+      "Estou no meu piso e pasa o afiador",
+      "ela está en pixama e baixa no ascensor",
+      "\"Non levo coitelos, non levo navallas,",
+      "afíame as unllas, que o meu sugar mo paga\""
+     ],
+     "pt": [
+      "As amêndoas marcam, as quadradas levantam, a bailarina rasga e o stiletto crava",
+      "As amêndoas marcam, as quadradas levantam, a bailarina rasga e o stiletto crava",
+      "Estou no meu apartamento e passa o amolador",
+      "ela está de pijama e desce no elevador",
+      "\"Não trago facas, não trago navalhas,",
+      "afia-me as unhas, que o meu sugar paga\""
+     ],
+     "fr": [
+      "Les amandes marquent, les carrés soulèvent, la ballerine tranche et le stiletto plante",
+      "Les amandes marquent, les carrés soulèvent, la ballerine tranche et le stiletto plante",
+      "Je suis dans mon appart et le rémouleur passe",
+      "elle est en pyjama et descend par l'ascenseur",
+      "« J'ai pas de couteaux, j'ai pas de lames,",
+      "aiguise-moi les ongles, c'est mon sugar qui paie »"
+     ],
+     "it": [
+      "Le mandorle segnano, le quadrate sollevano, la ballerina squarcia e lo stiletto infilza",
+      "Le mandorle segnano, le quadrate sollevano, la ballerina squarcia e lo stiletto infilza",
+      "Sono nel mio appartamento e passa l'arrotino",
+      "lei è in pigiama e scende in ascensore",
+      "«Non ho coltelli, non ho lame,",
+      "affilami le unghie, che me lo paga il mio sugar»"
+     ],
+     "de": [
+      "Mandeln markieren, Eckige heben an, Ballerina schlitzt und Stiletto sticht",
+      "Mandeln markieren, Eckige heben an, Ballerina schlitzt und Stiletto sticht",
+      "Ich bin in meiner Wohnung und der Scherenschleifer kommt vorbei",
+      "sie ist im Pyjama und fährt mit dem Aufzug runter",
+      "„Ich hab keine Messer, ich hab keine Klingen,",
+      "schleif mir die Nägel, mein Sugar zahlt das\""
+     ],
+     "ja": [
+      "アーモンドは跡をつけ、スクエアは持ち上げ、バレリーナは切り裂き、スティレットは突き刺す",
+      "アーモンドは跡をつけ、スクエアは持ち上げ、バレリーナは切り裂き、スティレットは突き刺す",
+      "部屋にいると研ぎ屋が通る",
+      "彼女はパジャマのままエレベーターで降りる",
+      "「包丁も持ってない、ナイフも持ってない",
+      "爪を研いで、お金はシュガーが払うから」"
      ]
     }
    ]
@@ -173,6 +390,48 @@
       "bera pijamarekin dago eta igogailuan jaisten da",
       "\"Ez daramat labanarik, ez daramat labana txikirik,",
       "zorrotz iezazkidazu azazkalak, nire sugarrak ordaintzen du\""
+     ],
+     "ca": [
+      "Sóc al meu pis i passa l'esmolet",
+      "ella va en pijama i baixa amb l'ascensor",
+      "\"No porto ganivets, no porto navalles,",
+      "esmola'm les ungles, que el meu sugar m'ho paga\""
+     ],
+     "gl": [
+      "Estou no meu piso e pasa o afiador",
+      "ela está en pixama e baixa no ascensor",
+      "\"Non levo coitelos, non levo navallas,",
+      "afíame as unllas, que o meu sugar mo paga\""
+     ],
+     "pt": [
+      "Estou no meu apartamento e passa o amolador",
+      "ela está de pijama e desce no elevador",
+      "\"Não trago facas, não trago navalhas,",
+      "afia-me as unhas, que o meu sugar paga\""
+     ],
+     "fr": [
+      "Je suis dans mon appart et le rémouleur passe",
+      "elle est en pyjama et descend par l'ascenseur",
+      "« J'ai pas de couteaux, j'ai pas de lames,",
+      "aiguise-moi les ongles, c'est mon sugar qui paie »"
+     ],
+     "it": [
+      "Sono nel mio appartamento e passa l'arrotino",
+      "lei è in pigiama e scende in ascensore",
+      "«Non ho coltelli, non ho lame,",
+      "affilami le unghie, che me lo paga il mio sugar»"
+     ],
+     "de": [
+      "Ich bin in meiner Wohnung und der Scherenschleifer kommt vorbei",
+      "sie ist im Pyjama und fährt mit dem Aufzug runter",
+      "„Ich hab keine Messer, ich hab keine Klingen,",
+      "schleif mir die Nägel, mein Sugar zahlt das\""
+     ],
+     "ja": [
+      "部屋にいると研ぎ屋が通る",
+      "彼女はパジャマのままエレベーターで降りる",
+      "「包丁も持ってない、ナイフも持ってない",
+      "爪を研いで、お金はシュガーが払うから」"
      ]
     }
    ]
@@ -198,6 +457,34 @@
      "eu": [
       "Gurekin sartzen denak arazoak izango ditu",
       "Gurekin sartzen denak arazoak izango ditu"
+     ],
+     "ca": [
+      "Qui es fiqui amb nosaltres tindrà problemes",
+      "Qui es fiqui amb nosaltres tindrà problemes"
+     ],
+     "gl": [
+      "Quen se meta con nós terá problemas",
+      "Quen se meta con nós terá problemas"
+     ],
+     "pt": [
+      "Quem se meter connosco vai ter problemas",
+      "Quem se meter connosco vai ter problemas"
+     ],
+     "fr": [
+      "Qui s'en prend à nous aura des problèmes",
+      "Qui s'en prend à nous aura des problèmes"
+     ],
+     "it": [
+      "Chi se la prende con noi avrà problemi",
+      "Chi se la prende con noi avrà problemi"
+     ],
+     "de": [
+      "Wer sich mit uns anlegt, kriegt Probleme",
+      "Wer sich mit uns anlegt, kriegt Probleme"
+     ],
+     "ja": [
+      "私たちに手を出すやつは痛い目にあう",
+      "私たちに手を出すやつは痛い目にあう"
      ]
     }
    ]

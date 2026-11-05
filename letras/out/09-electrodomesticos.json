@@ -19,6 +19,27 @@
      "es": null,
      "eu": [
       "Xurgagailua"
+     ],
+     "ca": [
+      "Aspiradora"
+     ],
+     "gl": [
+      "Aspiradora"
+     ],
+     "pt": [
+      "Aspirador"
+     ],
+     "fr": [
+      "Aspirateur"
+     ],
+     "it": [
+      "Aspirapolvere"
+     ],
+     "de": [
+      "Staubsauger"
+     ],
+     "ja": [
+      "掃除機"
      ]
     },
     {
@@ -36,6 +57,27 @@
      ],
      "eu": [
       "las marikarmen etxekoa"
+     ],
+     "ca": [
+      "De la casa de las marikarmen"
+     ],
+     "gl": [
+      "Da casa de las marikarmen"
+     ],
+     "pt": [
+      "Da casa de las marikarmen"
+     ],
+     "fr": [
+      "De la maison de las marikarmen"
+     ],
+     "it": [
+      "Dalla casa di las marikarmen"
+     ],
+     "de": [
+      "Aus dem Haus von las marikarmen"
+     ],
+     "ja": [
+      "ハウス・オブ・ラス・マリカルメンより"
      ]
     },
     {
@@ -137,6 +179,223 @@
       "Elektrifika nazazu",
       "Nik dena nahi dut",
       "Watioak"
+     ],
+     "ca": [
+      "Torradora, Aspiradora, Assecadora",
+      "Consolador, Batedora, Cuidadora, Rentadora, Planxa",
+      "Torradora, Aspiradora, Assecadora",
+      "Consolador, Batedora, Cuidadora, Rentadora, Mixer",
+      "Tot el que vull jo són els meus electrodomèstics",
+      "Mixer",
+      "Tot el que vull jo són els meus electrodomèstics",
+      "Torradora",
+      "Tot el que vull jo són els meus electrodomèstics",
+      "Batedora",
+      "Tot el que vull jo són els meus electrodomèstics",
+      "Planxa",
+      "Tot el que vull jo són els meus electrodomèstics",
+      "Assecadora",
+      "Tot el que vull jo són els meus electrodomèstics",
+      "Torradora, Aspiradora, Assecadora",
+      "Consolador, Batedora, Cuidadora, Rentadora, Planxa",
+      "Torradora, Aspiradora, Assecadora",
+      "Consolador, Batedora, Cuidadora, Rentadora, Mixer",
+      "Planxa",
+      "Aspiradora",
+      "Aspiradora",
+      "RentoCuino al vapor",
+      "Tot el que vull jo són els meus electrodomèstics",
+      "Endolla, endolla, endolla'm",
+      "Tot el que vull jo són els meus electrodomèstics",
+      "Electrifica'm",
+      "Ho vull tot",
+      "Watts"
+     ],
+     "gl": [
+      "Torradora, Aspiradora, Secadora",
+      "Dildo, Batedora, Coidadora, Lavadora, Ferro",
+      "Torradora, Aspiradora, Secadora",
+      "Dildo, Batedora, Coidadora, Lavadora, Mixer",
+      "Todo o que quero eu son os meus electrodomésticos",
+      "Mixer",
+      "Todo o que quero eu son os meus electrodomésticos",
+      "Torradora",
+      "Todo o que quero eu son os meus electrodomésticos",
+      "Batedora",
+      "Todo o que quero eu son os meus electrodomésticos",
+      "Ferro",
+      "Todo o que quero eu son os meus electrodomésticos",
+      "Secadora",
+      "Todo o que quero eu son os meus electrodomésticos",
+      "Torradora, Aspiradora, Secadora",
+      "Dildo, Batedora, Coidadora, Lavadora, Ferro",
+      "Torradora, Aspiradora, Secadora",
+      "Dildo, Batedora, Coidadora, Lavadora, Mixer",
+      "Ferro",
+      "Aspiradora",
+      "Aspiradora",
+      "LavoCociño ao vapor",
+      "Todo o que quero eu son os meus electrodomésticos",
+      "Enchufa, enchufa, enchúfame",
+      "Todo o que quero eu son os meus electrodomésticos",
+      "Electrifícame",
+      "Quéroo todo",
+      "Vatios"
+     ],
+     "pt": [
+      "Torradeira, Aspirador, Secadora",
+      "Dildo, Batedeira, Cuidadora, Máquina de lavar, Ferro",
+      "Torradeira, Aspirador, Secadora",
+      "Dildo, Batedeira, Cuidadora, Máquina de lavar, Mixer",
+      "Tudo o que eu quero são os meus eletrodomésticos",
+      "Mixer",
+      "Tudo o que eu quero são os meus eletrodomésticos",
+      "Torradeira",
+      "Tudo o que eu quero são os meus eletrodomésticos",
+      "Batedeira",
+      "Tudo o que eu quero são os meus eletrodomésticos",
+      "Ferro",
+      "Tudo o que eu quero são os meus eletrodomésticos",
+      "Secadora",
+      "Tudo o que eu quero são os meus eletrodomésticos",
+      "Torradeira, Aspirador, Secadora",
+      "Dildo, Batedeira, Cuidadora, Máquina de lavar, Ferro",
+      "Torradeira, Aspirador, Secadora",
+      "Dildo, Batedeira, Cuidadora, Máquina de lavar, Mixer",
+      "Ferro",
+      "Aspirador",
+      "Aspirador",
+      "LavoCozinho a vapor",
+      "Tudo o que eu quero são os meus eletrodomésticos",
+      "Liga, liga, liga-me",
+      "Tudo o que eu quero são os meus eletrodomésticos",
+      "Eletrifica-me",
+      "Quero tudo",
+      "Watts"
+     ],
+     "fr": [
+      "Grille-pain, Aspirateur, Sèche-linge",
+      "Gode, Batteur, Aidante, Lave-linge, Fer",
+      "Grille-pain, Aspirateur, Sèche-linge",
+      "Gode, Batteur, Aidante, Lave-linge, Mixer",
+      "Tout ce que je veux, c'est mon électroménager",
+      "Mixer",
+      "Tout ce que je veux, c'est mon électroménager",
+      "Grille-pain",
+      "Tout ce que je veux, c'est mon électroménager",
+      "Batteur",
+      "Tout ce que je veux, c'est mon électroménager",
+      "Fer",
+      "Tout ce que je veux, c'est mon électroménager",
+      "Sèche-linge",
+      "Tout ce que je veux, c'est mon électroménager",
+      "Grille-pain, Aspirateur, Sèche-linge",
+      "Gode, Batteur, Aidante, Lave-linge, Fer",
+      "Grille-pain, Aspirateur, Sèche-linge",
+      "Gode, Batteur, Aidante, Lave-linge, Mixer",
+      "Fer",
+      "Aspirateur",
+      "Aspirateur",
+      "LaveCuis à la vapeur",
+      "Tout ce que je veux, c'est mon électroménager",
+      "Branche, branche, branche-moi",
+      "Tout ce que je veux, c'est mon électroménager",
+      "Électrise-moi",
+      "Je veux tout",
+      "Watts"
+     ],
+     "it": [
+      "Tostapane, Aspirapolvere, Asciugatrice",
+      "Dildo, Frullatore, Badante, Lavatrice, Ferro da stiro",
+      "Tostapane, Aspirapolvere, Asciugatrice",
+      "Dildo, Frullatore, Badante, Lavatrice, Mixer",
+      "Tutto quello che voglio sono i miei elettrodomestici",
+      "Mixer",
+      "Tutto quello che voglio sono i miei elettrodomestici",
+      "Tostapane",
+      "Tutto quello che voglio sono i miei elettrodomestici",
+      "Frullatore",
+      "Tutto quello che voglio sono i miei elettrodomestici",
+      "Ferro da stiro",
+      "Tutto quello che voglio sono i miei elettrodomestici",
+      "Asciugatrice",
+      "Tutto quello che voglio sono i miei elettrodomestici",
+      "Tostapane, Aspirapolvere, Asciugatrice",
+      "Dildo, Frullatore, Badante, Lavatrice, Ferro da stiro",
+      "Tostapane, Aspirapolvere, Asciugatrice",
+      "Dildo, Frullatore, Badante, Lavatrice, Mixer",
+      "Ferro da stiro",
+      "Aspirapolvere",
+      "Aspirapolvere",
+      "LavoCucino a vapore",
+      "Tutto quello che voglio sono i miei elettrodomestici",
+      "Attacca, attacca, attaccami",
+      "Tutto quello che voglio sono i miei elettrodomestici",
+      "Elettrizzami",
+      "Voglio tutto",
+      "Watt"
+     ],
+     "de": [
+      "Toaster, Staubsauger, Trockner",
+      "Dildo, Mixer, Pflegerin, Waschmaschine, Bügeleisen",
+      "Toaster, Staubsauger, Trockner",
+      "Dildo, Mixer, Pflegerin, Waschmaschine, Mixer",
+      "Alles, was ich will, sind meine Haushaltsgeräte",
+      "Mixer",
+      "Alles, was ich will, sind meine Haushaltsgeräte",
+      "Toaster",
+      "Alles, was ich will, sind meine Haushaltsgeräte",
+      "Mixer",
+      "Alles, was ich will, sind meine Haushaltsgeräte",
+      "Bügeleisen",
+      "Alles, was ich will, sind meine Haushaltsgeräte",
+      "Trockner",
+      "Alles, was ich will, sind meine Haushaltsgeräte",
+      "Toaster, Staubsauger, Trockner",
+      "Dildo, Mixer, Pflegerin, Waschmaschine, Bügeleisen",
+      "Toaster, Staubsauger, Trockner",
+      "Dildo, Mixer, Pflegerin, Waschmaschine, Mixer",
+      "Bügeleisen",
+      "Staubsauger",
+      "Staubsauger",
+      "WaschKoch mit Dampf",
+      "Alles, was ich will, sind meine Haushaltsgeräte",
+      "Steck ein, steck ein, steck mich ein",
+      "Alles, was ich will, sind meine Haushaltsgeräte",
+      "Elektrisier mich",
+      "Ich will alles",
+      "Watt"
+     ],
+     "ja": [
+      "トースター、掃除機、乾燥機",
+      "ディルド、ブレンダー、ケアする人、洗濯機、アイロン",
+      "トースター、掃除機、乾燥機",
+      "ディルド、ブレンダー、ケアする人、洗濯機、ミキサー",
+      "私が欲しいのは家電だけ",
+      "ミキサー",
+      "私が欲しいのは家電だけ",
+      "トースター",
+      "私が欲しいのは家電だけ",
+      "ブレンダー",
+      "私が欲しいのは家電だけ",
+      "アイロン",
+      "私が欲しいのは家電だけ",
+      "乾燥機",
+      "私が欲しいのは家電だけ",
+      "トースター、掃除機、乾燥機",
+      "ディルド、ブレンダー、ケアする人、洗濯機、アイロン",
+      "トースター、掃除機、乾燥機",
+      "ディルド、ブレンダー、ケアする人、洗濯機、ミキサー",
+      "アイロン",
+      "掃除機",
+      "掃除機",
+      "洗って、蒸して料理して",
+      "私が欲しいのは家電だけ",
+      "つないで、つないで、私をつないで",
+      "私が欲しいのは家電だけ",
+      "私に電気を流して",
+      "全部欲しい",
+      "ワット"
      ]
     }
    ]

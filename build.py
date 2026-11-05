@@ -125,7 +125,7 @@ def build(langs, text, site):
         for slug, tpl, nav_key, title_key in PAGES:
             ctx = dict(
                 t=t, lang=lang, langs=langs if len(langs) > 1 else [], site=site,
-                lang_names=site["language_names"], root=root, page_url=page_url, og_tags=og_tags, lyrics_json=lambda: lyrics_for(lyrics, t, page_url),
+                lang_names=site["language_names"], root=root, page_url=page_url, og_tags=og_tags, lyrics_json=lambda: lyrics_for(lyrics, t, page_url, lang), lyrics_video={s['desc'].get('video'): s['slug'] for s in lyrics if s['desc'].get('video')},
                 slug=slug, pages=PAGES, icons=icons, asset_v=asset_v, gigs=gigs, past_gigs=past_gigs, past_years=past_years, presskit=root + presskit,
                 page_title=(t(title_key) if title_key else None),
                 canonical=f"{site['site_url'].rstrip('/')}/{sub}{'' if slug == 'index' else slug + '.html'}",
@@ -143,7 +143,10 @@ OG_LOCALE = {"es": "es_ES", "en": "en_GB", "ca": "ca_ES", "gl": "gl_ES", "eu": "
              "fr": "fr_FR", "it": "it_IT", "de": "de_DE", "ja": "ja_JP"}
 
 
-def lyrics_for(songs, t, page_url):
+LYR_LANGS = ("es", "en", "ca", "gl", "eu", "pt", "fr", "it", "de", "ja")
+
+
+def lyrics_for(songs, t, page_url, lang):
     """Lyrics data for one site language: '@key' texts become translated strings, '@page:x' site links."""
     import json as _json
     def r(v):
@@ -157,7 +160,10 @@ def lyrics_for(songs, t, page_url):
         if isinstance(x, list): return [walk(i) for i in x]
         if isinstance(x, dict): return {k: walk(v) for k, v in x.items()}
         return r(x)
-    data = [dict(s, desc=walk(s["desc"])) for s in songs]
+    def only(seg):  # keep the original and this page's language only
+        return {k: v for k, v in seg.items() if k not in LYR_LANGS or k == lang}
+    data = [dict(s, desc=walk(s["desc"]), blocks=[dict(b, segs=[only(g) for g in b["segs"]]) if "segs" in b else b for b in s["blocks"]])
+            for s in songs]
     return Markup(_json.dumps(data, ensure_ascii=False).replace("</", "<\\/"))
 
 

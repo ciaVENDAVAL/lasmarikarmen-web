@@ -19,6 +19,27 @@
      ],
      "eu": [
       "Gizona al da hori ala emakumea, emakumea, emakumea…?"
+     ],
+     "ca": [
+      "És un home o una dona, dona, dona…?"
+     ],
+     "gl": [
+      "É un home ou unha muller, muller, muller…?"
+     ],
+     "pt": [
+      "É um homem ou uma mulher, mulher, mulher…?"
+     ],
+     "fr": [
+      "C'est un homme ou une femme, femme, femme… ?"
+     ],
+     "it": [
+      "È un uomo o una donna, donna, donna…?"
+     ],
+     "de": [
+      "Ist das ein Mann oder eine Frau, Frau, Frau…?"
+     ],
+     "ja": [
+      "あれは男？それとも女、女、女…？"
      ]
     },
     {
@@ -39,6 +60,34 @@
      "eu": [
       "Eta, eta, eta, eta, eta, eta, eta, eta, eta,",
       "eta bakean utziko bazaidake?"
+     ],
+     "ca": [
+      "I si, i si, i si, i si, i si, i si, i si, i si, i si,",
+      "i si em deixes en pau?"
+     ],
+     "gl": [
+      "E se, e se, e se, e se, e se, e se, e se, e se, e se,",
+      "e se me deixas tranquila?"
+     ],
+     "pt": [
+      "E se, e se, e se, e se, e se, e se, e se, e se, e se,",
+      "e se me deixasses em paz?"
+     ],
+     "fr": [
+      "Et si, et si, et si, et si, et si, et si, et si, et si, et si,",
+      "et si tu me foutais la paix ?"
+     ],
+     "it": [
+      "E se, e se, e se, e se, e se, e se, e se, e se, e se,",
+      "e se mi lasciassi in pace?"
+     ],
+     "de": [
+      "Und wenn, und wenn, und wenn, und wenn, und wenn, und wenn, und wenn, und wenn, und wenn,",
+      "und wenn du mich einfach in Ruhe lässt?"
+     ],
+     "ja": [
+      "もしも、もしも、もしも、もしも、もしも、もしも、もしも、もしも、もしも",
+      "私のことほっといてくれたら？"
      ]
     }
    ]
@@ -70,6 +119,48 @@
       "Gaur ez dago labea bolloentzat, ez dago labea bolloentzat gaur",
       "Gaur ez dago labea bolloentzat, ez dago labea bolloentzat gaur",
       "Gaur ez dago labea bolloentzat, ez dago labea bolloentzat gaur"
+     ],
+     "ca": [
+      "No hi ha forn per a pans, no hi ha forn per a pans avui",
+      "No hi ha forn per a pans, no hi ha forn per a pans avui",
+      "No hi ha forn per a pans, no hi ha forn per a pans avui",
+      "No hi ha forn per a pans, no hi ha forn per a pans avui"
+     ],
+     "gl": [
+      "Non hai forno para bolos, non hai forno para bolos hoxe",
+      "Non hai forno para bolos, non hai forno para bolos hoxe",
+      "Non hai forno para bolos, non hai forno para bolos hoxe",
+      "Non hai forno para bolos, non hai forno para bolos hoxe"
+     ],
+     "pt": [
+      "Não há forno para bolos, não há forno para bolos hoje",
+      "Não há forno para bolos, não há forno para bolos hoje",
+      "Não há forno para bolos, não há forno para bolos hoje",
+      "Não há forno para bolos, não há forno para bolos hoje"
+     ],
+     "fr": [
+      "Pas de four pour les brioches, pas de four pour les brioches aujourd'hui",
+      "Pas de four pour les brioches, pas de four pour les brioches aujourd'hui",
+      "Pas de four pour les brioches, pas de four pour les brioches aujourd'hui",
+      "Pas de four pour les brioches, pas de four pour les brioches aujourd'hui"
+     ],
+     "it": [
+      "Niente forno per le brioche, niente forno per le brioche oggi",
+      "Niente forno per le brioche, niente forno per le brioche oggi",
+      "Niente forno per le brioche, niente forno per le brioche oggi",
+      "Niente forno per le brioche, niente forno per le brioche oggi"
+     ],
+     "de": [
+      "Kein Ofen für Brötchen, kein Ofen für Brötchen heute",
+      "Kein Ofen für Brötchen, kein Ofen für Brötchen heute",
+      "Kein Ofen für Brötchen, kein Ofen für Brötchen heute",
+      "Kein Ofen für Brötchen, kein Ofen für Brötchen heute"
+     ],
+     "ja": [
+      "今日はパンを焼くオーブンはない、パンを焼くオーブンはない",
+      "今日はパンを焼くオーブンはない、パンを焼くオーブンはない",
+      "今日はパンを焼くオーブンはない、パンを焼くオーブンはない",
+      "今日はパンを焼くオーブンはない、パンを焼くオーブンはない"
      ]
     }
    ]
@@ -95,6 +186,34 @@
      "eu": [
       "Nire gonak harritzen zaitu, nire azazkalek,",
       "nire bizarrak, nire makeupak, nire aurpegiak,"
+     ],
+     "ca": [
+      "Et sorprèn la meva faldilla, les meves ungles,",
+      "la meva barba, el meu maquillatge, la meva cara,"
+     ],
+     "gl": [
+      "Estráñache a miña saia, as miñas unllas,",
+      "a miña barba, o meu maquillaxe, a miña cara,"
+     ],
+     "pt": [
+      "Estranhas a minha saia, as minhas unhas,",
+      "a minha barba, a minha maquilhagem, a minha cara,"
+     ],
+     "fr": [
+      "Ma jupe te surprend, mes ongles,",
+      "ma barbe, mon maquillage, mon visage,"
+     ],
+     "it": [
+      "Ti stupisce la mia gonna, le mie unghie,",
+      "la mia barba, il mio trucco, la mia faccia,"
+     ],
+     "de": [
+      "Mein Rock irritiert dich, meine Nägel,",
+      "mein Bart, mein Make-up, mein Gesicht,"
+     ],
+     "ja": [
+      "私のスカートが変？私の爪、",
+      "私のヒゲ、私のメイク、私の顔、"
      ]
     },
     {
@@ -112,6 +231,27 @@
      ],
      "eu": [
       "zein da zure arazoa?"
+     ],
+     "ca": [
+      "quin problema tens?"
+     ],
+     "gl": [
+      "cal é o teu problema?"
+     ],
+     "pt": [
+      "qual é o teu problema?"
+     ],
+     "fr": [
+      "c'est quoi ton problème ?"
+     ],
+     "it": [
+      "qual è il tuo problema?"
+     ],
+     "de": [
+      "was ist dein Problem?"
+     ],
+     "ja": [
+      "何が問題なの？"
      ]
     }
    ]
@@ -146,6 +286,55 @@
       "Txandala, takoiak eta urrea",
       "Txandala, takoiak eta urrea",
       "papi etorri hona, ahoa jango dizut"
+     ],
+     "ca": [
+      "Xandall, talons i or",
+      "Xandall, talons i or",
+      "Xandall, talons i or",
+      "Xandall, talons i or",
+      "papi vine que et menjo la boca"
+     ],
+     "gl": [
+      "Chándal, tacóns e ouro",
+      "Chándal, tacóns e ouro",
+      "Chándal, tacóns e ouro",
+      "Chándal, tacóns e ouro",
+      "papi ven que che como a boca"
+     ],
+     "pt": [
+      "Fato de treino, saltos e ouro",
+      "Fato de treino, saltos e ouro",
+      "Fato de treino, saltos e ouro",
+      "Fato de treino, saltos e ouro",
+      "papi anda cá que te como a boca"
+     ],
+     "fr": [
+      "Survêt, talons et or",
+      "Survêt, talons et or",
+      "Survêt, talons et or",
+      "Survêt, talons et or",
+      "papi viens que je te bouffe la bouche"
+     ],
+     "it": [
+      "Tuta, tacchi e oro",
+      "Tuta, tacchi e oro",
+      "Tuta, tacchi e oro",
+      "Tuta, tacchi e oro",
+      "papi vieni che ti mangio la bocca"
+     ],
+     "de": [
+      "Jogginganzug, Heels und Gold",
+      "Jogginganzug, Heels und Gold",
+      "Jogginganzug, Heels und Gold",
+      "Jogginganzug, Heels und Gold",
+      "Papi komm her, ich knutsch dich weg"
+     ],
+     "ja": [
+      "ジャージ、ヒール、ゴールド",
+      "ジャージ、ヒール、ゴールド",
+      "ジャージ、ヒール、ゴールド",
+      "ジャージ、ヒール、ゴールド",
+      "パピ、おいで、唇を食べちゃう"
      ]
     }
    ]
@@ -177,6 +366,48 @@
       "Gonatik ateratzen zait arrautza",
       "Gonatik ateratzen zait arrautza",
       "ezta galtzerdiekin ere ez da eusten"
+     ],
+     "ca": [
+      "Se'm surt l'ou de la faldilla",
+      "Se'm surt l'ou de la faldilla",
+      "Se'm surt l'ou de la faldilla",
+      "és que ni amb mitges no se m'aguanta"
+     ],
+     "gl": [
+      "Sáeseme o ovo da saia",
+      "Sáeseme o ovo da saia",
+      "Sáeseme o ovo da saia",
+      "é que nin con medias se me agarra"
+     ],
+     "pt": [
+      "Sai-me o ovo da saia",
+      "Sai-me o ovo da saia",
+      "Sai-me o ovo da saia",
+      "é que nem com meias se aguenta"
+     ],
+     "fr": [
+      "Ma couille sort de ma jupe",
+      "Ma couille sort de ma jupe",
+      "Ma couille sort de ma jupe",
+      "même avec des collants ça tient pas"
+     ],
+     "it": [
+      "Mi esce la palla dalla gonna",
+      "Mi esce la palla dalla gonna",
+      "Mi esce la palla dalla gonna",
+      "neanche con i collant mi si tiene"
+     ],
+     "de": [
+      "Mir rutscht das Ei aus dem Rock",
+      "Mir rutscht das Ei aus dem Rock",
+      "Mir rutscht das Ei aus dem Rock",
+      "nicht mal mit Strumpfhose hält es"
+     ],
+     "ja": [
+      "スカートからタマがはみ出ちゃう",
+      "スカートからタマがはみ出ちゃう",
+      "スカートからタマがはみ出ちゃう",
+      "タイツをはいても押さえきれない"
      ]
     }
    ]
@@ -208,6 +439,48 @@
       "hain xarmanta, hain pibon, hain goxoa",
       "etorri nire gelara,",
       "eta aurkeztuko dizut nire hot dog-a"
+     ],
+     "ca": [
+      "Que estic tota guapa, tota flamant",
+      "tota maca, tota bombó, tota rica",
+      "come to my habitació,",
+      "i et presento el meu hot dog"
+     ],
+     "gl": [
+      "Que estou toda guapa, toda flamante",
+      "toda linda, toda bombón, toda rica",
+      "come to my habitación,",
+      "e preséntoche o meu hot dog"
+     ],
+     "pt": [
+      "Que estou toda gira, toda flamante",
+      "toda linda, toda borracho, toda gostosa",
+      "come to my quarto,",
+      "e apresento-te o meu hot dog"
+     ],
+     "fr": [
+      "Je suis trop belle, trop flamboyante",
+      "trop mignonne, trop bombe, trop bonne",
+      "come to my chambre,",
+      "et je te présente mon hot dog"
+     ],
+     "it": [
+      "Che sono tutta bella, tutta fiammante",
+      "tutta carina, tutta gnocca, tutta buona",
+      "come to my camera,",
+      "e ti presento il mio hot dog"
+     ],
+     "de": [
+      "Ich bin so hübsch, so flammend",
+      "so süß, so heiß, so lecker",
+      "come to my Zimmer,",
+      "und ich stell dir meinen Hot Dog vor"
+     ],
+     "ja": [
+      "私ってめちゃきれい、めちゃ燃えてる",
+      "めちゃかわいい、めちゃイケてる、めちゃおいしそう",
+      "come to my 部屋",
+      "私のホットドッグを紹介するね"
      ]
     }
    ]
@@ -239,6 +512,48 @@
       "Neska neska neska",
       "Neska neska neska",
       "ez al duzu ikusten pikoteo osoa eta mina daukadala?"
+     ],
+     "ca": [
+      "Noia noia noia",
+      "Noia noia noia",
+      "Noia noia noia",
+      "no veus que tinc tot el pica-pica?"
+     ],
+     "gl": [
+      "Rapaza rapaza rapaza",
+      "Rapaza rapaza rapaza",
+      "Rapaza rapaza rapaza",
+      "non ves que teño todo o pica-pica?"
+     ],
+     "pt": [
+      "Miúda miúda miúda",
+      "Miúda miúda miúda",
+      "Miúda miúda miúda",
+      "não vês que tenho todos os petiscos e comichões?"
+     ],
+     "fr": [
+      "Meuf meuf meuf",
+      "Meuf meuf meuf",
+      "Meuf meuf meuf",
+      "tu vois pas que j'ai tout le buffet qui pique ?"
+     ],
+     "it": [
+      "Ragazza ragazza ragazza",
+      "Ragazza ragazza ragazza",
+      "Ragazza ragazza ragazza",
+      "non vedi che ho tutto lo stuzzichino?"
+     ],
+     "de": [
+      "Mädel Mädel Mädel",
+      "Mädel Mädel Mädel",
+      "Mädel Mädel Mädel",
+      "siehst du nicht, dass ich das ganze Knabberzeug hab, das juckt?"
+     ],
+     "ja": [
+      "ギャル、ギャル、ギャル",
+      "ギャル、ギャル、ギャル",
+      "ギャル、ギャル、ギャル",
+      "私のおつまみ全部ヒリヒリなの見えない？"
      ]
     }
    ]
@@ -270,6 +585,48 @@
       "Gonatik ateratzen zait arrautza",
       "Gonatik ateratzen zait arrautza",
       "ezta galtzerdiekin ere ez da eusten"
+     ],
+     "ca": [
+      "Se'm surt l'ou de la faldilla",
+      "Se'm surt l'ou de la faldilla",
+      "Se'm surt l'ou de la faldilla",
+      "és que ni amb mitges no se m'aguanta"
+     ],
+     "gl": [
+      "Sáeseme o ovo da saia",
+      "Sáeseme o ovo da saia",
+      "Sáeseme o ovo da saia",
+      "é que nin con medias se me agarra"
+     ],
+     "pt": [
+      "Sai-me o ovo da saia",
+      "Sai-me o ovo da saia",
+      "Sai-me o ovo da saia",
+      "é que nem com meias se aguenta"
+     ],
+     "fr": [
+      "Ma couille sort de ma jupe",
+      "Ma couille sort de ma jupe",
+      "Ma couille sort de ma jupe",
+      "même avec des collants ça tient pas"
+     ],
+     "it": [
+      "Mi esce la palla dalla gonna",
+      "Mi esce la palla dalla gonna",
+      "Mi esce la palla dalla gonna",
+      "neanche con i collant mi si tiene"
+     ],
+     "de": [
+      "Mir rutscht das Ei aus dem Rock",
+      "Mir rutscht das Ei aus dem Rock",
+      "Mir rutscht das Ei aus dem Rock",
+      "nicht mal mit Strumpfhose hält es"
+     ],
+     "ja": [
+      "スカートからタマがはみ出ちゃう",
+      "スカートからタマがはみ出ちゃう",
+      "スカートからタマがはみ出ちゃう",
+      "タイツをはいても押さえきれない"
      ]
     }
    ]
@@ -292,6 +649,27 @@
      "es": null,
      "eu": [
       "Zer zer zer zer naiz ni?"
+     ],
+     "ca": [
+      "Què què què què sóc?"
+     ],
+     "gl": [
+      "Que que que que son?"
+     ],
+     "pt": [
+      "O quê o quê o quê o quê sou?"
+     ],
+     "fr": [
+      "Quoi quoi quoi quoi je suis ?"
+     ],
+     "it": [
+      "Cosa cosa cosa cosa sono?"
+     ],
+     "de": [
+      "Was was was was bin ich?"
+     ],
+     "ja": [
+      "私は何、何、何、何？"
      ]
     },
     {
@@ -312,6 +690,34 @@
      "eu": [
       "Zorionak, mutila da, harro egongo zarete, HARRO ASKO!",
       "Genitaaaaaleeeak! Harro zaudete orain?"
+     ],
+     "ca": [
+      "Felicitats, és un nen, n'heu d'estar tan orgullosos, TAN ORGULLOSOS!",
+      "Geeeeeenitaaals! Ara n'esteu orgullosos?"
+     ],
+     "gl": [
+      "Parabéns, é un neno, debedes estar tan orgullosos, TAN ORGULLOSOS!",
+      "Xeeeeeenitaaais! Agora estades orgullosos?"
+     ],
+     "pt": [
+      "Parabéns, é um menino, devem estar tão orgulhosos, TÃO ORGULHOSOS!",
+      "Geeeeeenitaaais! Agora estão orgulhosos?"
+     ],
+     "fr": [
+      "Félicitations, c'est un garçon, vous devez être si fiers, SI FIERS !",
+      "Organes géniiiiitauuux ! Vous êtes fiers maintenant ?"
+     ],
+     "it": [
+      "Congratulazioni, è un maschio, dovete essere così orgogliosi, COSÌ ORGOGLIOSI!",
+      "Geeeeeenitaaali! Siete orgogliosi adesso?"
+     ],
+     "de": [
+      "Herzlichen Glückwunsch, es ist ein Junge, ihr müsst so stolz sein, SO STOLZ!",
+      "Geeeeeenitaaalien! Seid ihr jetzt stolz?"
+     ],
+     "ja": [
+      "おめでとう、男の子です、さぞ誇らしいでしょう、さぞ誇らしい！",
+      "せーーーいーーーきーーー！これで誇らしい？"
      ]
     },
     {
@@ -350,6 +756,76 @@
       "Biderkatu naiteke zurekin ala ez?",
       "Arrosa!",
       "Gaur ez dago labea bolloentzat."
+     ],
+     "ca": [
+      "Sí, sí, sísísísísísísísí",
+      "Noia o noi, rosa o blau?",
+      "Defineix-te ja des d'ara per a tota la vida!",
+      "Transfòbia.",
+      "Prou agressions!",
+      "Em puc multiplicar amb tu o no?",
+      "Rosa!",
+      "No hi ha forn per a pans avui."
+     ],
+     "gl": [
+      "Si, si, sisisisisisisisi",
+      "Rapaza ou rapaz, rosa ou azul?",
+      "Defínete xa dende agora para toda a túa vida!",
+      "Transfobia.",
+      "Abonda xa de agresións!",
+      "Podo multiplicarme contigo ou non?",
+      "Rosa!",
+      "Non hai forno para bolos hoxe."
+     ],
+     "pt": [
+      "Sim, sim, simsimsimsimsimsimsimsim",
+      "Menina ou menino, rosa ou azul?",
+      "Define-te já a partir de agora para toda a vida!",
+      "Transfobia.",
+      "Chega de agressões!",
+      "Posso multiplicar-me contigo ou não?",
+      "Rosa!",
+      "Não há forno para bolos hoje."
+     ],
+     "fr": [
+      "Oui, oui, ouiouiouiouiouiouiouioui",
+      "Fille ou garçon, rose ou bleu ?",
+      "Définis-toi dès maintenant pour toute ta vie !",
+      "Transphobie.",
+      "Assez d'agressions !",
+      "Je peux me multiplier avec toi ou pas ?",
+      "Rose !",
+      "Pas de four pour les brioches aujourd'hui."
+     ],
+     "it": [
+      "Sì, sì, sìsìsìsìsìsìsìsì",
+      "Ragazza o ragazzo, rosa o azzurro?",
+      "Definisciti adesso per tutta la vita!",
+      "Transfobia.",
+      "Basta aggressioni!",
+      "Posso moltiplicarmi con te o no?",
+      "Rosa!",
+      "Niente forno per le brioche oggi."
+     ],
+     "de": [
+      "Ja, ja, jajajajajajaja",
+      "Mädchen oder Junge, rosa oder blau?",
+      "Leg dich jetzt fest, für dein ganzes Leben!",
+      "Transfeindlichkeit.",
+      "Schluss mit den Übergriffen!",
+      "Kann ich mich mit dir vermehren oder nicht?",
+      "Rosa!",
+      "Kein Ofen für Brötchen heute."
+     ],
+     "ja": [
+      "うん、うん、うんうんうんうんうんうん",
+      "女の子？男の子？ピンク？ブルー？",
+      "今すぐ一生ぶん決めなさい！",
+      "トランスフォビア。",
+      "暴力はもうたくさん！",
+      "あんたと増殖できるの、できないの？",
+      "ピンク！",
+      "今日はパンを焼くオーブンはない。"
      ]
     }
    ]

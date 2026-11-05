@@ -7,9 +7,10 @@
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
-  var G = 'orig', showO = false, BM = {};
+  var G = 'orig', showO = false, BM = {}, TL = [UI.lang];
+  LC[UI.lang] = UI.lang_code || LC[UI.lang] || UI.lang.toUpperCase();
 
-  function avail(b) { var a = {}; ['en', 'es', 'eu'].forEach(function (t) { a[t] = b.segs.some(function (s) { return !s.skip && !s.keep && s.lang !== t && s[t]; }); }); return a; }
+  function avail(b) { var a = {}; TL.forEach(function (t) { a[t] = b.segs.some(function (s) { return !s.skip && !s.keep && s.lang !== t && s[t]; }); }); return a; }
   function modeOf(si, bi) { return BM[si + ':' + bi] || G; }
 
   function lineHTML(l) {
@@ -34,7 +35,7 @@
     });
     var langs = [];
     b.segs.forEach(function (s) { if (!s.skip && langs.indexOf(s.lang) < 0) langs.push(s.lang); });
-    var opts = ['en', 'es', 'eu'].filter(function (t) { return av[t]; }), tools = '';
+    var opts = TL.filter(function (t) { return av[t]; }), tools = '';
     if (opts.length) {
       tools = '<div class="ly-tools"><span class="ly-lg">' + langs.map(function (l) { return LC[l] || l; }).join('·') + ' →</span>' +
         ['orig'].concat(opts).map(function (t) {

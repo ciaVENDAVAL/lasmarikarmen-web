@@ -39,11 +39,11 @@
     {% if site.get('featured_video') %}
     <div class="vid-feature">
       <p class="tag">{{ t('featured_kicker') }}</p>
-      {{ video(site.featured_video, root, t) }}
+      {{ video(site.featured_video, root, t, page_url('letras') ~ '#' ~ lyrics_video[site.featured_video.id] if site.featured_video.id in lyrics_video else None) }}
     </div>
     {% endif %}
     <div class="vids">
-      {% for v in site.videos %}{{ video(v, root, t) }}{% endfor %}
+      {% for v in site.videos %}{{ video(v, root, t, page_url('letras') ~ '#' ~ lyrics_video[v.id] if v.id in lyrics_video else None) }}{% endfor %}
     </div>
     <p class="small mono muted">{{ t('video_privacy') }}</p>
   </div>

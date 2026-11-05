@@ -28,6 +28,48 @@
       "armada queer queer queer",
       "[Bruce LaBruce] Heterosexualitatea herriaren opioa da",
       "masak ma-ma-masak"
+     ],
+     "ca": [
+      "[Hilary Hurst] Interrompem aquest programa per oferir-vos un missatge especial de l'exèrcit de les dones",
+      "exèrcit queer queer queer",
+      "[Bruce LaBruce] L'heterosexualitat és l'opi de les masses",
+      "masses ma-ma-masses"
+     ],
+     "gl": [
+      "[Hilary Hurst] Interrompemos este programa para ofrecervos unha mensaxe especial do exército das mulleres",
+      "exército queer queer queer",
+      "[Bruce LaBruce] A heterosexualidade é o opio das masas",
+      "masas ma-ma-masas"
+     ],
+     "pt": [
+      "[Hilary Hurst] Interrompemos este programa para vos trazer uma mensagem especial do exército das mulheres",
+      "exército queer queer queer",
+      "[Bruce LaBruce] A heterossexualidade é o ópio das massas",
+      "massas ma-ma-massas"
+     ],
+     "fr": [
+      "[Hilary Hurst] Nous interrompons ce programme pour un message spécial de l'armée des femmes",
+      "armée queer queer queer",
+      "[Bruce LaBruce] L'hétérosexualité est l'opium des masses",
+      "masses ma-ma-masses"
+     ],
+     "it": [
+      "[Hilary Hurst] Interrompiamo questo programma per un messaggio speciale dall'esercito delle donne",
+      "esercito queer queer queer",
+      "[Bruce LaBruce] L'eterosessualità è l'oppio delle masse",
+      "masse ma-ma-masse"
+     ],
+     "de": [
+      "[Hilary Hurst] Wir unterbrechen dieses Programm für eine Sondermeldung der Frauenarmee",
+      "Queer-Queer-Queer-Armee",
+      "[Bruce LaBruce] Heterosexualität ist das Opium der Massen",
+      "Massen Ma-Ma-Massen"
+     ],
+     "ja": [
+      "［ヒラリー・ハースト］番組の途中ですが、女たちの軍隊から特別メッセージをお届けします",
+      "クィア・クィア・クィア軍団",
+      "［ブルース・ラブルース］異性愛は大衆のアヘンだ",
+      "大衆、た、た、大衆"
      ]
     },
     {
@@ -65,6 +107,34 @@
      "eu": [
       "Marikoiak, transak, trabolo, bollerak",
       "munstroak, putak, kaleratuak"
+     ],
+     "ca": [
+      "Mariques, trans, traboles, bolleres",
+      "monstrues, putes, desallotjades"
+     ],
+     "gl": [
+      "Maricas, trans, trabolos, bolleras",
+      "monstruas, putas, desaloxadas"
+     ],
+     "pt": [
+      "Bichas, trans, fufas, sapatonas",
+      "monstras, putas, despejadas"
+     ],
+     "fr": [
+      "Pédés, trans, butchs, gouines",
+      "monstresses, putes, expulsées"
+     ],
+     "it": [
+      "Froci, trans, butch, lesbiche",
+      "mostre, puttane, sgomberate"
+     ],
+     "de": [
+      "Tunten, Trans, Butches, Lesben",
+      "Monstras, Huren, Geräumte"
+     ],
+     "ja": [
+      "オカマ、トランス、ブッチ、レズビアン",
+      "モンスター、娼婦、追い出された者たち"
      ]
     },
     {
@@ -82,6 +152,27 @@
      ],
      "eu": [
       "[Aunt Ida (Edith Massey)] Heteroen mundua bizitza gaixo eta aspergarria da"
+     ],
+     "ca": [
+      "[Aunt Ida (Edith Massey)] El món heterosexual és una vida malalta i avorrida"
+     ],
+     "gl": [
+      "[Aunt Ida (Edith Massey)] O mundo heterosexual é unha vida enferma e aburrida"
+     ],
+     "pt": [
+      "[Aunt Ida (Edith Massey)] O mundo heterossexual é uma vida doente e aborrecida"
+     ],
+     "fr": [
+      "[Aunt Ida (Edith Massey)] Le monde hétérosexuel est une vie malade et ennuyeuse"
+     ],
+     "it": [
+      "[Aunt Ida (Edith Massey)] Il mondo eterosessuale è una vita malata e noiosa"
+     ],
+     "de": [
+      "[Aunt Ida (Edith Massey)] Die heterosexuelle Welt ist ein krankes, langweiliges Leben"
+     ],
+     "ja": [
+      "［アイダおばさん（エディス・マッセイ）］異性愛の世界は病んでて退屈な人生"
      ]
     },
     {
@@ -99,6 +190,27 @@
      "es": null,
      "eu": [
       "[La Veneno] Munduko trabesti politena izan naiz"
+     ],
+     "ca": [
+      "[La Veneno] He estat la travesti més guapa del món"
+     ],
+     "gl": [
+      "[La Veneno] Fun a travesti máis guapa do mundo"
+     ],
+     "pt": [
+      "[La Veneno] Fui a travesti mais linda do mundo"
+     ],
+     "fr": [
+      "[La Veneno] J'ai été la travestie la plus belle du monde"
+     ],
+     "it": [
+      "[La Veneno] Sono stata la travesti più bella del mondo"
+     ],
+     "de": [
+      "[La Veneno] Ich war die schönste Travesti der Welt"
+     ],
+     "ja": [
+      "［ラ・ベネノ］私は世界一きれいなトラベスティだった"
      ]
     }
    ]
@@ -142,6 +254,76 @@
       "zure gogoa aske izan dadila",
       "trabolo zure auzoan, begira zer pasada",
       "kontuz hurbiltzen bazara zu ere erretzen zaitu"
+     ],
+     "ca": [
+      "Sóc el ladyboi, travesti, no sóc barata,",
+      "tinc diamants amagats a l'entrepà",
+      "cama llarga, minifaldilla, tota una mocosa",
+      "fer-me callar?… fora, boca de piñata",
+      "Les monstrues en escena, pair-te aquest tema",
+      "que la teva ment sigui lliure",
+      "una trabolo al teu barri, mira quina passada",
+      "compte si t'hi acostes, que també et crema"
+     ],
+     "gl": [
+      "Son o ladyboi, travesti, non son barata,",
+      "teño diamantes agochados no bocadillo",
+      "perna longa, minisaia, toda unha mocosa",
+      "calarme?… quita, boca de piñata",
+      "As monstruas en escena, dixire este tema",
+      "que a túa mente quede ceibe",
+      "unha trabolo no teu barrio, mira que pasada",
+      "coidado se te achegas, que tamén te queima"
+     ],
+     "pt": [
+      "Sou o ladyboi, travesti, não sou barata,",
+      "tenho diamantes escondidos na sandes",
+      "perna longa, minissaia, toda uma pirralha",
+      "calar-me?… sai daqui, boca de piñata",
+      "As monstras em cena, digere este tema",
+      "que a tua mente fique livre",
+      "uma fufa no teu bairro, olha que maravilha",
+      "cuidado se te aproximas, que também te queima"
+     ],
+     "fr": [
+      "Je suis le ladyboi, travestie, je suis pas bon marché,",
+      "j'ai des diamants planqués dans mon sandwich",
+      "jambes longues, minijupe, une vraie gamine",
+      "me faire taire ?… dégage, gueule de piñata",
+      "Les monstresses en scène, digère ce morceau",
+      "que ton esprit soit détaché",
+      "une butch dans ton quartier, quel régal",
+      "fais gaffe si tu t'approches, elle te brûle aussi"
+     ],
+     "it": [
+      "Sono il ladyboi, travesti, non costo poco,",
+      "ho diamanti nascosti nel panino",
+      "gamba lunga, minigonna, una ragazzina impertinente",
+      "farmi stare zitta?… levati, bocca di pentolaccia",
+      "Le mostre in scena, digerisciti questo pezzo",
+      "che la tua mente sia libera",
+      "una butch nel tuo quartiere, guarda che bomba",
+      "attento se ti avvicini, che brucia anche te"
+     ],
+     "de": [
+      "Ich bin der Ladyboi, Travesti, ich bin nicht billig,",
+      "hab Diamanten im Sandwich versteckt",
+      "lange Beine, Minirock, ein echtes Gör",
+      "mich zum Schweigen bringen?… hau ab, Piñata-Maul",
+      "Die Monstras auf der Bühne, verdau diesen Track",
+      "möge dein Geist losgelöst sein",
+      "eine Butch in deinem Viertel, was für ein Genuss",
+      "pass auf, wenn du näher kommst, sie verbrennt dich auch"
+     ],
+     "ja": [
+      "私はレディボーイ、トラベスティは安くない",
+      "サンドイッチにダイヤを隠してる",
+      "長い脚にミニスカ、生意気な小娘",
+      "黙らせる？…どいて、ピニャータ口",
+      "ステージのモンスターたち、この曲を飲み込んで",
+      "あなたの心が解き放たれますように",
+      "地元のブッチ、たまらないでしょ",
+      "近づくなら気をつけて、あんたも焼かれるよ"
      ]
     }
    ]
@@ -216,6 +398,48 @@
       "[Wendy-O Matik] Ez nago erakusgai zuk 'puta' edo 'maitia' oihukatzeko",
       "Gaixotasun bitarra",
       "[Kathleen Hanna] Eskubide putaren bat dugu hostil izateko"
+     ],
+     "ca": [
+      "[Kathleen Hanna] Totes les noies al davant, no és broma",
+      "[Wendy-O Matik] No sóc un aparador perquè em cridis bitch o nena",
+      "Malaltia binària",
+      "[Kathleen Hanna] Tenim tot el puto dret a ser hostils"
+     ],
+     "gl": [
+      "[Kathleen Hanna] Todas as rapazas diante, non é broma",
+      "[Wendy-O Matik] Non estou en exposición para que me berres bitch ou nena",
+      "Enfermidade binaria",
+      "[Kathleen Hanna] Temos todo o puto dereito a ser hostís"
+     ],
+     "pt": [
+      "[Kathleen Hanna] Todas as raparigas à frente, não estou a brincar",
+      "[Wendy-O Matik] Não estou em exposição para me gritares bitch ou baby",
+      "Doença binária",
+      "[Kathleen Hanna] Temos a porra do direito de ser hostis"
+     ],
+     "fr": [
+      "[Kathleen Hanna] Toutes les filles devant, je rigole pas",
+      "[Wendy-O Matik] Je ne suis pas en vitrine pour que tu me cries salope ou bébé",
+      "Maladie binaire",
+      "[Kathleen Hanna] On a le putain de droit d'être hostiles"
+     ],
+     "it": [
+      "[Kathleen Hanna] Tutte le ragazze davanti, non scherzo",
+      "[Wendy-O Matik] Non sono in vetrina perché tu mi urli troia o piccola",
+      "Malattia binaria",
+      "[Kathleen Hanna] Abbiamo il fottuto diritto di essere ostili"
+     ],
+     "de": [
+      "[Kathleen Hanna] Alle Mädchen nach vorn, kein Witz",
+      "[Wendy-O Matik] Ich bin nicht ausgestellt, damit du mir Schlampe oder Baby hinterherrufst",
+      "Binäre Krankheit",
+      "[Kathleen Hanna] Wir haben das verdammte Recht, feindselig zu sein"
+     ],
+     "ja": [
+      "［キャスリーン・ハンナ］女の子はみんな前へ、本気だよ",
+      "［ウェンディ・オー・マティック］ビッチとかベイビーとか叫ばれるための見せ物じゃない",
+      "二元論病",
+      "［キャスリーン・ハンナ］私たちには敵意をもつクソったれな権利がある"
      ]
     },
     {
@@ -235,6 +459,27 @@
      ],
      "eu": [
       "Ez naiz existitzen, genero ezezagunekoa naiz"
+     ],
+     "ca": [
+      "No existeixo, sóc de gènere desconegut"
+     ],
+     "gl": [
+      "Non existo, son de xénero descoñecido"
+     ],
+     "pt": [
+      "Não existo, sou de género desconhecido"
+     ],
+     "fr": [
+      "Je n'existe pas, je suis de genre inconnu"
+     ],
+     "it": [
+      "Non esisto, sono di genere sconosciuto"
+     ],
+     "de": [
+      "Ich existiere nicht, ich bin unbekannten Geschlechts"
+     ],
+     "ja": [
+      "私は存在しない、性別不明"
      ]
     }
    ]
@@ -266,6 +511,48 @@
       "nire azazkalak, nire bizarra, nire takoi hiltzaileak",
       "zure desiren armairuak nazka pixka bat ematen du, txo",
       "ez naiz porno hutsa, utzi mandatzen"
+     ],
+     "ca": [
+      "Et quedes parat amb el meu caminar",
+      "les meves ungles, la meva barba, els meus talons de matar",
+      "el teu armari de desitjos fa una mica de fàstic, xaval",
+      "no sóc només porno, deixa'm dominar"
+     ],
+     "gl": [
+      "Quedas abraiado co meu camiñar",
+      "as miñas unllas, a miña barba, os meus tacóns de matar",
+      "o teu armario de desexos dá noxiño, rapaz",
+      "non son só porno, déixame dominar"
+     ],
+     "pt": [
+      "Ficas pasmado com o meu andar",
+      "as minhas unhas, a minha barba, os meus saltos de matar",
+      "o teu armário de desejos dá nojinho, puto",
+      "não sou só porno, deixa-me dominar"
+     ],
+     "fr": [
+      "Tu restes bouche bée devant ma démarche",
+      "mes ongles, ma barbe, mes talons qui tuent",
+      "ton placard de désirs, c'est un peu dégueu, mec",
+      "je suis pas que du porno, laisse-moi dominer"
+     ],
+     "it": [
+      "Rimani a bocca aperta per la mia camminata",
+      "le mie unghie, la mia barba, i miei tacchi da urlo",
+      "il tuo armadio di desideri fa un po' schifo, ragazzo",
+      "non sono solo porno, lasciami dominare"
+     ],
+     "de": [
+      "Du bist baff von meinem Gang",
+      "meine Nägel, mein Bart, meine Killer-Heels",
+      "dein Schrank voller Begierden ist echt eklig, Junge",
+      "ich bin nicht nur Porno, lass mich dominieren"
+     ],
+     "ja": [
+      "私の歩き方にあんたはぽかん",
+      "私の爪、私のヒゲ、殺人級のヒール",
+      "あんたのクローゼットの中の欲望はちょっとキモいよ、坊や",
+      "私はポルノだけじゃない、支配させて"
      ]
     },
     {
@@ -292,6 +579,48 @@
       "zure gogoa aske izan dadila",
       "trabolo zure auzoan, begira zer pasada",
       "kontuz hurbiltzen bazara zu ere erretzen zaitu"
+     ],
+     "ca": [
+      "Les monstrues en escena, pair-te aquest tema",
+      "que la teva ment sigui lliure",
+      "una trabolo al teu barri, mira quina passada",
+      "compte si t'hi acostes, que també et crema"
+     ],
+     "gl": [
+      "As monstruas en escena, dixire este tema",
+      "que a túa mente quede ceibe",
+      "unha trabolo no teu barrio, mira que pasada",
+      "coidado se te achegas, que tamén te queima"
+     ],
+     "pt": [
+      "As monstras em cena, digere este tema",
+      "que a tua mente fique livre",
+      "uma fufa no teu bairro, olha que maravilha",
+      "cuidado se te aproximas, que também te queima"
+     ],
+     "fr": [
+      "Les monstresses en scène, digère ce morceau",
+      "que ton esprit soit détaché",
+      "une butch dans ton quartier, quel régal",
+      "fais gaffe si tu t'approches, elle te brûle aussi"
+     ],
+     "it": [
+      "Le mostre in scena, digerisciti questo pezzo",
+      "che la tua mente sia libera",
+      "una butch nel tuo quartiere, guarda che bomba",
+      "attento se ti avvicini, che brucia anche te"
+     ],
+     "de": [
+      "Die Monstras auf der Bühne, verdau diesen Track",
+      "möge dein Geist losgelöst sein",
+      "eine Butch in deinem Viertel, was für ein Genuss",
+      "pass auf, wenn du näher kommst, sie verbrennt dich auch"
+     ],
+     "ja": [
+      "ステージのモンスターたち、この曲を飲み込んで",
+      "あなたの心が解き放たれますように",
+      "地元のブッチ、たまらないでしょ",
+      "近づくなら気をつけて、あんたも焼かれるよ"
      ]
     }
    ]
@@ -387,6 +716,90 @@
       "gure identitateak ez dira falazia",
       "hemen dator dis-identzia auzo prekariotik",
       "ertzetik"
+     ],
+     "ca": [
+      "Mira aquell Ladyboi del barri precari",
+      "ve a trencar les regles de l'escenari",
+      "ajunta els suposats, passa a no binari",
+      "la teva ment, vull que surti de l'armari",
+      "ajunta, revolta, organitza la ràbia",
+      "transforma l'entorn, quina eficàcia",
+      "aixafa el sistema amb elegància",
+      "les nostres identitats no són una fal·làcia",
+      "aquí arriba la dissidència des del barri precari",
+      "des del marge"
+     ],
+     "gl": [
+      "Mira ese Ladyboi do barrio precario",
+      "vén romper as regras do escenario",
+      "xunta os supostos, pasa a non binario",
+      "a túa mente, quero que saia do armario",
+      "xunta, subleva, organiza a rabia",
+      "transforma o contorno, que eficacia",
+      "esmaga o sistema con elegancia",
+      "as nosas identidades non son falacia",
+      "aquí chega a disidencia dende o barrio precario",
+      "dende a marxe"
+     ],
+     "pt": [
+      "Olha aquele Ladyboi do bairro precário",
+      "vem quebrar as regras do palco",
+      "junta os supostos, passa a não binário",
+      "a tua mente, quero que saia do armário",
+      "junta, subleva, organiza a raiva",
+      "transforma o meio, que eficácia",
+      "esmaga o sistema com elegância",
+      "as nossas identidades não são falácia",
+      "aqui chega a dissidência do bairro precário",
+      "a partir da margem"
+     ],
+     "fr": [
+      "Regarde ce Ladyboi du quartier précaire",
+      "il vient casser les règles de la scène",
+      "rassemble les soi-disant, passe au non binaire",
+      "ton esprit, je veux qu'il sorte du placard",
+      "rassemble, soulève, organise la rage",
+      "transforme ton entourage, quelle efficacité",
+      "écrase le système avec élégance",
+      "nos identités ne sont pas un sophisme",
+      "voici la dissidence venue du quartier précaire",
+      "depuis la marge"
+     ],
+     "it": [
+      "Guarda quel Ladyboi del quartiere precario",
+      "viene a rompere le regole del palco",
+      "metti insieme i presunti, passa al non binario",
+      "la tua mente, voglio che esca dall'armadio",
+      "unisci, solleva, organizza la rabbia",
+      "trasforma l'ambiente, che efficacia",
+      "schiaccia il sistema con eleganza",
+      "le nostre identità non sono fallacia",
+      "ecco che arriva la dissidenza dal quartiere precario",
+      "dal margine"
+     ],
+     "de": [
+      "Schau dir den Ladyboi aus dem prekären Viertel an",
+      "er kommt, um die Regeln der Bühne zu brechen",
+      "sammel die sogenannten, wechsel zu nicht-binär",
+      "dein Kopf, ich will, dass er sich outet",
+      "vereinen, aufstehen, die Wut organisieren",
+      "das Umfeld verändern, wie effizient",
+      "das System mit Eleganz zerschlagen",
+      "unsere Identitäten sind kein Trugschluss",
+      "hier kommt die Dissidenz aus dem prekären Viertel",
+      "vom Rand"
+     ],
+     "ja": [
+      "見て、あの貧しい地区のレディボーイ",
+      "ステージのルールを壊しにやってくる",
+      "いわゆる何とかを集めて、ノンバイナリーへ切り替え",
+      "あんたの頭、クローゼットから出してやりたい",
+      "集まって、蜂起して、怒りを組織して",
+      "まわりを変える、なんて効率的",
+      "エレガントにシステムを叩きつぶす",
+      "私たちのアイデンティティはまやかしじゃない",
+      "貧しい地区から異議がやってきた",
+      "周縁から"
      ]
     },
     {
@@ -424,6 +837,27 @@
      ],
      "eu": [
       "[Kathleen Hanna] eskubide putaren bat hostil izateko"
+     ],
+     "ca": [
+      "[Kathleen Hanna] tot el puto dret a ser hostils"
+     ],
+     "gl": [
+      "[Kathleen Hanna] todo o puto dereito a ser hostís"
+     ],
+     "pt": [
+      "[Kathleen Hanna] a porra do direito de ser hostis"
+     ],
+     "fr": [
+      "[Kathleen Hanna] le putain de droit d'être hostiles"
+     ],
+     "it": [
+      "[Kathleen Hanna] il fottuto diritto di essere ostili"
+     ],
+     "de": [
+      "[Kathleen Hanna] das verdammte Recht, feindselig zu sein"
+     ],
+     "ja": [
+      "［キャスリーン・ハンナ］敵意をもつクソったれな権利"
      ]
     },
     {
@@ -441,6 +875,27 @@
      "es": null,
      "eu": [
       "trabolo… marikoiak..."
+     ],
+     "ca": [
+      "traboles… mariques..."
+     ],
+     "gl": [
+      "trabolos… maricas..."
+     ],
+     "pt": [
+      "fufas… bichas..."
+     ],
+     "fr": [
+      "butchs… pédés..."
+     ],
+     "it": [
+      "butch… froci..."
+     ],
+     "de": [
+      "Butches… Tunten..."
+     ],
+     "ja": [
+      "ブッチ…オカマ…"
      ]
     },
     {
@@ -478,6 +933,27 @@
      ],
      "eu": [
       "[Lynn Breedlove] Hau da feminismo berria. Gustatzen ez bazaizu, txupatu nire zakila."
+     ],
+     "ca": [
+      "[Lynn Breedlove] Aquest és el nou feminisme. Si no t'agrada, xucla-me-la."
+     ],
+     "gl": [
+      "[Lynn Breedlove] Este é o novo feminismo. Se non che gusta, chúpama."
+     ],
+     "pt": [
+      "[Lynn Breedlove] Este é o novo feminismo. Se não gostas, chupa-ma."
+     ],
+     "fr": [
+      "[Lynn Breedlove] C'est ça le nouveau féminisme. Si ça te plaît pas, suce-moi."
+     ],
+     "it": [
+      "[Lynn Breedlove] Questo è il nuovo femminismo. Se non ti piace, succhiamelo."
+     ],
+     "de": [
+      "[Lynn Breedlove] Das ist der neue Feminismus. Wenn's dir nicht passt, lutsch meinen Schwanz."
+     ],
+     "ja": [
+      "［リン・ブリードラブ］これが新しいフェミニズム。気に入らないならしゃぶりな。"
      ]
     }
    ]

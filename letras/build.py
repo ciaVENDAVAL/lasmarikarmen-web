@@ -63,7 +63,7 @@ for si,s in enumerate(S):
         for g in tbk['segments']:
             segs.append({"from":g['from'],"to":g['to'],"lang":g['lang'],"skip":bool(g.get('skip')),"keep":bool(g.get('keep')),
                 "o":[clean(x).replace('Jurancelli','Jurancelli') for x in g['orig']],
-                **{k:([clean(x) for x in g[k]] if g.get(k) else None) for k in('en','es','eu')}})
+                **{k:([clean(x) for x in g[k]] if g.get(k) else None) for k in('es','en','ca','gl','eu','pt','fr','it','de','ja')}})
         blocks.append({"segs":segs,"qs":(qs.get(src,[]) if src==bi else qs.get(src,[])),"after":after})
     # drop trailing hr
     while blocks and blocks[-1].get('hr'): blocks.pop()

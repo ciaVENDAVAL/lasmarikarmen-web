@@ -20,7 +20,7 @@ Social icons, contact and press kit appear once, in the footer of every page.
 Bottom left: pink triangle ▼ opens the accessibility options. Bottom right: ▲ back to top.
 
 **Gigs:** add lines under `gigs:` in `content/site.yaml` (posters in `assets/img/posters/`). Past dates move by themselves to "Lo petamos…", grouped by year (the site rebuilds every night).
-**Lyrics:** edit lyrics in `letras/songs.json`, translations in `letras/out/*.json`, descriptions and credits in `letras/build.py` (texts starting with `@` are `lyr_*` keys in `content/text.yaml`).
+**Lyrics:** edit lyrics in `letras/songs.json`, translations in `letras/out/*.json` (one array per language: es en ca gl eu pt fr it de ja; each language page shows only its own), descriptions and credits in `letras/build.py` (texts starting with `@` are `lyr_*` keys in `content/text.yaml`).
 **Shop:** products are under `merch:` in `site.yaml`; remove a line when it sells out.
 
 ## Where things live
