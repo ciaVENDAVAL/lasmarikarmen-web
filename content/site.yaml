@@ -112,7 +112,7 @@ radio:
   spotify_embed: "https://open.spotify.com/embed/playlist/37i9dQZF1E4wBvv8s9g5NW"
 
 # Muted, looping video behind the home-page photo (YouTube id). Remove to show only the photo.
-hero_video: {id: ou99LABzxKU, title: "abuelita folclórika (live) · Paral·lel 62"}
+hero_video: {id: flv6o1dghxk, title: "el stalker de tu barrio"}
 
 # Big video at the top of the music page and in the home-page music teaser.
 featured_video: {id: flv6o1dghxk, title: "el stalker de tu barrio", feat: "prod. Suzio Tarik"}
