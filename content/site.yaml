@@ -28,9 +28,31 @@ cname: ""
 pages_url: https://ciavendaval.github.io/lasmarikarmen-web
 site_url: https://www.lasmarikarmen.com
 
-# Press kit PDF per language (files in assets/presskit/). Missing ones fall back to es.
+# Press kit PDF per language (files in assets/presskit/). Built in the press-kit repo (lasmarikarmen) from the same master text.
 presskit:
   es: assets/presskit/Las-Marikarmen-presskit-2026-es.pdf
+  en: assets/presskit/Las-Marikarmen-presskit-2026-en.pdf
+  ca: assets/presskit/Las-Marikarmen-presskit-2026-ca.pdf
+  gl: assets/presskit/Las-Marikarmen-presskit-2026-gl.pdf
+  eu: assets/presskit/Las-Marikarmen-presskit-2026-eu.pdf
+  pt: assets/presskit/Las-Marikarmen-presskit-2026-pt.pdf
+  fr: assets/presskit/Las-Marikarmen-presskit-2026-fr.pdf
+  it: assets/presskit/Las-Marikarmen-presskit-2026-it.pdf
+  de: assets/presskit/Las-Marikarmen-presskit-2026-de.pdf
+  ja: assets/presskit/Las-Marikarmen-presskit-2026-ja.pdf
+
+# Technical rider PDF per language (files in assets/rider/). Built in the press-kit repo from the same master text.
+rider:
+  es: assets/rider/Las-Marikarmen-rider-2026-es.pdf
+  en: assets/rider/Las-Marikarmen-rider-2026-en.pdf
+  ca: assets/rider/Las-Marikarmen-rider-2026-ca.pdf
+  gl: assets/rider/Las-Marikarmen-rider-2026-gl.pdf
+  eu: assets/rider/Las-Marikarmen-rider-2026-eu.pdf
+  pt: assets/rider/Las-Marikarmen-rider-2026-pt.pdf
+  fr: assets/rider/Las-Marikarmen-rider-2026-fr.pdf
+  it: assets/rider/Las-Marikarmen-rider-2026-it.pdf
+  de: assets/rider/Las-Marikarmen-rider-2026-de.pdf
+  ja: assets/rider/Las-Marikarmen-rider-2026-ja.pdf
 
 contact:
   person: tyle fernández

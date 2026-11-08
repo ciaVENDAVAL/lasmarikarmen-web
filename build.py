@@ -131,11 +131,12 @@ def build(langs, text, site):
             return f"{root}{target_sub}{name}"
 
         presskit = site["presskit"].get(lang) or site["presskit"][SOURCE]
+        rider = (site.get("rider") or {}).get(lang) or (site.get("rider") or {}).get(SOURCE)
         for slug, tpl, nav_key, title_key in PAGES:
             ctx = dict(
                 t=t, lang=lang, langs=langs if len(langs) > 1 else [], site=site,
                 lang_names=site["language_names"], root=root, page_url=page_url, og_tags=og_tags, lyrics_json=lambda: lyrics_for(lyrics, t, page_url, lang), lyrics_video={s['desc'].get('video'): s['slug'] for s in lyrics if s['desc'].get('video')},
-                slug=slug, pages=PAGES, nav=NAV, icons=icons, asset_v=asset_v, gigs=gigs, past_gigs=past_gigs, past_years=past_years, presskit=root + presskit,
+                slug=slug, pages=PAGES, nav=NAV, icons=icons, asset_v=asset_v, gigs=gigs, past_gigs=past_gigs, past_years=past_years, presskit=root + presskit, rider=(root + rider) if rider else None,
                 page_title=(t(title_key) if title_key else None),
                 canonical=f"{site['site_url'].rstrip('/')}/{sub}{'' if slug == 'index' else slug + '.html'}",
             )

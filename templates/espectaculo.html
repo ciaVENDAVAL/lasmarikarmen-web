@@ -29,9 +29,10 @@
         <dt class="label pk">{{ t('tech_setup_l') }}</dt><dd>{{ t('tech_setup') }}</dd>
         <dt class="label pk">{{ t('tech_video_l') }}</dt><dd>{{ t('tech_video') }}</dd>
       </dl>
-      <p class="mono small">{{ t('contact_rider') }}</p>
+      {% if rider %}<p class="mono small"><a href="{{ rider }}" download>{{ t('web_rider') }}</a></p>{% else %}<p class="mono small">{{ t('contact_rider') }}</p>{% endif %}
       <p class="tech__links">
         <a class="btn" href="{{ presskit }}" download>{{ t('web_download') }}</a>
+        {% if rider %}<a class="btn" href="{{ rider }}" download>{{ t('web_rider') }}</a>{% endif %}
         {{ more(page_url('contacto'), t('nav_contact')) }}
       </p>
     </aside>

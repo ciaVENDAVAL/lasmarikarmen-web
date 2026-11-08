@@ -98,6 +98,7 @@ for(var k in s){if(k==='size'){h.style.fontSize=s.size+'%'}else if(s[k]){h.class
     <div>
       <p class="label gr">Press kit</p>
       <p><a href="{{ presskit }}">{{ t('web_download') }}</a></p>
+      {% if rider %}<p><a href="{{ rider }}">{{ t('web_rider') }}</a></p>{% endif %}
       <p class="label gr">{{ t('nav_shop') }}</p>
       <p><a href="{{ site.bandcamp_merch }}" target="_blank" rel="noopener">Bandcamp merch ↗</a></p>
     </div>

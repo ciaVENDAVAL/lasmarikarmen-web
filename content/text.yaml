@@ -271,6 +271,17 @@ web_download:
   it: "Scarica la cartella stampa (PDF)"
   de: "Pressemappe herunterladen (PDF)"
   ja: "プレスキットをダウンロード（PDF）"
+web_rider:
+  es: "Rider técnico (PDF)"
+  en: "Technical rider (PDF)"
+  ca: "Rider tècnic (PDF)"
+  gl: "Rider técnico (PDF)"
+  eu: "Rider teknikoa (PDF)"
+  pt: "Rider técnico (PDF)"
+  fr: "Fiche technique (PDF)"
+  it: "Rider tecnico (PDF)"
+  de: "Technik-Rider (PDF)"
+  ja: "テクニカルライダー（PDF）"
 web_write_us:
   es: Escríbenos
   en: "Write to us"
