@@ -244,6 +244,7 @@ gigs:
   - {date: "2026-05-01", city: "Iruña", venue: "Txantrea", event: "Txantreako jaiak 2026", posters: [assets/img/posters/2026-05-01-txantrea.jpg]}
   - {date: "2026-06-12", city: "Barcelona", venue: "Parc de la Guineueta", event: "Simbiruta 2026", posters: [assets/img/posters/2026-06-12-parc-de-la-guineueta.jpg, assets/img/posters/2026-06-12-parc-de-la-guineueta-2.jpg]}
   - {date: "2026-07-25", city: "Frankfurt", venue: "Sommerwerft", event: "Sommerwerft Festival", posters: [assets/img/posters/2026-07-25-sommerwerft.jpg]}
+  - {date: "2026-09-19", city: "Esplugues de Llobregat", venue: "Parc de les Esplugues", event: "Festa Major de Sant Mateu", posters: [assets/img/posters/2026-09-19-esplugues-sant-mateu.jpg]}
 
 # Press, newest first. date: YYYY-MM (month names come from text.yaml).
 # title: headline in its original language. note_key: optional translated note.

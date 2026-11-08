@@ -129,16 +129,16 @@ nav_bio:
   de: "Über uns"
   ja: "わたしたち"
 nav_show:
-  es: Espectáculo
-  en: "Show"
-  ca: "Espectacle"
-  gl: "Espectáculo"
-  eu: "Ikuskizuna"
-  pt: "Espetáculo"
-  fr: "Spectacle"
-  it: "Spettacolo"
-  de: "Show"
-  ja: "ショー"
+  es: "Concierto"
+  en: "Concert"
+  ca: "Concert"
+  gl: "Concerto"
+  eu: "Kontzertua"
+  pt: "Concerto"
+  fr: "Concert"
+  it: "Concerto"
+  de: "Konzert"
+  ja: "コンサート"
 nav_music:
   es: Música
   en: "Music"
@@ -606,16 +606,16 @@ cover_lines:
   de: "<b>Drag-Band</b> · transfeministisch · queer<br>Elektronischer Hip-Hop mit Live-Bläsern<br>Video, Rauch und ganz viel Glitzer"
   ja: "<b>ドラァグバンド</b> · トランスフェミニスト · クィア<br>管楽器生演奏のエレクトロ・ヒップホップ<br>映像、スモーク、そして大量のグリッター"
 cover_sticker:
-  es: El espectáculo
-  en: "The show"
-  ca: "L'espectacle"
-  gl: "O espectáculo"
-  eu: "Ikuskizuna"
-  pt: "O espetáculo"
-  fr: "Le spectacle"
-  it: "Lo spettacolo"
-  de: "Die Show"
-  ja: "ショー"
+  es: "El concierto"
+  en: "The concert"
+  ca: "El concert"
+  gl: "O concerto"
+  eu: "Kontzertua"
+  pt: "O concerto"
+  fr: "Le concert"
+  it: "Il concerto"
+  de: "Das Konzert"
+  ja: "コンサート"
 home_intro:
   es: "Somos Las Marikarmen, pura energía queer punk que mezcla electrónica con el power de dos saxos y un clarinete en vivo. Canalizamos activismo desde Euskadi, Leganés y un nomadismo nórdico, y lo mezclamos en Collserola con performance y una explosión sonora que desafía todas las etiquetas de géneros. Esto no es solo música: es un statement, un espectáculo, un viaje."
   en: "We are Las Marikarmen, pure queer punk energy mixing electronics with the power of two saxophones and a clarinet played live. We channel activism from the Basque Country, Leganés and a Nordic nomad life, and mix it in Collserola with performance and a sonic explosion that defies every genre label. This isn't just music: it's a statement, a show, a journey."
@@ -685,16 +685,16 @@ estupenda:
 
 # ───────── who we are ─────────
 bio_tag:
-  es: Quiénes somos
-  en: "About us"
-  ca: "Qui som"
-  gl: "Quen somos"
-  eu: "Nor gara"
-  pt: "Quem somos"
-  fr: "Qui sommes-nous"
-  it: "Chi siamo"
-  de: "Über uns"
-  ja: "わたしたち"
+  es: "Qué queremos"
+  en: "What we want"
+  ca: "Què volem"
+  gl: "Que queremos"
+  eu: "Zer nahi dugun"
+  pt: "O que queremos"
+  fr: "Ce que nous voulons"
+  it: "Cosa vogliamo"
+  de: "Was wir wollen"
+  ja: "わたしたちが望むこと"
 bio_title_1:
   es: Bienvenide a la
   en: "Welcome to the"
@@ -752,7 +752,7 @@ bio_p3:
   ja: "ハウス・オブ・マリカルメン（ボールルーム文化でいう「ハウス」、つまり自分たちで選んだ家族）には、母<b>レディ・マリカルメン</b>がいます。トランスフェミニズムの世界の偉大な先駆者です。彼女が亡くなった今、わたしたちはその遺志を受け継ぎ、闘いを続けています。根絶やしにされた古いクィアな生き方を抱きしめ、異性愛家父長制、シスノーマティビティ、そして押しつけられた二元論を壊すために。"
 bio_banner:
   es: ¡Destruir el heteropatriarcado, la cisnormalidad y el binarismo obligado!
-  en: "Destroy heteropatriarchy, cisnormativity and compulsory binarism!"
+  en: "Destroy the heteropatriarchy, cis-normativity and the compulsory gender binary!"
   ca: "Destruir l'heteropatriarcat, la cisnormativitat i el binarisme obligat!"
   gl: "Destruír o heteropatriarcado, a cisnormatividade e o binarismo obrigado!"
   eu: "Heteropatriarkatua, zisnormaltasuna eta derrigorrezko binarismoa suntsitu!"
@@ -976,16 +976,16 @@ bio_conta:
 
 # ───────── show ─────────
 show_kicker:
-  es: El espectáculo · 60 min
-  en: "The show · 60 min"
-  ca: "L'espectacle · 60 min"
-  gl: "O espectáculo · 60 min"
-  eu: "Ikuskizuna · 60 min"
-  pt: "O espetáculo · 60 min"
-  fr: "Le spectacle · 60 min"
-  it: "Lo spettacolo · 60 min"
-  de: "Die Show · 60 Min."
-  ja: "ショー · 60分"
+  es: "El concierto · 60 min"
+  en: "The concert · 60 min"
+  ca: "El concert · 60 min"
+  gl: "O concerto · 60 min"
+  eu: "Kontzertua · 60 min"
+  pt: "O concerto · 60 min"
+  fr: "Le concert · 60 min"
+  it: "Il concerto · 60 min"
+  de: "Das Konzert · 60 Min."
+  ja: "コンサート · 60分"
 show_deck:
   es: El funeral folclórico de Lady Marikarmen se convierte en <b>una fiesta multimedia</b> de hip-hop electrónico, vientos y travestismo.
   en: "Lady Marikarmen's folkloric funeral becomes <b>a multimedia party</b> of electronic hip-hop, horns and drag."
@@ -1253,16 +1253,16 @@ music_deck:
   de: "Zwei Alben, ein Radio und sechs Musikvideos."
   ja: "アルバム2枚、ラジオ1つ、ミュージックビデオ6本。"
 album_kicker:
-  es: El disco del espectáculo
-  en: "The album of the show"
-  ca: "El disc de l'espectacle"
-  gl: "O disco do espectáculo"
-  eu: "Ikuskizunaren diskoa"
-  pt: "O disco do espetáculo"
-  fr: "L'album du spectacle"
-  it: "Il disco dello spettacolo"
-  de: "Das Album zur Show"
-  ja: "ショーのアルバム"
+  es: "El disco del concierto"
+  en: "The album of the concert"
+  ca: "El disc del concert"
+  gl: "O disco do concerto"
+  eu: "Kontzertuaren diskoa"
+  pt: "O disco do concerto"
+  fr: "L'album du concert"
+  it: "Il disco del concerto"
+  de: "Das Album zum Konzert"
+  ja: "コンサートのアルバム"
 album_cover_alt:
   es: El fanzine de «Nos pegan!» con la portada del disco
   en: "The «Nos pegan!» fanzine with the album cover"
