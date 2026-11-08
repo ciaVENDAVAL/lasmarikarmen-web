@@ -180,4 +180,17 @@
       el.replaceWith(f);
     });
   });
+
+  /* swipe galleries: dots follow the scroll, a tap on a dot jumps there */
+  Array.prototype.forEach.call(document.querySelectorAll('.swipe'), function (sw) {
+    var dots = sw.parentNode.querySelectorAll('.swipe__dots span');
+    sw.addEventListener('scroll', function () {
+      var i = Math.round(sw.scrollLeft / sw.clientWidth);
+      Array.prototype.forEach.call(dots, function (d, k) { d.classList.toggle('on', k === i); });
+    }, { passive: true });
+    Array.prototype.forEach.call(dots, function (d, k) {
+      d.parentNode.removeAttribute('aria-hidden'); d.style.cursor = 'pointer';
+      d.addEventListener('click', function () { sw.scrollTo({ left: k * sw.clientWidth, behavior: 'smooth' }); });
+    });
+  });
 })();

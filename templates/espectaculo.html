@@ -2,7 +2,7 @@
 {% from "_macros.html" import more %}
 {% block main %}
 <section class="showband showband--page">
-  <img class="showband__img" src="{{ root }}assets/img/photos/live-funeral.jpg" alt="{{ t('funeral_alt')|striptags }}" width="800" height="533">
+  <img class="showband__img" src="{{ root }}assets/img/photos/live-night-crowd.jpg" alt="" width="800" height="532" style="object-position: center 40%">
   <div class="wrap showband__in">
     <p class="mono kicker">{{ t('show_kicker') }}</p>
     <h1 class="giant">Nos <span class="pk">pegan!</span></h1>
@@ -30,7 +30,10 @@
         <dt class="label pk">{{ t('tech_video_l') }}</dt><dd>{{ t('tech_video') }}</dd>
       </dl>
       <p class="mono small">{{ t('contact_rider') }}</p>
-      {{ more(page_url('contacto'), t('nav_contact')) }}
+      <p class="tech__links">
+        <a class="btn" href="{{ presskit }}" download>{{ t('web_download') }}</a>
+        {{ more(page_url('contacto'), t('nav_contact')) }}
+      </p>
     </aside>
   </div>
 </section>

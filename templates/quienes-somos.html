@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% from "_macros.html" import pagehead %}
 {% block main %}
-{% set bb = (t('bio_banner')|string).split(', ', 1) if '、' not in (t('bio_banner')|string) else (t('bio_banner')|string).split('、', 1) %}
-{{ pagehead(root ~ 'assets/img/band-wheelbarrow.jpg', t('bio_tag'), bb[0] ~ (',' if bb|length > 1 and '、' not in (t('bio_banner')|string) else ('、' if bb|length > 1 else '')), bb[1] if bb|length > 1 else '', 'center 40%') }}
+{% set bb = (t('bio_banner')|string|replace('¡', '')).split(', ', 1) if '、' not in (t('bio_banner')|string|replace('¡', '')) else (t('bio_banner')|string|replace('¡', '')).split('、', 1) %}
+{{ pagehead(root ~ 'assets/img/band-wheelbarrow.jpg', t('bio_tag'), bb[0] ~ (',' if bb|length > 1 and '、' not in (t('bio_banner')|string|replace('¡', '')) else ('、' if bb|length > 1 else '')), bb[1] if bb|length > 1 else '', 'center 40%') }}
 
 <section class="band band--cream">
   <div class="wrap bio">

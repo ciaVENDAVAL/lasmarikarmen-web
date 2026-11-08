@@ -24,7 +24,11 @@
 <section class="band band--ink">
   <div class="wrap clip">
     <figure>
-      <img src="{{ root }}assets/img/photos/enderrock-orgull-queer.jpg" alt="{{ t('clip_alt')|striptags }}" loading="lazy" width="800" height="509">
+      <div class="swipe" tabindex="0" aria-label="Enderrock · {{ month(t, '2021-12') }}">
+        <img src="{{ root }}assets/img/photos/enderrock-orgull-queer.jpg" alt="{{ t('clip_alt')|striptags }}" loading="lazy" width="800" height="509">
+        <img src="{{ root }}assets/img/photos/trio-mirror-dome.jpg" alt="{{ t('hero_alt_dome')|striptags }}" loading="lazy" width="1800" height="1200">
+      </div>
+      <div class="swipe__dots" aria-hidden="true"><span class="on"></span><span></span></div>
       <figcaption class="mono small">Enderrock · {{ month(t, '2021-12') }} · {{ t('photo_by') }} Juan Miguel Morales</figcaption>
     </figure>
   </div>
