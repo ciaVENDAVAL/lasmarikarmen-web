@@ -19,7 +19,7 @@ D['8000']={"video":"SLqGfI1X_9A","text":[],"credits":[]}
 D['abuelita']={"video":"ou99LABzxKU","text":["@lyr_d_abuelita1","@lyr_d_abuelita2"],"credits":[("@lyr_c_with","Capitano Barbaconyo",CAPI)],"src":[("SoundCloud","https://soundcloud.com/lasmarikarmen")]}
 D['alta bajeza']={"video":"KQJ2nJZBHCs","text":[],"credits":[("@lyr_c_with","Kiltreo Oskuro",KIL)],"src":[MUS]}
 D['amantalak']=track(6)
-D['nos pegan']=track(1,["@lyr_d_nospegan"])
+D['nos pegan']=track(1)
 D['nos pegan']['src']=[MUS,("@nav_show","@page:espectaculo")]
 D['compost']={"video":"JFXqMnMFqnI","text":["@lyr_d_compost"],"credits":[("@lyr_c_first_album","Compost your Gender (2021)"),("@lyr_c_with","Capitano Barbaconyo",CAPI)],"src":[MUS]}
 D['el afilador']=track(5,["@lyr_d_single:2023"]); D['el afilador']['video']="8dQ9giAwwBE"
