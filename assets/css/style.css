@@ -589,3 +589,10 @@ html.a11y-contrast .ly-chip[aria-pressed="true"], html.a11y-contrast .ly-mini[ar
 .product__img--tall { aspect-ratio: 9 / 16; }
 .product__img--tall img { object-fit: cover; }
 .order__thumb { width: 56px; height: 56px; object-fit: cover; object-position: center 40%; border: 2px solid var(--ink); background: #fff; flex: none; }
+.gal7 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(.5rem, 1.5vw, 1rem); }
+.gal7 img { width: 100%; height: 100%; aspect-ratio: 3/2; object-fit: cover; }
+.gal7 img:first-child { grid-column: span 2; grid-row: span 2; }
+.gal7 img:nth-child(n+6) { grid-column: span 2; }
+@media (max-width: 700px) { .gal7 { grid-template-columns: 1fr 1fr; } .gal7 img:first-child { grid-row: auto; } .gal7 img:nth-child(n+6) { grid-column: auto; } }
+.credit-line a { color: inherit; }
+

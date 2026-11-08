@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_macros.html" import more %}
+{% from "_macros.html" import more, month %}
 {% block main %}
 <section class="showband showband--page">
   <img class="showband__img" src="{{ root }}assets/img/photos/live-night-crowd.jpg" alt="" width="800" height="532" style="object-position: center 40%">
@@ -48,6 +48,19 @@
     <img src="{{ root }}assets/img/photos/live-smoke-green.jpg" alt="" loading="lazy" width="800" height="532">
   </div>
   <p class="wrap credit-line mono">{{ t('photo_credit_line') }}</p>
+</section>
+
+<section class="band band--ink band--sep" aria-label="{{ t('photo_by') }} Jordi Arques">
+  <div class="wrap gal7">
+    <img src="{{ root }}assets/img/photos/jordi-dance-stage.jpg" alt="" loading="lazy" width="582" height="388">
+    <img src="{{ root }}assets/img/photos/jordi-sax-red.jpg" alt="" loading="lazy" width="675" height="450">
+    <img src="{{ root }}assets/img/photos/jordi-mic-pink.jpg" alt="" loading="lazy" width="750" height="500">
+    <img src="{{ root }}assets/img/photos/jordi-mic-smoke.jpg" alt="" loading="lazy" width="682" height="455">
+    <img src="{{ root }}assets/img/photos/jordi-crowd-gold.jpg" alt="" loading="lazy" width="750" height="500">
+    <img src="{{ root }}assets/img/photos/jordi-saxes-lady.jpg" alt="" loading="lazy" width="621" height="414">
+    <img src="{{ root }}assets/img/photos/jordi-point.jpg" alt="" loading="lazy" width="563" height="376">
+  </div>
+  <p class="wrap credit-line mono">{{ month(t, '2025-09') }} · {{ t('photo_by') }} <a href="https://www.instagram.com/jes_orquadi/" target="_blank" rel="noopener">Jordi Arques (@jes_orquadi)</a></p>
 </section>
 {% include "_talleres.html" %}
 {% include "_conciertos.html" %}

@@ -69,4 +69,4 @@ python3 build.py
 python3 -m http.server -d _site 8000   # open http://localhost:8000
 ```
 
-Photos: Lukk Pink, Juan Miguel Morales, Albert Garcia, la peralimonera · Design: bicialta · Music production: suzio
+Photos: Lukk Pink, Juan Miguel Morales, Albert Garcia, la peralimonera, Jordi Arques · Design: bicialta · Music production: suzio
