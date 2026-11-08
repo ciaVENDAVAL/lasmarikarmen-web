@@ -31,19 +31,6 @@
 </section>
 {% endif %}
 
-<section class="band band--cream">
-  <div class="wrap">
-    <h2 class="h2">{{ t('concerts_title_1') }} <span class="pk">{{ t('concerts_title_2') }}</span> <span class="mono small muted">{{ t('concerts_since') }}</span></h2>
-    <div class="regions">
-      {% for r in site.concerts %}
-      <div>
-        <p class="label pk">{{ t(r.region_key) }}</p>
-        <p>{{ r.venues|join(' · ') }}</p>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
 
 <section class="band band--ink band--flushphotos">
   <div class="wrap trio">
