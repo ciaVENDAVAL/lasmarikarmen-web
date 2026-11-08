@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_macros.html" import more, video %}
+{% from "_macros.html" import more, video, gig %}
 {% block main %}
 
 {# hero: the photo stays free; the title sits below it #}
@@ -37,6 +37,24 @@
       {{ more(page_url('quienes-somos'), t('more_info')) }}
     </div>
     <img class="cutout" src="{{ root }}assets/img/photos/cutout-destruir.png" alt="Victoria Sickness, Hipogrifa, Contàmina Perpétua" loading="lazy" width="768" height="506">
+  </div>
+</section>
+
+{# upcoming gigs #}
+<section class="band band--ink home-gigs">
+  <div class="wrap gigs-top">
+    <h2 class="giant giant--md">{{ t('gigs_title_1') }} <span class="pk">{{ t('gigs_title_2') }}</span></h2>
+    {% if gigs %}
+    <ul class="gigs">
+      {% for g in gigs[:4] %}{{ gig(t, g, root) }}{% endfor %}
+    </ul>
+    {{ more(page_url('espectaculo') ~ '#conciertos', t('more_info')) }}
+    {% else %}
+    <div class="gigs-empty">
+      <p class="deck deck--light">{{ t('gigs_none') }}</p>
+      <a class="btn" href="{{ page_url('contacto') }}">{{ t('gigs_invite') }}</a>
+    </div>
+    {% endif %}
   </div>
 </section>
 

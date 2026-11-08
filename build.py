@@ -36,7 +36,7 @@ PAGES = [
 # Menu: (page, text key, anchor)
 NAV = [
     ("quienes-somos", "nav_bio", ""), ("espectaculo", "nav_show", ""), ("musica", "nav_music", ""),
-    ("tienda", "nav_shop", ""), ("espectaculo", "nav_gigs", "#conciertos"), ("contacto", "nav_contact", ""),
+    ("tienda", "nav_shop", ""), ("contacto", "nav_contact", ""),
 ]
 # Old pages now living inside others: the old address forwards to the new spot
 REDIRECTS = {"letras": ("musica", "#letras"), "talleres": ("espectaculo", "#talleres"),
