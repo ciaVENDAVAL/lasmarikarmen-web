@@ -35,8 +35,13 @@ PAGES = [
 ]
 # Menu: (page, text key, anchor)
 NAV = [
-    ("quienes-somos", "nav_bio", ""), ("espectaculo", "nav_show", ""), ("musica", "nav_music", ""),
-    ("tienda", "nav_shop", ""), ("contacto", "nav_contact", ""),
+    # (page, text key, anchor, [sub-items (page, text key, anchor)])
+    ("quienes-somos", "nav_bio", "", [("quienes-somos", "nav_band", ""), ("quienes-somos", "nav_members", "#members-h"),
+                                      ("quienes-somos", "nav_press", "#prensa")]),
+    ("espectaculo", "nav_events", "", [("espectaculo", "nav_show", ""), ("espectaculo", "nav_workshops", "#talleres"),
+                                       ("espectaculo", "nav_calendar", "#conciertos"), ("espectaculo", "nav_posters", "#past-h")]),
+    ("musica", "nav_music", "", [("musica", "nav_albums", ""), ("musica", "nav_videos", "#vid-h"), ("musica", "nav_lyrics", "#letras")]),
+    ("tienda", "nav_shop", "", []), ("contacto", "nav_contact", "", []),
 ]
 # Old pages now living inside others: the old address forwards to the new spot
 REDIRECTS = {"letras": ("musica", "#letras"), "talleres": ("espectaculo", "#talleres"),

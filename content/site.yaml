@@ -267,7 +267,7 @@ press_outlets:
   - {id: rambla,     name: Revista Rambla,      date: "2020-11", url: "https://www.revistarambla.com/ladyboi-el-nuevo-single-de-las-marikarmen/", title: "«Ladyboi», el nuevo single de Las Marikarmen"}
   - {id: kaos,       name: Kaos en la Red,      date: "2020-10", url: "https://kaosenlared.net/nos-regocijamos-en-el-odio-que-nos-transmite-la-sociedad-y-lo-transformamos-en-empoderamiento-y-amor-personal/", title: "«Nos regocijamos en el odio que nos transmite la sociedad y lo transformamos en empoderamiento y amor personal»"}
   - {id: masdecultura, name: Más de Cultura,    date: "2020-09", url: "https://masdecultura.com/musica/las-marikarmen-entrevistamos-este-colectivo-transfeminista-queer/", title: "Entrevistamos a este colectivo transfeminista queer"}
-  - {id: rutalokal,  name: Ruta Lokal,          date: "",        url: "https://rutalokal.com/las-marikarmen/", title: "Las Marikarmen"}
+  - {id: rutalokal,  name: Ruta Lokal,          date: "",        title: "Las Marikarmen"}
 
 credits:
   idea: [{name: Las Marikarmen}]
