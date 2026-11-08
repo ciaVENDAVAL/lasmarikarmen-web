@@ -13,7 +13,7 @@
       {% for p in site.merch %}
       <li class="product" id="{{ p.id }}">
         <a href="{{ p.url }}" target="_blank" rel="noopener">
-          <span class="product__img"><img src="{{ root }}{{ p.img }}" alt="" loading="lazy"></span>
+          <span class="product__img{% if p.get('tall') %} product__img--tall{% endif %}"><img src="{{ root }}{{ p.img }}" alt="" loading="lazy"></span>
           <span class="product__name">{{ t('merch_' ~ p.id ~ '_name') }}</span>
           <span class="product__desc">{{ t('merch_' ~ p.id ~ '_desc') }}</span>
           <span class="product__foot"><span class="product__price">{{ p.price }} €</span><span class="mono small">Bandcamp ↗</span></span>
@@ -57,7 +57,7 @@
           <ul class="order__items">
             {% for p in site.merch %}
             <li>
-              <label class="order__item"><input type="checkbox" id="o-{{ p.id }}" name="item" value="{{ p.id }}" data-name="{{ t('merch_' ~ p.id ~ '_name')|striptags }}" data-price="{{ p.price }}"><span>{{ t('merch_' ~ p.id ~ '_name') }}</span><span class="order__price">{{ p.price }} €</span></label>
+              <label class="order__item"><img class="order__thumb" src="{{ root }}{{ p.img }}" alt="" loading="lazy" width="56" height="56"><input type="checkbox" id="o-{{ p.id }}" name="item" value="{{ p.id }}" data-name="{{ t('merch_' ~ p.id ~ '_name')|striptags }}" data-price="{{ p.price }}"><span>{{ t('merch_' ~ p.id ~ '_name') }}</span><span class="order__price">{{ p.price }} €</span></label>
               <span class="order__opts">
                 <label>{{ t('order_qty') }} <input type="number" id="q-{{ p.id }}" min="1" max="20" value="1" inputmode="numeric"></label>
                 {% if p.get('sizes') %}<label>{{ t('order_size') }} <select id="s-{{ p.id }}">{% for z in p.sizes %}<option{% if z == 'M' %} selected{% endif %}>{{ z }}</option>{% endfor %}</select></label>{% endif %}

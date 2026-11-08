@@ -129,8 +129,8 @@ videos:
 # Shop. Text (name, description) is in text.yaml as merch_<id>_name / merch_<id>_desc.
 # Remove an item here when it sells out.
 merch:
-  - {id: tee_pink,  price: 15, sizes: [S, M, L, XL, XXL], img: assets/img/merch/camiseta-cistema-rosa-puesta.jpg,  url: "https://lasmarikarmen.bandcamp.com/merch/camisetas-t-shirts"}
-  - {id: tee_green, price: 15, sizes: [S, M, L, XL, XXL], img: assets/img/merch/camiseta-cistema-verde.gif, url: "https://lasmarikarmen.bandcamp.com/merch/camisetas-t-shirts-xxl-print"}
+  - {id: tee_pink,  tall: true, price: 15, sizes: [S, M, L, XL, XXL], img: assets/img/merch/camiseta-cistema-rosa-puesta.jpg,  url: "https://lasmarikarmen.bandcamp.com/merch/camisetas-t-shirts"}
+  - {id: tee_green, tall: true, price: 15, sizes: [S, M, L, XL, XXL], img: assets/img/merch/camiseta-cistema-verde.gif, url: "https://lasmarikarmen.bandcamp.com/merch/camisetas-t-shirts-xxl-print"}
   - {id: fan,       price: 10, img: assets/img/merch/abanico.jpg,                url: "https://lasmarikarmen.bandcamp.com/merch/fan-abanico"}
   - {id: cassette,  price: 5,  img: assets/img/merch/cassette-nos-pegan.jpg,     url: "https://lasmarikarmen.bandcamp.com/merch/nos-pegan-album-cassette"}
   - {id: fanzine,   price: 5,  img: assets/img/merch/fanzine-nos-pegan.jpg,      url: "https://lasmarikarmen.bandcamp.com/merch/fanzine-nos-pegan"}
