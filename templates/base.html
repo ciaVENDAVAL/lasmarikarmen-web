@@ -19,7 +19,8 @@ if(!k){var n=(navigator.languages||[navigator.language||'es']).map(function(x){r
 if(k&&k!==L[0]&&L.indexOf(k)>-1&&!/[?&]lang=/.test(location.search)){location.replace(k+'/')}}catch(e){}})();
 </script>
 {% endif %}
-<link rel="icon" href="{{ root }}favicon.ico" sizes="any">
+{% if slug == 'index' %}<link rel="me" href="https://social.anartist.org/@bicialta">
+{% endif %}<link rel="icon" href="{{ root }}favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="{{ root }}assets/img/favicon.png">
 <link rel="apple-touch-icon" href="{{ root }}assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
