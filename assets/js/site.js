@@ -75,32 +75,38 @@
     var save = navigator.connection && navigator.connection.saveData;
     return !rm && !save && !html.classList.contains('a11y-motion');
   }
+  /* uses the official YouTube IFrame API: the photo stays until the player really reports "playing" */
+  var ytPlayer = null, ytLoading = false;
+  function heroStart() {
+    if (ytPlayer || !window.YT || !YT.Player) return;
+    var id = hv.getAttribute('data-yt'), box = document.createElement('div');
+    hv.appendChild(box);
+    ytPlayer = new YT.Player(box, {
+      host: 'https://www.youtube-nocookie.com', videoId: id,
+      playerVars: { autoplay: 1, mute: 1, loop: 1, playlist: id, controls: 0, disablekb: 1, playsinline: 1,
+                    rel: 0, modestbranding: 1, iv_load_policy: 3, fs: 0, origin: location.origin },
+      events: {
+        onReady: function (e) { try { e.target.mute(); e.target.playVideo(); } catch (x) {} },
+        onStateChange: function (e) {
+          if (e.data === 1) hv.classList.add('is-on');
+          if (e.data === 0) { try { e.target.seekTo(0); e.target.playVideo(); } catch (x) {} }
+        },
+        onError: function () { hv.classList.remove('is-on'); }
+      }
+    });
+    var f = hv.querySelector('iframe'); if (f) { f.tabIndex = -1; f.title = ''; f.setAttribute('aria-hidden', 'true'); }
+  }
   function heroVideo() {
     if (!hv) return;
-    var on = heroVideoAllowed(), f = hv.querySelector('iframe');
-    if (on && !f) {
-      var id = hv.getAttribute('data-yt');
-      f = document.createElement('iframe');
-      f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&mute=1&loop=1&playlist=' + id +
-              '&controls=0&disablekb=1&playsinline=1&rel=0&modestbranding=1&iv_load_policy=3&enablejsapi=1&origin=' +
-              encodeURIComponent(location.origin);
-      f.allow = 'autoplay; encrypted-media; picture-in-picture';
-      f.tabIndex = -1; f.title = '';
-      /* show the video only once YouTube reports it is really playing (never show an error screen) */
-      var onMsg = function (ev) {
-        if (!/youtube/.test(ev.origin)) return;
-        try {
-          var m = typeof ev.data === 'string' ? JSON.parse(ev.data) : ev.data;
-          var st = m && m.info && m.info.playerState;
-          if (st === 1) hv.classList.add('is-on');
-        } catch (x) {}
-      };
-      window.addEventListener('message', onMsg);
-      f.addEventListener('load', function () {
-        try { f.contentWindow.postMessage(JSON.stringify({ event: 'listening', id: 1, channel: 'widget' }), '*'); } catch (x) {}
-      });
-      hv.appendChild(f);
-    } else if (!on && f) { hv.classList.remove('is-on'); f.remove(); }
+    var on = heroVideoAllowed();
+    if (on && !ytPlayer) {
+      if (window.YT && YT.Player) { heroStart(); return; }
+      var prev = window.onYouTubeIframeAPIReady;
+      window.onYouTubeIframeAPIReady = function () { if (prev) prev(); heroStart(); };
+      if (!ytLoading) { ytLoading = true; var sc = document.createElement('script'); sc.src = 'https://www.youtube.com/iframe_api'; sc.async = true; document.head.appendChild(sc); }
+    } else if (!on && ytPlayer) {
+      hv.classList.remove('is-on'); try { ytPlayer.destroy(); } catch (x) {} ytPlayer = null; hv.innerHTML = '';
+    }
   }
   heroVideo();
   if (window.MutationObserver) new MutationObserver(heroVideo).observe(html, { attributes: true, attributeFilter: ['class'] });
