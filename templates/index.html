@@ -58,23 +58,6 @@
   </div>
 </section>
 
-{# members #}
-<section class="band band--ink">
-  <div class="wrap">
-    <ul class="claws">
-      {% for m in site.members %}
-      <li>
-        <a href="{{ page_url('quienes-somos') }}#{{ m.id }}">
-          <img src="{{ root }}{{ m.claw }}" alt="" loading="lazy" width="600" height="900">
-          <span class="namebox nm">{{ m.name }}</span>
-          <span class="pron">{{ t(m.pronoun_key) }} · {{ t(m.role_key) }}</span>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
-
 {# show #}
 <section class="showband">
   <img class="showband__img" src="{{ root }}assets/img/photos/live-funeral.jpg" alt="" loading="lazy" width="800" height="533">
@@ -125,6 +108,23 @@
       </blockquote>
       {{ more(page_url('quienes-somos') ~ '#prensa', t('more_info')) }}
     </div>
+  </div>
+</section>
+
+{# members #}
+<section class="band band--ink">
+  <div class="wrap">
+    <ul class="claws">
+      {% for m in site.members %}
+      <li>
+        <a href="{{ page_url('quienes-somos') }}#{{ m.id }}">
+          <img src="{{ root }}{{ m.claw }}" alt="" loading="lazy" width="600" height="900">
+          <span class="namebox nm">{{ m.name }}</span>
+          <span class="pron">{{ t(m.pronoun_key) }} · {{ t(m.role_key) }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
 
