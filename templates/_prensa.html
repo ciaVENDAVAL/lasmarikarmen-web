@@ -1,9 +1,8 @@
-{% extends "base.html" %}
 {% from "_macros.html" import month %}
-{% block main %}
-<section class="band band--pink page-top">
+<div id="prensa" class="sec-anchor">
+<section class="band band--pink sec-top">
   <div class="wrap press-top">
-    <h1 class="giant giant--ink">{{ t('press_title_1') }} {{ t('press_title_2') }}</h1>
+    <h2 class="giant giant--ink">{{ t('press_title_1') }} {{ t('press_title_2') }}</h2>
     <figure class="polaroid">
       <img src="{{ root }}assets/img/conta-fur.jpg" alt="Contàmina Perpétua" width="733" height="1100">
     </figure>
@@ -44,4 +43,4 @@
     </ul>
   </div>
 </section>
-{% endblock %}
+</div>

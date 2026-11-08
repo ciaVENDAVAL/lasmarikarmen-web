@@ -3,18 +3,18 @@
 Static website for Las Marikarmen, in the style of the 2026 press kit.
 Short info on the home page, one page per topic:
 
-| Page | File |
-|---|---|
-| Inicio | `index.html` |
-| Quiénes somos + integrantes | `quienes-somos.html` |
-| Espectáculo + condiciones técnicas | `espectaculo.html` |
-| Música y vídeos | `musica.html` |
-| Tienda | `tienda.html` |
-| Talleres | `talleres.html` |
-| Conciertos (próximas fechas + memorables) | `conciertos.html` |
-| Prensa | `prensa.html` |
-| Contacto + ficha artística | `contacto.html` |
-| Letras (lyrics, EN/ES/EU per verse) | `letras.html`, lyrics source in `letras/` |
+| Page | File | Also contains |
+|---|---|---|
+| Inicio | `index.html` | |
+| Quiénes somos | `quienes-somos.html` | Prensa (`#prensa`) |
+| Espectáculo | `espectaculo.html` | Talleres (`#talleres`), Conciertos (`#conciertos`) |
+| Música | `musica.html` | Letras (`#letras`) |
+| Tienda | `tienda.html` | |
+| Contacto | `contacto.html` | |
+
+The sections live in `templates/_prensa.html`, `_talleres.html`, `_conciertos.html`, `_letras.html`.
+The old addresses (`letras.html`, `talleres.html`, `conciertos.html`, `prensa.html`) forward to the new spot,
+so links already shared keep working. Menu: `NAV` in `build.py`.
 
 Social icons, contact and press kit appear once, in the footer of every page.
 Bottom left: pink triangle ▼ opens the accessibility options. Bottom right: ▲ back to top.

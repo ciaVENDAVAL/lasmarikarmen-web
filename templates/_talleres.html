@@ -1,13 +1,12 @@
-{% extends "base.html" %}
-{% block main %}
-<section class="band band--pink page-top">
+<div id="talleres" class="sec-anchor">
+<section class="band band--pink sec-top">
   <div class="wrap workshop">
     <figure class="workshop__img">
       <img src="{{ root }}assets/img/vic-aspiradora.jpg" alt="Victoria Sickness" width="733" height="1100">
     </figure>
     <div class="workshop__txt">
       <p class="tag tag--ink">{{ t('workshop_title_1') }} {{ t('workshop_title_2') }}</p>
-      <h1 class="h2 h2--xl">{{ t('workshop_name') }}</h1>
+      <h2 class="h2 h2--xl">{{ t('workshop_name') }}</h2>
       <p class="lead">{{ t('workshop_intro') }}</p>
       <ul class="chips">
         {% for c in (t('workshop_contents')|string).split(' · ') %}<li>{{ c }}</li>{% endfor %}
@@ -35,4 +34,4 @@
     <img class="split__photo" src="{{ root }}assets/img/photos/live-crowd-hands.jpg" alt="" loading="lazy" width="800" height="533">
   </div>
 </section>
-{% endblock %}
+</div>

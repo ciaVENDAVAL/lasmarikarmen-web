@@ -1,7 +1,10 @@
-{% extends "base.html" %}
-{% from "_macros.html" import pagehead %}
-{% block main %}
-{{ pagehead(root ~ 'assets/img/photos/live-smoke-green.jpg', t('lyr_kicker'), t('nav_lyrics'), t('lyr_title2'), 'center 40%') }}
+<div id="letras" class="sec-anchor">
+<section class="band band--ink">
+  <div class="wrap row-head">
+    <h2 class="giant giant--md">{{ t('nav_lyrics') }} <span class="pk">{{ t('lyr_title2') }}</span></h2>
+    <p class="deck">{{ t('lyr_kicker') }}</p>
+  </div>
+</section>
 
 <section class="band band--cream ly">
   <div class="wrap">
@@ -31,4 +34,4 @@
   'watch_here': t('lyr_watch_here')|string, 'watch_yt': t('lyr_watch_yt')|string, 'cc': t('lyr_cc')|string,
   'more': t('lyr_more')|string, 'lang_code': t('lyr_lang_code')|string, 'video': t('lyr_video')|string, 'lang': lang } | tojson }}</script>
 <script src="{{ root }}assets/js/letras.js?v={{ asset_v }}" defer></script>
-{% endblock %}
+</div>

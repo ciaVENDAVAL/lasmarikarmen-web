@@ -1,9 +1,8 @@
-{% extends "base.html" %}
 {% from "_macros.html" import gig %}
-{% block main %}
-<section class="band band--ink page-top">
+<div id="conciertos" class="sec-anchor">
+<section class="band band--ink sec-top">
   <div class="wrap gigs-top">
-    <h1 class="giant giant--md">{{ t('gigs_title_1') }} <span class="pk">{{ t('gigs_title_2') }}</span></h1>
+    <h2 class="giant giant--md">{{ t('gigs_title_1') }} <span class="pk">{{ t('gigs_title_2') }}</span></h2>
     {% if gigs %}
     <ul class="gigs">
       {% for g in gigs %}{{ gig(t, g, root) }}{% endfor %}
@@ -53,4 +52,4 @@
     <img src="{{ root }}assets/img/photos/live-back-hair.jpg" alt="" loading="lazy" width="800" height="533">
   </div>
 </section>
-{% endblock %}
+</div>

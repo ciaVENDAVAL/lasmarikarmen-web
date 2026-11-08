@@ -58,8 +58,8 @@ for(var k in s){if(k==='size'){h.style.fontSize=s.size+'%'}else if(s[k]){h.class
     </button>
     <nav id="nav" class="nav" aria-label="{{ t('nav_menu') }}">
       <ul>
-      {% for p_slug, _tpl, nav_key, _tk in pages if p_slug != 'index' %}
-        <li><a href="{{ page_url(p_slug) }}"{% if p_slug == slug %} aria-current="page"{% endif %}>{{ t(nav_key) }}</a></li>
+      {% for n_slug, nav_key, n_anchor in nav %}
+        <li><a href="{{ page_url(n_slug) }}{{ n_anchor }}"{% if n_slug == slug and not n_anchor %} aria-current="page"{% endif %}>{{ t(nav_key) }}</a></li>
       {% endfor %}
       </ul>
     </nav>

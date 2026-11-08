@@ -30,13 +30,17 @@ PAGES = [
     ("quienes-somos",  "quienes-somos.html",  "nav_bio",       "nav_bio"),
     ("espectaculo",    "espectaculo.html",    "nav_show",      "nav_show"),
     ("musica",         "musica.html",         "nav_music",     "nav_music"),
-    ("letras",         "letras.html",         "nav_lyrics",    "nav_lyrics"),
     ("tienda",         "tienda.html",         "nav_shop",      "nav_shop"),
-    ("talleres",       "talleres.html",       "nav_workshops", "nav_workshops"),
-    ("conciertos",     "conciertos.html",     "nav_gigs",      "nav_gigs"),
-    ("prensa",         "prensa.html",         "nav_press",     "nav_press"),
     ("contacto",       "contacto.html",       "nav_contact",   "nav_contact"),
 ]
+# Menu: (page, text key, anchor)
+NAV = [
+    ("quienes-somos", "nav_bio", ""), ("espectaculo", "nav_show", ""), ("musica", "nav_music", ""),
+    ("tienda", "nav_shop", ""), ("espectaculo", "nav_gigs", "#conciertos"), ("contacto", "nav_contact", ""),
+]
+# Old pages now living inside others: the old address forwards to the new spot
+REDIRECTS = {"letras": ("musica", "#letras"), "talleres": ("espectaculo", "#talleres"),
+             "conciertos": ("espectaculo", "#conciertos"), "prensa": ("quienes-somos", "#prensa")}
 ALL_LANGS = ["es", "en", "ca", "gl", "eu", "pt", "fr", "it", "de", "ja"]
 SOURCE = "es"
 
@@ -126,7 +130,7 @@ def build(langs, text, site):
             ctx = dict(
                 t=t, lang=lang, langs=langs if len(langs) > 1 else [], site=site,
                 lang_names=site["language_names"], root=root, page_url=page_url, og_tags=og_tags, lyrics_json=lambda: lyrics_for(lyrics, t, page_url, lang), lyrics_video={s['desc'].get('video'): s['slug'] for s in lyrics if s['desc'].get('video')},
-                slug=slug, pages=PAGES, icons=icons, asset_v=asset_v, gigs=gigs, past_gigs=past_gigs, past_years=past_years, presskit=root + presskit,
+                slug=slug, pages=PAGES, nav=NAV, icons=icons, asset_v=asset_v, gigs=gigs, past_gigs=past_gigs, past_years=past_years, presskit=root + presskit,
                 page_title=(t(title_key) if title_key else None),
                 canonical=f"{site['site_url'].rstrip('/')}/{sub}{'' if slug == 'index' else slug + '.html'}",
             )
@@ -134,6 +138,10 @@ def build(langs, text, site):
             dest = OUT / sub / ("index.html" if slug == "index" else f"{slug}.html")
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_text(html, encoding="utf-8")
+        for old, (new, anchor) in REDIRECTS.items():
+            target = page_url(new).split("/")[-1] + anchor
+            html = env.get_template("redirect.html").render(lang=lang, target=target)
+            (OUT / sub / f"{old}.html").write_text(html, encoding="utf-8")
         if lang != SOURCE and missing:
             print(f"  {lang}: {len(missing)} texts shown in castellano (missing translation)")
     print(f"Built {len(langs)} language(s) × {len(PAGES)} pages → {OUT.relative_to(ROOT)}/")

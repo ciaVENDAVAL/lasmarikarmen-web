@@ -21,7 +21,7 @@
       <div class="btns">
         <a class="btn" href="{{ site.album.spotify }}" data-embed="{{ site.album.spotify_embed }}" data-kind="spotify" data-title="{{ site.album.title }} · Spotify">{{ t('listen_here') }}</a>
         <a class="more" href="https://lasmarikarmen.bandcamp.com/" target="_blank" rel="noopener">Bandcamp ↗</a>
-        <a class="more" href="{{ page_url('letras') }}">{{ t('lyrics_link') }} →</a>
+        <a class="more" href="#letras">{{ t('lyrics_link') }} →</a>
       </div>
     </div>
     <div class="album-row__side">
@@ -39,13 +39,14 @@
     {% if site.get('featured_video') %}
     <div class="vid-feature">
       <p class="tag">{{ t('featured_kicker') }}</p>
-      {{ video(site.featured_video, root, t, page_url('letras') ~ '#' ~ lyrics_video[site.featured_video.id] if site.featured_video.id in lyrics_video else None) }}
+      {{ video(site.featured_video, root, t, '#' ~ lyrics_video[site.featured_video.id] if site.featured_video.id in lyrics_video else None) }}
     </div>
     {% endif %}
     <div class="vids">
-      {% for v in site.videos %}{{ video(v, root, t, page_url('letras') ~ '#' ~ lyrics_video[v.id] if v.id in lyrics_video else None) }}{% endfor %}
+      {% for v in site.videos %}{{ video(v, root, t, '#' ~ lyrics_video[v.id] if v.id in lyrics_video else None) }}{% endfor %}
     </div>
     <p class="small mono muted">{{ t('video_privacy') }}</p>
   </div>
 </section>
+{% include "_letras.html" %}
 {% endblock %}
