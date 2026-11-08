@@ -597,3 +597,16 @@ html.a11y-contrast .ly-chip[aria-pressed="true"], html.a11y-contrast .ly-mini[ar
 .credit-line a { color: inherit; }
 .ly-h { margin: 0 0 .6rem; }
 .ly-kicker { color: var(--muted); margin-bottom: 1.6rem; }
+/* home "who we are": the photo melts into the cream background */
+.home-bio { position: relative; overflow: hidden; isolation: isolate; }
+.home-bio__bg { position: absolute; top: 0; right: 0; height: 100%; width: 66%; object-fit: cover; object-position: 60% 40%; z-index: -1;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, transparent 12%, rgba(0,0,0,.6) 32%, #000 50%); mask-image: linear-gradient(to right, transparent 0, transparent 12%, rgba(0,0,0,.6) 32%, #000 50%); }
+.home-bio .split { grid-template-columns: minmax(0, 1fr); }
+.home-bio .split__txt { max-width: 32rem; position: relative; }
+@media (max-width: 860px) {
+  .home-bio { padding-top: 0; }
+  .home-bio__bg { position: relative; width: 100%; height: auto; aspect-ratio: 3 / 2; display: block; margin-bottom: -4rem;
+    -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 100%); mask-image: linear-gradient(to bottom, #000 55%, transparent 100%); }
+  .home-bio .split__txt { max-width: none; padding: 0; background: none; box-shadow: none; position: relative; }
+}
+

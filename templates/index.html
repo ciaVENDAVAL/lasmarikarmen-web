@@ -25,7 +25,8 @@
 </section>
 
 {# who we are #}
-<section class="band band--cream">
+<section class="band band--cream home-bio">
+  <img class="home-bio__bg" src="{{ root }}assets/img/photos/trio-mirror-dome.jpg" alt="{{ t('hero_alt_dome')|striptags }}" loading="lazy" width="1800" height="1200">
   <div class="wrap split">
     <div class="split__txt">
       <p class="tag">{{ t('nav_bio') }}</p>
@@ -36,7 +37,6 @@
       </blockquote>
       {{ more(page_url('quienes-somos'), t('more_info')) }}
     </div>
-    <img class="split__photo" src="{{ root }}assets/img/photos/trio-mirror-dome.jpg" alt="{{ t('hero_alt_dome')|striptags }}" loading="lazy" width="1800" height="1200">
   </div>
 </section>
 
