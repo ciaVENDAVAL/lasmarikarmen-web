@@ -240,7 +240,11 @@ gigs:
   - {date: "2024-10-26", city: "Terrassa", venue: "Casa de la Música", event: "con OLI", posters: [assets/img/posters/2024-10-26-casa-de-la-musica.jpg]}
   - {date: "2024-11-30", city: "Parets del Vallès", venue: "Espai Jove", event: "II Vallès Queer", posters: [assets/img/posters/2024-11-30-espai-jove.jpg]}
   - {date: "2025-02-21", city: "Sabadell", venue: "Espai Mandarina", event: "Karnaval MariK", posters: [assets/img/posters/2025-02-21-espai-mandarina.jpg]}
-  - {date: "2025-09-05", city: "Barcelona", venue: "Vallcarca", event: "Festes Llibertàries de Vallcarca", posters: [assets/img/posters/2025-09-05-vallcarca.jpg]}
+  - {date: "2025-09-05", city: "Barcelona", venue: "Vallcarca", event: "Festes Llibertàries de Vallcarca", posters: [assets/img/posters/2025-09-05-vallcarca.jpg, assets/img/posters/2025-09-05-vallcarca-2.jpg]}
+  - {date: "2025-09-06", city: "Santa Perpètua de Mogoda", venue: "Parc de la Ribera", event: "Deskoncerts · Festa Major 2025", posters: [assets/img/posters/2025-09-06-santa-perpetua.jpg]}
+  - {date: "2025-09-13", city: "Móstoles", venue: "CSOA La Casika", event: "Disidencias Fest III · Fiestas Alternativas de Móstoles", posters: [assets/img/posters/2025-09-13-mostoles-la-casika.jpg]}
+  - {date: "2025-09", city: "Alcoi", venue: "Moniàtic", event: "Moniàtic 2025", posters: [assets/img/posters/2025-09-alcoi-moniatic.jpg]}
+  - {date: "2026-02-14", city: "Olot", venue: "La Carbonera", event: "Carnaval · La Magrana x Olot Cultura", posters: [assets/img/posters/2026-02-14-olot-la-carbonera.jpg]}
   - {date: "2026-05-01", city: "Iruña", venue: "Txantrea", event: "Txantreako jaiak 2026", posters: [assets/img/posters/2026-05-01-txantrea.jpg]}
   - {date: "2026-06-12", city: "Barcelona", venue: "Parc de la Guineueta", event: "Simbiruta 2026", posters: [assets/img/posters/2026-06-12-parc-de-la-guineueta.jpg, assets/img/posters/2026-06-12-parc-de-la-guineueta-2.jpg]}
   - {date: "2026-07-25", city: "Frankfurt", venue: "Sommerwerft", event: "Sommerwerft Festival", posters: [assets/img/posters/2026-07-25-sommerwerft.jpg]}
