@@ -85,6 +85,7 @@ ul, ol { padding: 0; list-style: none; }
 .band--pink { background: var(--pink); color: var(--ink); }
 .band--pink .pk { color: var(--paper); }
 .band--green { background: var(--green); color: var(--ink); }
+.band--sep { border-top: 6px solid var(--pink); }
 .page-top, .sec-top { padding-top: clamp(2.5rem, 6vw, 4.5rem); }
 .sec-anchor { scroll-margin-top: 64px; }
 
