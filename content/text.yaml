@@ -573,16 +573,16 @@ to_top:
 
 # ───────── home ─────────
 hero_alt:
-  es: Las Marikarmen con fliscornio, saxo y clarinete bajo una cúpula de espejos
-  en: "Las Marikarmen with flugelhorn, saxophone and clarinet under a mirrored dome"
-  ca: "Las Marikarmen amb fiscorn, saxo i clarinet sota una cúpula de miralls"
-  gl: "Las Marikarmen con fliscorno, saxo e clarinete baixo unha cúpula de espellos"
-  eu: "Las Marikarmen fliskornoarekin, saxofoiarekin eta klarinetearekin ispiluzko kupula baten azpian"
-  pt: "Las Marikarmen com fliscorne, saxofone e clarinete sob uma cúpula de espelhos"
-  fr: "Las Marikarmen avec bugle, saxophone et clarinette sous une coupole de miroirs"
-  it: "Las Marikarmen con flicorno, sassofono e clarinetto sotto una cupola di specchi"
-  de: "Las Marikarmen mit Flügelhorn, Saxofon und Klarinette unter einer Spiegelkuppel"
-  ja: "鏡のドームの下で、フリューゲルホルン、サックス、クラリネットを持つLas Marikarmen"
+  es: "Las Marikarmen sobre una moto de agua roja en un camino del bosque"
+  en: "Las Marikarmen on a red jet ski on a forest track"
+  ca: "Las Marikarmen sobre una moto d'aigua vermella en un camí del bosc"
+  gl: "Las Marikarmen sobre unha moto de auga vermella nun camiño do bosque"
+  eu: "Las Marikarmen ur-moto gorri baten gainean basoko bide batean"
+  pt: "Las Marikarmen numa mota de água vermelha num caminho do bosque"
+  fr: "Las Marikarmen sur un jet-ski rouge sur un chemin forestier"
+  it: "Las Marikarmen su una moto d'acqua rossa in un sentiero nel bosco"
+  de: "Las Marikarmen auf einem roten Jetski auf einem Waldweg"
+  ja: "森の小道で赤い水上バイクに乗るラス・マリカルメン"
 cover_headline:
   es: Saxos, drag,<br><em>synth punk.</em>
   en: "Saxes, drag,<br><em>synth punk.</em>"

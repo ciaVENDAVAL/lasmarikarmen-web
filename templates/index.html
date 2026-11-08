@@ -5,7 +5,7 @@
 {# hero: the photo stays free; the title sits below it #}
 <section class="hero">
   <figure class="hero__photo">
-    <img src="{{ root }}assets/img/photos/trio-mirror-dome.jpg" alt="{{ t('hero_alt')|striptags }}" width="1800" height="1200">
+    <img src="{{ root }}assets/img/photos/hero-jetski.jpg" alt="{{ t('hero_alt')|striptags }}" width="850" height="567">
     {% if site.get('hero_video') %}
     <div class="hero__video" data-yt="{{ site.hero_video.id }}" aria-hidden="true"></div>
     <a class="hero__vlink mono" href="https://www.youtube.com/watch?v={{ site.hero_video.id }}" target="_blank" rel="noopener">▶ <span class="hero__vtitle">{{ site.hero_video.title }} · </span>{{ t('hero_video_link') }} ↗</a>
