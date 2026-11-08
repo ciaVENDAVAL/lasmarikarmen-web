@@ -595,4 +595,5 @@ html.a11y-contrast .ly-chip[aria-pressed="true"], html.a11y-contrast .ly-mini[ar
 .gal7 img:nth-child(n+6) { grid-column: span 2; }
 @media (max-width: 700px) { .gal7 { grid-template-columns: 1fr 1fr; } .gal7 img:first-child { grid-row: auto; } .gal7 img:nth-child(n+6) { grid-column: auto; } }
 .credit-line a { color: inherit; }
-
+.ly-h { margin: 0 0 .6rem; }
+.ly-kicker { color: var(--muted); margin-bottom: 1.6rem; }
