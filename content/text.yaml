@@ -650,16 +650,16 @@ home_show_teaser:
   de: "Die folkloristische Beerdigung von Lady Marikarmen als Multimedia-Party. 60 Minuten, drinnen oder draußen, für jedes Alter."
   ja: "レディ・マリカルメンの民俗的なお葬式が、マルチメディアのパーティーに。60分、屋内でも屋外でも、全年齢対象。"
 home_music_more:
-  es: Discos, radio y videoclips
-  en: "Albums, radio and music videos"
-  ca: "Discos, ràdio i videoclips"
-  gl: "Discos, radio e videoclips"
-  eu: "Diskoak, irratia eta bideoklipak"
-  pt: "Discos, rádio e videoclipes"
-  fr: "Albums, radio et clips"
-  it: "Dischi, radio e videoclip"
-  de: "Alben, Radio und Musikvideos"
-  ja: "アルバム、ラジオ、ミュージックビデオ"
+  es: Discos, videoclips y letras
+  en: "Albums, music videos and lyrics"
+  ca: "Discos, videoclips i lletres"
+  gl: "Discos, videoclips e letras"
+  eu: "Diskoak, bideoklipak eta letrak"
+  pt: "Discos, videoclipes e letras"
+  fr: "Albums, clips et paroles"
+  it: "Dischi, videoclip e testi"
+  de: "Alben, Musikvideos und Songtexte"
+  ja: "アルバム、ミュージックビデオ、歌詞"
 home_shop_more:
   es: Toda la tienda
   en: "The whole shop"
