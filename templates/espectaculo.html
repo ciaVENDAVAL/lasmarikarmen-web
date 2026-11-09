@@ -16,8 +16,8 @@
       <p>{{ t('show_p1') }}</p>
       <p>{{ t('show_p2') }}</p>
       <blockquote class="q">
-        <p>«{{ t('quote_contamina') }}»</p>
-        <footer class="src pk">{{ t('quote_contamina_src') }}</footer>
+        <p>«{{ t('quote_kaos') }}»</p>
+        <footer class="src pk"><span class="nm">Victoria Sickness</span>, Kaos en la Red, {{ t('quote_kaos_src') }}</footer>
       </blockquote>
     </div>
     <aside class="tech" aria-labelledby="tech-h">
@@ -29,7 +29,7 @@
         <dt class="label pk">{{ t('tech_setup_l') }}</dt><dd>{{ t('tech_setup') }}</dd>
         <dt class="label pk">{{ t('tech_video_l') }}</dt><dd>{{ t('tech_video') }}</dd>
       </dl>
-      {% if rider %}<p class="mono small"><a href="{{ rider }}" download>{{ t('web_rider') }}</a></p>{% else %}<p class="mono small">{{ t('contact_rider') }}</p>{% endif %}
+      {% if not rider %}<p class="mono small">{{ t('contact_rider') }}</p>{% endif %}
       <p class="tech__links">
         <a class="btn" href="{{ presskit }}" download>{{ t('web_download') }}</a>
         {% if rider %}<a class="btn" href="{{ rider }}" download>{{ t('web_rider') }}</a>{% endif %}
