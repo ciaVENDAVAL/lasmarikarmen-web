@@ -214,7 +214,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .showband__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 45%; z-index: -2; }
 .showband::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgb(14 11 18 / .82) 0%, rgb(14 11 18 / .45) 50%, rgb(14 11 18 / 0) 80%); }
 .showband__in { min-height: clamp(400px, 56vh, 600px); display: flex; flex-direction: column; justify-content: flex-end; gap: 1rem; padding-block: 3rem; align-items: flex-start; }
-.showband__in .deck { max-width: 30rem; }
+.showband__in .deck { max-width: 30rem; text-shadow: 0 1px 2px #000, 0 0 10px rgba(0,0,0,.85), 0 0 22px rgba(0,0,0,.6); }
 .showband__in .more { color: var(--green); }
 .showband--page .showband__in { min-height: clamp(340px, 50vh, 540px); }
 .show { display: grid; grid-template-columns: 1fr; gap: 2.5rem; }
