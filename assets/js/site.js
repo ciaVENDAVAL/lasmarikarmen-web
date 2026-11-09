@@ -6,11 +6,18 @@
   /* mobile menu */
   var mb = document.querySelector('.menu-btn'), nav = document.getElementById('nav');
   if (mb && nav) {
+    var closeMenu = function () { mb.setAttribute('aria-expanded', 'false'); nav.classList.remove('open'); };
     mb.addEventListener('click', function () {
       var open = mb.getAttribute('aria-expanded') === 'true';
       mb.setAttribute('aria-expanded', String(!open));
       nav.classList.toggle('open', !open);
     });
+    /* collapse as soon as a menu link is followed (also same-page #anchors) */
+    nav.addEventListener('click', function (e) { if (e.target.closest('a')) closeMenu(); });
+    /* and when the page comes back from the back/forward cache (Firefox keeps the old state) */
+    window.addEventListener('pageshow', closeMenu);
+    window.addEventListener('hashchange', closeMenu);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && nav.classList.contains('open')) { closeMenu(); mb.focus(); } });
   }
 
   /* accessibility panel (settings kept in this browser only) */
