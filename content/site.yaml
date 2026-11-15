@@ -21,7 +21,7 @@ language_names:
 
 # Custom domain. Leave empty while testing on <user>.github.io/<repo>/.
 # Set to lasmarikarmen.com when you are ready to move the domain to GitHub Pages.
-cname: ""
+cname: "lasmarikarmen.com"
 
 # Address used in link previews (WhatsApp, Telegram, Signal…). While cname is empty the site
 # lives at pages_url; once cname is set, previews use https://<cname> automatically.
