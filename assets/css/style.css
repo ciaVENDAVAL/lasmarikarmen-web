@@ -624,3 +624,14 @@ html.a11y-contrast .ly-chip[aria-pressed="true"], html.a11y-contrast .ly-mini[ar
   .nav .sub a { font-size: .82rem; padding: .45em 0; opacity: .85; }
 }
 
+
+/* Blob Marikarmen teaser */
+.blobt__grid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: clamp(1.2rem, 3vw, 2.5rem); align-items: center; }
+.blobt__img { display: block; transition: transform .15s; }
+.blobt__img:hover { transform: translate(-2px, -2px) rotate(-.4deg); }
+.blobt__txt .btn + * , .blobt__txt p:last-child { margin-top: 1.4em; }
+.blobt__img img { display: block; width: 100%; height: auto; }
+.blobt__txt .h2 { margin: .4em 0 .3em; }
+.blobt__btn { box-shadow: 5px 5px 0 var(--paper); }
+.blobt__btn:hover { box-shadow: 7px 7px 0 var(--paper); }
+@media (max-width: 760px) { .blobt__grid { grid-template-columns: 1fr; } }

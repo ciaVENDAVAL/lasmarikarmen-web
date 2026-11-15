@@ -90,6 +90,9 @@ def build(langs, text, site):
     import subprocess, json as _json
     subprocess.run([sys.executable, "build.py"], cwd=ROOT / "letras", check=True, stdout=subprocess.DEVNULL)
     lyrics = _json.loads((ROOT / "letras" / "data.json").read_text(encoding="utf-8"))
+    # Blob Marikarmen: standalone toy page (Spanish UI), served at /blob/
+    (OUT / "blob").mkdir()
+    (OUT / "blob" / "index.html").write_text((ROOT / "blob" / "index.html").read_text(encoding="utf-8").replace("__SITE__", site["site_url"].rstrip("/")), encoding="utf-8")
     if (ROOT / "favicon.ico").exists():
         shutil.copy(ROOT / "favicon.ico", OUT / "favicon.ico")
     import hashlib
