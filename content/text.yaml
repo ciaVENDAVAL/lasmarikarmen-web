@@ -3381,18 +3381,6 @@ blob_cta:
   de: "Blob Marikarmen öffnen"
   ja: "Blob Marikarmenを開く"
 
-blob_note:
-  es: "Inspirado en Blob Opera (Google Arts & Culture), sin afiliación."
-  en: "Inspired by Blob Opera (Google Arts & Culture), not affiliated. Interface in Spanish."
-  ca: "Inspirat en Blob Opera (Google Arts & Culture), sense afiliació. Interfície en castellà."
-  gl: "Inspirado en Blob Opera (Google Arts & Culture), sen afiliación. Interface en castelán."
-  eu: "Blob Operan inspiratua (Google Arts & Culture), loturarik gabe. Interfazea gaztelaniaz."
-  pt: "Inspirado no Blob Opera (Google Arts & Culture), sem afiliação. Interface em espanhol."
-  fr: "Inspiré de Blob Opera (Google Arts & Culture), sans affiliation. Interface en espagnol."
-  it: "Ispirato a Blob Opera (Google Arts & Culture), senza affiliazione. Interfaccia in spagnolo."
-  de: "Inspiriert von Blob Opera (Google Arts & Culture), ohne Verbindung dazu. Oberfläche auf Spanisch."
-  ja: "Blob Opera（Google Arts & Culture）にインスパイアされた非公式作品。画面はスペイン語です。"
-
 blob_alt:
   es: "Tres blobs con las caras de Victoria Sickness, Hipogrifa y Contàmina Perpétua cantando en un escenario"
   en: "Three blobs with the faces of Victoria Sickness, Hipogrifa and Contàmina Perpétua singing on a stage"
@@ -3404,3 +3392,15 @@ blob_alt:
   it: "Tre blob con i volti di Victoria Sickness, Hipogrifa e Contàmina Perpétua che cantano su un palco"
   de: "Drei Blobs mit den Gesichtern von Victoria Sickness, Hipogrifa und Contàmina Perpétua singen auf einer Bühne"
   ja: "Victoria Sickness、Hipogrifa、Contàmina Perpétuaの顔をした3つのブロブがステージで歌う"
+
+nav_blob:
+  es: "Blob Marikarmen"
+  en: "Blob Marikarmen"
+  ca: "Blob Marikarmen"
+  gl: "Blob Marikarmen"
+  eu: "Blob Marikarmen"
+  pt: "Blob Marikarmen"
+  fr: "Blob Marikarmen"
+  it: "Blob Marikarmen"
+  de: "Blob Marikarmen"
+  ja: "Blob Marikarmen"

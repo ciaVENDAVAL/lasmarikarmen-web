@@ -40,7 +40,7 @@ NAV = [
                                       ("quienes-somos", "nav_press", "#prensa")]),
     ("espectaculo", "nav_events", "", [("espectaculo", "nav_show", ""), ("espectaculo", "nav_workshops", "#talleres"),
                                        ("espectaculo", "nav_calendar", "#conciertos"), ("espectaculo", "nav_posters", "#past-h")]),
-    ("musica", "nav_music", "", [("musica", "nav_albums", ""), ("musica", "nav_videos", "#vid-h"), ("musica", "nav_lyrics", "#letras")]),
+    ("musica", "nav_music", "", [("musica", "nav_albums", ""), ("musica", "nav_videos", "#vid-h"), ("musica", "nav_blob", "#blob-h"), ("musica", "nav_lyrics", "#letras")]),
     ("tienda", "nav_shop", "", []), ("contacto", "nav_contact", "", []),
 ]
 # Old pages now living inside others: the old address forwards to the new spot
@@ -90,9 +90,22 @@ def build(langs, text, site):
     import subprocess, json as _json
     subprocess.run([sys.executable, "build.py"], cwd=ROOT / "letras", check=True, stdout=subprocess.DEVNULL)
     lyrics = _json.loads((ROOT / "letras" / "data.json").read_text(encoding="utf-8"))
-    # Blob Marikarmen: standalone toy page (Spanish UI), served at /blob/
-    (OUT / "blob").mkdir()
-    (OUT / "blob" / "index.html").write_text((ROOT / "blob" / "index.html").read_text(encoding="utf-8").replace("__SITE__", site["site_url"].rstrip("/")), encoding="utf-8")
+    # Blob Marikarmen: standalone toy page, one copy per language at <lang>/blob/ (texts in blob/i18n.yaml)
+    import html as _html, json as _bjson
+    blob_src = (ROOT / "blob" / "index.html").read_text(encoding="utf-8")
+    blob_i18n = yaml.safe_load((ROOT / "blob" / "i18n.yaml").read_text(encoding="utf-8"))
+    for lang in langs:
+        bt = blob_i18n.get(lang) or blob_i18n[SOURCE]
+        bsub = "" if lang == default else f"{lang}/"
+        page = blob_src.replace("__I18N_JSON__", _bjson.dumps(bt, ensure_ascii=False))
+        for k, v in bt.items():
+            if isinstance(v, str):
+                page = page.replace(f"__H_{k}__", _html.escape(v))
+        page = (page.replace("__LANG__", lang).replace("__SUB__", bsub).replace("__ROOT__", "" if lang == default else "../")
+                    .replace("__SITE__", site["site_url"].rstrip("/")))
+        assert "__H_" not in page and "__I18N" not in page, lang
+        (OUT / bsub / "blob").mkdir(parents=True, exist_ok=True)
+        (OUT / bsub / "blob" / "index.html").write_text(page, encoding="utf-8")
     if (ROOT / "favicon.ico").exists():
         shutil.copy(ROOT / "favicon.ico", OUT / "favicon.ico")
     import hashlib
