@@ -40,7 +40,7 @@ NAV = [
                                       ("quienes-somos", "nav_press", "#prensa")]),
     ("espectaculo", "nav_events", "", [("espectaculo", "nav_show", ""), ("espectaculo", "nav_workshops", "#talleres"),
                                        ("espectaculo", "nav_calendar", "#conciertos"), ("espectaculo", "nav_posters", "#past-h")]),
-    ("musica", "nav_music", "", [("musica", "nav_albums", ""), ("musica", "nav_videos", "#vid-h"), ("musica", "nav_blob", "#blob-h"), ("musica", "nav_lyrics", "#letras")]),
+    ("musica", "nav_music", "", [("musica", "nav_albums", ""), ("musica", "nav_videos", "#vid-h"), ("musica", "nav_blob", "#blob"), ("musica", "nav_lyrics", "#letras")]),
     ("tienda", "nav_shop", "", []), ("contacto", "nav_contact", "", []),
 ]
 # Old pages now living inside others: the old address forwards to the new spot
