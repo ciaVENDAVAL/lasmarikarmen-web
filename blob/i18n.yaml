@@ -20,6 +20,14 @@ es:
   hint_chorus: "Tira de un blob y canta todo el trío"
   hint_solo: "Tira de un blob hacia arriba"
   notes: [Do, Do#, Re, Re#, Mi, Fa, Fa#, Sol, Sol#, La, La#, Si]
+  rec: "Grabar"
+  stop: "Parar"
+  share: "Compartir"
+  download: "Descargar"
+  close: "Cerrar"
+  copied: "Enlace copiado"
+  rec_title: "Tu grabación"
+  share_text: "¡Canta con Las Marikarmen!"
 en:
   desc: "Drag a blob and Victoria Sickness, Hipogrifa and Contàmina Perpétua sing. A Las Marikarmen toy."
   fs: "Full screen"
@@ -40,6 +48,14 @@ en:
   hint_chorus: "Drag a blob and the whole trio sings"
   hint_solo: "Drag a blob upwards"
   notes: [C, C#, D, D#, E, F, F#, G, G#, A, A#, B]
+  rec: "Record"
+  stop: "Stop"
+  share: "Share"
+  download: "Download"
+  close: "Close"
+  copied: "Link copied"
+  rec_title: "Your recording"
+  share_text: "Sing with Las Marikarmen!"
 ca:
   desc: "Estira un blob i canten Victoria Sickness, Hipogrifa i Contàmina Perpétua. Una joguina de Las Marikarmen."
   fs: "Pantalla completa"
@@ -60,6 +76,14 @@ ca:
   hint_chorus: "Estira un blob i canta tot el trio"
   hint_solo: "Estira un blob cap amunt"
   notes: [Do, Do#, Re, Re#, Mi, Fa, Fa#, Sol, Sol#, La, La#, Si]
+  rec: "Grava"
+  stop: "Atura"
+  share: "Comparteix"
+  download: "Descarrega"
+  close: "Tanca"
+  copied: "Enllaç copiat"
+  rec_title: "La teva gravació"
+  share_text: "Canta amb Las Marikarmen!"
 gl:
   desc: "Tira dun blob e cantan Victoria Sickness, Hipogrifa e Contàmina Perpétua. Un xoguete de Las Marikarmen."
   fs: "Pantalla completa"
@@ -80,6 +104,14 @@ gl:
   hint_chorus: "Tira dun blob e canta todo o trío"
   hint_solo: "Tira dun blob cara arriba"
   notes: [Do, Do#, Re, Re#, Mi, Fa, Fa#, Sol, Sol#, La, La#, Si]
+  rec: "Gravar"
+  stop: "Parar"
+  share: "Compartir"
+  download: "Descargar"
+  close: "Pechar"
+  copied: "Ligazón copiada"
+  rec_title: "A túa gravación"
+  share_text: "Canta con Las Marikarmen!"
 eu:
   desc: "Tiratu blob batetik eta Victoria Sickness, Hipogrifa eta Contàmina Perpétua abesten hasiko dira. Las Marikarmenen jostailua."
   fs: "Pantaila osoa"
@@ -100,6 +132,14 @@ eu:
   hint_chorus: "Tiratu blob batetik eta hirukote osoak abesten du"
   hint_solo: "Tiratu blob bat gora"
   notes: [Do, Do#, Re, Re#, Mi, Fa, Fa#, Sol, Sol#, La, La#, Si]
+  rec: "Grabatu"
+  stop: "Gelditu"
+  share: "Partekatu"
+  download: "Deskargatu"
+  close: "Itxi"
+  copied: "Esteka kopiatuta"
+  rec_title: "Zure grabazioa"
+  share_text: "Abestu Las Marikarmenekin!"
 pt:
   desc: "Puxa um blob e cantam Victoria Sickness, Hipogrifa e Contàmina Perpétua. Um brinquedo de Las Marikarmen."
   fs: "Ecrã inteiro"
@@ -120,6 +160,14 @@ pt:
   hint_chorus: "Puxa um blob e canta o trio todo"
   hint_solo: "Puxa um blob para cima"
   notes: [Dó, Dó#, Ré, Ré#, Mi, Fá, Fá#, Sol, Sol#, Lá, Lá#, Si]
+  rec: "Gravar"
+  stop: "Parar"
+  share: "Partilhar"
+  download: "Descarregar"
+  close: "Fechar"
+  copied: "Link copiado"
+  rec_title: "A tua gravação"
+  share_text: "Canta com Las Marikarmen!"
 fr:
   desc: "Tire un blob et Victoria Sickness, Hipogrifa et Contàmina Perpétua chantent. Un jouet de Las Marikarmen."
   fs: "Plein écran"
@@ -140,6 +188,14 @@ fr:
   hint_chorus: "Tire un blob et tout le trio chante"
   hint_solo: "Tire un blob vers le haut"
   notes: [Do, Do#, Ré, Ré#, Mi, Fa, Fa#, Sol, Sol#, La, La#, Si]
+  rec: "Enregistrer"
+  stop: "Arrêter"
+  share: "Partager"
+  download: "Télécharger"
+  close: "Fermer"
+  copied: "Lien copié"
+  rec_title: "Ton enregistrement"
+  share_text: "Chante avec Las Marikarmen !"
 it:
   desc: "Trascina un blob e cantano Victoria Sickness, Hipogrifa e Contàmina Perpétua. Un giocattolo di Las Marikarmen."
   fs: "Schermo intero"
@@ -160,6 +216,14 @@ it:
   hint_chorus: "Trascina un blob e canta tutto il trio"
   hint_solo: "Trascina un blob verso l'alto"
   notes: [Do, Do#, Re, Re#, Mi, Fa, Fa#, Sol, Sol#, La, La#, Si]
+  rec: "Registra"
+  stop: "Ferma"
+  share: "Condividi"
+  download: "Scarica"
+  close: "Chiudi"
+  copied: "Link copiato"
+  rec_title: "La tua registrazione"
+  share_text: "Canta con Las Marikarmen!"
 de:
   desc: "Zieh an einem Blob und Victoria Sickness, Hipogrifa und Contàmina Perpétua singen. Ein Spielzeug von Las Marikarmen."
   fs: "Vollbild"
@@ -180,6 +244,14 @@ de:
   hint_chorus: "Zieh an einem Blob und das ganze Trio singt"
   hint_solo: "Zieh einen Blob nach oben"
   notes: [C, Cis, D, Dis, E, F, Fis, G, Gis, A, B, H]
+  rec: "Aufnehmen"
+  stop: "Stopp"
+  share: "Teilen"
+  download: "Herunterladen"
+  close: "Schließen"
+  copied: "Link kopiert"
+  rec_title: "Deine Aufnahme"
+  share_text: "Sing mit Las Marikarmen!"
 ja:
   desc: "ブロブを引っぱると、Victoria Sickness、Hipogrifa、Contàmina Perpétuaが歌い出す。Las Marikarmenのおもちゃ。"
   fs: "全画面"
@@ -200,3 +272,11 @@ ja:
   hint_chorus: "ブロブを引っぱると3人で歌う"
   hint_solo: "ブロブを上に引っぱって"
   notes: [C, C#, D, D#, E, F, F#, G, G#, A, A#, B]
+  rec: "録画"
+  stop: "停止"
+  share: "シェア"
+  download: "ダウンロード"
+  close: "閉じる"
+  copied: "リンクをコピーしました"
+  rec_title: "あなたの録画"
+  share_text: "Las Marikarmenと歌おう！"

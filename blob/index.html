@@ -72,13 +72,35 @@ select{background:var(--ink);border:2px solid var(--cream);padding:6px 8px;font-
 }
 .pennant{text-decoration:none}
 .top .wrap{flex-wrap:wrap}
+[hidden]{display:none!important}
+.tools{display:flex;gap:8px;align-items:center}
+.tb{height:38px;min-width:38px;border:2px solid var(--cream);background:transparent;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;gap:7px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;text-decoration:none;color:var(--cream);line-height:1}
+.tb:hover{background:var(--cream);color:var(--ink)}
+.tb svg{width:16px;height:16px;flex:none}
+.tb--mag{background:var(--mag);border-color:var(--mag);color:var(--ink)}
+.tb--mag:hover{background:var(--cream);border-color:var(--cream)}
+.dot{width:11px;height:11px;border-radius:50%;background:#ff2a2a;flex:none}
+.rec[aria-pressed="true"]{border-color:#ff2a2a;background:#ff2a2a;color:#fff}
+.rec[aria-pressed="true"] .dot{background:#fff;border-radius:2px;animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:.25}}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--mag);color:var(--ink);font-weight:700;padding:10px 16px;z-index:10;pointer-events:none}
+.dlg{background:var(--ink);color:var(--cream);border:3px solid var(--mag);padding:16px;max-width:min(92vw,720px);width:100%;box-shadow:8px 8px 0 var(--mag)}
+.dlg::backdrop{background:rgba(11,6,18,.85)}
+.dlg__h{margin:0 0 10px;font-family:var(--display);font-size:24px;text-transform:uppercase;letter-spacing:.03em}
+.dlg video{display:block;width:100%;max-height:60vh;background:#000;border:2px solid var(--cream)}
+.dlg__btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+@media (max-width:560px){ .tb .lbl{display:none} .rec[aria-pressed="true"] .lbl{display:inline} }
 </style>
 </head>
 <body>
 <div id="app">
   <header class="top"><div class="wrap">
     <a class="pennant" href="../">Las Marikarmen</a>
-    <button type="button" class="fs" id="fs" aria-label="__H_fs__" title="__H_fs__">⛶</button>
+    <div class="tools">
+      <button type="button" class="tb rec" id="rec" aria-pressed="false" aria-label="__H_rec__" title="__H_rec__"><i class="dot"></i><span class="lbl" id="reclbl">__H_rec__</span></button>
+      <button type="button" class="tb" id="share" aria-label="__H_share__" title="__H_share__"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5M5 12v9h14v-9"/></svg><span class="lbl">__H_share__</span></button>
+      <button type="button" class="fs" id="fs" aria-label="__H_fs__" title="__H_fs__">⛶</button>
+    </div>
   </div></header>
 
   <section class="stage-wrap"><div class="wrap" style="height:100%">
@@ -97,6 +119,16 @@ select{background:var(--ink);border:2px solid var(--cream);padding:6px 8px;font-
       </div>
     </div>
   </div></section>
+
+  <dialog class="dlg" id="recdlg" aria-labelledby="recdlg-h">
+    <p class="dlg__h" id="recdlg-h">__H_rec_title__</p>
+    <video id="recvid" controls playsinline></video>
+    <div class="dlg__btns">
+      <button type="button" class="tb tb--mag" id="recshare">__H_share__</button>
+      <a class="tb" id="recdl" href="#" download="blob-marikarmen.webm">__H_download__</a>
+      <button type="button" class="tb" id="recclose">__H_close__</button>
+    </div>
+  </dialog>
 </div>
 
 <script>
@@ -181,7 +213,7 @@ function harmony(){
 }
 
 /* ---------- audio ---------- */
-var AC=null, master=null;
+var AC=null, master=null, outNode=null, recDest=null, recording=false;
 function makeIR(sec,decay){
   var len=Math.floor(AC.sampleRate*sec), b=AC.createBuffer(2,len,AC.sampleRate);
   for(var c=0;c<2;c++){
@@ -201,7 +233,7 @@ function initAudio(){
   var conv=AC.createConvolver(); conv.buffer=makeIR(2.0,2.4);
   var wet=AC.createGain(); wet.gain.value=.26;
   master.connect(comp); master.connect(conv); conv.connect(wet); wet.connect(comp);
-  comp.connect(AC.destination);
+  comp.connect(AC.destination); outNode=comp;
   PERF.forEach(buildVoice);
 }
 function clarWave(){
@@ -529,6 +561,10 @@ function frame(ts){
     ctx.save(); ctx.globalAlpha=q.life; ctx.translate(q.x,q.y); ctx.rotate(.785);
     ctx.fillStyle=q.col; var s=q.s*S*1.2; ctx.fillRect(-s/2,-s/2,s,s); ctx.restore();
   }
+  if(recording){
+    ctx.save(); ctx.font='700 '+Math.max(11,13*S)+'px "Space Mono",monospace'; ctx.textAlign='right'; ctx.textBaseline='top';
+    ctx.fillStyle='rgba(247,240,234,.85)'; ctx.fillText(location.host+'/blob',W-10,10); ctx.restore();
+  }
   if(!touched){
     var pulse=.6+.4*Math.sin(t*3);
     ctx.save(); ctx.globalAlpha=pulse; ctx.fillStyle='#f7f0ea';
@@ -628,6 +664,92 @@ fsBtn.addEventListener('click',function(){
   }catch(err){}
 });
 document.addEventListener('fullscreenchange',resize);
+
+/* ---------- record & share ---------- */
+var PAGE_URL=location.href.split('#')[0].split('?')[0];
+var recBtn=document.getElementById('rec'), recLbl=document.getElementById('reclbl'), shareBtn=document.getElementById('share');
+var dlg=document.getElementById('recdlg'), recVid=document.getElementById('recvid'), recDl=document.getElementById('recdl'), recShare=document.getElementById('recshare');
+var REC_MAX=60, rec=null, recFile=null, recURL=null;
+function pickMime(){
+  if(!window.MediaRecorder) return null;
+  var c=['video/mp4;codecs=avc1.42E01E,mp4a.40.2','video/mp4','video/webm;codecs=vp9,opus','video/webm;codecs=vp8,opus','video/webm'];
+  for(var i=0;i<c.length;i++){ try{ if(MediaRecorder.isTypeSupported(c[i])) return c[i]; }catch(e){} }
+  return '';
+}
+var MIME=pickMime();
+if(MIME===null || !cv.captureStream){ recBtn.hidden=true; }
+function toast(msg){
+  var el=document.createElement('div'); el.className='toast'; el.setAttribute('role','status'); el.textContent=msg;
+  appEl.appendChild(el); setTimeout(function(){ el.remove(); },2200);
+}
+function fmt(s){ s=Math.floor(s); return Math.floor(s/60)+':'+('0'+s%60).slice(-2); }
+function startRec(){
+  unlock(); if(!AC || !outNode) return;
+  if(!recDest){ recDest=AC.createMediaStreamDestination(); outNode.connect(recDest); }
+  var vs=cv.captureStream(30);
+  var ms=new MediaStream(vs.getVideoTracks().concat(recDest.stream.getAudioTracks()));
+  var mr;
+  try{ mr=MIME?new MediaRecorder(ms,{mimeType:MIME,videoBitsPerSecond:3000000}):new MediaRecorder(ms); }
+  catch(e){ try{ mr=new MediaRecorder(ms); }catch(e2){ return; } }
+  var chunks=[];
+  mr.ondataavailable=function(e){ if(e.data && e.data.size) chunks.push(e.data); };
+  mr.onstop=function(){
+    vs.getVideoTracks().forEach(function(t){ t.stop(); });
+    var type=((mr.mimeType||MIME||'video/webm').split(';')[0])||'video/webm';
+    if(chunks.length) showRec(new Blob(chunks,{type:type}),type);
+  };
+  mr.start(1000);
+  recording=true;
+  rec={mr:mr,t0:performance.now()};
+  rec.timer=setInterval(function(){
+    var el=(performance.now()-rec.t0)/1000;
+    recLbl.textContent=T.stop+' '+fmt(el);
+    if(el>=REC_MAX) stopRec();
+  },250);
+  recBtn.setAttribute('aria-pressed','true'); recBtn.setAttribute('aria-label',T.stop); recLbl.textContent=T.stop+' 0:00';
+}
+function stopRec(){
+  if(!rec) return;
+  clearInterval(rec.timer);
+  try{ rec.mr.stop(); }catch(e){}
+  rec=null; recording=false;
+  recBtn.setAttribute('aria-pressed','false'); recBtn.setAttribute('aria-label',T.rec); recLbl.textContent=T.rec;
+}
+function showRec(blob,type){
+  if(recURL) URL.revokeObjectURL(recURL);
+  recURL=URL.createObjectURL(blob);
+  var name='blob-marikarmen.'+(type.indexOf('mp4')>=0?'mp4':'webm');
+  recVid.src=recURL; recDl.href=recURL; recDl.setAttribute('download',name);
+  recFile=null;
+  try{ recFile=new File([blob],name,{type:type}); }catch(e){}
+  recShare.hidden=!(recFile && navigator.canShare && navigator.canShare({files:[recFile]}));
+  if(dlg.showModal) dlg.showModal(); else dlg.setAttribute('open','');
+}
+function closeDlg(){ try{ recVid.pause(); }catch(e){} if(dlg.close) dlg.close(); else dlg.removeAttribute('open'); }
+recBtn.addEventListener('click',function(){ if(rec) stopRec(); else startRec(); });
+document.getElementById('recclose').addEventListener('click',closeDlg);
+recShare.addEventListener('click',function(){
+  if(!recFile) return;
+  var r=navigator.share({files:[recFile],title:'Blob Marikarmen',text:T.share_text+' '+PAGE_URL});
+  if(r && r.catch) r.catch(function(){});
+});
+function copyLink(){
+  function ok(){ toast(T.copied); }
+  if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(PAGE_URL).then(ok,fallback); }
+  else fallback();
+  function fallback(){
+    var ta=document.createElement('textarea'); ta.value=PAGE_URL; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); ok(); }catch(e){ window.prompt('',PAGE_URL); }
+    ta.remove();
+  }
+}
+shareBtn.addEventListener('click',function(){
+  if(navigator.share){
+    var r=navigator.share({title:'Blob Marikarmen',text:T.share_text,url:PAGE_URL});
+    if(r && r.catch) r.catch(function(e){ if(e && e.name!=='AbortError') copyLink(); });
+  }else copyLink();
+});
 
 if(document.fonts && document.fonts.load){
   document.fonts.load('22px Anton'); document.fonts.load('italic 500 24px "Playfair Display"'); document.fonts.load('700 12px "Space Mono"');
