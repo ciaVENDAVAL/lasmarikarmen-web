@@ -1,137 +1,3 @@
-<!doctype html>
-<html lang="__LANG__">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Blob Marikarmen</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@1,500&family=Space+Mono:wght@400;700&display=swap">
-<meta name="description" content="__H_desc__">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Blob Marikarmen">
-<meta property="og:description" content="__H_desc__">
-<meta property="og:url" content="__SITE__/__SUB__blob/">
-<meta property="og:image" content="__SITE__/assets/img/og/blob.jpg">
-<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="__ROOT__../favicon.ico">
-<style>
-/* Layout: one black screen. Slim bar on top, stage fills the space, one row of toggles per blob, one row for chorus and scale. */
-:root{
-  --ink:#0b0612;
-  --ink-2:#1a0f26;
-  --mag:#ff00ff;
-  --cream:#f7f0ea;
-  --display:'Anton','Impact','Arial Narrow',sans-serif;
-  --voice:'Playfair Display','Georgia',serif;
-  --mono:'Space Mono','Courier New',monospace;
-  color-scheme:dark;
-}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{margin:0;background:var(--ink);color:var(--cream);font-family:var(--mono);font-size:13px;line-height:1.4}
-.wrap{max-width:1100px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-button,select{font:inherit;color:inherit}
-:focus-visible{outline:3px solid var(--mag);outline-offset:2px}
-
-#app{height:100%;display:flex;flex-direction:column;background:var(--ink)}
-.top{flex:none;border-bottom:2px solid var(--mag)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
-.pennant{display:inline-block;background:var(--mag);color:var(--ink);font-family:var(--voice);font-style:italic;font-weight:500;font-size:20px;line-height:1.2;padding:3px 24px 3px 12px;clip-path:polygon(0 0,100% 0,88% 100%,0 100%);transform:rotate(-2deg)}
-.fs{width:38px;height:38px;border:2px solid var(--cream);background:transparent;font-size:20px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}
-.fs:hover{background:var(--cream);color:var(--ink)}
-
-.stage-wrap{flex:1 1 0;min-height:320px;padding-block:12px 8px}
-.stage{display:block;width:100%;height:100%;border:3px solid var(--mag);background:var(--ink);touch-action:none;cursor:grab;-webkit-user-select:none;user-select:none}
-.stage:active{cursor:grabbing}
-
-.bar{flex:none;padding-block:4px 14px}
-.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.pc{min-width:0;display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
-.global{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 10px;margin-top:10px;padding-top:10px;border-top:1px solid rgba(247,240,234,.25)}
-
-.seg{display:inline-flex;border:2px solid var(--cream)}
-.seg button{background:transparent;border:0;border-left:2px solid var(--cream);padding:6px 9px;font-size:11px;letter-spacing:.05em;text-transform:uppercase;font-weight:700;cursor:pointer;min-width:0}
-.seg button:first-child{border-left:0}
-.seg button[aria-pressed="true"]{background:var(--mag);color:var(--ink)}
-.seg button:hover:not([aria-pressed="true"]){background:rgba(247,240,234,.16)}
-
-.auto{display:inline-flex;align-items:center;gap:6px;background:transparent;border:2px solid var(--cream);padding:6px 9px;font-size:11px;letter-spacing:.05em;text-transform:uppercase;font-weight:700;cursor:pointer;min-width:0}
-.auto:hover{background:rgba(247,240,234,.16)}
-.led{width:9px;height:9px;border-radius:50%;background:#4a3a52;border:1px solid var(--cream);flex:none}
-.auto[data-on="1"]{border-color:var(--mag)}
-.auto[data-on="1"] .led{background:var(--mag)}
-.pc.is-inst .auto{opacity:.4}
-
-.chorus{background:transparent;border:2px solid var(--cream);padding:7px 14px;font-family:var(--display);font-size:20px;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;line-height:1}
-.chorus[aria-pressed="true"]{background:var(--mag);border-color:var(--mag);color:var(--ink)}
-select{background:var(--ink);border:2px solid var(--cream);padding:6px 8px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;border-radius:0;cursor:pointer}
-
-@media (max-width:520px){
-  .seg button,.auto{padding:6px 6px;font-size:10px}
-  .chorus{font-size:18px;padding:7px 12px}
-}
-.pennant{text-decoration:none}
-.top .wrap{flex-wrap:wrap}
-[hidden]{display:none!important}
-.tools{display:flex;gap:8px;align-items:center}
-.tb{height:38px;min-width:38px;border:2px solid var(--cream);background:transparent;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;gap:7px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;text-decoration:none;color:var(--cream);line-height:1}
-.tb:hover{background:var(--cream);color:var(--ink)}
-.tb svg{width:16px;height:16px;flex:none}
-.tb--mag{background:var(--mag);border-color:var(--mag);color:var(--ink)}
-.tb--mag:hover{background:var(--cream);border-color:var(--cream)}
-.dot{width:11px;height:11px;border-radius:50%;background:#ff2a2a;flex:none}
-.rec[aria-pressed="true"]{border-color:#ff2a2a;background:#ff2a2a;color:#fff}
-.rec[aria-pressed="true"] .dot{background:#fff;border-radius:2px;animation:blink 1s steps(2) infinite}
-@keyframes blink{50%{opacity:.25}}
-.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--mag);color:var(--ink);font-weight:700;padding:10px 16px;z-index:10;pointer-events:none}
-.dlg{background:var(--ink);color:var(--cream);border:3px solid var(--mag);padding:16px;max-width:min(92vw,720px);width:100%;box-shadow:8px 8px 0 var(--mag)}
-.dlg::backdrop{background:rgba(11,6,18,.85)}
-.dlg__h{margin:0 0 10px;font-family:var(--display);font-size:24px;text-transform:uppercase;letter-spacing:.03em}
-.dlg video{display:block;width:100%;max-height:60vh;background:#000;border:2px solid var(--cream)}
-.dlg__btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-@media (max-width:560px){ .tb .lbl{display:none} .rec[aria-pressed="true"] .lbl{display:inline} }
-</style>
-</head>
-<body>
-<div id="app">
-  <header class="top"><div class="wrap">
-    <a class="pennant" href="../">Las Marikarmen</a>
-    <div class="tools">
-      <button type="button" class="tb rec" id="rec" aria-pressed="false" aria-label="__H_rec__" title="__H_rec__"><i class="dot"></i><span class="lbl" id="reclbl">__H_rec__</span></button>
-      <button type="button" class="tb" id="share" aria-label="__H_share__" title="__H_share__"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5M5 12v9h14v-9"/></svg><span class="lbl">__H_share__</span></button>
-      <button type="button" class="fs" id="fs" aria-label="__H_fs__" title="__H_fs__">⛶</button>
-    </div>
-  </div></header>
-
-  <section class="stage-wrap"><div class="wrap" style="height:100%">
-    <canvas id="stage" class="stage" aria-label="__H_stage__" role="img"></canvas>
-  </div></section>
-
-  <section class="bar"><div class="wrap">
-    <div class="cols" id="cols"></div>
-    <div class="global">
-      <button type="button" class="chorus" id="chorus" aria-pressed="true">__H_chorus__</button>
-      <select id="root" aria-label="__H_key__"></select>
-      <div class="seg" role="group" aria-label="__H_scale__" id="scales">
-        <button type="button" data-scale="maj" aria-pressed="false">__H_maj__</button>
-        <button type="button" data-scale="min" aria-pressed="false">__H_min__</button>
-        <button type="button" data-scale="copla" aria-pressed="true" title="__H_copla_title__">__H_copla__</button>
-      </div>
-    </div>
-  </div></section>
-
-  <dialog class="dlg" id="recdlg" aria-labelledby="recdlg-h">
-    <p class="dlg__h" id="recdlg-h">__H_rec_title__</p>
-    <video id="recvid" controls playsinline></video>
-    <div class="dlg__btns">
-      <button type="button" class="tb tb--mag" id="recshare">__H_share__</button>
-      <a class="tb" id="recdl" href="#" download="blob-marikarmen.webm">__H_download__</a>
-      <button type="button" class="tb" id="recclose">__H_close__</button>
-    </div>
-  </dialog>
-</div>
-
-<script>
 (function(){
 "use strict";
 var T=__I18N_JSON__;
@@ -664,6 +530,11 @@ fsBtn.addEventListener('click',function(){
   }catch(err){}
 });
 document.addEventListener('fullscreenchange',resize);
+function fitApp(){
+  var hd=document.querySelector('header.top');
+  document.documentElement.style.setProperty('--bm-top',(hd?hd.offsetHeight:0)+'px');
+}
+fitApp(); window.addEventListener('resize',fitApp);
 
 /* ---------- record & share ---------- */
 var PAGE_URL=location.href.split('#')[0].split('?')[0];
@@ -756,6 +627,3 @@ if(document.fonts && document.fonts.load){
 }
 requestAnimationFrame(frame);
 })();
-</script>
-</body>
-</html>

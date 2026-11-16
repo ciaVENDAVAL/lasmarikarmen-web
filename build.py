@@ -32,6 +32,7 @@ PAGES = [
     ("musica",         "musica.html",         "nav_music",     "nav_music"),
     ("tienda",         "tienda.html",         "nav_shop",      "nav_shop"),
     ("contacto",       "contacto.html",       "nav_contact",   "nav_contact"),
+    ("blob",           "blob.html",           None,            "nav_blob"),
 ]
 # Menu: (page, text key, anchor)
 NAV = [
@@ -90,22 +91,21 @@ def build(langs, text, site):
     import subprocess, json as _json
     subprocess.run([sys.executable, "build.py"], cwd=ROOT / "letras", check=True, stdout=subprocess.DEVNULL)
     lyrics = _json.loads((ROOT / "letras" / "data.json").read_text(encoding="utf-8"))
-    # Blob Marikarmen: standalone toy page, one copy per language at <lang>/blob/ (texts in blob/i18n.yaml)
+    # Blob Marikarmen toy: blob/toy.{css,html,js} + texts in blob/i18n.yaml, rendered inside the site page blob.html
     import html as _html, json as _bjson
-    blob_src = (ROOT / "blob" / "index.html").read_text(encoding="utf-8")
+    blob_src = {k: (ROOT / "blob" / f"toy.{k}").read_text(encoding="utf-8") for k in ("css", "html", "js")}
     blob_i18n = yaml.safe_load((ROOT / "blob" / "i18n.yaml").read_text(encoding="utf-8"))
-    for lang in langs:
+
+    def blob_parts(lang):
         bt = blob_i18n.get(lang) or blob_i18n[SOURCE]
-        bsub = "" if lang == default else f"{lang}/"
-        page = blob_src.replace("__I18N_JSON__", _bjson.dumps(bt, ensure_ascii=False))
+        h = blob_src["html"]
         for k, v in bt.items():
             if isinstance(v, str):
-                page = page.replace(f"__H_{k}__", _html.escape(v))
-        page = (page.replace("__LANG__", lang).replace("__SUB__", bsub).replace("__ROOT__", "" if lang == default else "../")
-                    .replace("__SITE__", site["site_url"].rstrip("/")))
-        assert "__H_" not in page and "__I18N" not in page, lang
-        (OUT / bsub / "blob").mkdir(parents=True, exist_ok=True)
-        (OUT / bsub / "blob" / "index.html").write_text(page, encoding="utf-8")
+                h = h.replace(f"__H_{k}__", _html.escape(v))
+        j = blob_src["js"].replace("__I18N_JSON__", _bjson.dumps(bt, ensure_ascii=False))
+        assert "__H_" not in h and "__I18N" not in j and "</script" not in j.lower(), lang
+        return {"css": Markup(blob_src["css"]), "html": Markup(h), "js": Markup(j), "desc": bt["desc"]}
+
     if (ROOT / "favicon.ico").exists():
         shutil.copy(ROOT / "favicon.ico", OUT / "favicon.ico")
     import hashlib
@@ -154,6 +154,8 @@ def build(langs, text, site):
                 lang_names=site["language_names"], root=root, page_url=page_url, og_tags=og_tags, lyrics_json=lambda: lyrics_for(lyrics, t, page_url, lang), lyrics_video={s['desc'].get('video'): s['slug'] for s in lyrics if s['desc'].get('video')},
                 slug=slug, pages=PAGES, nav=NAV, icons=icons, asset_v=asset_v, gigs=gigs, past_gigs=past_gigs, past_years=past_years, presskit=root + presskit, rider=(root + rider) if rider else None,
                 page_title=(t(title_key) if title_key else None),
+                blob=blob_parts(lang) if slug == "blob" else None,
+                page_desc=blob_parts(lang)["desc"] if slug == "blob" else None,
                 canonical=f"{site['site_url'].rstrip('/')}/{sub}{'' if slug == 'index' else slug + '.html'}",
             )
             html = env.get_template(tpl).render(**ctx)
@@ -164,6 +166,9 @@ def build(langs, text, site):
             target = page_url(new).split("/")[-1] + anchor
             html = env.get_template("redirect.html").render(lang=lang, target=target)
             (OUT / sub / f"{old}.html").write_text(html, encoding="utf-8")
+        # old toy address /blob/ forwards to blob.html
+        (OUT / sub / "blob").mkdir(parents=True, exist_ok=True)
+        (OUT / sub / "blob" / "index.html").write_text(env.get_template("redirect.html").render(lang=lang, target="../blob.html"), encoding="utf-8")
         if lang != SOURCE and missing:
             print(f"  {lang}: {len(missing)} texts shown in castellano (missing translation)")
     print(f"Built {len(langs)} language(s) × {len(PAGES)} pages → {OUT.relative_to(ROOT)}/")

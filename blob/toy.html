@@ -1,0 +1,37 @@
+<div id="app" class="bm">
+  <div class="bm-head"><div class="wrap bm-head__row">
+    <h1 class="bm-title">Blob Marikarmen</h1>
+    <div class="tools">
+      <button type="button" class="tb rec" id="rec" aria-pressed="false" aria-label="__H_rec__" title="__H_rec__"><i class="dot"></i><span class="lbl" id="reclbl">__H_rec__</span></button>
+      <button type="button" class="tb" id="share" aria-label="__H_share__" title="__H_share__"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5M5 12v9h14v-9"/></svg><span class="lbl">__H_share__</span></button>
+      <button type="button" class="fs" id="fs" aria-label="__H_fs__" title="__H_fs__">⛶</button>
+    </div>
+  </div></div>
+
+  <section class="stage-wrap"><div class="wrap bm-fill">
+    <canvas id="stage" class="stage" aria-label="__H_stage__" role="img"></canvas>
+  </div></section>
+
+  <section class="bar"><div class="wrap">
+    <div class="cols" id="cols"></div>
+    <div class="global">
+      <button type="button" class="chorus" id="chorus" aria-pressed="true">__H_chorus__</button>
+      <select id="root" aria-label="__H_key__"></select>
+      <div class="seg" role="group" aria-label="__H_scale__" id="scales">
+        <button type="button" data-scale="maj" aria-pressed="false">__H_maj__</button>
+        <button type="button" data-scale="min" aria-pressed="false">__H_min__</button>
+        <button type="button" data-scale="copla" aria-pressed="true" title="__H_copla_title__">__H_copla__</button>
+      </div>
+    </div>
+  </div></section>
+
+  <dialog class="dlg" id="recdlg" aria-labelledby="recdlg-h">
+    <p class="dlg__h" id="recdlg-h">__H_rec_title__</p>
+    <video id="recvid" controls playsinline></video>
+    <div class="dlg__btns">
+      <button type="button" class="tb tb--mag" id="recshare">__H_share__</button>
+      <a class="tb" id="recdl" href="#" download="blob-marikarmen.webm">__H_download__</a>
+      <button type="button" class="tb" id="recclose">__H_close__</button>
+    </div>
+  </dialog>
+</div>
