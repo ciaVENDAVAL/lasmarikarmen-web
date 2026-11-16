@@ -5,15 +5,18 @@ Short info on the home page, one page per topic:
 
 | Page | File | Also contains |
 |---|---|---|
-| Inicio | `index.html` | |
-| Quiénes somos | `quienes-somos.html` | Prensa (`#prensa`) |
-| Espectáculo | `espectaculo.html` | Talleres (`#talleres`), Conciertos (`#conciertos`) |
-| Música | `musica.html` | Letras (`#letras`) |
-| Tienda | `tienda.html` | |
-| Contacto | `contacto.html` | |
+| Inicio | `/` | |
+| Quiénes somos | `/quienes-somos/` | Miembros (`#members`), Prensa (`#prensa`) |
+| Espectáculo | `/espectaculo/` | Talleres (`#talleres`), Conciertos (`#conciertos`) |
+| Música | `/musica/` | Blob (`#blob`), Letras (`#letras`) |
+| Blob Marikarmen | `/blob/` | |
+| Tienda | `/tienda/` | |
+| Contacto | `/contacto/` | |
+
+Addresses have no `.html` (each page is `<slug>/index.html`; other languages under `/<lang>/<slug>/`). Anchors go after the slash: `/musica/#blob`.
 
 The sections live in `templates/_prensa.html`, `_talleres.html`, `_conciertos.html`, `_letras.html`.
-The old addresses (`letras.html`, `talleres.html`, `conciertos.html`, `prensa.html`) forward to the new spot,
+The old addresses (`blob.html`, `musica.html`… and `letras.html`, `talleres.html`, `conciertos.html`, `prensa.html`, also without `.html`) forward to the new spot,
 so links already shared keep working. Menu: `NAV` in `build.py`.
 
 Social icons, contact and press kit appear once, in the footer of every page.

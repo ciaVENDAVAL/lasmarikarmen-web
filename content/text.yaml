@@ -2451,16 +2451,16 @@ press_grec:
 
 # ───────── contact ─────────
 contact_invite:
-  es: Si quieres un <a href='espectaculo.html'><b>concierto teatral</b></a> o un <a href='espectaculo.html#talleres'><b>taller de drag</b></a>, o simplemente te falta alguien para escucharte, llámanos.
-  en: "If you want a <a href='espectaculo.html'><b>theatrical concert</b></a> or a <a href='espectaculo.html#talleres'><b>drag workshop</b></a>, or you just need someone to listen to you, call us."
-  ca: "Si vols un <a href='espectaculo.html'><b>concert teatral</b></a> o un <a href='espectaculo.html#talleres'><b>taller de drag</b></a>, o simplement et falta algú que t'escolti, truca'ns."
-  gl: "Se queres un <a href='espectaculo.html'><b>concerto teatral</b></a> ou un <a href='espectaculo.html#talleres'><b>obradoiro de drag</b></a>, ou simplemente che falta alguén que te escoite, chámanos."
-  eu: "<a href='espectaculo.html'><b>Kontzertu teatral</b></a> bat edo <a href='espectaculo.html#talleres'><b>drag tailer</b></a> bat nahi baduzu, edo besterik gabe entzungo dizun norbait falta bazaizu, deitu iezaguzu."
-  pt: "Se queres um <a href='espectaculo.html'><b>concerto teatral</b></a> ou uma <a href='espectaculo.html#talleres'><b>oficina de drag</b></a>, ou simplesmente te falta alguém que te ouça, liga-nos."
-  fr: "Si tu veux un <a href='espectaculo.html'><b>concert théâtral</b></a> ou un <a href='espectaculo.html#talleres'><b>atelier drag</b></a>, ou si tu as simplement besoin de quelqu'un pour t'écouter, appelle-nous."
-  it: "Se vuoi un <a href='espectaculo.html'><b>concerto teatrale</b></a> o un <a href='espectaculo.html#talleres'><b>laboratorio drag</b></a>, o semplicemente ti manca qualcunə che ti ascolti, chiamaci."
-  de: "Wenn du ein <a href='espectaculo.html'><b>theatrales Konzert</b></a> oder einen <a href='espectaculo.html#talleres'><b>Drag-Workshop</b></a> willst, oder dir einfach jemand zum Zuhören fehlt, ruf uns an."
-  ja: "<a href='espectaculo.html'><b>演劇的なライブ</b></a>や<a href='espectaculo.html#talleres'><b>ドラァグ・ワークショップ</b></a>をご希望の方、ただ話を聞いてくれる誰かがほしい方も、お気軽にご連絡ください。"
+  es: Si quieres un <a href='../espectaculo/'><b>concierto teatral</b></a> o un <a href='../espectaculo/#talleres'><b>taller de drag</b></a>, o simplemente te falta alguien para escucharte, llámanos.
+  en: "If you want a <a href='../espectaculo/'><b>theatrical concert</b></a> or a <a href='../espectaculo/#talleres'><b>drag workshop</b></a>, or you just need someone to listen to you, call us."
+  ca: "Si vols un <a href='../espectaculo/'><b>concert teatral</b></a> o un <a href='../espectaculo/#talleres'><b>taller de drag</b></a>, o simplement et falta algú que t'escolti, truca'ns."
+  gl: "Se queres un <a href='../espectaculo/'><b>concerto teatral</b></a> ou un <a href='../espectaculo/#talleres'><b>obradoiro de drag</b></a>, ou simplemente che falta alguén que te escoite, chámanos."
+  eu: "<a href='../espectaculo/'><b>Kontzertu teatral</b></a> bat edo <a href='../espectaculo/#talleres'><b>drag tailer</b></a> bat nahi baduzu, edo besterik gabe entzungo dizun norbait falta bazaizu, deitu iezaguzu."
+  pt: "Se queres um <a href='../espectaculo/'><b>concerto teatral</b></a> ou uma <a href='../espectaculo/#talleres'><b>oficina de drag</b></a>, ou simplesmente te falta alguém que te ouça, liga-nos."
+  fr: "Si tu veux un <a href='../espectaculo/'><b>concert théâtral</b></a> ou un <a href='../espectaculo/#talleres'><b>atelier drag</b></a>, ou si tu as simplement besoin de quelqu'un pour t'écouter, appelle-nous."
+  it: "Se vuoi un <a href='../espectaculo/'><b>concerto teatrale</b></a> o un <a href='../espectaculo/#talleres'><b>laboratorio drag</b></a>, o semplicemente ti manca qualcunə che ti ascolti, chiamaci."
+  de: "Wenn du ein <a href='../espectaculo/'><b>theatrales Konzert</b></a> oder einen <a href='../espectaculo/#talleres'><b>Drag-Workshop</b></a> willst, oder dir einfach jemand zum Zuhören fehlt, ruf uns an."
+  ja: "<a href='../espectaculo/'><b>演劇的なライブ</b></a>や<a href='../espectaculo/#talleres'><b>ドラァグ・ワークショップ</b></a>をご希望の方、ただ話を聞いてくれる誰かがほしい方も、お気軽にご連絡ください。"
 contact_direct:
   es: Contacto directo
   en: "Direct contact"

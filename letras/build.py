@@ -80,7 +80,7 @@ T=yaml.safe_load(open('../content/text.yaml',encoding='utf-8'))
 def R(v):
     if not isinstance(v,str) or not v.startswith('@'): return v
     k,_,n=v[1:].partition(':')
-    if k=='page': return f"https://ciavendaval.github.io/lasmarikarmen-web/{n}.html"
+    if k=='page': return f"https://lasmarikarmen.com/{n}/"
     return str(T[k]['es']).replace('{n}',n)
 def RD(x):
     if isinstance(x,list): return [RD(i) for i in x]

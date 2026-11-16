@@ -2,7 +2,7 @@
 # All translatable text lives in content/text.yaml.
 
 # Languages published on the site. The first one is the default and is built
-# at the root (/). The others go in /<code>/ (e.g. /ca/talleres.html).
+# at the root (/). The others go in /<code>/ (e.g. /ca/espectaculo/).
 # Add a language here only when its translation in text.yaml is complete —
 # `python3 build.py --check` lists what is missing.
 languages: [es, en, ca, gl, eu, pt, fr, it, de, ja]

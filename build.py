@@ -37,7 +37,7 @@ PAGES = [
 # Menu: (page, text key, anchor)
 NAV = [
     # (page, text key, anchor, [sub-items (page, text key, anchor)])
-    ("quienes-somos", "nav_bio", "", [("quienes-somos", "nav_band", ""), ("quienes-somos", "nav_members", "#members-h"),
+    ("quienes-somos", "nav_bio", "", [("quienes-somos", "nav_band", ""), ("quienes-somos", "nav_members", "#members"),
                                       ("quienes-somos", "nav_press", "#prensa")]),
     ("espectaculo", "nav_events", "", [("espectaculo", "nav_show", ""), ("espectaculo", "nav_workshops", "#talleres"),
                                        ("espectaculo", "nav_calendar", "#conciertos"), ("espectaculo", "nav_posters", "#past-h")]),
@@ -127,7 +127,8 @@ def build(langs, text, site):
 
     for lang in langs:
         sub = "" if lang == default else f"{lang}/"
-        root = "" if lang == default else "../"
+        base_root = "" if lang == default else "../"
+        root = base_root
         missing = set()
 
         def t(key, _lang=lang):
@@ -141,14 +142,15 @@ def build(langs, text, site):
             return Markup(val)
 
         def page_url(slug, target_lang=lang):
-            # link from the current language folder to <slug> in target_lang
+            # clean addresses: /<lang>/<slug>/ (no .html); the home page is the language folder itself
             target_sub = "" if target_lang == default else f"{target_lang}/"
-            name = "index.html" if slug == "index" else f"{slug}.html"
-            return f"{root}{target_sub}{name}"
+            name = "" if slug == "index" else f"{slug}/"
+            return f"{root}{target_sub}{name}" or "./"
 
         presskit = site["presskit"].get(lang) or site["presskit"][SOURCE]
         rider = (site.get("rider") or {}).get(lang) or (site.get("rider") or {}).get(SOURCE)
         for slug, tpl, nav_key, title_key in PAGES:
+            root = base_root if slug == "index" else base_root + "../"
             ctx = dict(
                 t=t, lang=lang, langs=langs if len(langs) > 1 else [], site=site,
                 lang_names=site["language_names"], root=root, page_url=page_url, og_tags=og_tags, lyrics_json=lambda: lyrics_for(lyrics, t, page_url, lang), lyrics_video={s['desc'].get('video'): s['slug'] for s in lyrics if s['desc'].get('video')},
@@ -156,19 +158,22 @@ def build(langs, text, site):
                 page_title=(t(title_key) if title_key else None),
                 blob=blob_parts(lang) if slug == "blob" else None,
                 page_desc=blob_parts(lang)["desc"] if slug == "blob" else None,
-                canonical=f"{site['site_url'].rstrip('/')}/{sub}{'' if slug == 'index' else slug + '.html'}",
+                canonical=f"{site['site_url'].rstrip('/')}/{sub}{'' if slug == 'index' else slug + '/'}",
             )
             html = env.get_template(tpl).render(**ctx)
-            dest = OUT / sub / ("index.html" if slug == "index" else f"{slug}.html")
+            dest = OUT / sub / ("index.html" if slug == "index" else f"{slug}/index.html")
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_text(html, encoding="utf-8")
+        # old addresses keep working: <page>.html → <page>/ and pages that moved inside others → <page>/#anchor
+        def redirect(path, target):
+            (OUT / sub / path).parent.mkdir(parents=True, exist_ok=True)
+            (OUT / sub / path).write_text(env.get_template("redirect.html").render(lang=lang, target=target), encoding="utf-8")
+        for slug, *_ in PAGES:
+            if slug != "index":
+                redirect(f"{slug}.html", f"{slug}/")
         for old, (new, anchor) in REDIRECTS.items():
-            target = page_url(new).split("/")[-1] + anchor
-            html = env.get_template("redirect.html").render(lang=lang, target=target)
-            (OUT / sub / f"{old}.html").write_text(html, encoding="utf-8")
-        # old toy address /blob/ forwards to blob.html
-        (OUT / sub / "blob").mkdir(parents=True, exist_ok=True)
-        (OUT / sub / "blob" / "index.html").write_text(env.get_template("redirect.html").render(lang=lang, target="../blob.html"), encoding="utf-8")
+            redirect(f"{old}.html", f"{new}/{anchor}")
+            redirect(f"{old}/index.html", f"../{new}/{anchor}")
         if lang != SOURCE and missing:
             print(f"  {lang}: {len(missing)} texts shown in castellano (missing translation)")
     print(f"Built {len(langs)} language(s) × {len(PAGES)} pages → {OUT.relative_to(ROOT)}/")
