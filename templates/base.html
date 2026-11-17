@@ -139,7 +139,7 @@ files:["content/i18n/{lang}.json","content/gigs.json","content/videos.json","con
 skip:["_about","id","url","img","claw","card","posters","cover","date","kind","icon","instagram","pronoun_key","from_key","role_key","roles_key","motto_key","bio_key","tall","price","sizes","spotify","spotify_embed","phone","phone_href","email","person","name","title_key","region_key","lang","social","bandcamp_merch","meneo_instagram","presskit","rider"],
 img:{root:"/assets/img/"},
 pdf:{downloads:"content/downloads.json",name:"/assets/{kind}/Las-Marikarmen-{kind}-{yyyy-mm}-{lang}.pdf",short:null},
-admin:"{{ root }}admin/"};
+admin:"{{ site.site_url }}/admin/"};
 var s=document.createElement("script");s.type="module";s.src="{{ root }}assets/js/edit.js?v={{ asset_v }}";document.body.appendChild(s)}
 else addEventListener("hashchange",function(){if(location.hash==="#edit")location.reload()})}catch(e){}</script>
 </body>
