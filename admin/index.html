@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Las Marikarmen · admin</title>
+  <link rel="icon" href="../assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../assets/css/fonts.css">
+  <style>
+    :root { --pink:#ff00ff; --green:#3cfe2d; --ink:#0e0b12; --card:#1a1420; --cream:#f6f0e8; --muted:rgb(246 240 232/.65); --line:rgb(246 240 232/.18); }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--ink); color:var(--cream); font:400 1.02rem/1.55 "Inter",system-ui,sans-serif; padding:clamp(1.1rem,5vw,4rem); }
+    main { max-width:58rem; margin:0 auto; }
+    .logo { display:block; width:min(300px,70vw); height:auto; margin:0 0 .6rem; }
+    .label { font:700 .78rem/1 "Space Mono",monospace; letter-spacing:.2em; text-transform:uppercase; color:var(--green); margin:0 0 2rem; }
+    h2 { font:400 1.9rem/1 "Anton",Impact,sans-serif; text-transform:uppercase; letter-spacing:.01em; margin:0 0 .3rem; color:var(--cream); }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:1rem; margin-bottom:2.5rem; }
+    .card { display:block; background:var(--card); border:3px solid var(--cream); padding:1.3rem; text-decoration:none; color:var(--cream); box-shadow:6px 6px 0 var(--cream); transition:transform .15s, box-shadow .15s; }
+    .card:hover, .card:focus-visible { transform:translate(-2px,-2px); box-shadow:8px 8px 0 var(--pink); }
+    .card--main { border-color:var(--pink); box-shadow:6px 6px 0 var(--pink); }
+    .card h2::after { content:" →"; color:var(--pink); }
+    .card p { margin:0; font-family:"Playfair Display",Georgia,serif; font-style:italic; font-size:1.15rem; color:var(--pink); }
+    .card ul { margin:.8rem 0 0; padding-left:1.1rem; color:var(--muted); font-size:.95rem; }
+    a { color:var(--pink); }
+    code { background:var(--card); padding:.1em .35em; font:.88em "Space Mono",monospace; }
+    details { border-top:1px solid var(--line); padding:1rem 0; }
+    details:last-of-type { border-bottom:1px solid var(--line); }
+    summary { cursor:pointer; font-weight:600; }
+    summary::marker { color:var(--pink); }
+    li { margin:.35rem 0; }
+    .nm { white-space:nowrap; }
+    .foot { margin-top:2.5rem; font:.8rem "Space Mono",monospace; color:var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <img class="logo" src="../assets/img/logo-pennant-dark.png" alt="Las Marikarmen" width="300" height="97">
+  <p class="label">✦ admin de la web</p>
+
+  <div class="cards">
+    <a class="card card--main" href="../#edit">
+      <h2>Editar en la página</h2>
+      <p>La web de verdad, editable</p>
+      <ul>
+        <li>Toca un texto y escribe</li>
+        <li>Toca una foto o un botón de PDF para cambiarlo (o «Fotos» en la barra de abajo)</li>
+        <li>Muévete por las páginas e idiomas, luego <b>Publicar</b> una vez</li>
+      </ul>
+    </a>
+    <a class="card" href="web/">
+      <h2>Formularios</h2>
+      <p>Todo, campo por campo</p>
+      <ul>
+        <li>Textos en 10 idiomas, por secciones</li>
+        <li>Fechas y carteles, vídeos, tienda, prensa</li>
+        <li>Integrantes, discos, créditos, contacto, colores</li>
+      </ul>
+    </a>
+    <a class="card" href="web/#/collections/_singletons/entries/gigs">
+      <h2>Fechas</h2>
+      <p>Conciertos nuevos y carteles</p>
+      <ul>
+        <li>Añade una fecha con su cartel; pasada la fecha se mueve sola a «Lo petamos…»</li>
+        <li>Fecha <code>2027-03-14</code> (o <code>2027-03</code> si no se sabe el día)</li>
+      </ul>
+    </a>
+    <a class="card" href="web/#/collections/_singletons/entries/downloads">
+      <h2>PDFs</h2>
+      <p>Press kit y rider</p>
+      <ul>
+        <li>Sube la versión nueva y elígela para cada idioma</li>
+        <li>Nombre: <code>Las-Marikarmen-presskit-2027-01-es.pdf</code></li>
+      </ul>
+    </a>
+  </div>
+
+  <details>
+    <summary>Primera vez: cómo entrar</summary>
+    <p>Se entra con un <b>token de GitHub</b> (una contraseña larga hecha para esto). Se pega una vez por navegador y se queda guardado hasta que cierres sesión. Sirve para los formularios y para editar en la página (es la misma web, así que entrando en uno ya estás en los dos).</p>
+    <ol>
+      <li>Entra en GitHub con una cuenta que sea miembro de <b>ciaVENDAVAL</b>.</li>
+      <li>Abre <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">New fine-grained token</a>.</li>
+      <li><b>Token name:</b> <code>Las Marikarmen admin</code>. <b>Expiration:</b> hasta un año.</li>
+      <li><b>Resource owner:</b> <code>ciaVENDAVAL</code> (no tu cuenta personal).</li>
+      <li><b>Repository access:</b> <i>Only select repositories</i> → <code>lasmarikarmen-web</code>. (Los permisos solo aparecen después de elegir el repositorio.)</li>
+      <li><b>Permissions:</b> toca <b>+ Add permissions</b>, busca <b>Contents</b>, elígelo y cámbialo de <i>Read-only</i> a <b>Read and write</b>. (<i>Metadata: Read-only</i> se añade solo; déjalo. Nada más: <b>no</b> elijas «Repository creation».)</li>
+      <li><b>Generate token</b>, cópialo, abre <i>Formularios</i>, elige <b>Sign In Using Access Token</b> y pégalo.</li>
+    </ol>
+    <p>Si ciaVENDAVAL no permite tokens fine-grained, usa un <a href="https://github.com/settings/tokens/new?scopes=public_repo&amp;description=Las%20Marikarmen%20admin" target="_blank" rel="noopener">token clásico</a> marcando solo <code>public_repo</code>.</p>
+    <p>Guárdalo como una contraseña. En un móvil o compu compartido: Formularios → icono de cuenta → <b>Sign Out</b> (cierra los dos). Para borrar un token: GitHub → foto de perfil (arriba a la derecha) → Settings → Developer settings → Personal access tokens.</p>
+  </details>
+
+  <details>
+    <summary>Cómo funciona</summary>
+    <ul>
+      <li>Cada <b>Guardar</b> (o <b>Publicar</b> en la página) va directo a la web. Se ve en unos <b>3–5 minutos</b>: recarga la página.</li>
+      <li>Todo cambio queda en el <a href="https://github.com/ciaVENDAVAL/lasmarikarmen-web/commits/main" target="_blank" rel="noopener">historial de GitHub</a>: todo se puede deshacer.</li>
+      <li><b>Cambia un idioma, los demás le siguen:</b> un texto cambiado solo en un idioma se traduce a los otros unos minutos después, con el traductor libre de Softcatalà (sin Google, sin Amazon). El <b>japonés</b> no: queda con el texto viejo y el historial avisa de qué falta. <b>Revisa siempre el resultado</b>, sobre todo los pronombres: <span class="nm">Hipogrifa</span> ella; <span class="nm">Victoria Sickness</span> y <span class="nm">Contàmina Perpétua</span> elle / elli / they / dey. Para corregir solo un idioma, desmarca <i>Traducir</i> en la barra de edición, o cambia todos los idiomas en el mismo guardado.</li>
+      <li><b>Fotos:</b> súbelas tal cual, con nombres simples sin espacios ni acentos (p. ej. <code>2027-03-14-sala-apolo.jpg</code>). La web hace sola una copia más ligera. <b>Nunca se recortan.</b></li>
+      <li><b>Cambiar una foto</b> sin tocar textos: en la página, tócala y elige otra (mismo nombre, se cambia en toda la web).</li>
+      <li>Los vídeos aceptan un enlace de <b>PeerTube</b> o de YouTube; la portada es siempre una foto de la propia web.</li>
+      <li>Si trabajas desde un ordenador con git: <code>git pull</code> antes de empezar (los formularios y el robot de traducción también guardan).</li>
+      <li>Las letras de las canciones y el press kit (PDF) se cambian con Claude.</li>
+    </ul>
+  </details>
+
+  <p class="foot">Hecho con <a href="https://sveltiacms.app" target="_blank" rel="noopener">Sveltia CMS</a> · modelo La Senyal / Victoria Sickness · repo ciaVENDAVAL/lasmarikarmen-web</p>
+</main>
+</body>
+</html>

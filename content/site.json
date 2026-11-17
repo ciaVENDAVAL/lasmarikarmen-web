@@ -1,0 +1,31 @@
+{
+  "_about": "Technical settings (no form in the admin): languages, addresses. Change only with care.",
+  "languages": [
+    "es",
+    "en",
+    "ca",
+    "gl",
+    "eu",
+    "pt",
+    "fr",
+    "it",
+    "de",
+    "ja"
+  ],
+  "language_names": {
+    "es": "Castellano",
+    "en": "English",
+    "ca": "Català",
+    "gl": "Galego",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "fr": "Français",
+    "eu": "Euskara",
+    "pt": "Português",
+    "ja": "日本語"
+  },
+  "cname": "lasmarikarmen.com",
+  "pages_url": "https://ciavendaval.github.io/lasmarikarmen-web",
+  "site_url": "https://www.lasmarikarmen.com",
+  "admin_url": "https://www.lasmarikarmen.com/admin/"
+}

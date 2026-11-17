@@ -7,7 +7,7 @@ ALB="Nos pegan (2023)"
 KIL="https://www.instagram.com/kiltreoskuro"
 CAPI="https://www.instagram.com/capitano_barbaconyo"
 PROD="Suzio Tarik, Slowbou, Carlo Jurancelli"
-# Texts starting with "@" are keys in ../content/text.yaml (translated per site language);
+# Texts starting with "@" are keys in ../content/i18n/<lang>.json (translated per site language);
 # "@key:N" fills {n}; "@page:slug" links to that page of the site in the visitor's language.
 MUS=("@nav_music","@page:musica")
 SPOT_TR=("Spotify","https://open.spotify.com/track/7rVY7nSi1jSgkNe6u7987Z")
@@ -75,8 +75,7 @@ for si,s in enumerate(S):
     out.append({"title":title,"slug":norm(title).replace(' ','-'),"blocks":blocks,"desc":d})
 out.sort(key=lambda s:norm(s['title']))
 json.dump(out,open('data.json','w'),ensure_ascii=False)
-import yaml
-T=yaml.safe_load(open('../content/text.yaml',encoding='utf-8'))
+T={k:{'es':v} for g in json.load(open('../content/i18n/es.json',encoding='utf-8')).values() for k,v in g.items()}
 def R(v):
     if not isinstance(v,str) or not v.startswith('@'): return v
     k,_,n=v[1:].partition(':')

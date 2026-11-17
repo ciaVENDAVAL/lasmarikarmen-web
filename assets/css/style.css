@@ -635,3 +635,6 @@ html.a11y-contrast .ly-chip[aria-pressed="true"], html.a11y-contrast .ly-mini[ar
 .blobt__btn { box-shadow: 5px 5px 0 var(--paper); }
 .blobt__btn:hover { box-shadow: 7px 7px 0 var(--paper); }
 @media (max-width: 760px) { .blobt__grid { grid-template-columns: 1fr; } }
+
+/* edit on the page (#edit): overlays let taps reach the photo below */
+.is-editing .vid__play, .is-editing .hero__video { pointer-events: none; }

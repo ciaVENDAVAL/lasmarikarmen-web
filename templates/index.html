@@ -6,9 +6,9 @@
 <section class="hero">
   <figure class="hero__photo">
     <img src="{{ root }}assets/img/photos/hero-jetski.jpg" alt="{{ t('hero_alt')|striptags }}" width="850" height="567">
-    {% if site.get('hero_video') %}
+    {% if site.get('hero_video') and site.hero_video.id %}
     <div class="hero__video" data-yt="{{ site.hero_video.id }}" aria-hidden="true"></div>
-    <a class="hero__vlink mono" href="https://www.youtube.com/watch?v={{ site.hero_video.id }}" target="_blank" rel="noopener">▶ <span class="hero__vtitle">{{ site.hero_video.title }} · </span>{{ t('hero_video_link') }} ↗</a>
+    <a class="hero__vlink mono" href="{{ site.hero_video.watch }}" target="_blank" rel="noopener">▶ <span class="hero__vtitle">{{ site.hero_video.title }} · </span>{{ t('hero_video_link') }} ↗</a>
     {% endif %}
     <a class="sticker" href="{{ page_url('espectaculo') }}">
       <span class="sticker__big">Nos<br>pegan!</span>

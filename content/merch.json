@@ -1,0 +1,60 @@
+{
+  "merch": [
+    {
+      "id": "tee_pink",
+      "tall": true,
+      "price": 15,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "img": "/assets/img/merch/camiseta-cistema-rosa-puesta.jpg",
+      "url": "https://lasmarikarmen.bandcamp.com/merch/camisetas-t-shirts"
+    },
+    {
+      "id": "tee_green",
+      "tall": true,
+      "price": 15,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "img": "/assets/img/merch/camiseta-cistema-verde.gif",
+      "url": "https://lasmarikarmen.bandcamp.com/merch/camisetas-t-shirts-xxl-print"
+    },
+    {
+      "id": "fan",
+      "tall": false,
+      "price": 10,
+      "img": "/assets/img/merch/abanico.jpg",
+      "url": "https://lasmarikarmen.bandcamp.com/merch/fan-abanico"
+    },
+    {
+      "id": "cassette",
+      "tall": false,
+      "price": 5,
+      "img": "/assets/img/merch/cassette-nos-pegan.jpg",
+      "url": "https://lasmarikarmen.bandcamp.com/merch/nos-pegan-album-cassette"
+    },
+    {
+      "id": "fanzine",
+      "tall": false,
+      "price": 5,
+      "img": "/assets/img/merch/fanzine-nos-pegan.jpg",
+      "url": "https://lasmarikarmen.bandcamp.com/merch/fanzine-nos-pegan"
+    },
+    {
+      "id": "usb",
+      "tall": false,
+      "price": 10,
+      "img": "/assets/img/merch/usb-unicornios.jpg",
+      "url": "https://lasmarikarmen.bandcamp.com/merch/usb-unicorn-4gb-with-music-photos"
+    }
+  ]
+}

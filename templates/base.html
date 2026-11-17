@@ -23,11 +23,10 @@ if(k&&k!==L[0]&&L.indexOf(k)>-1&&!/[?&]lang=/.test(location.search)){location.re
 {% endif %}<link rel="icon" href="{{ root }}favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="{{ root }}assets/img/favicon.png">
 <link rel="apple-touch-icon" href="{{ root }}assets/img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&family=Playfair+Display:ital,wght@1,400;1,700;1,900&family=Space+Mono:wght@400;700&display=swap">
-{% if lang == 'ja' %}<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="{{ root }}assets/css/fonts.css?v={{ asset_v }}">
+{% if lang == 'ja' %}<link rel="stylesheet" href="{{ root }}assets/css/fonts-ja.css?v={{ asset_v }}">
 {% endif %}<link rel="stylesheet" href="{{ root }}assets/css/style.css?v={{ asset_v }}">
+<style>:root{ {%- for k, v in site.theme.items() %}--{{ k }}:{{ v }};{% endfor -%} }</style>
 <script>
 /* apply saved accessibility settings before the page paints */
 (function(){try{var s=JSON.parse(localStorage.getItem('lm-a11y')||'{}'),h=document.documentElement;
@@ -133,5 +132,15 @@ for(var k in s){if(k==='size'){h.style.fontSize=s.size+'%'}else if(s[k]){h.class
 </a>
 
 <script src="{{ root }}assets/js/site.js?v={{ asset_v }}" defer></script>
+{#- Edit on the page: open any page with #edit (assets/js/edit.js; forms admin at /admin/) #}
+<script>try{if(location.hash==="#edit"||sessionStorage.getItem("ls-edit")){sessionStorage.setItem("ls-edit","1");document.documentElement.classList.add("is-editing");
+window.LS_EDIT={repo:"ciaVENDAVAL/lasmarikarmen-web",branch:"main",base:"",lang:"{{ lang }}",
+files:["content/i18n/{lang}.json","content/gigs.json","content/videos.json","content/merch.json","content/press.json","content/music.json","content/venues.json","content/credits.json","content/contact.json","content/members.json","content/downloads.json"],
+skip:["_about","id","url","img","claw","card","posters","cover","date","kind","icon","instagram","pronoun_key","from_key","role_key","roles_key","motto_key","bio_key","tall","price","sizes","spotify","spotify_embed","phone","phone_href","email","person","name","title_key","region_key","lang","social","bandcamp_merch","meneo_instagram","presskit","rider"],
+img:{root:"/assets/img/"},
+pdf:{downloads:"content/downloads.json",name:"/assets/{kind}/Las-Marikarmen-{kind}-{yyyy-mm}-{lang}.pdf",short:null},
+admin:"{{ root }}admin/"};
+var s=document.createElement("script");s.type="module";s.src="{{ root }}assets/js/edit.js?v={{ asset_v }}";document.body.appendChild(s)}
+else addEventListener("hashchange",function(){if(location.hash==="#edit")location.reload()})}catch(e){}</script>
 </body>
 </html>

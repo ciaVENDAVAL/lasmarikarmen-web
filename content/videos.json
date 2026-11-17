@@ -1,0 +1,52 @@
+{
+  "hero_video": {
+    "title": "el stalker de tu barrio",
+    "url": "https://www.youtube.com/watch?v=flv6o1dghxk"
+  },
+  "featured_video": {
+    "title": "el stalker de tu barrio",
+    "feat": "prod. Suzio Tarik",
+    "url": "https://www.youtube.com/watch?v=flv6o1dghxk",
+    "cover": "/assets/img/video/flv6o1dghxk.jpg"
+  },
+  "videos": [
+    {
+      "title": "el Afilador",
+      "url": "https://www.youtube.com/watch?v=8dQ9giAwwBE",
+      "cover": "/assets/img/video/8dQ9giAwwBE.jpg"
+    },
+    {
+      "title": "alta BAJEZA",
+      "url": "https://www.youtube.com/watch?v=KQJ2nJZBHCs",
+      "cover": "/assets/img/video/KQJ2nJZBHCs.jpg",
+      "feat": "ft. Kiltreo Oskuro"
+    },
+    {
+      "title": "Ratón Vacilón",
+      "url": "https://www.youtube.com/watch?v=k4cl3OAWrPg",
+      "cover": "/assets/img/video/k4cl3OAWrPg.jpg",
+      "feat": "ft. Kiltreo Oskuro"
+    },
+    {
+      "title": "PELASO",
+      "url": "https://www.youtube.com/watch?v=IFF7f8r7nbA",
+      "cover": "/assets/img/video/IFF7f8r7nbA.jpg"
+    },
+    {
+      "title": "POCA ROPA",
+      "url": "https://www.youtube.com/watch?v=DgmGpjpw-Pk",
+      "cover": "/assets/img/video/DgmGpjpw-Pk.jpg",
+      "feat": "ft. La Maga"
+    },
+    {
+      "title": "Ladyboi",
+      "url": "https://www.youtube.com/watch?v=mYE5oTtRIMw",
+      "cover": "/assets/img/video/mYE5oTtRIMw.jpg"
+    },
+    {
+      "title": "Sissy",
+      "url": "https://www.youtube.com/watch?v=hxHuym02RKc",
+      "cover": "/assets/img/video/hxHuym02RKc.jpg"
+    }
+  ]
+}

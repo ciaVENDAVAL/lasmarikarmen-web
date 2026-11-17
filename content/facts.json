@@ -1,0 +1,185 @@
+{
+  "_about": "Names, pronouns and fixed terms of Las Marikarmen. Used by tools/translate.py (names are never translated, terms use each language's form) and tools/check.py (spellings, banned forms, private data). Update this file FIRST when a spelling or rule changes.",
+  "contact": {
+    "email": "lasmarikarmen@anartist.org",
+    "web": "lasmarikarmen.com"
+  },
+  "names": {
+    "Las Marikarmen": [
+      "Las Maricarmen",
+      "Las marikarmen",
+      "las Marikarmen"
+    ],
+    "Hipogrifa": [
+      "Hipogrifia",
+      "Hipogrifo",
+      "hipogrifa"
+    ],
+    "Victoria Sickness": [
+      "Victoria Sicknes",
+      "Victoria sickness",
+      "victoria Sickness"
+    ],
+    "Contàmina Perpétua": [
+      "Contamina Perpetua",
+      "Contàmina Perpètua",
+      "Contámina Perpétua",
+      "Contàmina Perpetua",
+      "Contamina Perpétua"
+    ],
+    "tyle fernández": [
+      "Tyle Fernández",
+      "tyle fernandez",
+      "Tyle Fernandez"
+    ],
+    "Capitano Barbacoño": [
+      "Capitano Barbacono"
+    ]
+  },
+  "pronouns": {
+    "_about": "Hipogrifa: she. Victoria Sickness and Contàmina Perpétua: they (neutral). Where a language has no settled neutral pronoun, rephrase around the name.",
+    "Hipogrifa": {
+      "en": "she / her",
+      "es": "ella",
+      "ca": "ella",
+      "de": "sie"
+    },
+    "Victoria Sickness": {
+      "en": "they / them",
+      "es": "elle",
+      "ca": "elli",
+      "de": "dey / dem",
+      "gl": "elle",
+      "pt": "elu",
+      "fr": "iel",
+      "it": "ləi",
+      "eu": "no grammatical gender"
+    },
+    "Contàmina Perpétua": {
+      "en": "they / them",
+      "es": "elle",
+      "ca": "elli",
+      "de": "dey / dem",
+      "gl": "elle",
+      "pt": "elu",
+      "fr": "iel",
+      "it": "ləi",
+      "eu": "no grammatical gender"
+    }
+  },
+  "banned": {
+    "*": [],
+    "en": [
+      "Victoria Sickness is a woman",
+      "Contàmina Perpétua is a woman",
+      "her saxophone",
+      "his saxophone"
+    ],
+    "es": [
+      "la Victoria",
+      "la Contàmina",
+      "el Victoria",
+      "el Contàmina"
+    ],
+    "ca": [
+      "la Victoria",
+      "la Contàmina",
+      "el Victoria",
+      "el Contàmina"
+    ]
+  },
+  "private": [
+    {
+      "pattern": "\\b[A-Z]{2}\\d{2}(?:\\s?\\d{4}){5}\\b",
+      "why": "IBAN / bank account"
+    },
+    {
+      "pattern": "\\b(?:NIF|CIF|DNI|NIE)\\b",
+      "why": "tax / ID number"
+    },
+    {
+      "pattern": "\\b\\d{8}[A-HJ-NP-TV-Z]\\b",
+      "why": "DNI-like number"
+    },
+    {
+      "pattern": "\\b[XYZ]\\d{7}[A-Z]\\b",
+      "why": "NIE-like number"
+    },
+    {
+      "pattern": "(?i)\\b(?:cachet|caché|catxet|honorarios|honoraris|pressupost|presupuesto)(?!\\w)",
+      "why": "fee / budget word (concert fees are never public)"
+    }
+  ],
+  "do_not_translate": [
+    "Las Marikarmen",
+    "Marikarmen",
+    "Hipogrifa",
+    "Victoria Sickness",
+    "Contàmina Perpétua",
+    "tyle fernández",
+    "Blob Marikarmen",
+    "Marikarmen Radio",
+    "Nos pegan",
+    "Compost your Gender",
+    "Capitano Barbacoño",
+    "Kiltreo Oskuro",
+    "Suzio Tarik",
+    "Slowbou",
+    "Carlo Jurancelli",
+    "La Maga",
+    "Rebel Sound Booking",
+    "Collserola",
+    "queer",
+    "drag",
+    "travesti",
+    "travestis",
+    "marika",
+    "marikas",
+    "Bizum",
+    "Bandcamp",
+    "Spotify",
+    "YouTube",
+    "Instagram",
+    "betevé",
+    "Enderrock",
+    "Kaos en la Red",
+    "el Afilador",
+    "alta BAJEZA",
+    "Ratón Vacilón",
+    "PELASO",
+    "POCA ROPA",
+    "Ladyboi",
+    "Sissy",
+    "el stalker de tu barrio",
+    "Meneo Disidente",
+    "Press kit",
+    "press kit",
+    "rider"
+  ],
+  "terms": [
+    {
+      "es": "banda travesti",
+      "ca": "banda travesti",
+      "gl": "banda travesti",
+      "pt": "banda travesti",
+      "eu": "talde trabestia",
+      "en": "drag band",
+      "fr": "groupe drag",
+      "it": "band drag",
+      "de": "Drag-Band",
+      "ja": "ドラァグバンド"
+    },
+    {
+      "es": "Banda travesti",
+      "ca": "Banda travesti",
+      "gl": "Banda travesti",
+      "pt": "Banda travesti",
+      "eu": "Talde trabestia",
+      "en": "Drag band",
+      "fr": "Groupe drag",
+      "it": "Band drag",
+      "de": "Drag-Band",
+      "ja": "ドラァグバンド"
+    }
+  ]
+}

@@ -13,11 +13,11 @@
 <a class="more" href="{{ href }}">{{ label }} <span aria-hidden="true">→</span></a>
 {% endmacro %}
 
-{# YouTube video, loads the player only on click #}
+{# YouTube or PeerTube video (see video_info in build.py); loads the player only on click #}
 {% macro video(v, root, t, lyrics_href=None) %}
 <figure class="vid">
-  <a class="vid__btn" href="https://www.youtube.com/watch?v={{ v.id }}" data-embed="https://www.youtube-nocookie.com/embed/{{ v.id }}?autoplay=1&amp;rel=0" data-title="{{ v.title }} · Las Marikarmen" target="_blank" rel="noopener">
-    <img src="{{ root }}assets/img/video/{{ v.id }}.jpg" alt="" loading="lazy" width="960" height="540">
+  <a class="vid__btn" href="{{ v.watch }}" data-embed="{{ v.embed }}" data-title="{{ v.title }} · Las Marikarmen" target="_blank" rel="noopener">
+    <img src="{{ root }}{{ v.cover }}" alt="" loading="lazy" width="960" height="540">
     <span class="vid__play" aria-hidden="true"></span>
     <span class="sr">{{ t('video_play') }}: {{ v.title }}</span>
   </a>

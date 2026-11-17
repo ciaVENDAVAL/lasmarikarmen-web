@@ -78,6 +78,7 @@
   /* hero: muted looping YouTube video over the photo — skipped when motion is reduced or data is saved */
   var hv = document.querySelector('.hero__video');
   function heroVideoAllowed() {
+    if (document.documentElement.classList.contains('is-editing')) return false;   // editing on the page: photo only
     var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var save = navigator.connection && navigator.connection.saveData;
     return !rm && !save && !html.classList.contains('a11y-motion');

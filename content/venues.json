@@ -1,0 +1,54 @@
+{
+  "concerts": [
+    {
+      "region_key": "region_bcn",
+      "venues": [
+        "El Grec",
+        "El Molino",
+        "La Mercè",
+        "betevé: Habitació 910 & Plaça Tísner",
+        "Carneval Bravo, Paral·lel 62",
+        "Churros Talent, Sala Apolo",
+        "Fiesta Wacha, Sala Upload",
+        "Poble Espanyol",
+        "La Central de Circ",
+        "FMA Fort Pienc",
+        "Barraques del Clot",
+        "Simbiruta Festival Jove",
+        "Festa Alternativa La Totxana",
+        "Diobar"
+      ]
+    },
+    {
+      "region_key": "region_cat",
+      "venues": [
+        "Calçotada Marika, Konvent (Berga)",
+        "La Mirona (Girona)",
+        "Figa Fest (Lleida)",
+        "Adoberies Fest (Vic)",
+        "Nuria Social (Olot)",
+        "La Rabia, CRAC (Rubí)",
+        "Festival de Circo y Arte (La Candela)"
+      ]
+    },
+    {
+      "region_key": "region_es",
+      "venues": [
+        "Orgull (Palma, Mallorca)",
+        "Transgress Fest (Zamora)",
+        "Orgullo es Protesta (Asturias)",
+        "Lata de Zinc (Oviedo)",
+        "Planta Baja (Granada)",
+        "Festa Agro LGTBI (Tomiño, Galicia)"
+      ]
+    },
+    {
+      "region_key": "germany",
+      "venues": [
+        "Fusion Festival (Lärz)",
+        "Sommerwerft Festival (Frankfurt)",
+        "At.tension Festival"
+      ]
+    }
+  ]
+}

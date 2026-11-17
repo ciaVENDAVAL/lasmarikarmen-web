@@ -1,0 +1,43 @@
+{
+  "members": [
+    {
+      "id": "vic",
+      "name": "Victoria Sickness",
+      "pronoun_key": "pron_they",
+      "from_key": "from_vic",
+      "role_key": "role_vic",
+      "roles_key": "roles_vic",
+      "motto_key": "motto_vic",
+      "bio_key": "bio_vic",
+      "instagram": "victoriasickness",
+      "claw": "/assets/img/claw-vic.jpg",
+      "card": "/assets/img/photos/card-vic.jpg"
+    },
+    {
+      "id": "hipo",
+      "name": "Hipogrifa",
+      "pronoun_key": "pron_she",
+      "from_key": "from_hipo",
+      "role_key": "role_hipo",
+      "roles_key": "roles_hipo",
+      "motto_key": "motto_hipo",
+      "bio_key": "bio_hipo",
+      "instagram": "hipogrifff",
+      "claw": "/assets/img/claw-hipo.jpg",
+      "card": "/assets/img/photos/card-hipo.jpg"
+    },
+    {
+      "id": "conta",
+      "name": "Contàmina Perpétua",
+      "pronoun_key": "pron_they",
+      "from_key": "from_conta",
+      "role_key": "role_conta",
+      "roles_key": "roles_conta",
+      "motto_key": "motto_conta",
+      "bio_key": "bio_conta",
+      "instagram": "contamina_perpetua",
+      "claw": "/assets/img/claw-conta.jpg",
+      "card": "/assets/img/photos/card-conta.jpg"
+    }
+  ]
+}

@@ -5,8 +5,10 @@
     python3 build.py --all      also build every planned language (missing text falls back to es) — for previews
     python3 build.py --check    list missing translations per language, build nothing
 
-Text:      content/text.yaml   (translatable, one entry per key and language)
-Settings:  content/site.yaml   (languages, links, names, venues…)
+Text:      content/i18n/<lang>.json   (translatable; grouped by page section; es = reference)
+Data:      content/*.json           (one file per admin form: gigs, videos, merch, members, press…)
+Settings:  content/site.json        (technical, no form: languages, addresses)
+           Edited from the phone with the admin (/admin/) or on the page (#edit) — see UPDATING.md
 Templates: templates/*.html    (Jinja2)
 Static:    assets/             (copied as-is)
 """
@@ -51,9 +53,93 @@ ALL_LANGS = ["es", "en", "ca", "gl", "eu", "pt", "fr", "it", "de", "ja"]
 SOURCE = "es"
 
 
-def load_yaml(name):
-    with open(ROOT / "content" / name, encoding="utf-8") as f:
-        return yaml.safe_load(f)
+import json
+
+# one JSON file per admin form; their top-level keys are merged into `site` for the templates
+FORM_FILES = ["contact.json", "members.json", "music.json", "videos.json", "merch.json", "gigs.json",
+              "press.json", "credits.json", "venues.json"]
+
+
+def _J(name):
+    return json.loads((ROOT / "content" / name).read_text(encoding="utf-8"))
+
+
+def _unslash(x):
+    """The admin stores files as /assets/…; the templates want assets/… (they add the page's root)."""
+    if isinstance(x, str):
+        return x[1:] if x.startswith("/assets/") else x
+    if isinstance(x, list):
+        return [_unslash(i) for i in x]
+    if isinstance(x, dict):
+        return {k: _unslash(v) for k, v in x.items()}
+    return x
+
+
+MAX_SIDE = 1800
+
+
+def shrink_photos(folder):
+    """Photos uploaded from a phone can be huge: the published copy is at most 1800 px (the repo keeps the original).
+    Never cropped. Same input → same output, so rebuilding changes nothing."""
+    from PIL import Image, ImageOps
+    for p in folder.rglob("*"):
+        if p.suffix.lower() not in (".jpg", ".jpeg", ".png", ".webp"):
+            continue
+        with Image.open(p) as im:
+            if max(im.size) <= MAX_SIDE and not im.getexif().get(0x0112, 1) != 1:
+                continue
+            im = ImageOps.exif_transpose(im)
+            im.thumbnail((MAX_SIDE, MAX_SIDE), Image.LANCZOS)
+            if p.suffix.lower() in (".jpg", ".jpeg"):
+                im.convert("RGB").save(p, quality=84, optimize=True, progressive=True)
+            else:
+                im.save(p, optimize=True)
+
+
+def video_info(v):
+    """A video is a YouTube or PeerTube link (+ a cover photo from the site's own images, never YouTube's).
+    Adds: id (YouTube only), watch (link), embed (player address)."""
+    import urllib.parse as up
+    v = dict(v)
+    u = (v.get("url") or "").strip()
+    q = up.urlparse(u)
+    yt = None
+    if "youtu.be" in q.netloc:
+        yt = q.path.strip("/")
+    elif "youtube" in q.netloc:
+        yt = up.parse_qs(q.query).get("v", [None])[0] or q.path.rstrip("/").split("/")[-1]
+    if yt:
+        v.update(id=yt, watch=f"https://www.youtube.com/watch?v={yt}",
+                 embed=f"https://www.youtube-nocookie.com/embed/{yt}?autoplay=1&rel=0")
+    elif u:   # PeerTube: https://<instance>/w/<id> or /videos/watch/<id>
+        vid = q.path.rstrip("/").split("/")[-1]
+        v.update(id=None, watch=u, embed=f"{q.scheme}://{q.netloc}/videos/embed/{vid}?autoplay=1&title=0&warningTitle=0&peertubeLink=0&p2p=0")
+    v.setdefault("cover", f"assets/img/video/{yt}.jpg" if yt else "")
+    return v
+
+
+def load_content():
+    site = _J("site.json")
+    for f in FORM_FILES:
+        site.update(_J(f))
+    site.update(_J("downloads.json"))          # presskit / rider: {lang: file}
+    site["theme"] = {k: v for k, v in _J("theme.json").items() if not k.startswith("_")}
+    site = _unslash(site)
+    for k in ("hero_video", "featured_video"):
+        if site.get(k):
+            site[k] = video_info(site[k])
+    site["videos"] = [video_info(v) for v in site.get("videos", [])]
+    # the admin leaves out empty fields: give the templates their defaults back
+    for o in site.get("press_outlets", []):
+        o.setdefault("date", "")
+    text = {}                                  # key -> {lang: text}
+    for lang in ALL_LANGS:
+        p = ROOT / "content" / "i18n" / f"{lang}.json"
+        if p.exists():
+            for group in json.loads(p.read_text(encoding="utf-8")).values():
+                for k, v in group.items():
+                    text.setdefault(k, {})[lang] = v
+    return text, site
 
 
 def load_icons():
@@ -86,7 +172,9 @@ def build(langs, text, site):
     if OUT.exists():
         shutil.rmtree(OUT)
     shutil.copytree(ROOT / "assets", OUT / "assets")
+    shrink_photos(OUT / "assets" / "img")
     (OUT / ".nojekyll").write_text("")
+    shutil.copytree(ROOT / "admin", OUT / "admin")   # forms admin (Sveltia CMS) at /admin/
     # Lyrics: letras/build.py turns the lyrics + translations into letras/data.json
     import subprocess, json as _json
     subprocess.run([sys.executable, "build.py"], cwd=ROOT / "letras", check=True, stdout=subprocess.DEVNULL)
@@ -109,7 +197,7 @@ def build(langs, text, site):
     if (ROOT / "favicon.ico").exists():
         shutil.copy(ROOT / "favicon.ico", OUT / "favicon.ico")
     import hashlib
-    asset_v = hashlib.sha1(b''.join((ROOT / f).read_bytes() for f in ('assets/css/style.css', 'assets/js/site.js', 'assets/js/letras.js'))).hexdigest()[:8]
+    asset_v = hashlib.sha1(b''.join((ROOT / f).read_bytes() for f in ('assets/css/style.css', 'assets/css/fonts.css', 'assets/js/site.js', 'assets/js/letras.js', 'assets/js/edit.js'))).hexdigest()[:8]
     today = date.today().isoformat()
     all_gigs = site.get("gigs") or []
     gigs = sorted((g for g in all_gigs if str(g["date"]) >= today), key=lambda g: str(g["date"]))
@@ -133,7 +221,7 @@ def build(langs, text, site):
 
         def t(key, _lang=lang):
             if key not in text:
-                raise KeyError(f"text.yaml has no key '{key}'")
+                raise KeyError(f"content/i18n/es.json has no key '{key}'")
             entry = text[key] or {}
             val = entry.get(_lang)
             if not val:
@@ -228,7 +316,7 @@ def main():
     ap.add_argument("--check", action="store_true", help="only report missing translations")
     args = ap.parse_args()
 
-    text, site = load_yaml("text.yaml"), load_yaml("site.yaml")
+    text, site = load_content()
     if args.check:
         for lang, keys in missing_report(text, ALL_LANGS).items():
             done = len(text) - len(keys)

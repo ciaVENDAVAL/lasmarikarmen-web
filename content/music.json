@@ -1,0 +1,30 @@
+{
+  "album": {
+    "title": "Nos pegan",
+    "year": 2023,
+    "spotify": "https://open.spotify.com/album/0K5Uj5ANW0CpvLUnNLWD9D",
+    "spotify_embed": "https://open.spotify.com/embed/album/0K5Uj5ANW0CpvLUnNLWD9D",
+    "producers": [
+      "Suzio Tarik",
+      "Slowbou",
+      "Carlo Jurancelli"
+    ],
+    "tracks": [
+      "Nos pegan",
+      "Travestis por la carretera",
+      "Secuestro",
+      "Tiene un brillito",
+      "El afilador",
+      "Amantalak",
+      "Patadas",
+      "Petaca en el tanga",
+      "69: el número del amor"
+    ],
+    "first_album": "Compost your Gender",
+    "first_album_year": 2021
+  },
+  "radio": {
+    "spotify": "https://open.spotify.com/playlist/37i9dQZF1E4wBvv8s9g5NW",
+    "spotify_embed": "https://open.spotify.com/embed/playlist/37i9dQZF1E4wBvv8s9g5NW"
+  }
+}
