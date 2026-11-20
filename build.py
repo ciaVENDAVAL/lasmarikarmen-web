@@ -237,6 +237,7 @@ def build(langs, text, site):
 
         presskit = site["presskit"].get(lang) or site["presskit"][SOURCE]
         rider = (site.get("rider") or {}).get(lang) or (site.get("rider") or {}).get(SOURCE)
+        preview = {}
         for slug, tpl, nav_key, title_key in PAGES:
             root = base_root if slug == "index" else base_root + "../"
             ctx = dict(
@@ -252,16 +253,22 @@ def build(langs, text, site):
             dest = OUT / sub / ("index.html" if slug == "index" else f"{slug}/index.html")
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_text(html, encoding="utf-8")
-        # old addresses keep working: <page>.html → <page>/ and pages that moved inside others → <page>/#anchor
-        def redirect(path, target):
+            # link-preview tags (title, description, image) for the bridge pages below
+            preview[slug] = "\n".join(re.findall(r'<meta (?:property="og:[^"]+"|name="(?:twitter:[^"]+|description)")[^>]*>', html))
+        # old addresses keep working: <page>.html → <page>/ and pages that moved inside others → <page>/#anchor.
+        # GitHub Pages answers /musica (no slash) with musica.html, so these bridges carry the target's full address
+        # and its link-preview tags: a link shared in WhatsApp/Telegram/Signal still shows picture and text.
+        home = f"{site['site_url'].rstrip('/')}/{sub}"
+        def redirect(path, slug, anchor=""):
             (OUT / sub / path).parent.mkdir(parents=True, exist_ok=True)
-            (OUT / sub / path).write_text(env.get_template("redirect.html").render(lang=lang, target=target), encoding="utf-8")
+            (OUT / sub / path).write_text(env.get_template("redirect.html").render(
+                lang=lang, target=f"{home}{slug}/{anchor}", preview=Markup(preview.get(slug, ""))), encoding="utf-8")
         for slug, *_ in PAGES:
             if slug != "index":
-                redirect(f"{slug}.html", f"{slug}/")
+                redirect(f"{slug}.html", slug)
         for old, (new, anchor) in REDIRECTS.items():
-            redirect(f"{old}.html", f"{new}/{anchor}")
-            redirect(f"{old}/index.html", f"../{new}/{anchor}")
+            redirect(f"{old}.html", new, anchor)
+            redirect(f"{old}/index.html", new, anchor)
         if lang != SOURCE and missing:
             print(f"  {lang}: {len(missing)} texts shown in castellano (missing translation)")
     print(f"Built {len(langs)} language(s) × {len(PAGES)} pages → {OUT.relative_to(ROOT)}/")
