@@ -55,6 +55,7 @@
     "a11y_title": "Accessibility",
     "a11y_motion": "Stop animations",
     "a11y_contrast": "High contrast",
+    "a11y_day": "Day mode (light background)",
     "a11y_plain": "Easier-to-read font",
     "a11y_links": "Underline links",
     "a11y_spacing": "More space between lines",

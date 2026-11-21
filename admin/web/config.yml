@@ -949,6 +949,10 @@ collections:
         label: A11y contrast
         widget: string
         i18n: true
+      - name: a11y_day
+        label: A11y day
+        widget: string
+        i18n: true
       - name: a11y_plain
         label: A11y plain
         widget: string

@@ -675,3 +675,12 @@ html.a11y-contrast .ly-chip[aria-pressed="true"], html.a11y-contrast .ly-mini[ar
   .top.menu-open { background: #221b29; }
   .top.menu-open .nav__langs summary { border-color: #221b29; }
 }
+
+/* accessibility: day mode — the black parts of the page turn light; pink stays, green gets darker so it can be read */
+html.a11y-day body,
+html.a11y-day :is(.band--ink, .top, .top.menu-open, .foot, .hero, body::before) { background-color: #fffaf3; }
+html.a11y-day :is(.band--ink, .top, .foot, .hero) { --cream: #0e0b12; --green: #0a7a12; color: #0e0b12; }
+html.a11y-day .hero :is(h1, h2, p, a, span):not(.btn):not(.btn *) { color: inherit; }
+html.a11y-day .top.menu-open { background-color: #efe6dc; }
+html.a11y-day :is(.band--ink, .hero, .foot) :is(.giant, .gig__city) { color: #0e0b12; }
+html.a11y-day .nav :is(.nav__social, .nav__langs) { border-color: rgb(14 11 18 / .2); }

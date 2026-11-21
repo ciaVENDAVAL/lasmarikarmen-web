@@ -54,7 +54,7 @@
   }
 
   /* accessibility panel (settings kept in this browser only) */
-  var KEY = 'lm-a11y', TOGGLES = ['motion', 'contrast', 'plain', 'links', 'spacing'];
+  var KEY = 'lm-a11y', TOGGLES = ['day', 'motion', 'contrast', 'plain', 'links', 'spacing'];
   var state = {};
   try { state = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { state = {}; }
   function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
