@@ -13,7 +13,27 @@
       nav.classList.toggle('open', !open);
     });
     /* collapse as soon as a menu link is followed (also same-page #anchors) */
-    nav.addEventListener('click', function (e) { if (e.target.closest('a')) closeMenu(); });
+    /* phone menu: each section (About us, Events, Music) starts collapsed; tapping its name opens or closes it */
+    var phone = window.matchMedia('(max-width: 1080px)');
+    var heads = nav.querySelectorAll('.has-sub > a');
+    var markHeads = function () {
+      heads.forEach(function (h) {
+        if (phone.matches) h.setAttribute('aria-expanded', String(h.parentNode.classList.contains('sub-open')));
+        else h.removeAttribute('aria-expanded');
+      });
+    };
+    markHeads();
+    if (phone.addEventListener) phone.addEventListener('change', markHeads);
+    nav.addEventListener('click', function (e) {
+      var head = e.target.closest('.has-sub > a');
+      if (head && phone.matches) {
+        e.preventDefault();
+        head.parentNode.classList.toggle('sub-open');
+        markHeads();
+        return;
+      }
+      if (e.target.closest('a')) closeMenu();
+    });
     /* and when the page comes back from the back/forward cache (Firefox keeps the old state) */
     window.addEventListener('pageshow', closeMenu);
     window.addEventListener('hashchange', closeMenu);

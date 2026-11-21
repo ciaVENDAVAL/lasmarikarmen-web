@@ -661,3 +661,11 @@ html.a11y-contrast .ly-chip[aria-pressed="true"], html.a11y-contrast .ly-mini[ar
   .nav .nav__langs a { font: 600 .9rem/1.2 var(--sans); text-transform: none; letter-spacing: 0; padding: .5em .4em; border: 0; display: flex; gap: .55rem; align-items: baseline; }
   .nav .nav__langs a b { font: 700 .72rem/1 var(--mono); letter-spacing: .08em; color: var(--pink); min-width: 1.6em; }
 }
+
+/* phone menu: sections start collapsed (site.js toggles .sub-open); without JavaScript they stay open */
+@media (max-width: 1080px) {
+  .js .nav .has-sub > .sub { display: none; }
+  .js .nav .has-sub.sub-open > .sub { display: flex; }
+  .js .nav .has-sub > a::after { content: "▾"; display: inline-block; margin-left: .5em; color: var(--pink); transition: transform .2s; }
+  .js .nav .has-sub.sub-open > a::after { transform: rotate(180deg); }
+}
