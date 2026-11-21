@@ -669,3 +669,9 @@ html.a11y-contrast .ly-chip[aria-pressed="true"], html.a11y-contrast .ly-mini[ar
   .js .nav .has-sub > a::after { content: "▾"; display: inline-block; margin-left: .5em; color: var(--pink); transition: transform .2s; }
   .js .nav .has-sub.sub-open > a::after { transform: rotate(180deg); }
 }
+
+/* phone menu open: the header turns a lighter black, so it is clear the menu is open */
+@media (max-width: 1080px) {
+  .top.menu-open { background: #221b29; }
+  .top.menu-open .nav__langs summary { border-color: #221b29; }
+}

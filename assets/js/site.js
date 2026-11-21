@@ -6,11 +6,13 @@
   /* mobile menu */
   var mb = document.querySelector('.menu-btn'), nav = document.getElementById('nav');
   if (mb && nav) {
-    var closeMenu = function () { mb.setAttribute('aria-expanded', 'false'); nav.classList.remove('open'); };
+    var hdr = document.querySelector('.top');
+    var closeMenu = function () { mb.setAttribute('aria-expanded', 'false'); nav.classList.remove('open'); if (hdr) hdr.classList.remove('menu-open'); };
     mb.addEventListener('click', function () {
       var open = mb.getAttribute('aria-expanded') === 'true';
       mb.setAttribute('aria-expanded', String(!open));
       nav.classList.toggle('open', !open);
+      if (hdr) hdr.classList.toggle('menu-open', !open);   // lighter background while the menu is open
     });
     /* collapse as soon as a menu link is followed (also same-page #anchors) */
     /* phone menu: each section (About us, Events, Music) starts collapsed; tapping its name opens or closes it */
