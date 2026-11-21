@@ -24,6 +24,17 @@
     };
     markHeads();
     if (phone.addEventListener) phone.addEventListener('change', markHeads);
+    /* social icons: as many lines as needed, balanced (7 icons on two lines = 4 + 3, the extra one on top) */
+    var soc = nav.querySelector('.nav__social');
+    var balance = function () {
+      if (!soc || !phone.matches || !nav.classList.contains('open')) return;
+      var n = soc.children.length, gap = parseFloat(getComputedStyle(soc).columnGap) || 0, w = 42;
+      var per = Math.max(1, Math.floor((soc.clientWidth + gap) / (w + gap)));
+      var lines = Math.ceil(n / per);
+      soc.style.setProperty('--cols', Math.ceil(n / lines));
+    };
+    mb.addEventListener('click', balance);
+    window.addEventListener('resize', balance);
     nav.addEventListener('click', function (e) {
       var head = e.target.closest('.has-sub > a');
       if (head && phone.matches) {

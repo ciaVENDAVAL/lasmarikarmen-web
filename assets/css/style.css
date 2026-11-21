@@ -642,7 +642,7 @@ html.a11y-contrast .ly-chip[aria-pressed="true"], html.a11y-contrast .ly-mini[ar
 /* social icons in the phone menu */
 .nav .nav__social { display: none; }
 @media (max-width: 1080px) {
-  .nav .nav__social { display: flex; flex-direction: row; flex-wrap: wrap; gap: .6rem; margin-top: 1rem; margin-bottom: 5.5rem; /* clear of the accessibility button */ padding-top: 1rem; border-top: 1px solid rgb(246 240 232 / .2); width: 100%; }
+  .nav .nav__social { display: grid; grid-template-columns: repeat(var(--cols, 7), 42px); gap: .6rem; margin-top: 1rem; /* --cols: set by site.js so two lines are balanced */ padding-top: 1rem; border-top: 1px solid rgb(246 240 232 / .2); width: 100%; }
   .nav .nav__social a { width: 42px; height: 42px; padding: 0; border-bottom: 0; display: grid; place-items: center; }
   .nav .nav__social a:hover { color: var(--ink); }
   .nav .nav__social svg { width: 19px; height: 19px; }
