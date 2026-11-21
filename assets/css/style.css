@@ -123,7 +123,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   .menu-btn__bars, .menu-btn__bars::before, .menu-btn__bars::after { display: block; width: 16px; height: 2px; background: var(--pink); position: relative; content: ""; }
   .menu-btn__bars::before { position: absolute; top: -5px; } .menu-btn__bars::after { position: absolute; top: 5px; }
   .js .nav { display: none; width: 100%; padding-bottom: 1rem; }
-  .js .nav.open { display: flex; flex-direction: column; align-items: flex-start; }
+  .js .nav.open { display: flex; flex-direction: column; align-items: flex-start; flex-wrap: nowrap; }   /* nowrap: a tall menu scrolls instead of wrapping into a second column */
   .nav ul { flex-direction: column; gap: 0; }
   .nav a { font-size: .95rem; padding: .65em 0; }
   .top__in > .langs { order: 2; }
@@ -642,7 +642,7 @@ html.a11y-contrast .ly-chip[aria-pressed="true"], html.a11y-contrast .ly-mini[ar
 /* social icons in the phone menu */
 .nav .nav__social { display: none; }
 @media (max-width: 1080px) {
-  .nav .nav__social { display: flex; flex-direction: row; flex-wrap: wrap; gap: .6rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgb(246 240 232 / .2); width: 100%; }
+  .nav .nav__social { display: flex; flex-direction: row; flex-wrap: wrap; gap: .6rem; margin-top: 1rem; margin-bottom: 5.5rem; /* clear of the accessibility button */ padding-top: 1rem; border-top: 1px solid rgb(246 240 232 / .2); width: 100%; }
   .nav .nav__social a { width: 42px; height: 42px; padding: 0; border-bottom: 0; display: grid; place-items: center; }
   .nav .nav__social a:hover { color: var(--ink); }
   .nav .nav__social svg { width: 19px; height: 19px; }
