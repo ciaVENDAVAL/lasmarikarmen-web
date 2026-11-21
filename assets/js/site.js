@@ -57,6 +57,10 @@
   }
 
   /* language button: remember the choice, close on outside click / Escape */
+  document.addEventListener('click', function (e) {   // remember the language chosen in the phone menu too
+    var a = e.target.closest('.nav__langs [data-lang]');
+    if (a) { try { localStorage.setItem('lm-lang', a.getAttribute('data-lang')); } catch (err) {} }
+  });
   var langs = document.querySelector('.langs');
   if (langs) {
     langs.addEventListener('click', function (e) {

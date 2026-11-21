@@ -56,6 +56,14 @@ for(var k in s){if(k==='size'){h.style.fontSize=s.size+'%'}else if(s[k]){h.class
       <span class="menu-btn__bars" aria-hidden="true"></span>{{ t('nav_menu') }}
     </button>
     <nav id="nav" class="nav" aria-label="{{ t('nav_menu') }}">
+      {%- if langs %}
+      {#- languages: at the top of the phone menu (on wide screens: the globe button in the header) #}
+      <ul class="nav__langs" aria-label="{{ t('lang_label') }}">
+        {% for l in langs %}
+        <li><a href="{{ page_url(slug, l) }}" hreflang="{{ l }}" lang="{{ l }}" data-lang="{{ l }}"{% if l == lang %} aria-current="true"{% endif %}><b>{{ l|upper }}</b> {{ lang_names[l] }}</a></li>
+        {% endfor %}
+      </ul>
+      {%- endif %}
       <ul>
       {% for n_slug, nav_key, n_anchor, subs in nav %}
         <li{% if subs %} class="has-sub"{% endif %}><a href="{{ page_url(n_slug) }}{{ n_anchor }}"{% if n_slug == slug and not n_anchor %} aria-current="page"{% endif %}>{{ t(nav_key) }}</a>
