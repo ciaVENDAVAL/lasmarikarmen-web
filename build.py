@@ -197,7 +197,7 @@ def build(langs, text, site):
     if (ROOT / "favicon.ico").exists():
         shutil.copy(ROOT / "favicon.ico", OUT / "favicon.ico")
     import hashlib
-    asset_v = hashlib.sha1(b''.join((ROOT / f).read_bytes() for f in ('assets/css/style.css', 'assets/css/fonts.css', 'assets/js/site.js', 'assets/js/letras.js', 'assets/js/edit.js'))).hexdigest()[:8]
+    asset_v = hashlib.sha1(b''.join((ROOT / f).read_bytes() for f in ('assets/css/style.css', 'assets/css/fonts.css', 'assets/js/site.js', 'assets/js/letras.js', 'assets/js/edit.js', 'assets/js/fluid.js'))).hexdigest()[:8]
     today = date.today().isoformat()
     all_gigs = site.get("gigs") or []
     gigs = sorted((g for g in all_gigs if str(g["date"]) >= today), key=lambda g: str(g["date"]))

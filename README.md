@@ -21,6 +21,8 @@ so links already shared keep working. Menu: `NAV` in `build.py`.
 
 Social icons, contact and press kit appear once, in the footer of every page.
 Bottom left: pink triangle ▼ opens the accessibility options. Bottom right: ▲ back to top.
+Hidden toy on every page except `/blob/` (`assets/js/fluid.js`): long-press ~0.4 s → a fireball brews under the finger; flick → it's thrown and dissolves;
+keep holding 3 s more → full-screen fluid game, which dissolves back after 2 s without touching (or Esc). Off with reduced motion (⏸️) and in `#edit`. Timings at the top of the file.
 
 **Gigs:** admin → *Fechas y carteles* (or `content/gigs.json`; posters in `assets/img/posters/`). Past dates move by themselves to "Lo petamos…", grouped by year (the site rebuilds every night).
 **Lyrics:** edit lyrics in `letras/songs.json`, translations in `letras/out/*.json` (one array per language: es en ca gl eu pt fr it de ja; each language page shows only its own), descriptions and credits in `letras/build.py` (texts starting with `@` are `lyr_*` keys in `content/i18n/<lang>.json`).

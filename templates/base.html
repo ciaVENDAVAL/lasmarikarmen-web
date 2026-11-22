@@ -150,6 +150,8 @@ for(var k in s){if(k==='size'){h.style.fontSize=s.size+'%'}else if(s[k]){h.class
 </a>
 
 <script src="{{ root }}assets/js/site.js?v={{ asset_v }}" defer></script>
+{#- Fuego Marikarmen: long-press anywhere (assets/js/fluid.js) #}
+<script src="{{ root }}assets/js/fluid.js?v={{ asset_v }}" defer></script>
 {#- Edit on the page: open any page with #edit (assets/js/edit.js; forms admin at /admin/) #}
 <script>try{if(location.hash==="#edit"||sessionStorage.getItem("ls-edit")){sessionStorage.setItem("ls-edit","1");document.documentElement.classList.add("is-editing");
 window.LS_EDIT={repo:"ciaVENDAVAL/lasmarikarmen-web",branch:"main",base:"",lang:"{{ lang }}",
