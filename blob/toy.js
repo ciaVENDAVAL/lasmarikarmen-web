@@ -88,15 +88,37 @@ function makeIR(sec,decay){
   }
   return b;
 }
+var WEAK=(navigator.hardwareConcurrency||4)<=4||(navigator.deviceMemory&&navigator.deviceMemory<=3);
+function unlockIOS(){
+  try{ if(navigator.audioSession) navigator.audioSession.type='playback'; }catch(e){}
+  try{ // older iOS: a looping silent <audio> switches the page to "media playback"
+    var sr=8000,n=800,b=new ArrayBuffer(44+n*2),v=new DataView(b),w=function(o,t){for(var i=0;i<t.length;i++)v.setUint8(o+i,t.charCodeAt(i));};
+    w(0,'RIFF');v.setUint32(4,36+n*2,true);w(8,'WAVEfmt ');v.setUint32(16,16,true);v.setUint16(20,1,true);v.setUint16(22,1,true);
+    v.setUint32(24,sr,true);v.setUint32(28,sr*2,true);v.setUint16(32,2,true);v.setUint16(34,16,true);w(36,'data');v.setUint32(40,n*2,true);
+    var a=new Audio(URL.createObjectURL(new Blob([b],{type:'audio/wav'}))); a.loop=true; a.setAttribute('playsinline',''); var pr=a.play(); if(pr&&pr.catch) pr.catch(function(){});
+  }catch(e){}
+}
+// Some Android phones hiss or crackle while web audio plays silence: pause it 3 s after the last voice, wake it when one sings
+var quietSince=0;
+setInterval(function(){
+  if(!AC) return;
+  var on=PERF.some(function(p){ return p.on; });
+  if(on){ quietSince=0; if(AC.state==='suspended'){ var r=AC.resume(); if(r&&r.catch) r.catch(function(){}); } return; }
+  if(AC.state!=='running') return;
+  if(!quietSince) quietSince=performance.now(); else if(performance.now()-quietSince>3000){ quietSince=0; AC.suspend(); }
+},250);
 function initAudio(){
   if(AC) return;
   var Ctor=window.AudioContext||window.webkitAudioContext;
   if(!Ctor) return;
-  AC=new Ctor();
+  // iPhone/iPad: without this the silent switch mutes web audio
+  if(/iP(hone|ad|od)/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1)) unlockIOS();
+  // bigger buffer (and shorter reverb) on weaker phones: otherwise the sound crackles
+  try{ AC=new Ctor({latencyHint:WEAK?'playback':'balanced'}); }catch(e){ AC=new Ctor(); }
   var comp=AC.createDynamicsCompressor();
   comp.threshold.value=-18; comp.ratio.value=5; comp.attack.value=.01; comp.release.value=.2;
   master=AC.createGain(); master.gain.value=.9;
-  var conv=AC.createConvolver(); conv.buffer=makeIR(2.0,2.4);
+  var conv=AC.createConvolver(); conv.buffer=makeIR(WEAK?1.1:2.0,2.4);
   var wet=AC.createGain(); wet.gain.value=.26;
   master.connect(comp); master.connect(conv); conv.connect(wet); wet.connect(comp);
   comp.connect(AC.destination); outNode=comp;

@@ -36,7 +36,8 @@
   var gl, ext, P = {}, quad, vel, dye, divg, curlT, pres, simW, simH, ready = false, failed = false;
   var VS = 'precision highp float;attribute vec2 aPosition;varying vec2 vUv,vL,vR,vT,vB;uniform vec2 texelSize;' +
     'void main(){vUv=aPosition*.5+.5;vL=vUv-vec2(texelSize.x,0.);vR=vUv+vec2(texelSize.x,0.);vT=vUv+vec2(0.,texelSize.y);vB=vUv-vec2(0.,texelSize.y);gl_Position=vec4(aPosition,0.,1.);}';
-  var H = 'precision mediump float;precision mediump sampler2D;varying highp vec2 vUv,vL,vR,vT,vB;';
+  // highp where the phone has it: Mali/PowerVR GPUs really compute mediump with 10 bits (blocky, smeared or stuck fluid)
+  var H = '#ifdef GL_FRAGMENT_PRECISION_HIGH\nprecision highp float;\nprecision highp sampler2D;\n#else\nprecision mediump float;\nprecision mediump sampler2D;\n#endif\nvarying highp vec2 vUv,vL,vR,vT,vB;';
   var FS = {
     clear: H + 'uniform sampler2D uTexture;uniform float value;void main(){gl_FragColor=value*texture2D(uTexture,vUv);}',
     display: H + 'uniform sampler2D uTexture;void main(){vec3 c=max(texture2D(uTexture,vUv).rgb,0.);float m=max(c.r,max(c.g,c.b));' +
