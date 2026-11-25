@@ -8,14 +8,18 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="{{ (page_desc or t('meta_description'))|striptags }}">
 {{ og_tags(site, canonical[site.site_url|length + 1:], ((page_title|striptags) ~ ' · ' if page_title else '') ~ 'Las Marikarmen', (page_desc or t('meta_description'))|striptags, slug, lang)|safe }}<meta name="theme-color" content="#0e0b12">
+<link rel="canonical" href="{{ canonical }}">
 {% for l in langs %}
-<link rel="alternate" hreflang="{{ l }}" href="{{ page_url(slug, l) }}">
+<link rel="alternate" hreflang="{{ l }}" href="{{ abs_url(slug, l) }}">
 {% endfor %}
-{% if langs %}<link rel="alternate" hreflang="x-default" href="{{ page_url(slug, langs[0]) }}">{% endif %}
+{% if langs %}<link rel="alternate" hreflang="x-default" href="{{ abs_url(slug, langs[0]) }}">
+{% endif %}
+{% if json_ld %}<script type="application/ld+json">{{ json_ld }}</script>
+{% endif %}
 {% if slug == 'index' and lang == langs[0] and langs|length > 1 %}
 <script>
 /* first visit to the home page: open it in the browser's language, if we have it */
-(function(){try{var L={{ langs|tojson }},k=localStorage.getItem('lm-lang');
+(function(){try{if(/bot|crawl|spider|slurp|lighthouse|google|bing|yandex|duckduck|baidu/i.test(navigator.userAgent))return;var L={{ langs|tojson }},k=localStorage.getItem('lm-lang');
 if(!k){var n=(navigator.languages||[navigator.language||'es']).map(function(x){return x.slice(0,2).toLowerCase()});k=n.find(function(x){return L.indexOf(x)>-1})}
 if(k&&k!==L[0]&&L.indexOf(k)>-1&&!/[?&]lang=/.test(location.search)){location.replace(k+'/')}}catch(e){}})();
 </script>

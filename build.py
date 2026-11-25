@@ -235,6 +235,12 @@ def build(langs, text, site):
             name = "" if slug == "index" else f"{slug}/"
             return f"{root}{target_sub}{name}" or "./"
 
+        def abs_url(slug, target_lang=lang):
+            # full address, for <link rel="canonical"> / hreflang / sitemap (Google needs absolute URLs there)
+            target_sub = "" if target_lang == default else f"{target_lang}/"
+            name = "" if slug == "index" else f"{slug}/"
+            return f"{site['site_url'].rstrip('/')}/{target_sub}{name}"
+
         presskit = site["presskit"].get(lang) or site["presskit"][SOURCE]
         rider = (site.get("rider") or {}).get(lang) or (site.get("rider") or {}).get(SOURCE)
         # every language a PDF exists in, for the small language dropdown next to each press kit / rider link
@@ -245,12 +251,13 @@ def build(langs, text, site):
             root = base_root if slug == "index" else base_root + "../"
             ctx = dict(
                 t=t, lang=lang, langs=langs if len(langs) > 1 else [], site=site,
-                lang_names=site["language_names"], root=root, page_url=page_url, og_tags=og_tags, lyrics_json=lambda: lyrics_for(lyrics, t, page_url, lang), lyrics_video={s['desc'].get('video'): s['slug'] for s in lyrics if s['desc'].get('video')},
+                lang_names=site["language_names"], root=root, page_url=page_url, abs_url=abs_url, og_tags=og_tags, lyrics_json=lambda: lyrics_for(lyrics, t, page_url, lang), lyrics_video={s['desc'].get('video'): s['slug'] for s in lyrics if s['desc'].get('video')},
                 slug=slug, pages=PAGES, nav=NAV, icons=icons, asset_v=asset_v, gigs=gigs, past_gigs=past_gigs, past_years=past_years, presskit=root + presskit, rider=(root + rider) if rider else None, pdfs={k: [(l, root + f) for l, f in v] for k, v in pdf_files.items()},
                 page_title=(t(title_key) if title_key else None),
                 blob=blob_parts(lang) if slug == "blob" else None,
                 page_desc=blob_parts(lang)["desc"] if slug == "blob" else None,
                 canonical=f"{site['site_url'].rstrip('/')}/{sub}{'' if slug == 'index' else slug + '/'}",
+                json_ld=(json_ld(site, t, lang, abs_url, gigs) if slug == "index" else None),
             )
             html = env.get_template(tpl).render(**ctx)
             dest = OUT / sub / ("index.html" if slug == "index" else f"{slug}/index.html")
@@ -274,7 +281,61 @@ def build(langs, text, site):
             redirect(f"{old}/index.html", new, anchor)
         if lang != SOURCE and missing:
             print(f"  {lang}: {len(missing)} texts shown in castellano (missing translation)")
+    write_sitemap(site, langs, default, today)
     print(f"Built {len(langs)} language(s) × {len(PAGES)} pages → {OUT.relative_to(ROOT)}/")
+
+
+def write_sitemap(site, langs, default, today):
+    """sitemap.xml (every page in every language, with hreflang alternates) and robots.txt pointing to it."""
+    base = site["site_url"].rstrip("/")
+    def url(slug, l):
+        return f"{base}/{'' if l == default else l + '/'}{'' if slug == 'index' else slug + '/'}"
+    out = ['<?xml version="1.0" encoding="UTF-8"?>',
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
+    for slug, *_ in PAGES:
+        for l in langs:
+            out.append(f"  <url><loc>{url(slug, l)}</loc>")
+            if len(langs) > 1:
+                out += [f'    <xhtml:link rel="alternate" hreflang="{a}" href="{url(slug, a)}"/>' for a in langs]
+                out.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{url(slug, default)}"/>')
+            out.append("  </url>")
+    out.append("</urlset>")
+    (OUT / "sitemap.xml").write_text("\n".join(out) + "\n", encoding="utf-8")
+    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {base}/sitemap.xml\n", encoding="utf-8")
+
+
+def json_ld(site, t, lang, abs_url, gigs):
+    """schema.org data for Google (knowledge panel, events): the band, its members, socials and upcoming gigs."""
+    import json as _j
+    from html import unescape
+    base = site["site_url"].rstrip("/")
+    plain = lambda v: unescape(re.sub(r"<[^>]+>", "", str(v)))
+    band = {"@type": "MusicGroup", "@id": f"{base}/#band", "name": "Las Marikarmen", "url": abs_url("index"),
+            "description": plain(t("meta_description")), "inLanguage": lang,
+            "image": f"{base}/assets/img/og/index.jpg", "logo": f"{base}/assets/img/logo-pennant-light.png",
+            "genre": ["Hip-hop", "Electronic", "Queer punk", "Drag"],
+            "foundingLocation": {"@type": "Place", "name": "Collserola, Barcelona"},
+            "location": {"@type": "Place", "address": {"@type": "PostalAddress", "addressLocality": "Barcelona", "addressCountry": "ES"}},
+            "member": [{"@type": "Person", "name": m["name"]} for m in site.get("members") or []],
+            "sameAs": [s["url"] for s in site.get("social") or [] if s.get("url")]}
+    if (site.get("contact") or {}).get("email"):
+        band["email"] = site["contact"]["email"]
+    graph = [band]
+    for g in gigs:
+        d = str(g["date"])
+        if len(d) != 10:   # only gigs with a full date
+            continue
+        name = g.get("event") or f"Las Marikarmen · {g.get('city', '')}".strip(" ·")
+        graph.append({"@type": "MusicEvent", "name": f"Las Marikarmen · {name}" if g.get("event") else name,
+                      "startDate": d, "eventStatus": "https://schema.org/EventScheduled",
+                      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                      "location": {"@type": "Place", "name": g.get("venue") or g.get("city", ""),
+                                   "address": {"@type": "PostalAddress", "addressLocality": g.get("city", "")}},
+                      "performer": {"@id": f"{base}/#band"}, "organizer": {"@type": "Organization", "name": g.get("venue") or g.get("event") or "Las Marikarmen"},
+                      "image": [f"{base}{p}" for p in g.get("posters") or []] or [f"{base}/assets/img/og/index.jpg"],
+                      "url": abs_url("espectaculo") + "#conciertos"})
+    data = {"@context": "https://schema.org", "@graph": graph}
+    return Markup(_j.dumps(data, ensure_ascii=False).replace("</", "<\\/"))
 
 
 OG_LOCALE = {"es": "es_ES", "en": "en_GB", "ca": "ca_ES", "gl": "gl_ES", "eu": "eu_ES", "pt": "pt_PT",
