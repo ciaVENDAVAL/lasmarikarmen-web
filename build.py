@@ -237,13 +237,16 @@ def build(langs, text, site):
 
         presskit = site["presskit"].get(lang) or site["presskit"][SOURCE]
         rider = (site.get("rider") or {}).get(lang) or (site.get("rider") or {}).get(SOURCE)
+        # every language a PDF exists in, for the small language dropdown next to each press kit / rider link
+        pdf_files = {kind: [(l, (site.get(kind) or {})[l]) for l in langs if (site.get(kind) or {}).get(l)
+                            and (ROOT / (site.get(kind) or {})[l]).exists()] for kind in ("presskit", "rider")}
         preview = {}
         for slug, tpl, nav_key, title_key in PAGES:
             root = base_root if slug == "index" else base_root + "../"
             ctx = dict(
                 t=t, lang=lang, langs=langs if len(langs) > 1 else [], site=site,
                 lang_names=site["language_names"], root=root, page_url=page_url, og_tags=og_tags, lyrics_json=lambda: lyrics_for(lyrics, t, page_url, lang), lyrics_video={s['desc'].get('video'): s['slug'] for s in lyrics if s['desc'].get('video')},
-                slug=slug, pages=PAGES, nav=NAV, icons=icons, asset_v=asset_v, gigs=gigs, past_gigs=past_gigs, past_years=past_years, presskit=root + presskit, rider=(root + rider) if rider else None,
+                slug=slug, pages=PAGES, nav=NAV, icons=icons, asset_v=asset_v, gigs=gigs, past_gigs=past_gigs, past_years=past_years, presskit=root + presskit, rider=(root + rider) if rider else None, pdfs={k: [(l, root + f) for l, f in v] for k, v in pdf_files.items()},
                 page_title=(t(title_key) if title_key else None),
                 blob=blob_parts(lang) if slug == "blob" else None,
                 page_desc=blob_parts(lang)["desc"] if slug == "blob" else None,

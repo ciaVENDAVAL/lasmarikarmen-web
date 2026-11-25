@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_macros.html" import more, month %}
+{% from "_macros.html" import more, month, pdf_langs %}
 {% block main %}
 <section class="showband showband--page">
   <img class="showband__img" src="{{ root }}assets/img/photos/live-night-crowd.jpg" alt="" width="800" height="532" style="object-position: center 40%">
@@ -30,11 +30,11 @@
         <dt class="label pk">{{ t('tech_video_l') }}</dt><dd>{{ t('tech_video') }}</dd>
       </dl>
       {% if not rider %}<p class="mono small">{{ t('contact_rider') }}</p>{% endif %}
-      <p class="tech__links">
-        <a class="btn" href="{{ presskit }}" download>{{ t('web_download') }}</a>
-        {% if rider %}<a class="btn" href="{{ rider }}" download>{{ t('web_rider') }}</a>{% endif %}
+      <div class="tech__links">
+        <div class="pdfrow"><a class="btn" href="{{ presskit }}" download>{{ t('web_download') }}</a>{{ pdf_langs(pdfs.presskit, lang, lang_names, t('lang_label')) }}</div>
+        {% if rider %}<div class="pdfrow"><a class="btn" href="{{ rider }}" download>{{ t('web_rider') }}</a>{{ pdf_langs(pdfs.rider, lang, lang_names, t('lang_label')) }}</div>{% endif %}
         {{ more(page_url('contacto'), t('nav_contact')) }}
-      </p>
+      </div>
     </aside>
   </div>
 </section>

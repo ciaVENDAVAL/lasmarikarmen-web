@@ -9,6 +9,20 @@
 </section>
 {% endmacro %}
 
+{# a PDF (press kit / rider) in any language that exists: small dropdown next to its link #}
+{% macro pdf_langs(files, lang, lang_names, label) %}
+{%- if files|length > 1 %}
+<details class="pdfl">
+  <summary aria-label="{{ label }}: {{ lang_names[lang] }}"><span aria-hidden="true">{{ lang|upper }} ▾</span></summary>
+  <ul>
+  {% for l, href in files %}
+    <li><a href="{{ href }}" download hreflang="{{ l }}" lang="{{ l }}"{% if l == lang %} aria-current="true"{% endif %}><b>{{ l|upper }}</b> {{ lang_names[l] }}</a></li>
+  {% endfor %}
+  </ul>
+</details>
+{%- endif %}
+{% endmacro %}
+
 {% macro more(href, label) %}
 <a class="more" href="{{ href }}">{{ label }} <span aria-hidden="true">→</span></a>
 {% endmacro %}

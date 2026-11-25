@@ -684,3 +684,21 @@ html.a11y-day .hero :is(h1, h2, p, a, span):not(.btn):not(.btn *) { color: inher
 html.a11y-day .top.menu-open { background-color: #efe6dc; }
 html.a11y-day :is(.band--ink, .hero, .foot) :is(.giant, .gig__city) { color: #0e0b12; }
 html.a11y-day .nav :is(.nav__social, .nav__langs) { border-color: rgb(14 11 18 / .2); }
+
+/* press kit / rider: language dropdown next to the link */
+.pdfrow { display: inline-flex; align-items: center; gap: .5rem; flex-wrap: nowrap; }
+.pdfl { position: relative; display: inline-block; }
+.pdfl summary { list-style: none; cursor: pointer; font: 700 .68rem/1 var(--mono); letter-spacing: .08em; padding: .45em .55em; border: 1.5px solid currentColor; white-space: nowrap; }
+.pdfl summary::-webkit-details-marker { display: none; }
+.pdfl[open] summary { background: var(--pink); color: var(--ink); border-color: var(--pink); }
+.pdfl ul { position: absolute; z-index: 40; right: 0; left: auto; top: calc(100% + 6px); list-style: none; margin: 0; padding: .4rem; min-width: 12rem;
+  background: var(--ink); border: 2px solid var(--pink); box-shadow: 5px 5px 0 var(--pink); display: grid; gap: .1rem; }
+.foot .pdfl ul { top: auto; bottom: calc(100% + 6px); }
+.pdfl a { display: flex; gap: .6rem; align-items: baseline; padding: .45em .5em; color: var(--cream); text-decoration: none; font: 600 .86rem/1.2 var(--sans); white-space: nowrap; }
+.pdfl a b { font: 700 .68rem/1 var(--mono); letter-spacing: .08em; color: var(--pink); min-width: 1.8em; }
+.pdfl a:hover, .pdfl a:focus-visible { background: var(--pink); color: var(--ink); }
+.pdfl a:hover b, .pdfl a:focus-visible b { color: var(--ink); }
+.pdfl a[aria-current="true"] { outline: 1px solid var(--pink); }
+html.a11y-day .pdfl ul { background: #fffaf3; }
+.foot .pdfrow { display: flex; font-size: .84rem; line-height: 1.45; margin: 0 0 .35rem; }
+.foot .pdfrow + .label { margin-top: .6rem; }
