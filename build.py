@@ -196,6 +196,9 @@ def build(langs, text, site):
 
     if (ROOT / "favicon.ico").exists():
         shutil.copy(ROOT / "favicon.ico", OUT / "favicon.ico")
+    # search-engine ownership files must sit at the site root (Bing Webmaster Tools, Google Search Console)
+    for f in [*ROOT.glob("BingSiteAuth.xml"), *ROOT.glob("google*.html")]:
+        shutil.copy(f, OUT / f.name)
     import hashlib
     asset_v = hashlib.sha1(b''.join((ROOT / f).read_bytes() for f in ('assets/css/style.css', 'assets/css/fonts.css', 'assets/js/site.js', 'assets/js/letras.js', 'assets/js/edit.js', 'assets/js/fluid.js'))).hexdigest()[:8]
     today = date.today().isoformat()
